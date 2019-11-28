@@ -1,0 +1,120 @@
+body {
+    background-color: #102f50;
+    color: #e6edf1;
+}
+
+#organization {
+    height: 100%;
+}
+
+#organization #title {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    font-family: 'DecimaABold';
+    font-size: 4vw;
+    color: white;
+}
+
+#organization.container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#organization .organization-title-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+#organization .organization-title {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #1399D6;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Decima';
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#organization .organization-title-container hr {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(19, 153, 214, 1), rgba(0, 0, 0, 0));
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    #organization #title {
+        font-size: 8vw;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .member-image {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+}
+
+@media (max-width:540px) {
+    #organization #title {
+        font-size: 8vw;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .member-image {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .member-image {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.member-name {
+    text-align: center;
+    color: white;
+    font-family: 'DecimaABold';
+    font-size: 1.25em;
+    margin: 5% 0;
+}
+
+.detail-img {
+    cursor: pointer;
+}
+
+.department-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.space-even {
+    justify-content: space-evenly;
+}
+
+.space-center {
+    justify-content: center;
+}

@@ -47,7 +47,6 @@ body {
 html,
 .fullscreen {
     display: flex;
-    height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -59,18 +58,27 @@ html,
     text-align: center;
 }
 
-.title {
-    font-size: 8rem;
-    color: rgb(230, 237, 241);
-    text-align: left;
+#title {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
     font-family: 'DecimaABold';
-    padding-left: 0.2em;
+    font-size: 4vw;
+    color: white;
 }
 
 .talk-title{
     font-size: 1.7rem;
-    color: rgb(230, 237, 241);
+    color: white;
     text-align: left;
+    font-family: 'DecimaABold';
+    padding-right: 0.35em;
+    margin-left: -2px;
+}
+
+.talk-title-center{
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
     font-family: 'DecimaABold';
     padding-right: 0.35em;
     margin-left: -2px;
@@ -402,6 +410,10 @@ nav {
         color: white;
     }
 
+    .program-container {
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width:992px) {
@@ -440,6 +452,12 @@ nav {
     }
 }
 
+@media (min-width:992px) {
+    .program-container {
+        max-width: 60%;
+    }
+}
+
 .conf-status p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typwriter cursor */
@@ -466,4 +484,8 @@ nav {
 .navbar-collapse.collapse.show {
     max-height: 95vh;
     overflow-y: auto;
+}
+
+#navbar.show {
+    background-color: rgba(9, 28, 49, 0.9);
 }

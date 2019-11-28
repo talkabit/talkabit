@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Talk A Bit 2020</title>
     <link rel="stylesheet" href="../css/program.css">
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="manifest" href="../manifest.json">
@@ -30,44 +32,45 @@
     <meta name="apple-mobile-web-app-title" content="Hello World">
     <meta name="msapplication-TileImage" content="../images/hello-icon-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
 
 <body style="overflow-x: hidden">
     <div id="landing" class="landing container-fluid">
-        <nav class="fixed-top navbar navbar-expand-lg navbar-dark hide" id="navbar">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
-                <i class="fas fa-arrow-right text-white"></i>
+                <i class="fas fa-bars text-white"></i>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav mx-auto navbar-first-list">
                     <li class="nav-item">
-                        <a class="nav-link py-0 active d-inline d-lg-block" href="#landing">Home</a>
-                        <i class="fas fa-arrow-left text-white d-inline d-lg-none float-right" data-toggle="collapse"
+                        <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+                        <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
                             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation"></i>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="#about">About</a>
+                        <a class="nav-link py-0" href="../index.html#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#tickets">Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="../talks">Talks</a>
+                        <a class="nav-link py-0" href="./speakers.html">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="#program">Program</a>
+                        <a class="nav-link py-0" href="./program.html">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0 sponsors_link" href="#sponsors">Sponsors</a>
+                        <a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#location">Location</a>
                     </li>
                 </ul>
 
-                <ul class="nav navbar-nav mx-auto" id="logo_navbar">
+                <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
                     <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
                         <img height="40" src="../images/logo_sem.png" />
                     </a>
@@ -75,7 +78,7 @@
 
                 <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="#organization">Organization</a>
+                        <a class="nav-link py-0" href="./organization.html">Organization</a>
                     </li>
                     <li class="nav-item dropdown" id="prevVersions">
                         <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
@@ -97,10 +100,8 @@
             </div>
         </nav>
 
-        <div class="container mt-5">
-            <div class="title">
-                Program
-            </div>
+        <div class="container-fluid program-container">
+            <h1 id="title">Program</h1>
 
             <table class="d-none d-lg-inline table table-borderless text-white">
                 <thead>
@@ -112,20 +113,19 @@
                 </thead>
                 <tbody>
                     <tr class="row border-bottom" style="margin: auto; height: 4em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">9:00</td>
-                        <td class="col-5 ml-2 mb-2">
-                            <div class="row mx-3">
-                                <span class="talk-title w-100">Opening Session</span>
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">10:00</td>
+                        <td class="col-10 ml-2 mb-2" colspan="2">
+                            <div class="row mx-3 w-100">
+                                <span class="talk-title-center w-100">Opening Session</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
-                    <tr class="row border-bottom" style="margin: auto; height: 15em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">10:00</td>
-                        <td class="col-5 ml-2 mt-2 mb-2">
-                            <div class="row mx-3">
-                                <span class="talk-title w-100">Should a CEO smoke weed?</span>
-                                <span class="talk-pos">Elon Musk</span>
+                    <tr class="row " style="margin: auto; height: 15em;">
+                        <td class="col-1 border-bottom" style="font-size: 1.2em; font-weight: bold">10:30</td>
+                        <td class="col-5 border-bottom mt-2 ">
+                            <div class="row mx-3 ml-4">
+                                <span class="talk-title w-100">Talk 1</span>
+                                <span class="talk-pos">André Lago</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
@@ -134,13 +134,10 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="col-5 ml-2 mt-2 mb-2">
+                        <td class="col-5 ml-2 mt-2 mb-0" style="align-self: flex-end;" rowspan="2">
                             <div class="row mx-3">
-                                <span class="workshop-title w-100">Very Cool Workshop</span>
-                                <span class="workshop-pos">Very Cool Person</span>
-                                <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing
-                                </div>
+                                <span class="workshop-title ml-2 w-100">Workshop 1</span>
+                                <span class="workshop-pos ml-2 mb-0 pb-0">Bosch</span>
                             </div>
                         </td>
                     </tr>
@@ -148,8 +145,8 @@
                         <td class="col-1" style="font-size: 1.2em; font-weight: bold">11:00</td>
                         <td class="col-5 ml-2 mb-2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Should a CEO smoke weed?</span>
-                                <span class="talk-pos">Elon Musk</span>
+                                <span class="talk-title w-100">Talk 2</span>
+                                <span class="talk-pos">Peter Sikachev</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
@@ -159,29 +156,20 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="col-5 ml-2 mb-2">
+                        <td class="col-5 ml-2 mt-0 mb-2" rowspan="2">
                             <div class="row mx-3">
-                                <span class="workshop-title w-100">Very Cool Workshop</span>
-                                <span class="workshop-pos">Very Cool Person</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
-                                    elit. Quidem
-                                    sit
-                                    similique exercitationem provident, dolorum aliquid reprehenderit,
-                                    consequuntur eaque
-                                    architecto aliquam non fugiat, molestias nostrum ex ipsum at. Totam, sed
-                                    commodi?Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit.
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="row border-bottom" style="margin: auto; height: 15em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">12:00</td>
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">11:30</td>
                         <td class="col-5 ml-2 mb-2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Should a CEO smoke weed?</span>
-                                <span class="talk-pos">Elon Musk</span>
+                                <span class="talk-title w-100">Talk 3</span>
+                                <span class="talk-pos">Rui Costa</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
@@ -194,10 +182,10 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="col-5 ml-2 mb-2">
+                        <td class="col-5 ml-2 mb-2" rowspan="2">
                             <div class="row mx-3">
-                                <span class="workshop-title w-100">Very Cool Workshop</span>
-                                <span class="workshop-pos">Very Cool Person</span>
+                                <span class="workshop-title w-100">Workshop 2</span>
+                                <span class="workshop-pos">Rumos</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
@@ -208,96 +196,93 @@
                         </td>
                     </tr>
                     <tr class="row border-bottom" style="margin: auto; height: 4em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">13:00</td>
-                        <td class="col-5 ml-2 mb-2">
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">12:30</td>
+                        <td class="col-10 ml-2 mb-2" colspan="2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Lunch break</span>
+                                <span class="talk-title-center w-100">Lunch break</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
-                    <tr class="row border-bottom" style="margin: auto; height: 15em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">14:00</td>
-                        <td class="col-5 ml-2 mb-2">
-                            <div class="row mx-3">
-                                <span class="talk-title w-100">Should a CEO smoke weed?</span>
-                                <span class="talk-pos">Elon Musk</span>
+                    <tr class="row " style="margin: auto; height: 15em;">
+                        <td class="col-1 border-bottom" style="font-size: 1.2em; font-weight: bold">14:00</td>
+                        <td class="col-5 border-bottom mt-2 ">
+                            <div class="row mx-3 ml-4">
+                                <span class="talk-title w-100">Talk 4</span>
+                                <span class="talk-pos">Ana Paiva</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
                                     sit
+                                    ipsum, dolor sit amet consectetur adipisicing elit.
                                 </div>
                             </div>
                         </td>
-                        <td class="col-5 ml-2 mt-2 mb-2">
+                        <td class="col-5 ml-2 mt-2 mb-0" style="align-self: flex-end;" rowspan="2">
                             <div class="row mx-3">
-                                <span class="workshop-title w-100">Very Cool Workshop</span>
-                                <span class="workshop-pos">Very Cool Person</span>
+                                <span class="workshop-title ml-2 w-100">Workshop 3</span>
+                                <span class="workshop-pos ml-2 mb-0 pb-0">Switch</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row border-bottom" style="margin: auto; height: 15em;">
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">14:30</td>
+                        <td class="col-5 ml-2 mb-2">
+                            <div class="row mx-3">
+                                <span class="talk-title w-100">Talk 5</span>
+                                <span class="talk-pos">Robert</span>
                                 <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
                                     elit. Quidem
                                     sit
                                     similique exercitationem provident, dolorum aliquid reprehenderit,
                                     consequuntur eaque
-                                    architecto aliquam non fugiat, molestias nostrum ex ipsum at. Totam, sed
-                                    commodi?Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-5 ml-2 mt-0 mb-2" rowspan="2">
+                            <div class="row mx-3">
+                                <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="row border-bottom" style="margin: auto; height: 4em;">
                         <td class="col-1" style="font-size: 1.2em; font-weight: bold">15:00</td>
-                        <td class="col-5 ml-2 mb-2">
+                        <td class="col-10 ml-2 mb-2" colspan="2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Coffee break</span>
+                                <span class="talk-title-center w-100">Coffee break</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
-                    <tr class="row border-bottom" style="margin: auto; height: 15em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">16:00</td>
-                        <td class="col-5 ml-2 mt-2 mb-2">
+                    <tr class="row border-bottom" style="margin: auto; height: 4em;">
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">15:30</td>
+                        <td class="col-10 ml-2 mb-2" colspan="2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Should a CEO smoke weed?</span>
-                                <span class="talk-pos">Elon Musk</span>
-                                <div class="talk-description">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing
-                                    elit. Quidem
-                                    sit
-                                    similique exercitationem provident, dolorum aliquid reprehenderit,
-                                    consequuntur eaque
-                                    architecto aliquam non fugiat, molestias nostrum ex ipsum at. Totam, sed
-                                    commodi?Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit.
-                                </div>
+                                <span class="talk-title-center w-100">Forum</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
                     <tr class="row border-bottom" style="margin: auto; height: 4em;">
                         <td class="col-1" style="font-size: 1.2em; font-weight: bold">17:00</td>
-                        <td class="col-5 ml-2 mb-2">
+                        <td class="col-10 ml-2 mb-2" colspan="2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">Closing Session</span>
+                                <span class="talk-title-center w-100">Closing Session</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
                     <tr class="row border-bottom" style="margin: auto; height: 4em;">
-                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">18:00</td>
-                        <td class="col-5 ml-2 mt-2 mb-2">
+                        <td class="col-1" style="font-size: 1.2em; font-weight: bold">17:30</td>
+                        <td class="col-10 ml-2 mt-2 mb-2">
                             <div class="row mx-3">
-                                <span class="talk-title w-100">ChillABit</span>
+                                <span class="talk-title-center w-100">DrinkABit</span>
                             </div>
                         </td>
-                        <td class="col-5"></td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="d-inline d-lg-none mx-auto">
-
                 <div class="row">
                     <div class="col-2 mr-5">
                         <ul class="">
@@ -305,47 +290,52 @@
                                 <span class="col-1 text-white" style="font-size: 1.5em; font-weight: bold">Time</span>
                             </li>
                             <li class="mt-3" style="height: 3em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">9:00</span>
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">10:00</span>
                             </li>
                             <li style="height: 5em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">10:00</span>
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">10:30</span>
                             </li>
                             <li style="height: 5em;">
                                 <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">11:00</span>
                             </li>
                             <li style="height: 5em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">12:00</span>
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">11:30</span>
                             </li>
                             <li style="height: 3em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">13:00</span>
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">12:30</span>
                             </li>
                             <li style="height: 5em;">
                                 <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">14:00</span>
                             </li>
+                            <li style="height: 5em;">
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">14:30</span>
+                            </li>
                             <li style="height: 3em;">
                                 <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">15:00</span>
                             </li>
-                            <li style="height: 5em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">16:00</span>
+                            <li style="height: 3em;">
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">15:30</span>
                             </li>
                             <li style="height: 3em;">
                                 <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">17:00</span>
                             </li>
                             <li style="height: 3em;">
-                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">18:00</span>
+                                <span class="col-1 text-white" style="font-size: 1.2em; font-weight: bold">17:30</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-8 ml-1">
                         <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                            <li class="nav-item col-6">
-                                <a class="nav-link active border-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                    aria-controls="home" aria-selected="true" style="font-size: 1.2em; font-weight: bold">Talks</a>
+                            <li class="nav-item p-0 col-5">
+                                <a class="nav-link active border-0" id="home-tab" data-toggle="tab" href="#home"
+                                    role="tab" aria-controls="home" aria-selected="true"
+                                    style="font-size: 1.2em; font-weight: bold">Talks</a>
                             </li>
-                            <li class="nav-item col-6">
-                                <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                    aria-controls="profile" aria-selected="false" style="font-size: 1.2em; font-weight: bold">Workshops</a>
+                            <li class="nav-item p-0 col-7">
+                                <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile"
+                                    role="tab" aria-controls="profile" aria-selected="false"
+                                    style="font-size: 1.2em; font-weight: bold">Workshops</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -355,36 +345,39 @@
                                     <span class="talk-title w-100"><small>Opening Session</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 5em;">
-                                    <span class="talk-title w-100"><small>Should a CEO smoke weed?</small></span>
-                                    <span class="talk-pos"><small>Elon Musk</small></span>
+                                    <span class="talk-title w-100"><small>Talk 1</small></span>
+                                    <span class="talk-pos"><small>André Lago</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 5em;">
-                                    <span class="talk-title w-100"><small>Should a CEO smoke weed?</small></span>
-                                    <span class="talk-pos"><small>Elon Musk</small></span>
+                                    <span class="talk-title w-100"><small>Talk 2</small></span>
+                                    <span class="talk-pos"><small>Peter Sikachev</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 5em;">
-                                    <span class="talk-title w-100"><small>Should a CEO smoke weed?</small></span>
-                                    <span class="talk-pos"><small>Elon Musk</small></span>
+                                    <span class="talk-title w-100"><small>Talk 3</small></span>
+                                    <span class="talk-pos"><small>Rui Costa</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
                                     <span class="talk-title w-100"><small>Lunch break</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 5em;">
-                                    <span class="talk-title w-100"><small>Should a CEO smoke weed?</small></span>
-                                    <span class="talk-pos"><small>Elon Musk</small></span>
+                                    <span class="talk-title w-100"><small>Talk 4</small></span>
+                                    <span class="talk-pos"><small>Ana Paiva</small></span>
+                                </div>
+                                <div class="row mx-3" style="height: 5em;">
+                                    <span class="talk-title w-100"><small>Talk 5</small></span>
+                                    <span class="talk-pos"><small>Robert</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
                                     <span class="talk-title w-100"><small>Coffee break</small></span>
                                 </div>
-                                <div class="row mx-3" style="height: 5em;">
-                                    <span class="talk-title w-100"><small>Should a CEO smoke weed?</small></span>
-                                    <span class="talk-pos"><small>Elon Musk</small></span>
+                                <div class="row mx-3" style="height: 3em;">
+                                    <span class="talk-title w-100"><small>Forum</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
-                                    <span class="talk-title w-100"><small>Closing session</small></span>
+                                    <span class="talk-title w-100"><small>Closing Session</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
-                                    <span class="talk-title w-100"><small>ChillABit</small></span>
+                                    <span class="talk-title w-100"><small>DrinkABit</small></span>
                                 </div>
                             </div>
                             <div class="tab-pane text-white fade" id="profile" role="tabpanel"
@@ -392,51 +385,73 @@
                                 <div class="row mx-3 mt-3" style="height: 3em;">
                                     <span class="talk-title w-100"><small>Opening Session</small></span>
                                 </div>
-                                <div class="row mx-3" style="height: 5em;">
-                                    <span class="workshop-title w-100"><small>Very Cool Workshop</small></span>
-                                    <span class="workshop-pos"><small>Very Cool Person</small></span>
+                                <div class="row mx-3 align-items-center" style="height: 10em;">
+                                    <span class="workshop-title w-100"><small>Workshop 1</small></span>
+                                    <span class="workshop-pos"><small>Bosch</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 5em;">
-                                    <span class="workshop-title w-100"><small>Very Cool Workshop</small></span>
-                                    <span class="workshop-pos"><small>Very Cool Person</small></span>
-                                </div>
-                                <div class="row mx-3" style="height: 5em;">
-                                    <span class="workshop-title w-100"><small>Very Cool Workshop</small></span>
-                                    <span class="workshop-pos"><small>Very Cool Person</small></span>
+                                    <span class="workshop-title w-100"><small>Workshop 2</small></span>
+                                    <span class="workshop-pos"><small>Rumos</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
                                     <span class="talk-title w-100"><small>Lunch break</small></span>
                                 </div>
-                                <div class="row mx-3" style="height: 5em;">
-                                    <span class="workshop-title w-100"><small>Very Cool Workshop</small></span>
-                                    <span class="workshop-pos"><small>Very Cool Person</small></span>
+                                <div class="row mx-3" style="height: 10em;">
+                                    <span class="workshop-title w-100"><small>Workshop 3</small></span>
+                                    <span class="workshop-pos"><small>Switch</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
                                     <span class="talk-title w-100"><small>Coffee break</small></span>
                                 </div>
-                                <div class="row mx-3" style="height: 5em;">
-                                    <span class="workshop-title w-100"><small>Very Cool Workshop</small></span>
-                                    <span class="workshop-pos"><small>Very Cool Person</small></span>
+                                <div class="row mx-3" style="height: 3em;">
+                                    <span class="talk-title w-100"><small>Forum</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
-                                    <span class="talk-title w-100"><small>Closing session</small></span>
+                                    <span class="talk-title w-100"><small>Closing Session</small></span>
                                 </div>
                                 <div class="row mx-3" style="height: 3em;">
-                                    <span class="talk-title w-100"><small>ChillABit</small></span>
+                                    <span class="talk-title w-100"><small>DrinkABit</small></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <!-- <div class="footer" style="height:7em"> -->
+    <!-- Footer -->
+    <footer id="footer" class="page-footer font-small">
 
-    </div>
-    </div>
+        <div class="container-fluid text-center">
+            <div class="row social">
+                <ul class="list-group list-group-horizontal mx-auto mt-3">
+                    <li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-logo-feup ">
+                <a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+                        src="../2019/res/img/feup-logo.png" /></a>
+            </div>
+
+            <div class="footer-copyright text-center py-3">
+                Copyright Ⓒ 2020 Talk a Bit. All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+
     <!-- <script src="js/main.js"></script> -->
+    <script type="text/javascript" src="../js/hide-navbar.js"></script>
 
 </body>
 
