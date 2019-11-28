@@ -45,6 +45,7 @@
 body {
   font-family: sans-serif;
   background-color: rgba(15, 46, 81, 1) !important;
+  overflow-x: hidden;
 }
 
 html,
@@ -347,4 +348,99 @@ html,
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
     border: 1px solid #001220;
+}
+
+.card-row {
+  padding-top: 5vh;
+  color: black;
+}
+
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+
+}
+
+.card-flip {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+  height: 250px;
+  margin-bottom: 30px;
+
+}
+
+.card-flip div {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+
+}
+
+.front {
+  background-color: rgba(9,28, 49, 1)!important;
+  display: table;
+  height: 100%;
+  border: 3px solid white;
+}
+
+.front i {
+  color: #009AD7;
+  text-align:center;
+  margin: 20px 0px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+
+.back {
+  transform: rotateY(-180deg);
+  text-align: left;
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.4);
+  overflow: auto;
+  height: 100%;
+  border: 3px solid white;
+}
+
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.location-guide-title {
+  border-bottom: 2px solid #009AD7;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009AD7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0076a4;
+}
+
+h3.need-help  {
+  color: white!important;
+  font-family: "DecimaABold"!important;
+  text-align: left;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
