@@ -7,12 +7,12 @@ Talk a Bit Website
 * [ ] Tickets - embedded eventbrite iframe on our site (Danny)
 * [x] Speakers (David)
 * [x] Program (Danny)
-* [ ] Sponsors (Mateus)
+* [ ] Sponsors (Mateus) - Done, waiting for sponsors list.
 * [ ] Location - FEUP com google maps + salas com indicações textuais (Mário Santos) 
 * [x] Organization (Mário Santos)
 
 * [ ] Login/register
-* [ ] Profile (at least to see achievements and score)
+* [ ] Profile (at least to see achievements and score) - (Mateus)
 * [ ] QR Code reader to read achievements
 
 ### Warnings
