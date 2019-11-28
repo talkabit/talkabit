@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Talk A Bit 2020</title>
-    <link rel="stylesheet" href="css/speakers.css">
+    <link rel="stylesheet" href="../css/speakers.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="manifest" href="/manifest.json">
@@ -19,11 +20,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+    <link rel="apple-touch-icon" href="../images/hello-icon-152.png">
     <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
     <meta name="theme-color" content="white" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -33,49 +34,49 @@
 
 <body>
     <div id="landing" class="landing container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark hide" id="navbar">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
-                <i class="fas fa-arrow-right text-white"></i>
+                <i class="fas fa-bars text-white"></i>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav mx-auto navbar-first-list">
                     <li class="nav-item">
-                        <a class="nav-link py-0 active d-inline d-lg-block" href="#landing">Home</a>
-                        <i class="fas fa-arrow-left text-white d-inline d-lg-none float-right" data-toggle="collapse"
+                        <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+                        <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
                             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation"></i>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="#about">About</a>
+                        <a class="nav-link py-0" href="../index.html#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#tickets">Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="/speakers">Speakers</a>
+                        <a class="nav-link py-0" href="./speakers.html">Speakers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#program">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0 sponsors_link" href="#sponsors">Sponsors</a>
+                        <a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#location">Location</a>
                     </li>
                 </ul>
 
-                <ul class="nav navbar-nav mx-auto" id="logo_navbar">
-                    <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="/index.html">
-                        <img height="40" src="images/logo_sem.png" />
+                <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+                    <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
+                        <img height="40" src="../images/logo_sem.png" />
                     </a>
                 </ul>
 
                 <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="organization.html">Organization</a>
+                        <a class="nav-link py-0" href="./organization.html">Organization</a>
                     </li>
                     <li class="nav-item dropdown" id="prevVersions">
                         <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
@@ -106,13 +107,13 @@
                 <div class="row">
                     <div class="col speaker-image-col">
                         <div class="row align-items-center">
-                            <img class="speaker-pic" src="./images/musky.jpg" alt="Musk" />
+                            <img class="speaker-pic" src="../images/musky.jpg" alt="Musk" />
                         </div>
                     </div>
                     <div class="col speaker-info-col">
                         <div class="speaker-info">
                             <div class="speaker-title">
-                                <img class="speaker-pic-small" src="./images/musky.jpg" alt="Musk" />
+                                <img class="speaker-pic-small" src="../images/musky.jpg" alt="Musk" />
                                 <span class="speaker-name">Elon Musk</span>
                                 <span class="speaker-pos">CEO at SpaceX</span>
                             </div>
@@ -128,7 +129,7 @@
                                 sit
                                 similique exercitationem provident, dolorum aliquid reprehenderit</div>
                             <div class="speaker-social-close">
-                                <i class="fab fa-linkedin" style="padding-right:0.5em"></i>
+                                <i class="fab speaker-linkedin fa-linkedin" style="padding-right:0.5em"></i>
                                 <div class="speaker-talk"><span class="speaker-talk-talk">Talk:</span> Should a CEO
                                     smoke weed?</div>
                             </div>
@@ -137,13 +138,35 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer" style="height:7em">
-
-        </div>
     </div>
-    <!-- <script src="js/main.js"></script> -->
 
+    <footer id="footer" class="page-footer font-small">
+        <!-- meter links das redes sociais -->
+        <div class="container-fluid text-center">
+            <div class="row social">
+                <ul class="list-group list-group-horizontal mx-auto mt-3">
+                    <li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-logo-feup ">
+                <a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+                        src="../2019/res/img/feup-logo.png" /></a>
+            </div>
+
+            <div class="footer-copyright text-center py-3">
+                Copyright Ⓒ 2019 Talk a Bit. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/hide-navbar.js"></script>
 </body>
 
 </html>
