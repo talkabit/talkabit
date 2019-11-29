@@ -1,7 +1,9 @@
 var cacheName = 'talkabit-pwa';
 var filesToCache = [
+  '/',
+  '/sw.js',
+  '/manifest.json',
   '/favicon.ico',
-  '/index.html',
   '/css/bootstrap/css/bootstrap.min.css',
   '/css/bootstrap/css/bootstrap-reboot.min.css.map',
   '/css/bootstrap/css/bootstrap.css',
@@ -19,12 +21,10 @@ var filesToCache = [
   '/css/bootstrap/js/bootstrap.bundle.js.map',
   '/css/bootstrap/js/bootstrap.js',
   '/css/bootstrap/js/bootstrap.bundle.min.js',
-  '/css/bootstrap/js/popper.min.js.map',
   '/css/bootstrap/js/bootstrap.min.js',
   '/css/bootstrap/js/popper.min.js',
   '/css/bootstrap/js/bootstrap.js.map',
   '/css/bootstrap/js/bootstrap.min.js.map',
-  '/css/speakers.css',
   '/css/fontawesome/css/all.css',
   '/css/fontawesome/css/v4-shims.css',
   '/css/fontawesome/css/brands.min.css',
@@ -54,7 +54,6 @@ var filesToCache = [
   '/css/fontawesome/webfonts/fa-brands-400.woff',
   '/css/fontawesome/webfonts/fa-brands-400.ttf',
   '/css/fontawesome/webfonts/fa-regular-400.eot',
-  '/css/style.css',
   '/css/fonts/Roboto-Medium.ttf',
   '/css/fonts/Roboto-Light.ttf',
   '/css/fonts/decima-light-webfont.woff',
@@ -75,7 +74,27 @@ var filesToCache = [
   '/css/fonts/Roboto-Thin.ttf',
   '/css/fonts/Roboto-Black.ttf',
   '/css/fonts/Calibri.ttf',
+
+  //Pages
+  '/pages/speakers.html',
+  '/index.html',
+  '/pages/program.html',
+  '/pages/sponsors.html',
+
+  //CSS
   '/css/footer.css',
+  '/css/navbar.css',
+  '/css/program.css',
+  '/css/speakers.css',
+  '/css/sponsors.css',
+  '/css/style.css',
+
+  //Scripts
+  '/js/organization.js',
+  '/js/hide-navbar.js',
+  '/js/main.js',
+
+  //Images
   '/images/logo_filled.png',
   '/images/feup.jpeg',
   '/images/logo_sem.svg',
@@ -87,18 +106,13 @@ var filesToCache = [
   '/images/logo.png',
   '/images/logo_com.svg',
   '/images/logo_lg.png',
-  '/js/organization.js',
-  '/js/hide-navbar.js',
-  '/js/main.js',
-  '/manifest.json',
-  '/pages/speakers.html',
-  '/sw.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
-self.addEventListener('install', function(e) {
+self.addEventListener('install', function (e) {
   e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
+    caches.open(cacheName).then(function (cache) {
+      console.log("ADDING ALL");
       return cache.addAll(filesToCache).catch((error) => {
         console.log(error);
       });
@@ -106,11 +120,19 @@ self.addEventListener('install', function(e) {
   );
 });
 
-//Network then cache approach
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     fetch(event.request).catch(function() {
       return caches.match(event.request);
+    }).then((response) => {
+      let responseClone = response.clone();
+
+      caches.open(cacheName).then((cache)=>{
+        cache.put(event.request,responseClone);
+      });
+
+      return response;
     })
   );
 });
