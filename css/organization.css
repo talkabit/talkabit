@@ -68,6 +68,18 @@ body {
         height: auto;
         border-radius: 50%;
     }
+
+    .col-md-4 .member-name {
+        text-align: center;
+        color: white;
+        font-family: 'DecimaABold';
+        font-size: 0.8em;
+        margin: 5% 0;
+    }
+
+    .col-md-4 .flipper {
+        margin-top: 0em;
+    }
     
 }
 
@@ -83,22 +95,42 @@ body {
         height: auto;
         border-radius: 50%;
     }
+
+    .flipper {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
     .member-image {
         width: 80%;
         height: auto;
         border-radius: 50%;
     }
+    
+    .member-name {
+        text-align: center;
+        color: white;
+        font-family: 'DecimaABold';
+        font-size: 1em;
+        margin: 5% 0;
+    }
 }
 
-.member-name {
-    text-align: center;
-    color: white;
-    font-family: 'DecimaABold';
-    font-size: 1.25em;
-    margin: 5% 0;
+@media (min-width: 992px) {
+    .member-image {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .member-name {
+        text-align: center;
+        color: white;
+        font-family: 'DecimaABold';
+        font-size: 1em;
+        margin: 5% 0;
+    }
 }
 
 .detail-img {
@@ -117,4 +149,60 @@ body {
 
 .space-center {
     justify-content: center;
+}
+
+.flipper.click {
+    transform: rotateY(180deg);
+}
+
+.flipper .back {
+    opacity: 0;
+} 
+
+.flipper.click .back {
+    opacity: 1;
+}
+
+.flipper {
+	transition: transform 0.5s, opacity 0.5s ease-in-out;
+	transform-style: preserve-3d;
+
+    position: relative;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.flipper .front, .flipper .back {
+    backface-visibility: hidden;
+}
+
+.front {
+	z-index: 2;
+    transform: rotateY(0deg);
+    transition: transform 0.5s, opacity 0.5s ease-in-out;
+}
+
+.back {
+    transform: rotateY(180deg);
+    transition: transform 0.5s, opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+}
+
+@media(min-width: 992px){
+    .org-cont {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 992px){
+    .org-cont {
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 540px){
+    .org-cont {
+        width: 100%;
+    }
 }
