@@ -6,6 +6,7 @@
     <title>Talk A Bit 2020</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/tickets.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
@@ -30,70 +31,70 @@
 </head>
 
 <body>
-  <div id="landing" class="landing container-fluid">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
-          <i class="fas fa-bars text-white"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav mx-auto navbar-first-list">
-              <li class="nav-item">
-                  <a class="nav-link py-0 active d-inline d-lg-block" href="#landing">Home</a>
-                  <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
-                      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                      aria-label="Toggle navigation"></i>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="./index.html#about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="./pages/tickets.html">Tickets</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="./pages/speakers.html">Speakers</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="./pages/program.html">Program</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0 sponsors_link" href="./pages/sponsors.html">Sponsors</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="#location">Location</a>
-              </li>
-          </ul>
+    <div id="landing" class="landing container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav mx-auto navbar-first-list">
+                    <li class="nav-item">
+                        <a class="nav-link py-0 active d-inline d-lg-block" href="#landing">Home</a>
+                        <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+                            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="./index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="#tickets">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="./pages/speakers.html">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="./pages/program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0 sponsors_link" href="./pages/sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="#location">Location</a>
+                    </li>
+                </ul>
 
-          <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
-              <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="./index.html">
-                  <img height="40" src="./images/logo_sem.png" />
-              </a>
-          </ul>
+                <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+                    <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="./index.html">
+                        <img height="40" src="./images/logo_sem.png" />
+                    </a>
+                </ul>
 
-          <ul class="nav navbar-nav mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link py-0" href="./pages/organization.html">Organization</a>
-              </li>
-              <li class="nav-item dropdown" id="prevVersions">
-                  <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Previous Editions
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
-                      <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
-                  </div>
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="./pages/organization.html">Organization</a>
+                    </li>
+                    <li class="nav-item dropdown" id="prevVersions">
+                        <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Previous Editions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+                            <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+                        </div>
 
-              </li>
-          </ul>
-      </div>
-  </nav>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="row h-25">
         </div>
@@ -143,6 +144,7 @@
         </div>
     </div>
 
+    <!-- About -->
     <div id="about">
         <div class="container my-5">
             <h4 class="title">About</h4>
@@ -164,6 +166,39 @@
                 if this is the right way.
             </p>
         </div>
+    </div>
+
+    <!-- Tickets -->
+    <div id="tickets" class="text-center">
+
+        <div class="card">
+            <div class="card-body">
+                <div id="eventbrite-widget-container-74585546377"></div>
+
+                <div class="get-tickets">
+                    Get your ticket now!
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '74585546377',
+                iframeContainerId: 'eventbrite-widget-container-74585546377',
+
+                // Optional
+                iframeContainerHeight: 238,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
     </div>
 
     <!-- Footer -->
