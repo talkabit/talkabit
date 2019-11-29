@@ -1,0 +1,89 @@
+/* Color pattern: https://www.schemecolor.com/gold-silver-and-bronze-color-palette.php */
+body {
+  background-color: #102f50;
+  color: #e6edf1;
+}
+
+#sponsors {
+  font-family: "DecimaABold";
+}
+
+#sponsors.container {
+  text-align: left;
+  margin-top: 4rem;
+}
+
+#sponsors #title {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  font-family: 'DecimaABold';
+  font-size: 4vw;
+  color: white;
+}
+
+#sponsors .box {
+  margin-bottom: 8rem;
+}
+
+#sponsors .line {
+  height: 0.1rem;
+}
+
+#sponsors i.fas {
+  margin-right: 0.5rem;
+}
+
+#sponsors #main-title {
+  color: #31c0ff;
+}
+
+#sponsors #main-line {
+  background-color: #31c0ff;
+}
+
+#sponsors #main-sponsor-img {
+  width: 100%;
+  height: 15rem;
+  padding-top: 2rem;
+}
+
+#sponsors #gold-title {
+  color: #c9b037;
+}
+
+#sponsors #gold-line {
+  background-color: #c9b037;
+}
+
+#sponsors #silver-title {
+  color: #b4b4b4;
+}
+
+#sponsors #silver-line {
+  background-color: #b4b4b4;
+}
+
+#sponsors #bronze-title {
+  color: #ad8a56;
+}
+
+#sponsors #bronze-line {
+  background-color: #ad8a56;
+}
+
+#sponsors #partners-title {
+  color: white;
+}
+
+#sponsors #partners-line {
+  background-color: white;
+}
+
+#sponsors .row {
+  padding-top: 2em;
+}
+
+#sponsors .row .col-sm {
+  display: flex;
+  justify-content: center;
+}

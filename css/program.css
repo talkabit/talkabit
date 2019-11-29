@@ -47,7 +47,6 @@ body {
 html,
 .fullscreen {
     display: flex;
-    height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -59,21 +58,48 @@ html,
     text-align: center;
 }
 
-.title {
-    font-size: 8rem;
-    color: rgb(230, 237, 241);
-    text-align: left;
+#title {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
     font-family: 'DecimaABold';
-    padding-left: 0.2em;
+    font-size: 4vw;
+    color: white;
 }
 
-.speaker-name{
-    font-size: 3rem;
-    color: rgb(230, 237, 241);
+.talk-title{
+    font-size: 1.7rem;
+    color: white;
     text-align: left;
     font-family: 'DecimaABold';
     padding-right: 0.35em;
     margin-left: -2px;
+}
+
+.talk-title-center{
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    font-family: 'DecimaABold';
+    padding-right: 0.35em;
+    margin-left: -2px;
+}
+
+.workshop-title {
+    font-size: 1.7rem;
+    color: rgb(34,187,255);
+    text-align: left;
+    font-family: 'DecimaABold';
+    padding-right: 0.35em;
+    margin-left: -2px;
+}
+
+.workshop-pos {
+    font-size: 1.2rem;
+    color: rgb(230, 237, 241);
+    text-align: left;
+    font-family: 'DecimaABold';
+    padding-bottom: 0.45em;
+    padding-right: 0.35em;
 }
 
 .small-spacer{
@@ -84,18 +110,18 @@ html,
     height:4em;
 }
 
-.speaker-title{
+.talk-title{
     display: flex;
     align-items: flex-end;
 }
 
-.speaker-title-off{
+.talk-title-off{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-.speaker-social{
+.talk-social{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,42 +129,42 @@ html,
     padding-top: 0.6em;
 }
 
-.speaker-social-close{
+.talk-social-close{
     display: flex;
     align-items: center;
     width: 100%;
     padding-top: 0.6em;
 }
 
-.speaker-talk-talk{
+.talk-talk-talk{
     font-style: italic;
     font-family: 'DecimaABold';
 }
 
-.speaker-talk{
+.talk-talk{
     font-style: italic;
     color: rgb(230, 237, 241);
     font-family: 'DecimaALight';
 }
 
-.speaker-info{
+.talk-info{
     display: flex;
     flex-direction: column;
 }
 
-.speaker-linkedin{
+.fa-linkedin{
     font-size: 2em;
     color: rgb(230, 237, 241);
 }
 
-.speaker-bio{
+.talk-description{
     color: rgb(230, 237, 241);
     text-align: justify;
     font-family: 'Decima';
 }
 
-.speaker-pos{
-    font-size: 1.5rem;
+.talk-pos{
+    font-size: 1.2rem;
     color: rgb(34,187,255);
     text-align: left;
     font-family: 'DecimaABold';
@@ -146,7 +172,7 @@ html,
     padding-right: 0.35em;
 }
 
-.speaker-pic{
+.talk-pic{
     max-width: 100%;
     border-radius: 50%;
     overflow: hidden;
@@ -156,7 +182,7 @@ html,
     margin-top:0.9em;
 }
 
-.speaker-pic-small{
+.talk-pic-small{
     max-width: 15em;
     border-radius: 50%;
     overflow: hidden;
@@ -248,7 +274,7 @@ html,
     }
 }
 
-.speaker-image-col{
+.talk-image-col{
     flex-grow: 0.2 !important;
 }
 
@@ -261,15 +287,15 @@ html,
         max-width: 100%;
     }
 
-    .speaker-image-col{
+    .talk-image-col{
         display: none;
     }
 
-    .speaker-pic{
+    .talk-pic{
         display: none;
     }
 
-    .speaker-title{
+    .talk-title{
         flex-direction: column;
         align-items: flex-start;
     }
@@ -302,6 +328,10 @@ html,
 
 .navbar-toggler{
     background: rgba(14,14,14,0.4);
+}
+
+nav {
+    background-color: #0F2E51;
 }
 
 #navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
@@ -348,7 +378,7 @@ html,
         bottom: 10px;
     }
 
-    .speaker-pic-small{
+    .talk-pic-small{
         display: none;
     }
     
@@ -378,6 +408,10 @@ html,
         font-family: 'DecimaABold';
         font-weight: normal;
         color: white;
+    }
+
+    .program-container {
+        max-width: 100%;
     }
 
 }
@@ -418,6 +452,12 @@ html,
     }
 }
 
+@media (min-width:992px) {
+    .program-container {
+        max-width: 60%;
+    }
+}
+
 .conf-status p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typwriter cursor */
@@ -444,4 +484,8 @@ html,
 .navbar-collapse.collapse.show {
     max-height: 95vh;
     overflow-y: auto;
+}
+
+#navbar.show {
+    background-color: rgba(9, 28, 49, 0.9);
 }
