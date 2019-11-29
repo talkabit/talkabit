@@ -255,7 +255,7 @@ html,
         max-width: 70%;
     }
 
-    .title{
+    #title{
         font-size: 4em !important;
     }
 }
@@ -265,7 +265,7 @@ html,
         font-size: 2rem;
     }
 
-    .title{
+    #title{
         font-size: 3em !important;
     }
 
