@@ -120,7 +120,7 @@ html,
     -ms-transition: all 0.2s ease;
 }
 
-#email, #ticket, #password {
+#email, #ticket, #password, #name, #conf_password {
     background-color: rgb(230, 237, 241);
 }
 

@@ -1,0 +1,74 @@
+var regBtn = document.getElementById('register_button')
+regBtn.addEventListener('click', registerUser)
+
+function registerUser() {
+    event.preventDefault()
+    var error = document.getElementById('error')
+    error.style.display = 'none';
+    var errorText = document.getElementById('error-text')
+    var email = document.getElementById('email')
+    var ticket = document.getElementById('ticket')
+    var name = document.getElementById('name')
+    var pass = document.getElementById('password')
+    var confPass = document.getElementById('conf_password')
+
+    if (pass.value != confPass.value) {
+        errorText.innerHTML = 'Passwords don\'t match!'
+        error.style.display = 'inline'
+    }
+
+    const url = 'http://localhost:3000/api/users/register'
+
+    var data = {
+        name: name.value,
+        email: email.value,
+        password: pass.value,
+        orderId: ticket.value
+    }
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(data => { 
+            if (data.status == 403){
+                errorText.innerHTML = 'Already registered!'
+                error.style.display = 'inline'
+                return -1
+            }
+            else if (data.status == 401){
+                errorText.innerHTML = 'Invalid email or ticket number!'
+                error.style.display = 'inline'
+                return -1
+            }
+            else if (data.status == 500){
+                errorText.innerHTML = 'Something went wrong...'
+                error.style.display = 'inline'
+                return -1
+            }
+            return data.json()
+        })
+        .then(res => {
+            if(res == -1)
+                return
+
+            localStorage.setItem('jwt', res.token)
+            localStorage.setItem('expiresAt', new Date(res.expiresAt))
+            window.location.href = '../index.html'
+        })
+        .catch(err => {
+            console.log(err)
+
+            if (err.status == 403)
+                errorText.innerHTML = 'Already registered!'
+            else if (err.status == 401)
+                errorText.innerHTML = 'Invalid email or ticket number!'
+            else if (err.status == 500)
+                errorText.innerHTML = 'Something went wrong...'
+
+            error.style.display = 'inline'
+        })
+}
