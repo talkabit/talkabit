@@ -42,6 +42,7 @@
 body {
     font-family: sans-serif;
     background-color: rgb(15, 46, 81) !important;
+    overflow-x: hidden;
 }
   
 html, body {
@@ -75,17 +76,6 @@ html,
     /*text-align: center;*/
 }
 
-.subtitle {
-    font-size: 2rem;
-    text-align: left;
-    font-family: 'DecimaABold';
-    padding-left: 0.2em;
-}
-
-.logo {
-    max-width: 40%;
-}
-
 .social li {
     list-style-type: none;
 }
@@ -117,19 +107,8 @@ html,
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#login-form {
-    /*min-width: 15em;*/
-    widows: 100%;
-}
-
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: rgb(34,187,255) !important;;
-}
-
-.main-container {
-    display: flex;
-    align-items: center;
-    height: 100%;
 }
 
 .btn-primary:hover {
@@ -141,7 +120,7 @@ html,
     -ms-transition: all 0.2s ease;
 }
 
-#email, #password {
+#email, #ticket, #password {
     background-color: rgb(230, 237, 241);
 }
 
@@ -179,7 +158,6 @@ html,
 #landing {
     /* background-color: #0F2E51; */
     min-width: 100vw;
-    height: 100%;
     /*background-image: url("../images/feup.jpeg");*/
     background-repeat: no-repeat;
     background-position: center;
@@ -199,246 +177,68 @@ html,
     bottom: 30px;
 }
 
-@media (max-width: 992px) {
-    .conf-status p {
-        font-size: 2rem;
-    }
-
-    .logo {
-        max-width: 70%;
-    }
-}
-
-@media (max-width: 768px) {
-    .conf-status p {
-        font-size: 2rem;
-    }
-
-    .logo {
-        max-width: 95%;
-    }
-
-    #footer .footer-logo-feup {
-        position: static;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        /*background-color: red;*/
-    }
-    
-    .login-tab-logo{
-        display: none;
-    }
-
-    .login-col{
-        border-radius: 25px;
-    }
-}
-
-@media (max-width:576px) {
-    .conf-status p {
-        font-size: 1.5rem;
-    }
-
-    .logo {
-        max-width: 100%;
-    }
-}
-
-.dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    /* animation: wave 1.3s linear infinite; */
-}
-
-.dot:nth-child(2) {
-    animation-delay: -1.1s;
-}
-
-.dot:nth-child(3) {
-    animation-delay: -0.9s;
-}
-
-@keyframes wave {
-	0%, 60%, 100% {
-		transform: initial;
-	}
-
-	30% {
-		transform: translateY(-15px);
-	}
-}
-
-.navbar-toggler{
-    background: rgba(14,14,14,0.4);
-}
-
-#navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
-    color: white;
-    font-family: 'DecimaA';
-    letter-spacing: .3px;
-    font-size: 17px;
-}
-
-#navbar .dropdown-menu .dropdown-item{
-	text-align: center;
-}
-
-#navbar .dropdown-menu{
-	min-width: 8.5rem;
-}
-
-#navbar .nav-item .nav-link, #navbar .dropdown-menu .dropdown-item{
-	font-size:15px;
-    border: 5px solid transparent;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    opacity: 0.8;
-}
-
-#navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-#navbar .dropdown-menu{
-	background-color: rgba(9,28,49, 0.9) !important;
-	border: none;
-	border-radius:2px 2px 8px 8px;
-	padding:0;
-}
-
-#navbar {
-    background-color: rgba(0,0,0, 0);
-    -webkit-transition: background-color .5s;
-    -moz-transition: background-color .5s;
-    -ms-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
-}
-
-#navbar.show {
-    background-color: rgba(9,28,49, 0.9);
-}
-
-@media (min-width: 577px) {
-    .logo-feup {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-    }
-    
-    .edition {
-        width: 100%;
-        font-size: 1.5rem;
-        font-family: 'DecimaABold';
-        font-weight: normal;
-        color: white;
-    }
-}
-
-@media (max-width:576px) {
-    .logo-feup {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-    }
-
-    .logo-feup img {
-        width: 150px;
-    }
-
-    .edition {
-        width: 100%;
-        font-size: 0.9rem;
-        font-family: 'DecimaABold';
-        font-weight: normal;
-        color: white;
-    }
-}
-
-@media (max-width:992px) {
-    #navbar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    #toggle {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-    }
-
-    #navbarNav {
-        background-color: rgba(9,28,49, 0.9);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    #prevVersions{
-        width: 10em;
-    }
-
-    #navbarNav li {
-        margin-top: 10%;
-        padding-left: 10% !important;
-        padding-right: 10% !important
-    }
-
-    #navbarNav li:last-of-type {
-        margin-bottom: 10%;
-    }
-}
-
-.conf-status p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-  
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
-}
-
-.navbar-collapse.collapse.show {
-    max-height: 95vh;
-    overflow-y: auto;
-}
-
-#about {
-	color: rgb(230, 237, 241);
-}
-
-#about hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-color: rgb(34,187,255)
-}
-
 #footer {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     color: rgb(230, 237, 241);
     background-color: rgb(9,28,49);
 }
 
 #footer .footer-logo-feup img {
     height: 50px;
+}
+
+@media (min-width: 992px) {
+    .main-container {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer .footer-logo-feup {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .login-col{
+        border-radius: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main-container {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .login-col{
+        border-radius: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main-container {
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 }
