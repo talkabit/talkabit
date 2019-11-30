@@ -2,18 +2,18 @@
 Talk a Bit Website
 
 ### Features
-* [ ] About (Bruno)
+* [x] About (Bruno)
 * [x] Previous editions (Danny)
-* [ ] Tickets - botão na landing page + link na navbar para site dos eventos
-* [ ] Speakers (David)
-* [ ] Program (Danny)
+* [ ] Tickets - embedded eventbrite iframe on our site
+* [x] Speakers (David)
+* [x] Program (Danny)
 * [ ] Sponsors (Mateus)
 * [ ] Location - FEUP com google maps + salas com indicações textuais
-* [ ] Organization (Mário Santos)
+* [x] Organization (Mário Santos)
 * [ ] Convert blueprints to svg (Mário Santos)
 
 * [ ] Login/register
-* [ ] Profile (at least to see achievements and score
+* [ ] Profile (at least to see achievements and score)
 * [ ] QR Code reader to read achievements
 
 ### Warnings

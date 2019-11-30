@@ -5,7 +5,6 @@ window.mobilecheck = function() {
 };
 
 window.addEventListener('scroll', function (e) {
-
     if(!window.mobilecheck()) {
         if (window.pageYOffset === 0)
         {

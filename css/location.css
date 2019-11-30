@@ -1,0 +1,22 @@
+#location {
+    width: 100%;
+    font-family: "DecimaALight";
+    background: #0f2e51;
+    text-align: left;
+}
+
+.location-content{
+    padding-top: 10vh!important;
+}
+
+.location-information {
+    font-family: "DecimALight";
+    text-align: left;
+    color: white;
+}
+
+#map  {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    border: 1px solid #001220;
+}
