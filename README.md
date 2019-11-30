@@ -4,11 +4,11 @@ Talk a Bit Website
 ### Features
 * [x] About (Bruno)
 * [x] Previous editions (Danny)
-* [ ] Tickets - embedded eventbrite iframe on our site (Danny)
+* [x] Tickets - embedded eventbrite iframe on our site (Danny)
 * [x] Speakers (David)
 * [x] Program (Danny)
 * [ ] Sponsors (Mateus) - Done, waiting for sponsors list.
-* [ ] Location - FEUP com google maps + salas com indicações textuais (Mário Santos) 
+* [x] Location - FEUP com google maps + salas com indicações textuais (Mário Santos) 
 * [x] Organization (Mário Santos)
 
 * [ ] Login/register
