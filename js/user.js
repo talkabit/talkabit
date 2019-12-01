@@ -1,40 +1,49 @@
-if(window.location.href.includes('thanks.html'))
-  addEventListener('fetch-user', renderThanks)
+if (window.location.href.includes('thanks.html'))
+	addEventListener('fetch-user', renderThanks)
 
 getLocalUser();
 
 function getLocalUser() {
-  let userToken = localStorage.getItem('jwt');
-  //console.log(userToken)
-  if (!userToken)
-    return null
+	let userToken = localStorage.getItem('jwt');
+	//console.log(userToken)
+	if (!userToken)
+		return null
 
-  let url = `http://localhost:3000/api/html/getuser`
-  fetch(url, {
-    method: 'GET',
-    headers: {
-      'Authorization': userToken
-    },
-  }).then((response) => {
-    if (response.status == 200)
-      return response.json()
-  }).then(({ html, user } = { html: "", user: null }) => {
-    //console.log(user)
-    let userEvents = new CustomEvent('fetch-user', {detail: user} );
-    dispatchEvent(userEvents);
-    let div = document.createElement('div');
-    div.innerHTML = html;
+	let expAt = localStorage.getItem('expiresAt')
+	if (expAt && new Date(expAt) < new Date())
+		logout()
 
-    document.querySelector('#user-navbar').appendChild(div.firstChild);
-  }).catch(err => {
-    console.log(err)
-  })
+	// if(localStorage)
+
+	let url = `http://localhost:3000/api/html/getuser`
+	fetch(url, {
+		method: 'GET',
+		headers: {
+			'Authorization': userToken
+		},
+	}).then((response) => {
+		if (response.status == 200)
+			return response.json()
+	}).then(({ html, user } = { html: "", user: null }) => {
+		//console.log(user)
+		let userEvents = new CustomEvent('fetch-user', { detail: user });
+		dispatchEvent(userEvents);
+		let div = document.createElement('div');
+		div.innerHTML = html;
+
+		document.querySelector('#user-navbar').appendChild(div.firstChild);
+		document.getElementById('logout-button').addEventListener('click', () => {
+			logout()
+		})
+	}).catch(err => {
+		console.log(err)
+	})
 }
 
 function renderThanks(e) {
-  let user = e.detail
-  let thanksDiv = document.querySelector('#thanksTemplate');
-  thanksDiv.innerHTML = `
+	let user = e.detail
+	let thanksDiv = document.querySelector('#thanksTemplate');
+	thanksDiv.innerHTML = `
     <p>Dear ${user.name},</p>
     <p>Thank you for completing registration to Talk a Bit 2020.<br />
         You registered with this email: ${user.email}</p>
@@ -59,4 +68,11 @@ function renderThanks(e) {
         </li>
     </ul>
     `;
+}
+
+function logout() {
+	localStorage.removeItem('jwt')
+	localStorage.removeItem('uuid')
+	localStorage.removeItem('expiresAt')
+	window.location.reload();
 }
