@@ -8,7 +8,6 @@ function registerUser() {
     var errorText = document.getElementById('error-text')
     var email = document.getElementById('email')
     var ticket = document.getElementById('ticket')
-    var name = document.getElementById('name')
     var pass = document.getElementById('password')
     var confPass = document.getElementById('conf_password')
 
@@ -20,7 +19,6 @@ function registerUser() {
     const url = 'http://localhost:3000/api/users/register'
 
     var data = {
-        name: name.value,
         email: email.value,
         password: pass.value,
         orderId: ticket.value
