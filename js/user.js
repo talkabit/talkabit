@@ -15,8 +15,9 @@ function getLocalUser() {
       'Authorization': userToken
     },
   }).then((response) => {
-    return response.json()
-  }).then(({ html }) => {
+    if (response.status == 200)
+      return response.json()
+  }).then(({ html, user } = {html: "", user: null}) => {
     var div = document.createElement('div');
     div.innerHTML = html;
 
