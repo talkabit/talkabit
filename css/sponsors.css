@@ -2,6 +2,9 @@
 body {
   background-color: #102f50;
   color: #e6edf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #sponsors {
@@ -14,8 +17,6 @@ body {
 }
 
 #sponsors #title {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
   font-family: 'DecimaABold';
   font-size: 4vw;
   color: white;

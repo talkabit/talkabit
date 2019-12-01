@@ -43,10 +43,13 @@ body {
     font-family: sans-serif;
     background-color: rgb(15, 46, 81) !important;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
   
 html, body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -178,7 +181,6 @@ html,
 }
 
 #footer {
-    position: absolute;
     width: 100%;
     bottom: 0;
     color: rgb(230, 237, 241);
@@ -189,22 +191,14 @@ html,
     height: 50px;
 }
 
-@media (min-width: 992px) {
-    .main-container {
-        margin-top: 10%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-}
-
-@media (max-width: 992px) {
-    .main-container {
-        margin-top: 20%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 @media (max-width: 768px) {
@@ -216,29 +210,16 @@ html,
 
     .login-col{
         border-radius: 25px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .main-container {
-        margin-top: 20%;
-        display: flex;
-        align-items: center;
-        height: 100%;
     }
 }
 
 @media (max-width: 540px) {
     .login-col{
         border-radius: 25px;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 
     .main-container {
-        margin-top: 30%;
-        display: flex;
-        align-items: center;
-        height: 100%;
+        padding-top: 3em;
+        min-height: 70vh;
     }
 }

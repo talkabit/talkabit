@@ -100,40 +100,42 @@
 
     <div class="container main-container">
       <div class="login-card-container">
-        <div class="row login-card">
-          <div class="d-none d-md-flex col-md-7 login-tab-logo">
-            <img src="../images/logo_transparente.png" id="login-tab-logo-img" />
-          </div>
-          <div class="col justify-content-center login-col">
-            <form id="validation-form" class="">
-              <div class="title">
-                Register
-              </div>
-              <div class="col text-left mb-3">
-                Enter your email and ticket number to validate your account.
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="ticket" placeholder="Order Nº Eventbrite">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="conf_password" placeholder="Confirm Password">
-              </div>
-              <div id="error" style="display: none;"><i class="fas fa-exclamation-triangle mx-2 text-danger"></i>
-                <div style="display: inline;" id="error-text">Passwords don't match!</div>
-              </div>
-              <div class="text-center d-none" id="spinner">
-                <div class="spinner-border" role="status">
-                  <span class="sr-only">Loading...</span>
+        <div class="login-card mx-3">
+          <div class="row">
+            <div class="d-none d-md-flex col-md-7 login-tab-logo">
+              <img src="../images/logo_transparente.png" id="login-tab-logo-img" />
+            </div>
+            <div class="col justify-content-center login-col">
+              <form id="validation-form" class="">
+                <div class="title">
+                  Register
                 </div>
-              </div>
-              <button id="register_button" type="submit" class="btn btn-primary login-btn-submit">Register</button>
-            </form>
+                <div class="col text-left mb-3">
+                  Enter your email and ticket number to validate your account.
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="ticket" placeholder="Order Nº Eventbrite">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="conf_password" placeholder="Confirm Password">
+                </div>
+                <div id="error" style="display: none;"><i class="fas fa-exclamation-triangle mx-2 text-danger"></i>
+                  <div style="display: inline;" id="error-text">Passwords don't match!</div>
+                </div>
+                <div class="text-center d-none" id="spinner">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <button id="register_button" type="submit" class="btn btn-primary login-btn-submit">Register</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ function registerUser() {
 
             localStorage.setItem('jwt', res.token)
             localStorage.setItem('expiresAt', new Date(res.expiresAt))
-            window.location.href = '../index.html'
+            window.location.href = './pages/thanks.html'
         })
         .catch(err => {
             console.log(err)

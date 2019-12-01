@@ -43,6 +43,9 @@ body {
     font-family: sans-serif;
     background-color: rgba(15, 46, 81, 1) !important;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
   
 html,

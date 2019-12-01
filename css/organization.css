@@ -3,10 +3,6 @@ body {
     color: #e6edf1;
 }
 
-#organization {
-    height: 100%;
-}
-
 #organization #title {
     margin-bottom: 4rem;
     margin-top: 4rem;
