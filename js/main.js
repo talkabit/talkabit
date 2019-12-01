@@ -1,10 +1,10 @@
 window.onload = () => {
     'use strict';
-    Notification.requestPermission(status => {});
+    Notification.requestPermission(status => { });
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
-    }else{
+    } else {
         console.error("Could not register service worker")
     }
-  }
+}
