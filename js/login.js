@@ -11,7 +11,7 @@ function login() {
     error.style.display = 'none';
     var errorText = document.getElementById('error-text')
 
-    if(email.value == '' || password.value == ''){
+    if (email.value == '' || password.value == '') {
         error.style.display = 'inline'
     }
 
@@ -28,36 +28,33 @@ function login() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
-    })
-    .then(data => { 
-
+    }).then(data => {
         console.log(data)
-        if (data.status == 403){
+        if (data.status == 403) {
             errorText.innerHTML = 'This account is banned!'
             error.style.display = 'inline'
             return -1
         }
-        else if (data.status == 400){
+        else if (data.status == 400) {
             errorText.innerHTML = 'Invalid credentials!'
             error.style.display = 'inline'
             return -1
         }
-        else if (data.status == 500){
+        else if (data.status == 500) {
             errorText.innerHTML = 'Something went wrong...'
             error.style.display = 'inline'
             return -1
         }
         return data.json()
-    })
-    .then(res => {
-        if(res == -1)
+    }).then(res => {
+        if (res == -1)
             return
 
+        localStorage.setItem('uuid', res.uuid)
         localStorage.setItem('jwt', res.token)
         localStorage.setItem('expiresAt', new Date(res.expiresAt))
         window.location.href = '../index.html'
-    })
-    .catch(err => {
+    }).catch(err => {
         console.log(err)
     })
 
