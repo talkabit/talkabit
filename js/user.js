@@ -2,6 +2,7 @@ if (window.location.href.includes('thanks.html'))
 	addEventListener('fetch-user', renderThanks)
 
 getLocalUser();
+getCookies()
 
 function getLocalUser() {
 	let userToken = localStorage.getItem('jwt');
@@ -12,8 +13,6 @@ function getLocalUser() {
 	let expAt = localStorage.getItem('expiresAt')
 	if (expAt && new Date(expAt) < new Date())
 		logout()
-
-	// if(localStorage)
 
 	let url = `http://localhost:3000/api/html/getuser`
 	fetch(url, {
@@ -75,4 +74,16 @@ function logout() {
 	localStorage.removeItem('uuid')
 	localStorage.removeItem('expiresAt')
 	window.location.reload();
+}
+
+function getCookies() {
+	if(localStorage.getItem('cookies'))
+		return
+	else
+		document.getElementById('cookies').style.display = 'inline'
+}
+
+function storeCookies() {
+	localStorage.setItem('cookies', true)
+	document.getElementById('cookies').style.display = 'none'
 }
