@@ -16,7 +16,7 @@ function registerUser() {
         error.style.display = 'inline'
     }
 
-    const url = 'http://localhost:3000/api/users/register'
+    const url = 'http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/users/register'
 
     var data = {
         email: email.value,

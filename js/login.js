@@ -15,7 +15,7 @@ function login() {
         error.style.display = 'inline'
     }
 
-    const url = 'http://localhost:3000/api/users/login'
+    const url = 'http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/users/login'
 
     var data = {
         email: email.value,
