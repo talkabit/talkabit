@@ -42,7 +42,7 @@ function registerUser() {
                 error.style.display = 'inline'
                 return -1
             }
-            else if (data.status == 500){
+            else if (data.status == 500 || data.status == 400){
                 errorText.innerHTML = 'Something went wrong...'
                 error.style.display = 'inline'
                 return -1
