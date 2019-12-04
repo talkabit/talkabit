@@ -14,7 +14,7 @@ function getLocalUser() {
 	if (expAt && new Date(expAt) < new Date())
 		logout()
 
-	let url = `http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/html/getuser`
+	let url = `https://api.jflcarvalho.me/api/html/getuser`
 	fetch(url, {
 		method: 'GET',
 		headers: {

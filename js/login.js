@@ -15,7 +15,7 @@ function login() {
         error.style.display = 'inline'
     }
 
-    const url = 'http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/users/login'
+    const url = 'https://api.jflcarvalho.me/api/users/login'
 
     var data = {
         email: email.value,
