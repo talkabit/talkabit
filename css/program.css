@@ -67,7 +67,7 @@ html,
 }
 
 .talk-title{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: white;
     text-align: left;
     font-family: 'DecimaABold';
@@ -76,7 +76,7 @@ html,
 }
 
 .talk-title-center{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     font-family: 'DecimaABold';
@@ -85,7 +85,7 @@ html,
 }
 
 .workshop-title {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: rgb(34,187,255);
     text-align: left;
     font-family: 'DecimaABold';
