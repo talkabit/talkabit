@@ -108,6 +108,8 @@ var filesToCache = [
   '/images/logo_sem.png',
   '/images/speakers/spk.jpg',
   '/images/speakers/spk2.jpg',
+  '/images/speakers/spk_small.png',
+  '/images/speakers/spk2_small.png',
   '/images/speakers/spk3.png',
   '/images/speakers/spk4.png',
   '/images/speakers/spk5.png',
