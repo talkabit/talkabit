@@ -43,7 +43,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="nav navbar-nav mx-auto navbar-first-list">
 					<li class="nav-item">
-            <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+						<a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
 						<i class="fas fa-arrow-left text-white d-inline d-lg-none float-right" data-toggle="collapse"
 							data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 							aria-label="Toggle navigation"></i>
@@ -79,8 +79,8 @@
 						<a class="nav-link py-0" href="organization.html">Organization</a>
 					</li>
 					<li class="nav-item dropdown" id="prevVersions">
-						<a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Previous Editions
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -92,7 +92,12 @@
 							<a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
 							<a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
 						</div>
-
+					</li>
+					<li class="nav-item" id="loginLnk" style="display: none;">
+						<a class="nav-link py-0" href="./login.html">Login</a>
+					</li>
+					<li class="nav-item" id="registerLnk" style="display: none;">
+						<a class="nav-link py-0" href="./register.html">Register</a>
 					</li>
 				</ul>
 			</div>
@@ -110,16 +115,19 @@
 								Login
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email"
-									required>
+								<input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+									placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control" id="password" placeholder="Password" required>
+								<input type="password" class="form-control" id="password" placeholder="Password"
+									required>
 							</div>
-							<div id="error" style="display: none;"><i class="fas fa-exclamation-triangle mx-2 text-danger"></i>
+							<div id="error" style="display: none;"><i
+									class="fas fa-exclamation-triangle mx-2 text-danger"></i>
 								<div style="display: inline;" id="error-text">Invalid credentials!</div>
 							</div>
-							<button type="submit" id="login-button" class="btn btn-primary login-btn-submit">Login</button>
+							<button type="submit" id="login-button"
+								class="btn btn-primary login-btn-submit">Login</button>
 							<!-- <a href="#">Forgot your password?</a> -->
 						</form>
 					</div>
@@ -135,11 +143,14 @@
 		<div class="container-fluid text-center">
 			<div class="row social">
 				<ul class="list-group list-group-horizontal mx-auto mt-3">
-					<li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fab fa-instagram"></i></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+								class="fab fa-facebook-f"></i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+								class="fab fa-instagram"></i></a></li>
 					<li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a>
 					</li>
-					<li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i class="fab fa-linkedin"></i></a>
+					<li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+								class="fab fa-linkedin"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -156,7 +167,7 @@
 
 	</footer>
 	<!-- <script src="js/main.js"></script> -->
-  <script type="text/javascript" src="../js/user.js"></script>
+	<script type="text/javascript" src="../js/user.js"></script>
 	<script type="text/javascript" src="../js/hide-navbar.js"></script>
 	<script type="text/javascript" src="../js/login.js"></script>
 </body>
