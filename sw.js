@@ -138,26 +138,26 @@ self.addEventListener('install', function (e) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function() {
-      return caches.match(event.request);
-    }).then((response) => {
-
-      let url = new URL(event.request.url);
-      if(filesToCache.indexOf(url.pathname) > -1){ //Updating cache only if it belongs to filesToCache
+self.addEventListener('fetch', function (event) {
+  let url = new URL(event.request.url);
+  if (filesToCache.indexOf(url.pathname) > -1) {
+    event.respondWith(fetch(event.request));
+    console.debug("Not caching " + url.pathname);
+  } else {
+    event.respondWith(
+      fetch(event.request).catch(function () {
+        return caches.match(event.request);
+      }).then((response) => {
         let responseClone = response.clone();
 
-        caches.open(cacheName).then((cache)=>{
-          cache.put(event.request,responseClone);
+        caches.open(cacheName).then((cache) => {
+          cache.put(event.request, responseClone);
         });
 
-         console.debug("Caching " + url.pathname);
-      }else{
-         console.debug("Not caching " + url.pathname);
-      }
+        console.debug("Caching " + url.pathname);
 
-      return response;
-    })
-  );
+        return response;
+      })
+    );
+  }
 });
