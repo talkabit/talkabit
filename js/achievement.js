@@ -3,8 +3,11 @@ addAchievement();
 
 function addAchievement() {
 	let userToken = localStorage.getItem('jwt');
+	let userUuid = localStorage.getItem('uuid');
 	
-	if (!userToken){
+	console.log(userToken);
+
+	if (!userToken || !userUuid){
 		window.location = "/pages/login.html";
 	}
 
@@ -17,15 +20,23 @@ function addAchievement() {
 	if (expAt && new Date(expAt) < new Date())
 		logout()
 
-	let url = `http://localhost:3000/api/achievements/awardAchievement`
+	let url = `https://api.jflcarvalho.me/api/users/${userUuid}/achievements`
 	fetch(url, {
 		method: 'POST',
 		headers: {
-			'Authorization': userToken
+			'Authorization': userToken,
+			'Content-Type': 'application/x-www-form-urlencoded',
 		},
+		body: `achievementUuid=${achievement_id}`
 	}).then((response) => {
-		if (response.status == 201)
-			window.location = "/achievements.html";
+		if (response.status == 200)
+			window.location = "/pages/achievements.html";
+		else{
+			response.json().then((body) => {
+				alert(body["error"]["message"]);
+				window.location = "/index.html";
+			});
+		}
 	}).catch(err => {
 		console.log(err)
 	})
