@@ -19,7 +19,7 @@ window.addEventListener('scroll', function (e) {
 
 var popup  = document.getElementsByClassName('navbar-collapse')[0]
 function togglePopup(event){
-    if(event.target.id != 'navbarNav' && popup.classList.contains('show')){
+    if(event.target.id != 'navbarNav' && event.target.id != 'prevVersions' && popup.classList.contains('show')){
         popup.classList.remove('show');
     }
 }
