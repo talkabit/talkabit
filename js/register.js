@@ -16,7 +16,7 @@ function registerUser() {
         error.style.display = 'inline'
     }
 
-    const url = 'http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/users/register'
+    const url = 'https://api.jflcarvalho.me/api/users/register'
 
     var data = {
         email: email.value,
@@ -42,7 +42,7 @@ function registerUser() {
                 error.style.display = 'inline'
                 return -1
             }
-            else if (data.status == 500){
+            else if (data.status == 500 || data.status == 400){
                 errorText.innerHTML = 'Something went wrong...'
                 error.style.display = 'inline'
                 return -1

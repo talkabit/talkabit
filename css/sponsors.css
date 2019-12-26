@@ -42,11 +42,20 @@ body {
   background-color: #31c0ff;
 }
 
-#sponsors #main-sponsor-img {
-  width: 60%;
-  /* height: 15rem; */
-  height: auto;
-  padding-top: 2rem;
+@media(min-width: 992px) {
+  #sponsors #main-sponsor-img {
+    width: 60%;
+    height: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media(max-width: 992px) {
+  #sponsors #main-sponsor-img {
+    width: 85%;
+    height: auto;
+    padding-top: 2rem;
+  }
 }
 
 #sponsors #gold-title {

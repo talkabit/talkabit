@@ -7,14 +7,16 @@ getCookies()
 function getLocalUser() {
 	let userToken = localStorage.getItem('jwt');
 	//console.log(userToken)
-	if (!userToken)
-		return null
+	if (!userToken){
+		showLogin()
+		return
+	}
 
 	let expAt = localStorage.getItem('expiresAt')
 	if (expAt && new Date(expAt) < new Date())
 		logout()
 
-	let url = `http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/html/getuser`
+	let url = `https://api.jflcarvalho.me/api/html/getuser`
 	fetch(url, {
 		method: 'GET',
 		headers: {
@@ -24,7 +26,7 @@ function getLocalUser() {
 		if (response.status == 200)
 			return response.json()
 	}).then(({ html, user } = { html: "", user: null }) => {
-		//console.log(user)
+		hideLogin()
 		let userEvents = new CustomEvent('fetch-user', { detail: user });
 		dispatchEvent(userEvents);
 		let div = document.createElement('div');
@@ -86,4 +88,14 @@ function getCookies() {
 function storeCookies() {
 	localStorage.setItem('cookies', true)
 	document.getElementById('cookies').style.display = 'none'
+}
+
+function showLogin() {
+	document.getElementById('loginLnk').style.display = 'inline'
+	document.getElementById('registerLnk').style.display = 'inline'
+}
+
+function hideLogin() {
+	document.getElementById('loginLnk').style.display = 'none'
+	document.getElementById('registerLnk').style.display = 'none'
 }

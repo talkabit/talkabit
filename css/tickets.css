@@ -8,45 +8,16 @@
     #tickets .card {
         width: 59%;
     }
-
-    .get-tickets {
-        position: absolute;
-        bottom: 15%;
-        color: #22bbff;
-        font-family: DecimaA;
-        text-align: center;
-        font-size: 3em;
-        left: 0;
-        right: 0;
-    }
 }
 
 @media(max-width:992px) {
     #tickets .card {
         width: 60%;
     }
-
-    .get-tickets {
-        position: absolute;
-        bottom: 12%;
-        color: #22bbff;
-        font-family: DecimaA;
-        text-align: center;
-        font-size: 2em;
-        left: 0;
-        right: 0;
-    }
 }
 
-@media(max-width:540px) {
-    .get-tickets {
-        position: absolute;
-        bottom: 8%;
-        color: #22bbff;
-        font-family: DecimaA;
-        text-align: center;
-        font-size: 1.25em;
-        left: 0;
-        right: 0;
+@media(max-width:740px) {
+    #tickets .card {
+       width: 80%;
     }
 }

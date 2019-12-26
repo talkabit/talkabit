@@ -15,6 +15,12 @@ window.addEventListener('scroll', function (e) {
             document.getElementById("navbar").classList.add('show');
         }
     }
-
-
 });
+
+var popup  = document.getElementsByClassName('navbar-collapse')[0]
+function togglePopup(event){
+    if(event.target.id != 'navbarNav' && event.target.id != 'prevVersions' && popup.classList.contains('show')){
+        popup.classList.remove('show');
+    }
+}
+document.onclick=togglePopup
