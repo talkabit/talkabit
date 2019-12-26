@@ -1,4 +1,20 @@
-const getUserData = () => {
+const api = async (token, func, method, body = null) => {
+  let url = "https://api.jflcarvalho.me/api/" + func;
+
+  const response = await fetch(url, {
+    method: method,
+    headers: {
+      Authorization: token
+    },
+    body: body
+  });
+
+  if (response.status != 200) return;
+
+  return response.json();
+};
+
+const getUserData = async () => {
   let userToken = localStorage.getItem("jwt");
   if (!userToken) {
     const notLoggedDiv = document.querySelector("#profile #not-logged");
@@ -12,55 +28,95 @@ const getUserData = () => {
   let expAt = localStorage.getItem("expiresAt");
   if (expAt && new Date(expAt) < new Date()) logout();
 
-  let url = `http://talkabit-1735953010.eu-west-2.elb.amazonaws.com/api/html/getuser`;
-  fetch(url, {
-    method: "GET",
-    headers: {
-      Authorization: userToken
+  // fetch user data
+  try {
+    const { user, html } = await api(userToken, "html/getuser", "GET");
+
+    const loggedDiv = document.querySelector("#profile #logged");
+    // show logged div
+    loggedDiv.style.display = "block";
+
+    // create name label
+    const nameDiv = document.createElement("h3");
+    nameDiv.innerText = user.name;
+
+    // create evenbrite order label
+    const orderLabel = document.createElement("h4");
+    orderLabel.innerText = "Eventbrite order: #" + user.orderId;
+
+    // curriculum button
+    const cvButton = createCurriculumButton(user, userToken);
+
+    // add divs
+    loggedDiv.append(nameDiv);
+    loggedDiv.append(orderLabel);
+    loggedDiv.append(cvButton);
+
+    // create events and achievements grid
+    const grid = document.createElement("div");
+    grid.classList.add("row");
+
+    const col1 = document.createElement("div");
+    col1.classList.add("col-sm-6");
+    col1.append(createAchievementsList(user));
+    grid.append(col1);
+
+    const col2 = document.createElement("div");
+    col2.classList.add("col-sm-6");
+    col2.append(createEventsList(user));
+    grid.append(col2);
+
+    // append grid
+    loggedDiv.append(grid);
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+const createCurriculumButton = (user, userToken) => {
+  const div = document.createElement("div");
+  div.classList.add("input-group");
+  div.style.marginTop = "1rem";
+  div.style.maxWidth = "40rem";
+
+  const input = document.createElement("input");
+  input.type = "text";
+  input.classList.add("form-control");
+  input.placeholder = user.cv ? user.cv : "Curriculum URL";
+  div.append(input);
+
+  const buttonDiv = document.createElement("div");
+  buttonDiv.classList.add("input-group-append");
+
+  const button = document.createElement("button");
+  button.classList.add("btn", "btn-outline-primary");
+  button.type = "button";
+  button.innerText = user.cv ? "Add Curriculum" : "Update Curriculum";
+
+  button.onclick = async event => {
+    const text = input.value;
+    if (text != "") {
+      // update user cv
+      user.cv = text;
+
+      // create msg body
+      const body = JSON.stringify(user);
+
+      // make request
+      try {
+        await api(userToken, "users/" + user.uuid, "PUT", body);
+
+        //window.location.reload();
+      } catch (e) {
+        console.error(e);
+      }
     }
-  })
-    .then(response => {
-      if (response.status == 200) return response.json();
-    })
-    .then(({ html, user } = { html: "", user: null }) => {
-      console.log(user);
+  };
 
-      const loggedDiv = document.querySelector("#profile #logged");
-      // show logged div
-      loggedDiv.style.display = "block";
+  buttonDiv.append(button);
+  div.append(buttonDiv);
 
-      // create name label
-      const nameDiv = document.createElement("h3");
-      nameDiv.innerText = user.name;
-
-      // create evenbrite order label
-      const orderLabel = document.createElement("h4");
-      orderLabel.innerText = "Eventbrite order: #" + user.orderId;
-
-      // TODO: create qr div
-      // const qrDiv = document.createElement("div");
-
-      // add divs
-      loggedDiv.append(nameDiv);
-      loggedDiv.append(orderLabel);
-      const grid = document.createElement("div");
-      grid.classList.add("row");
-
-      const col1 = document.createElement("div");
-      col1.classList.add("col-sm-6");
-      col1.append(createAchievementsList(user));
-      grid.append(col1);
-
-      const col2 = document.createElement("div");
-      col2.classList.add("col-sm-6");
-      col2.append(createEventsList(user));
-      grid.append(col2);
-
-      loggedDiv.append(grid);
-    })
-    .catch(err => {
-      console.log(err);
-    });
+  return div;
 };
 
 const createAchievementsList = user => {
@@ -73,7 +129,7 @@ const createAchievementsList = user => {
   const achievementsTitle = document.createElement("li");
   achievementsTitle.classList.add("list-group-item", "list-group-item-primary");
   achievementsTitle.innerHTML =
-    '<h4><i class="fas fa-trophy" style="margin-right: 1rem;"></i> Achievements</h4>';
+    '<i class="fas fa-trophy" style="margin-right: 1rem;"></i> Achievements';
   achievementsDiv.append(achievementsTitle);
 
   for (let i = 0; i < user.achievements.length; i++) {
@@ -123,7 +179,7 @@ const createEventsList = user => {
   const eventsTitle = document.createElement("li");
   eventsTitle.classList.add("list-group-item", "list-group-item-secondary");
   eventsTitle.innerHTML =
-    '<h4><i class="far fa-calendar-alt" style="margin-right: 1rem;"></i> Events</h4>';
+    '<i class="far fa-calendar-alt" style="margin-right: 1rem;"></i> Events';
 
   // add title
   eventsDiv.append(eventsTitle);
