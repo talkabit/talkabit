@@ -110,8 +110,12 @@
     <div class="container-fluid" style="width: 60%;">
       <h1 id="title">Our Events</h1>
 
-      <div class="row" style="justify-content: space-between;">
-        <div class="card col-3">
+      <div id="resultMessage" style="min-width: 60%; min-height: 2rem; display: none; background-color: white;" class="m-3 rounded">
+        <div id="msgDiv" class="py-2 ml-2">Message</div>
+      </div>
+
+      <div class="row m-0 p-0 w-100" style="justify-content: space-between;">
+        <div class="card col-3 m-3">
           <img src="../images/sponsors/bosch.png" alt="bosch_logo" style="width: 100%; height: auto">
           <div class="card-body">
             <h4 class="card-title">Workshop 1</h4>
@@ -121,7 +125,7 @@
           </div>
         </div>
 
-        <div class="card col-3">
+        <div class="card col-3 m-3">
           <img src="../images/sponsors/rumos.png" alt="rumos_logo" class="my-5" style="width: 100%; height: auto">
           <div class="card-body">
             <h4 class="card-title">Workshop 2</h4>
@@ -131,7 +135,7 @@
           </div>
         </div>
 
-        <div class="card col-3">
+        <div class="card col-3 m-3">
           <img src="../images/sponsors/switch.png" alt="switch_logo" class="my-5" style="width: 100%; height: auto">
           <div class="card-body">
             <h4 class="card-title">Workshop 3</h4>
@@ -140,14 +144,52 @@
             <a href="#" class="btn btn-primary">Register</a>
           </div>
         </div>
-      </div>
 
+        <div class="card col-3 m-3">
+          <img src="../images/dinner.jpg" alt="dinner" class="my-1" style="width: 100%; height: auto">
+          <div class="card-body">
+            <h4 class="card-title">Social Dinner</h4>
+            <!-- <h5 class="card-title">Bosch</h5> -->
+            <p class="card-text">Dinner with companies to talk about stuff</p>
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+
+        <div class="card col-3 m-3">
+          <img src="../images/network.jpg" alt="network" class="my-1" style="width: 100%; height: auto">
+          <div class="card-body">
+            <h4 class="card-title">Network a Bit</h4>
+            <!-- <h5 class="card-title">Rumos</h5> -->
+            <p class="card-text">Connect with companies in small groups to talk about stuff</p>
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+
+        <div class="card col-3 m-3">
+          <img src="../images/sponsors/switch.png" alt="switch_logo" class="my-5" style="width: 100%; height: auto">
+          <div class="card-body">
+            <h4 class="card-title">Visit Switch Office</h4>
+            <h5 class="card-title">Switch</h5>
+            <p class="card-text">Visit Switch Office to see stuff and talk about stuff</p>
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+
+        <div class="card col-3 m-3">
+          <img src="../images/sponsors/switch.png" alt="switch_logo" class="my-5" style="width: 100%; height: auto">
+          <div class="card-body">
+            <h4 class="card-title">Test</h4>
+            <p class="card-text">Test</p>
+            <a href="#" class="btn btn-primary" onclick="addEvent('3faa27d0-28e1-11ea-8e78-611376d0a6f4')">Register</a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer id="footer" class="page-footer font-small mt-5">
-
     <!-- meter links das redes sociais -->
     <div class="container-fluid text-center">
       <div class="row social">
@@ -166,15 +208,15 @@
       </div>
 
       <div class="footer-copyright text-center py-3">
-        Copyright Ⓒ 2020 Talk a Bit. All rights reserved.
+        Copyright Ⓒ 2019 Talk a Bit. All rights reserved.
       </div>
     </div>
-
   </footer>
   <!-- Optional JavaScript -->
-  <!--   <script type="text/javascript" src="../js/main.js"></script> -->
-  <script type="text/javascript" src="../../js/user.js"></script>
+  <!-- <script type="text/javascript" src="../js/main.js"></script> -->
+  <script type="text/javascript" src="../js/user.js"></script>
   <script type="text/javascript" src="../js/hide-navbar.js"></script>
+  <script type="text/javascript" src="../js/events.js"></script>
 </body>
 
 </html>
