@@ -1,0 +1,17 @@
+body {
+  background-color: #102f50;
+  color: #e6edf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#profile #title {
+  font-size: 4rem;
+  color: white;
+}
+
+#profile #logged {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
