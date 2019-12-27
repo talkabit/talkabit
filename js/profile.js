@@ -4,18 +4,22 @@ const api = async (token, func, method, body = null) => {
   const response = await fetch(url, {
     method: method,
     headers: {
-      Authorization: token
+      'Content-Type': 'application/json',
+      Authorization: 'Bearer ' + token
     },
     body: body
   });
 
-  if (response.status != 200) return;
+  if (response.status != 200) {
+    return response
+  }
 
   return response.json();
 };
 
 const getUserData = async () => {
   let userToken = localStorage.getItem("jwt");
+  let userUuid = localStorage.getItem('uuid')
   if (!userToken) {
     const notLoggedDiv = document.querySelector("#profile #not-logged");
 
@@ -30,8 +34,8 @@ const getUserData = async () => {
 
   // fetch user data
   try {
-    const { user, html } = await api(userToken, "html/getuser", "GET");
-
+    const user = await api(userToken, "users/" + userUuid, "GET");
+    console.log(user)
     const loggedDiv = document.querySelector("#profile #logged");
     // show logged div
     loggedDiv.style.display = "block";
@@ -96,17 +100,19 @@ const createCurriculumButton = (user, userToken) => {
   button.onclick = async event => {
     const text = input.value;
     if (text != "") {
-      // update user cv
-      user.cv = text;
-
       // create msg body
-      const body = JSON.stringify(user);
+      const body = JSON.stringify({cv: text});
 
       // make request
       try {
-        await api(userToken, "users/" + user.uuid, "PUT", body);
+        var res = await api(userToken, "users/" + user.uuid, "PUT", body);
 
-        //window.location.reload();
+        console.log(res)
+        if(res.status == 400){
+          showFailure()
+        } else {
+          showSuccess()
+        }
       } catch (e) {
         console.error(e);
       }
@@ -118,6 +124,22 @@ const createCurriculumButton = (user, userToken) => {
 
   return div;
 };
+
+function showSuccess() {
+  var resultMessage = document.getElementById('resultMessage')
+    var msgDiv = document.getElementById('msgDiv')
+    msgDiv.innerText = "CV updated with success!"
+    resultMessage.style.display = 'block'
+    resultMessage.style.backgroundColor = 'lightgreen'
+}
+
+function showFailure() {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "Link must be from Google Drive, Github or LinkedIn!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'red'
+}
 
 const createAchievementsList = user => {
   // achievements list
@@ -184,7 +206,11 @@ const createEventsList = user => {
   // add title
   eventsDiv.append(eventsTitle);
 
+  console.log(user)
+
   for (let i = 0; i < user.events.length; i++) {
+    console.log("EVENT")
+    console.log(user.events[i])
     // create each list item
     const item = document.createElement("li");
     item.classList.add("list-group-item");
