@@ -1,3 +1,8 @@
+var regBts = document.getElementsByClassName('register-btn')
+if (localStorage.getItem('jwt'))
+    for (let btn of regBts)
+        btn.style.display = 'inline-block'
+
 function addEvent(eventId) {
     event.preventDefault()
     let userToken = localStorage.getItem('jwt');

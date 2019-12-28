@@ -34,12 +34,11 @@ function getLocalUser() {
 		div.innerHTML = html;
 
 		document.querySelector('#user-navbar').appendChild(div.firstChild);
-		document.getElementById('prof-button').addEventListener('click', () => {
-			console.log("HERE")
-			window.location.href = '../pages/profile.html'
+		document.getElementById('prof-button').addEventListener('click', () => {	
+			window.location.href = window.location.href.includes('pages') ? './profile.html' : './pages/profile.html'
 		})
 		document.getElementById('events-button').addEventListener('click', () => {
-			window.location.href = '../pages/events.html'
+			window.location.href = window.location.href.includes('pages') ? './events.html' : './pages/events.html'
 		})
 		document.getElementById('logout-button').addEventListener('click', () => {
 			logout()
