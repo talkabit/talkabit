@@ -140,7 +140,7 @@ self.addEventListener('install', function (e) {
 
 self.addEventListener('fetch', function (event) {
   let url = new URL(event.request.url);
-  if (filesToCache.indexOf(url.pathname) > -1) {
+  if (filesToCache.indexOf(url.pathname) <= -1) {
     event.respondWith(fetch(event.request));
     console.debug("Not caching " + url.pathname);
   } else {
