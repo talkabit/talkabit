@@ -1,11 +1,12 @@
-@media(max-width: 992px) {
+@media(max-width: 1200px) {
     #mainContainer {
         width: 80%;
     }   
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     #mainContainer {
         width: 60%;
     }   
 }
+
