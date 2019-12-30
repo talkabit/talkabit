@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <title>Talk A Bit 2020 - Profile</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="../manifest.json" />
   <meta name="theme-color" content="white" />
@@ -29,21 +30,20 @@
 </head>
 
 <body>
-  <!-- Profile page -->
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark hide" id="navbar">
+  <div id="landing" class="landing container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
-        <i class="fas fa-arrow-right text-white"></i>
+        <i class="fas fa-bars text-white"></i>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav mx-auto navbar-first-list">
           <li class="nav-item">
             <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
-            <i class="fas fa-arrow-left text-white d-inline d-lg-none
-                float-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-              aria-expanded="false" aria-label="Toggle navigation"></i>
+            <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation"></i>
           </li>
           <li class="nav-item">
             <a class="nav-link py-0" href="../index.html#about">About</a>
@@ -65,15 +65,15 @@
           </li>
         </ul>
 
-        <ul class="nav navbar-nav mx-auto" id="logo_navbar">
-          <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="/index.html">
+        <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+          <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
             <img height="40" src="../images/logo_sem.png" />
           </a>
         </ul>
 
         <ul id="user-navbar" class="nav navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link py-0" href="organization.html">Organization</a>
+            <a class="nav-link py-0" href="./organization.html">Organization</a>
           </li>
           <li class="nav-item dropdown" id="prevVersions">
             <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -89,6 +89,12 @@
               <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
               <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
             </div>
+          </li>
+          <li class="nav-item" id="loginLnk" style="display: none;">
+            <a class="nav-link py-0" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item" id="registerLnk" style="display: none;">
+            <a class="nav-link py-0" href="./register.html">Register</a>
           </li>
         </ul>
       </div>
