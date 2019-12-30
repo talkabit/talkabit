@@ -20,7 +20,7 @@ function getLocalUser() {
 	fetch(url, {
 		method: 'GET',
 		headers: {
-			'Authorization': userToken
+			'Authorization': 'Bearer ' + userToken
 		},
 	}).then((response) => {
 		if (response.status == 200)
