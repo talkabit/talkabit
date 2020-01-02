@@ -91,7 +91,11 @@ body {
 }
 
 #sponsors .row {
-  padding-top: 2em;
+  padding: 2em;
+  background-color: rgba(0,0,0,0.6) !important;
+  border-radius: 10px;
+  border: solid 0.1rem;
+  margin-top: 2rem;
 }
 
 #sponsors .row .col-sm {
