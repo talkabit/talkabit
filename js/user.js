@@ -12,10 +12,11 @@ function getLocalUser() {
 		return
 	}
 
+	
 	let expAt = localStorage.getItem('expiresAt')
 	if (expAt && new Date(expAt) < new Date())
-		logout()
-
+	logout()
+	
 	let url = `https://api.jflcarvalho.me/api/html/getuser`
 	fetch(url, {
 		method: 'GET',
@@ -24,7 +25,7 @@ function getLocalUser() {
 		},
 	}).then((response) => {
 		if (response.status == 200)
-			return response.json()
+		return response.json()
 	}).then(({ html, user } = { html: "", user: null }) => {
 		hideLogin()
 		let userEvents = new CustomEvent('fetch-user', { detail: user });
@@ -33,6 +34,12 @@ function getLocalUser() {
 		div.innerHTML = html;
 
 		document.querySelector('#user-navbar').appendChild(div.firstChild);
+		document.getElementById('prof-button').addEventListener('click', () => {	
+			window.location.href = window.location.href.includes('pages') ? './profile.html' : './pages/profile.html'
+		})
+		document.getElementById('events-button').addEventListener('click', () => {
+			window.location.href = window.location.href.includes('pages') ? './events.html' : './pages/events.html'
+		})
 		document.getElementById('logout-button').addEventListener('click', () => {
 			logout()
 		})

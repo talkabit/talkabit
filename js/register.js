@@ -32,7 +32,12 @@ function registerUser() {
         body: JSON.stringify(data)
     })
         .then(data => { 
-            if (data.status == 403){
+            if(data.status == 400) {
+                errorText.innerHTML = 'Password must have 8 characters, at least a number, Upper and lower case'
+                error.style.display = 'inline'
+                return -1
+            }
+            else if (data.status == 403){
                 errorText.innerHTML = 'Already registered!'
                 error.style.display = 'inline'
                 return -1
@@ -42,7 +47,7 @@ function registerUser() {
                 error.style.display = 'inline'
                 return -1
             }
-            else if (data.status == 500 || data.status == 400){
+            else if (data.status == 500){
                 errorText.innerHTML = 'Something went wrong...'
                 error.style.display = 'inline'
                 return -1
@@ -60,7 +65,9 @@ function registerUser() {
         .catch(err => {
             console.log(err)
 
-            if (err.status == 403)
+            if(err.status == 400)
+                errorText.innerHTML = 'Password must have 8 characters, at least a number, Upper and lower case'
+            else if (err.status == 403)
                 errorText.innerHTML = 'Already registered!'
             else if (err.status == 401)
                 errorText.innerHTML = 'Invalid email or ticket number!'
@@ -69,4 +76,13 @@ function registerUser() {
 
             error.style.display = 'inline'
         })
+}
+
+
+if (localStorage.getItem('jwt')) {
+    var resultMessage = document.getElementById('resultMessage')
+    var msgDiv = document.getElementById('msgDiv')
+    msgDiv.innerText = "You are already Register!"
+    resultMessage.style.display = 'block'
+    resultMessage.style.backgroundColor = 'lightgreen'
 }

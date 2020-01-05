@@ -59,3 +59,11 @@ function login() {
     })
 
 }
+
+if (localStorage.getItem('jwt')) {
+    var resultMessage = document.getElementById('resultMessage')
+    var msgDiv = document.getElementById('msgDiv')
+    msgDiv.innerText = "You are already Login!"
+    resultMessage.style.display = 'block'
+    resultMessage.style.backgroundColor = 'lightgreen'
+}
