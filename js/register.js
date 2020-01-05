@@ -70,3 +70,12 @@ function registerUser() {
             error.style.display = 'inline'
         })
 }
+
+
+if (localStorage.getItem('jwt')) {
+    var resultMessage = document.getElementById('resultMessage')
+    var msgDiv = document.getElementById('msgDiv')
+    msgDiv.innerText = "You are already Register!"
+    resultMessage.style.display = 'block'
+    resultMessage.style.backgroundColor = 'lightgreen'
+}
