@@ -1,3 +1,121 @@
+let userEvents
+getUser()
+// getEvents()
+
+async function getUser() {
+    let userToken = localStorage.getItem('jwt')
+    if (!userToken) {
+        showLoginRequired()
+        showLogin()
+        return
+    }
+    let expAt = localStorage.getItem('expiresAt')
+    if (expAt && new Date(expAt) < new Date())
+        logout()
+
+    let userUuid = localStorage.getItem('uuid')
+    if (!userUuid) {
+        logout()
+        return
+    }
+
+    let url = `https://api.jflcarvalho.me/api/users/` + userUuid
+    await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + userToken
+        }
+    }).then(data => {
+        return data.json()
+    }).then(user => {
+        userEvents = user.events
+        getEvents()
+    }).catch(err => {
+    })
+}
+
+function getEvents() {
+    let userToken = localStorage.getItem('jwt')
+    if (!userToken) {
+        showLoginRequired()
+        showLogin()
+        return
+    }
+    let expAt = localStorage.getItem('expiresAt')
+    if (expAt && new Date(expAt) < new Date())
+        logout()
+
+    let url = `https://api.jflcarvalho.me/api/events/`
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + userToken
+        }
+    }).then(data => {
+        return data.json()
+    }).then(events => {
+        createEventsCards(events)
+    }).catch(err => {
+    })
+
+}
+
+function createEventsCards(events) {
+    let eventsRow = document.getElementById('events_row')
+    for (let event of events) {
+        let button = getButton(event)
+        let description = getDescription(event)
+        eventsRow.innerHTML += `<div class="card col-12 col-md-4 col-lg-3 mb-5">
+        <img src="` + getImage(event) + `" alt="event_logo" style="width: 85%; height: auto" class="mx-auto mt-2">
+        <div class="card-body">
+            <h4 class="card-title">` + event.name + `</h4>
+            <p class="card-text mb-5">` + description + `</p>`
+            + button +
+            `</div>
+    </div>`
+    }
+}
+
+function getDescription(event) {
+    if (event.name.includes('Bosch'))
+        return "Bosch is giving a workshop."
+    else if (event.name.includes('Visit Switch'))
+        return "Take a trip backstage to the offices of Switch, our main sponsor for this edition of TAB, and see for yourself how Switch deals with everyday challenges."
+    else if (event.name.includes('Switch'))
+        return "Switch is giving a workshop."
+    else if (event.name.includes('XpandIT'))
+        return "XpandIT is giving a workshop."
+    else if (event.name.includes('Dinner'))
+        return "Get your chance to dine with some of our partners in a more casual environment."
+    else if (event.name.includes('Network'))
+        return "Attend a casual pitch with partner companies and exchange information in a more private setup."
+}
+
+function getImage(event) {
+    if (event.name.includes('Bosch'))
+        return "../images/sponsors/bosch.png"
+    else if (event.name.includes('Switch'))
+        return "../images/sponsors/switch.png"
+    else if (event.name.includes('XpandIT'))
+        return "../images/sponsors/xpandit.png"
+    else if (event.name.includes('Dinner'))
+        return "../images/dinner.png"
+    else if (event.name.includes('Network'))
+        return "../images/network.png"
+}
+
+function getButton(event) {
+    console.log(userEvents)
+    for (let userEvent of userEvents) {
+        if (event.uuid == userEvent.uuid)
+            return `<a href="#" onclick="unregisterEvent('` + event.uuid + `')" class="btn btn-danger unregister-btn my-2" style="position: absolute; bottom: 0">Unregister</a>`
+    }
+    return `<a href="#" onclick="addEvent('` + event.uuid + `')" class="btn btn-primary register-btn my-2" style="position: absolute; bottom: 0">Register</a>`
+}
+
+
 var regBts = document.getElementsByClassName('register-btn')
 if (localStorage.getItem('jwt'))
     for (let btn of regBts)
@@ -5,6 +123,7 @@ if (localStorage.getItem('jwt'))
 
 function addEvent(eventId) {
     event.preventDefault()
+    console.log(eventId)
     let userToken = localStorage.getItem('jwt');
     if (!userToken) {
         showLoginRequired()
@@ -31,7 +150,7 @@ function addEvent(eventId) {
         body: JSON.stringify(data)
     }).then(data => {
         if (data.statusText == 'OK')
-            showSuccess()
+            showSuccess("reg")
 
         else {
             return data.json()
@@ -47,10 +166,51 @@ function addEvent(eventId) {
     })
 }
 
-function showSuccess() {
+function unregisterEvent(eventId) {
+    event.preventDefault()
+    console.log(eventId)
+    let userToken = localStorage.getItem('jwt');
+    if (!userToken) {
+        showLoginRequired()
+        showLogin()
+        return
+    }
+
+    let expAt = localStorage.getItem('expiresAt')
+    if (expAt && new Date(expAt) < new Date())
+        logout()
+
+    var data = {
+        eventUuid: eventId
+    }
+
+    let userUID = localStorage.getItem('uuid');
+    let url = `https://api.jflcarvalho.me/api/users/` + userUID + '/events'
+    fetch(url, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + userToken
+        },
+        body: JSON.stringify(data)
+    }).then(data => {
+        if (data.statusText == 'OK') {
+            showSuccess("unr")
+        }
+        else {
+            return data.json()
+        }
+    }).then(res => {
+        if (res)
+            showFailure()
+    }).catch(err => {
+    })
+}
+
+function showSuccess(mode) {
     var resultMessage = document.getElementById('resultMessage')
     var msgDiv = document.getElementById('msgDiv')
-    msgDiv.innerText = "Registered with success!"
+    msgDiv.innerText = mode == "reg" ? "Registered with success!" : "Unregistered with success!"
     resultMessage.style.display = 'block'
     resultMessage.style.backgroundColor = 'lightgreen'
     window.scrollTo(0, 0)

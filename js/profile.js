@@ -209,8 +209,6 @@ const createEventsList = user => {
   console.log(user)
 
   for (let i = 0; i < user.events.length; i++) {
-    console.log("EVENT")
-    console.log(user.events[i])
     // create each list item
     const item = document.createElement("li");
     item.classList.add("list-group-item");
@@ -220,14 +218,26 @@ const createEventsList = user => {
     grid.style.color = "black";
 
     const col1 = document.createElement("div");
-    col1.classList.add("col-sm-6");
+    col1.classList.add("col-9");
+    col1.classList.add("col-sm-10");
     grid.append(col1);
 
     const col2 = document.createElement("div");
-    col2.classList.add("col-sm-6");
+    col2.classList.add("col-1");
+    col2.classList.add("col-sm-1");
     col2.style.textAlign = "right";
     col2.style.fontSize = "1rem";
     grid.append(col2);
+
+    const col3 = document.createElement("div");
+    col3.classList.add("col-1");
+    col3.classList.add("col-sm-1");
+    col3.style.textAlign = "right";
+    col3.style.fontSize = "1rem";
+    col3.style.cursor = 'pointer';
+    grid.append(col3);
+    col3.innerHTML = '<i class="fas fa-times-circle"></i>';
+    col3.onclick = function () {removeEvent(user.events[i].uuid)}//removeEvent(user.events[i])
 
     // Set fields
     const event = user.events[i];
@@ -249,3 +259,7 @@ const createEventsList = user => {
 window.onload = () => {
   getUserData();
 };
+
+function removeEvent(event_uuid) {
+  console.log(event_uuid)
+}
