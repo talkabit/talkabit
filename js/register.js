@@ -33,7 +33,7 @@ function registerUser() {
     })
         .then(data => { 
             if(data.status == 400) {
-                errorText.innerHTML = 'Password must have a number, Uppercase and Lowercase'
+                errorText.innerHTML = 'Password must have 8 characters, at least a number, Upper and lower case'
                 error.style.display = 'inline'
                 return -1
             }
@@ -66,7 +66,7 @@ function registerUser() {
             console.log(err)
 
             if(err.status == 400)
-                errorText.innerHTML = 'Password must have a number, Uppercase and Lowercase'
+                errorText.innerHTML = 'Password must have 8 characters, at least a number, Upper and lower case'
             else if (err.status == 403)
                 errorText.innerHTML = 'Already registered!'
             else if (err.status == 401)
