@@ -63,7 +63,6 @@ function registerUser() {
             window.location.href = './thanks.html'
         })
         .catch(err => {
-            console.log(err)
 
             if(err.status == 400)
                 errorText.innerHTML = 'Password must have 8 characters, at least a number, Upper and lower case'

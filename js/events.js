@@ -1,6 +1,5 @@
 let userEvents
 getUser()
-// getEvents()
 
 async function getUser() {
     let userToken = localStorage.getItem('jwt')
@@ -107,7 +106,6 @@ function getImage(event) {
 }
 
 function getButton(event) {
-    console.log(userEvents)
     for (let userEvent of userEvents) {
         if (event.uuid == userEvent.uuid)
             return `<a href="#" onclick="unregisterEvent('` + event.uuid + `')" class="btn btn-danger unregister-btn my-2" style="position: absolute; bottom: 0">Unregister</a>`
@@ -126,7 +124,6 @@ if (localStorage.getItem('jwt')) {
 
 function addEvent(eventId) {
     event.preventDefault()
-    console.log(eventId)
     let userToken = localStorage.getItem('jwt');
     if (!userToken) {
         showLoginRequired()
@@ -171,7 +168,6 @@ function addEvent(eventId) {
 
 function unregisterEvent(eventId) {
     event.preventDefault()
-    console.log(eventId)
     let userToken = localStorage.getItem('jwt');
     if (!userToken) {
         showLoginRequired()

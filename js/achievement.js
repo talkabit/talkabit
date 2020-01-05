@@ -5,8 +5,6 @@ function addAchievement() {
 	let userToken = localStorage.getItem('jwt');
 	let userUuid = localStorage.getItem('uuid');
 	
-	console.log(userToken);
-
 	if (!userToken || !userUuid){
 		window.location = "./login.html";
 	}

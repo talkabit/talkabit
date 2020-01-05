@@ -35,7 +35,6 @@ const getUserData = async () => {
   // fetch user data
   try {
     const user = await api(userToken, "users/" + userUuid, "GET");
-    console.log(user)
     const loggedDiv = document.querySelector("#profile #logged");
     // show logged div
     loggedDiv.style.display = "block";
@@ -107,7 +106,6 @@ const createCurriculumButton = (user, userToken) => {
       try {
         var res = await api(userToken, "users/" + user.uuid, "PUT", body);
 
-        console.log(res)
         if(res.status == 400){
           showFailure()
         } else {
@@ -206,7 +204,6 @@ const createEventsList = user => {
   // add title
   eventsDiv.append(eventsTitle);
 
-  console.log(user)
 
   for (let i = 0; i < user.events.length; i++) {
     // create each list item

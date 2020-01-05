@@ -5,16 +5,13 @@ function addCV() {
 	let userToken = localStorage.getItem('jwt');
 	let userUuid = localStorage.getItem('uuid');
 	
-	console.log(userToken);
-
 	if (!userToken || !userUuid){
 		window.location = "./login.html";
 	}
 
 	var scannedUuid = new URL(window.location.href).searchParams.get("uuid");
-	if(!scannedUuid){
-		window.location = "../index.html"
-	}
+	if(!scannedUuid)
+		return
 	
 	let expAt = localStorage.getItem('expiresAt')
 	if (expAt && new Date(expAt) < new Date())

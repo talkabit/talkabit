@@ -6,7 +6,6 @@ getCookies()
 
 function getLocalUser() {
 	let userToken = localStorage.getItem('jwt');
-	//console.log(userToken)
 	if (!userToken){
 		showLogin()
 		return

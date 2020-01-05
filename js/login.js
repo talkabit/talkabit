@@ -29,7 +29,6 @@ function login() {
         },
         body: JSON.stringify(data)
     }).then(data => {
-        console.log(data)
         if (data.status == 403) {
             errorText.innerHTML = 'This account is banned!'
             error.style.display = 'inline'
