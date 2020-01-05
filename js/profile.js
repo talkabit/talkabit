@@ -100,13 +100,13 @@ const createCurriculumButton = (user, userToken) => {
     const text = input.value;
     if (text != "") {
       // create msg body
-      const body = JSON.stringify({cv: text});
+      const body = JSON.stringify({ cv: text });
 
       // make request
       try {
         var res = await api(userToken, "users/" + user.uuid, "PUT", body);
 
-        if(res.status == 400){
+        if (res.status == 400) {
           showFailure()
         } else {
           showSuccess()
@@ -125,10 +125,10 @@ const createCurriculumButton = (user, userToken) => {
 
 function showSuccess() {
   var resultMessage = document.getElementById('resultMessage')
-    var msgDiv = document.getElementById('msgDiv')
-    msgDiv.innerText = "CV updated with success!"
-    resultMessage.style.display = 'block'
-    resultMessage.style.backgroundColor = 'lightgreen'
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "CV updated with success!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'lightgreen'
 }
 
 function showFailure() {
@@ -234,7 +234,7 @@ const createEventsList = user => {
     col3.style.cursor = 'pointer';
     grid.append(col3);
     col3.innerHTML = '<i class="fas fa-times-circle"></i>';
-    col3.onclick = function () {removeEvent(user.events[i].uuid)}//removeEvent(user.events[i])
+    col3.onclick = function () { unregisterEvent(user.events[i].uuid); grid.remove(col3)}
 
     // Set fields
     const event = user.events[i];
@@ -257,6 +257,86 @@ window.onload = () => {
   getUserData();
 };
 
-function removeEvent(event_uuid) {
-  console.log(event_uuid)
+function unregisterEvent(eventId) {
+  let userToken = localStorage.getItem('jwt');
+  if (!userToken) {
+    showLoginRequired()
+    showLogin()
+    return
+  }
+
+  let expAt = localStorage.getItem('expiresAt')
+  if (expAt && new Date(expAt) < new Date())
+    logout()
+
+  var data = {
+    eventUuid: eventId
+  }
+
+  let userUID = localStorage.getItem('uuid');
+  let url = `https://api.jflcarvalho.me/api/users/` + userUID + '/events'
+  fetch(url, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + userToken
+    },
+    body: JSON.stringify(data)
+  }).then(data => {
+    if (data.statusText == 'OK') {
+      showSuccess("unr")
+    }
+    else {
+      return data.json()
+    }
+  }).then(res => {
+    if (res)
+      showFailure()
+  }).catch(err => {
+  })
+}
+
+function showSuccess(mode) {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = mode == "reg" ? "Registered with success!" : "Unregistered with success!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'lightgreen'
+  window.scrollTo(0, 0)
+}
+
+function showEventFull() {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "Sorry, this event is full!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'red'
+  window.scrollTo(0, 0)
+}
+
+function showCVRequired() {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "Update your CV on your profile to register for this event!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'red'
+  window.scrollTo(0, 0)
+}
+
+function showLoginRequired() {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "You need to log in to register for an event!"
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'red'
+  window.scrollTo(0, 0)
+}
+
+function showFailure() {
+  var resultMessage = document.getElementById('resultMessage')
+  var msgDiv = document.getElementById('msgDiv')
+  msgDiv.innerText = "Something went wrong..."
+  resultMessage.style.display = 'block'
+  resultMessage.style.backgroundColor = 'red'
+  window.scrollTo(0, 0)
 }
