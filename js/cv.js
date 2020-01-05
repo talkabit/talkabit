@@ -1,7 +1,7 @@
 
-addAchievement();
+addCV();
 
-function addAchievement() {
+function addCV() {
 	let userToken = localStorage.getItem('jwt');
 	let userUuid = localStorage.getItem('uuid');
 	
@@ -11,8 +11,8 @@ function addAchievement() {
 		window.location = "./login.html";
 	}
 
-	var achievement_id = new URL(window.location.href).searchParams.get("id");
-	if(!achievement_id){
+	var scannedUuid = new URL(window.location.href).searchParams.get("uuid");
+	if(!scannedUuid){
 		window.location = "../index.html"
 	}
 	
@@ -20,20 +20,21 @@ function addAchievement() {
 	if (expAt && new Date(expAt) < new Date())
 		logout()
 
-	let url = `https://api.jflcarvalho.me/api/users/${userUuid}/achievements`
+	let url = `https://api.jflcarvalho.me/api/users/${userUuid}/scanned`
 	fetch(url, {
 		method: 'POST',
 		headers: {
-			'Authorization': userToken,
+			'Authorization': 'Bearer ' + userToken,
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
-		body: `achievementUuid=${achievement_id}`
+		body: `scannedUserUuid=${scannedUuid}`
 	}).then((response) => {
-		if (response.status == 200)
-			window.location = "./achievements.html";
+        if (response.status == 200){
+            window.location = "./cv.html";
+        }
 		else{
 			response.json().then((body) => {
-				alert(body["error"]["message"]);
+                alert(body["error"]["message"]);
 				window.location = "../index.html";
 			});
 		}
