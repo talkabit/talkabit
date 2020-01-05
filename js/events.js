@@ -67,7 +67,7 @@ function createEventsCards(events) {
     for (let event of events) {
         let button = getButton(event)
         let description = getDescription(event)
-        eventsRow.innerHTML += `<div class="card col-12 col-md-4 col-lg-3 mb-5">
+        eventsRow.innerHTML += `<div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
         <img src="` + getImage(event) + `" alt="event_logo" style="width: 85%; height: auto" class="mx-auto mt-2">
         <div class="card-body">
             <h4 class="card-title">` + event.name + `</h4>
