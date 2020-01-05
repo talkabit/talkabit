@@ -117,9 +117,12 @@ function getButton(event) {
 
 
 var regBts = document.getElementsByClassName('register-btn')
-if (localStorage.getItem('jwt'))
+if (localStorage.getItem('jwt')) {
     for (let btn of regBts)
         btn.style.display = 'inline-block'
+} else {
+    showLoginRequired();
+}
 
 function addEvent(eventId) {
     event.preventDefault()
