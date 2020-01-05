@@ -67,11 +67,11 @@ body {
 }
 
 #sponsors #silver-title {
-  color: #b4b4b4;
+  color: #979696;
 }
 
 #sponsors #silver-line {
-  background-color: #b4b4b4;
+  background-color: #979696;
 }
 
 #sponsors #bronze-title {
@@ -83,16 +83,16 @@ body {
 }
 
 #sponsors #partners-title {
-  color: white;
+  color: black;
 }
 
 #sponsors #partners-line {
-  background-color: white;
+  background-color: black;
 }
 
-#sponsors .row {
+#sponsors .box {
   padding: 2em;
-  background-color: rgba(0,0,0,0.6) !important;
+  background-color: white !important;
   border-radius: 10px;
   border: solid 0.1rem;
   margin-top: 2rem;
