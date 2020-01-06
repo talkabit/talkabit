@@ -4,9 +4,9 @@ addCV();
 function addCV() {
 	let userToken = localStorage.getItem('jwt');
 	let userUuid = localStorage.getItem('uuid');
-	
+
 	if (!userToken || !userUuid){
-		window.location = "./login.html";
+		window.location = "./login.html?redirect=" + encodeURIComponent(window.location.href);
 	}
 
 	var scannedUuid = new URL(window.location.href).searchParams.get("uuid");

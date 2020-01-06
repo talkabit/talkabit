@@ -52,7 +52,12 @@ function login() {
         localStorage.setItem('uuid', res.uuid)
         localStorage.setItem('jwt', res.token)
         localStorage.setItem('expiresAt', new Date(res.expiresAt))
-        window.location.href = '../index.html'
+
+        var redirect = new URL(window.location.href).searchParams.get("redirect");
+        if (redirect)
+            window.location.href = decodeURI(redirect)
+        else
+            window.location.href = '../index.html'
     }).catch(err => {
         console.log(err)
     })
