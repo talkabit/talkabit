@@ -81,13 +81,13 @@ function getDescription(event) {
     if (event.name.includes('Bosch'))
         return "Bosch is giving a workshop."
     else if (event.name.includes('Visit Switch'))
-        return "Take a trip backstage to the offices of Switch, our main sponsor for this edition of TAB, and see for yourself how Switch deals with everyday challenges."
+        return "Take a trip backstage to the offices of Switch, our main sponsor for this edition of TAB, and see for yourself how Switch deals with everyday challenges. Jan,09 2020"
     else if (event.name.includes('Switch'))
         return "Switch is giving a workshop."
     else if (event.name.includes('XpandIT'))
         return "XpandIT is giving a workshop."
     else if (event.name.includes('Dinner'))
-        return "Get your chance to dine with some of our partners in a more casual environment."
+        return "Get your chance to dine with some of our partners in a more casual environment. Jan,10 2020 - 19h30"
     else if (event.name.includes('Network'))
         return "Attend a casual pitch with partner companies and exchange information in a more private setup."
 }
