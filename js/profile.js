@@ -296,46 +296,10 @@ function unregisterEvent(eventId) {
   })
 }
 
-function showSuccess(mode) {
-  var resultMessage = document.getElementById('resultMessage')
-  var msgDiv = document.getElementById('msgDiv')
-  msgDiv.innerText = mode == "reg" ? "Registered with success!" : "Unregistered with success!"
-  resultMessage.style.display = 'block'
-  resultMessage.style.backgroundColor = 'lightgreen'
-  window.scrollTo(0, 0)
-}
-
-function showEventFull() {
-  var resultMessage = document.getElementById('resultMessage')
-  var msgDiv = document.getElementById('msgDiv')
-  msgDiv.innerText = "Sorry, this event is full!"
-  resultMessage.style.display = 'block'
-  resultMessage.style.backgroundColor = 'red'
-  window.scrollTo(0, 0)
-}
-
-function showCVRequired() {
-  var resultMessage = document.getElementById('resultMessage')
-  var msgDiv = document.getElementById('msgDiv')
-  msgDiv.innerText = "Update your CV on your profile to register for this event!"
-  resultMessage.style.display = 'block'
-  resultMessage.style.backgroundColor = 'red'
-  window.scrollTo(0, 0)
-}
-
 function showLoginRequired() {
   var resultMessage = document.getElementById('resultMessage')
   var msgDiv = document.getElementById('msgDiv')
   msgDiv.innerText = "You need to log in to register for an event!"
-  resultMessage.style.display = 'block'
-  resultMessage.style.backgroundColor = 'red'
-  window.scrollTo(0, 0)
-}
-
-function showFailure() {
-  var resultMessage = document.getElementById('resultMessage')
-  var msgDiv = document.getElementById('msgDiv')
-  msgDiv.innerText = "Something went wrong..."
   resultMessage.style.display = 'block'
   resultMessage.style.backgroundColor = 'red'
   window.scrollTo(0, 0)

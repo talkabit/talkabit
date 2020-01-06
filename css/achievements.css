@@ -1,0 +1,22 @@
+body {
+    background-color: #102f50;
+    color: #e6edf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#achievements {
+    font-family: "DecimaABold";
+}
+
+#achievements.container {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+#sponachievementssors #title {
+    font-family: 'DecimaABold';
+    font-size: 4vw;
+    color: white;
+}

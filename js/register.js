@@ -14,6 +14,7 @@ function registerUser() {
     if (pass.value != confPass.value) {
         errorText.innerHTML = 'Passwords don\'t match!'
         error.style.display = 'inline'
+        return
     }
 
     const url = 'https://api.jflcarvalho.me/api/users/register'
