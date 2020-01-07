@@ -66,11 +66,11 @@ function createAchievementsItems(achievements) {
     for (let achievement of achievements) {
         achievementsContainer.innerHTML += `
             <div class="row mb-1"
-                style="background-color: lightgray; opacity: 0.7; height: 3rem; border-radius: 1rem; align-items: center; text-align: left;">
-                <div class="col-9 text-dark">
+                style="background-color: lightgray; ` + getOpacity(achievement) + `min-height: 3rem; border-radius: 1rem; align-items: center; text-align: left;">
+                <div class="col-7 col-md-9 text-dark">
                     ` + getAchievementDescription(achievement) + `
                 </div>
-                <div class="col-3 text-dark" style="text-align: right;">
+                <div class="col-5 col-md-3 text-dark" style="text-align: right;">
                     ` + isAchieved(achievement) + `
                 </div>
             </div>
@@ -78,6 +78,14 @@ function createAchievementsItems(achievements) {
     }
 
     updateProgress(achievements)
+}
+
+function getOpacity(achievement){
+    for (let ach of userAchievements) {
+        if (ach.name == achievement.name)
+            return ''
+    }
+    return 'opacity: 0.7; '
 }
 
 function getAchievementDescription(achievement) {
@@ -99,8 +107,7 @@ function getAchievementDescription(achievement) {
 
 function updateProgress(achievements) {
     let progressBar = document.getElementById('progress-bar')
-
-    // let progress = userAchievements.length / achievements.length
+    
     let progress = 0
 
     for(let ach of userAchievements){
@@ -110,11 +117,14 @@ function updateProgress(achievements) {
             progress++
     }
 
-    progress /= 15 * 100
+    progress = progress / (achievements.length-3) * 100
 
     if (progress == 0) {
         progressBar.style.color = 'black'
         progressBar.style.marginLeft = '1rem'
+    } else {
+        progressBar.style.color = 'white'
+        progressBar.style.marginLeft = '0rem'
     }
     progressBar.style.width = progress + '%'
     progressBar.innerText = progress + '%'
