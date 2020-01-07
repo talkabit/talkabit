@@ -93,6 +93,13 @@ html,
     margin-left: -2px;
 }
 
+.workshop-place {
+    text-align: left;
+    font-family: 'DecimaABold';
+    padding-right: 0.35em;
+    margin-left: -2px;
+}
+
 .workshop-pos {
     font-size: 1.2rem;
     color: rgb(230, 237, 241);
