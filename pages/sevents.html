@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Talk A Bit 2020</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/organization.css">
+    <link rel="stylesheet" href="../css/events.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="manifest" href="../manifest.json">
@@ -31,9 +34,11 @@
     <meta name="apple-mobile-web-app-title" content="Hello World">
     <meta name="msapplication-TileImage" content="../images/hello-icon-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
 
 <body>
-    <div id="landing" class="landing container-fluid">
+    <!-- Events page -->
+    <div id="organization" class="container-fluid">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -106,62 +111,74 @@
             </div>
         </nav>
 
-        <div class="container main-container">
+        <div class="container-fluid" id="mainContainer">
+            <h1 id="title">Our Events</h1>
+
             <div id="resultMessage" style="min-width: 60%; min-height: 2rem; display: none; background-color: white;"
                 class="m-3 rounded">
                 <div id="msgDiv" class="py-2 ml-2">Message</div>
             </div>
-            <div class="login-card-container">
-                <div class="login-card mx-3">
-                    <div class="row">
-                        <div class="d-none d-md-flex col-md-7 login-tab-logo">
-                            <img src="../images/logo_transparente.png" id="login-tab-logo-img" />
-                        </div>
-                        <div class="col justify-content-center login-col">
-                            <form id="validation-form" class="">
-                                <div class="title">
-                                    Register
-                                </div>
-                                <div class="col text-left mb-3">
-                                    Enter your email and ticket number to validate your account.
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                        placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="ticket"
-                                        placeholder="Order Nº Eventbrite">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="conf_password"
-                                        placeholder="Confirm Password">
-                                </div>
-                                <div id="error" style="display: none;"><i
-                                        class="fas fa-exclamation-triangle mx-2 text-danger"></i>
-                                    <div style="display: inline;" id="error-text">Passwords don't match!</div>
-                                </div>
-                                <div class="text-center d-none" id="spinner">
-                                    <div class="spinner-border" role="status">
-                                        <span class="sr-only">Loading...</span>
-                                    </div>
-                                </div>
-                                <button id="register_button" type="submit"
-                                    class="btn btn-primary login-btn-submit">Register</button>
-                            </form>
-                        </div>
+
+            <div class="row m-0 p-0 w-100" style="justify-content: space-between;" id="events_row">
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/sponsors/switch.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Visit Switch</h4>
+                        <p class="card-text">Take a trip backstage to the offices of Switch, our main sponsor for
+                            this edition of TAB, and see for yourself how Switch deals with everyday challenges. Jan,09
+                            2020</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/sponsors/switch.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Workshop Switch</h4>
+                        <p class="card-text">Designing a Rest API</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/sponsors/xpandit.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Workshop XpandIT</h4>
+                        <p class="card-text">How to build a multiplatform desktop App (Win, Mac, Linux) using web
+                            tecnologies</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/network.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Network a Bit</h4>
+                        <p class="card-text">Attend a casual pitch with partner companies and exchange information
+                            in a more private setup.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/dinner.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Social Dinner</h4>
+                        <p class="card-text mb-5">Get your chance to dine with some of our partners in a more casual
+                            environment. Jan,10 2020 - 19h30</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 col-lg-3 mb-5 mx-2">
+                    <img src="../images/sponsors/bosch.png" alt="event_logo" style="width: 85%; height: auto"
+                        class="mx-auto mt-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Workshop Bosch</h4>
+                        <p class="card-text mb-5">Why Autonomous Driving is Hard</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!-- Footer -->
-    <footer id="footer" class="page-footer font-small">
+    <footer id="footer" class="page-footer font-small mt-5">
         <!-- meter links das redes sociais -->
         <div class="container-fluid text-center">
             <div class="row social">
@@ -170,8 +187,7 @@
                                 class="fab fa-facebook-f"></i></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
                                 class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a>
-                    </li>
+                    <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
                                 class="fab fa-linkedin"></i></a>
                     </li>
@@ -187,12 +203,12 @@
                 Copyright Ⓒ 2019 Talk a Bit. All rights reserved.
             </div>
         </div>
-
     </footer>
-    <!-- <script src="js/main.js"></script> -->
+    <!-- Optional JavaScript -->
+    <!-- <script type="text/javascript" src="../js/main.js"></script> -->
     <script type="text/javascript" src="../js/user.js"></script>
     <script type="text/javascript" src="../js/hide-navbar.js"></script>
-    <script type="text/javascript" src="../js/register.js"></script>
+    <script type="text/javascript" src="../js/sevents.js"></script>
 </body>
 
 </html>
