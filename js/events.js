@@ -79,13 +79,13 @@ function createEventsCards(events) {
 
 function getDescription(event) {
     if (event.name.includes('Bosch'))
-        return "Bosch is giving a workshop."
+        return "Why Autonomous Driving is Hard"
     else if (event.name.includes('Visit Switch'))
         return "Take a trip backstage to the offices of Switch, our main sponsor for this edition of TAB, and see for yourself how Switch deals with everyday challenges. Jan,09 2020"
     else if (event.name.includes('Switch'))
-        return "Switch is giving a workshop."
+        return "Designing a Rest API"
     else if (event.name.includes('XpandIT'))
-        return "XpandIT is giving a workshop."
+        return "How to build a multiplatform desktop App (Win, Mac, Linux) using web tecnologies"
     else if (event.name.includes('Dinner'))
         return "Get your chance to dine with some of our partners in a more casual environment. Jan,10 2020 - 19h30"
     else if (event.name.includes('Network'))
