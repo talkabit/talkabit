@@ -68,7 +68,7 @@ function createAchievementsItems(achievements) {
             <div class="row mb-1"
                 style="background-color: lightgray; opacity: 0.7; height: 3rem; border-radius: 1rem; align-items: center; text-align: left;">
                 <div class="col-9 text-dark">
-                    ` + achievement.description + `
+                    ` + getAchievementDescription(achievement) + `
                 </div>
                 <div class="col-3 text-dark" style="text-align: right;">
                     ` + isAchieved(achievement) + `
@@ -80,19 +80,50 @@ function createAchievementsItems(achievements) {
     updateProgress(achievements)
 }
 
+function getAchievementDescription(achievement) {
+    if (achievement.name.includes('talk1') || achievement.name.includes('talk2'))
+        return achievement.description + ' (concurrent with Workshop Bosch)'
+    if (achievement.name.includes('talk3'))
+        return achievement.description + ' (concurrent with Workshop XpandIT)'
+    if (achievement.name.includes('talk4') || achievement.name.includes('talk5'))
+        return achievement.description + ' (concurrent with Workshop Switch)'
+    if (achievement.name.includes('workshop1'))
+        return achievement.description + ' (concurrent with Talk:The past, present and future of Privacy and Talk:Graphics Technology Evolution During the Current Generation of Consoles'
+    if (achievement.name.includes('workshop2'))
+        return achievement.description + ' (concurrent with Talk:The Challenges of Software Engineering in F1'
+    if (achievement.name.includes('workshop3'))
+        return achievement.description + ' (concurrent with Talk:Social Artificial Intelligence and Talk:Building an Internet for Things and Robots and an Internet of Humans for Everyday Life'
+
+    return achievement.description
+}
+
 function updateProgress(achievements) {
     let progressBar = document.getElementById('progress-bar')
 
-    let progress = userAchievements.length/achievements.length
+    // let progress = userAchievements.length / achievements.length
+    let progress = 0
 
+    for(let ach of userAchievements){
+        if(ach.name == 'workshop1' || ach.name == 'workshop3')
+            progress += 2
+        else
+            progress++
+    }
+
+    progress /= 15 * 100
+
+    if (progress == 0) {
+        progressBar.style.color = 'black'
+        progressBar.style.marginLeft = '1rem'
+    }
     progressBar.style.width = progress + '%'
     progressBar.innerText = progress + '%'
 }
 
 function isAchieved(achievement) {
-    for(let ach of userAchievements) {
+    for (let ach of userAchievements) {
         if (ach.name == achievement.name)
-        return 'Achieved <i class="fas fa-check ml-2" style="color: green"></i>'
+            return 'Achieved <i class="fas fa-check ml-2" style="color: green"></i>'
     }
     return 'Locked <i class="fas fa-lock ml-2" style="color: darkred;"></i>'
 }
