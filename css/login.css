@@ -175,23 +175,6 @@ html,
     color: black !important;
 }
 
-#footer .footer-logo-feup {
-    position: absolute; 
-    right: 20px; 
-    bottom: 30px;
-}
-
-#footer {
-    width: 100%;
-    bottom: 0;
-    color: rgb(230, 237, 241);
-    background-color: rgb(9,28,49);
-}
-
-#footer .footer-logo-feup img {
-    height: 50px;
-}
-
 .main-container {
     display: flex;
     flex-direction: column;
@@ -203,12 +186,6 @@ html,
 }
 
 @media (max-width: 768px) {
-    #footer .footer-logo-feup {
-        position: static;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .login-col{
         border-radius: 25px;
     }
