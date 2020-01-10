@@ -79,6 +79,9 @@ function renderThanks(e) {
         </li>
     </ul>
     `;
+	localStorage.removeItem('jwt')
+	localStorage.removeItem('uuid')
+	localStorage.removeItem('expiresAt')
 }
 
 function logout() {
