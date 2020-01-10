@@ -42,6 +42,14 @@ body {
   background-color: #31c0ff;
 }
 
+#sponsors #supported-title {
+  color: #2e7d32;
+}
+
+#sponsors #supported-line {
+  background-color: #2e7d32;
+}
+
 @media(min-width: 992px) {
   #sponsors #main-sponsor-img {
     width: 60%;

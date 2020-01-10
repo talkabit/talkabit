@@ -149,6 +149,9 @@ var filesToCache = [
   '/images/sponsors/junifeup.png',
   '/images/sponsors/aefeup.png',
   '/images/sponsors/niaefeup.png',
+  '/images/sponsors/nortada.png',
+  '/images/sponsors/scaleup.jpg',
+  '/images/sponsors/alquimiadossabores.png',
   '/2019/res/img/feup-logo.png'
 ];
 
