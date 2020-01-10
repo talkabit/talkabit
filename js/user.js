@@ -39,10 +39,10 @@ function getLocalUser() {
 		document.getElementById('events-button').addEventListener('click', () => {
 			window.location.href = window.location.href.includes('pages') ? './events.html' : './pages/events.html'
 		})
-		document.getElementById('achievements-button').classList.add('disabled')
-		/*document.getElementById('achievements-button').addEventListener('click', () => {
+		// document.getElementById('achievements-button').classList.add('disabled')
+		document.getElementById('achievements-button').addEventListener('click', () => {
 			window.location.href = window.location.href.includes('pages') ? './achievements.html' : './pages/achievements.html'
-		})*/
+		})
 		document.getElementById('logout-button').addEventListener('click', () => {
 			logout()
 		})

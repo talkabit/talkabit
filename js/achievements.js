@@ -68,7 +68,7 @@ function createAchievementsItems(achievements) {
             <div class="row mb-1"
                 style="background-color: lightgray; ` + getOpacity(achievement) + `min-height: 3rem; border-radius: 1rem; align-items: center; text-align: left;">
                 <div class="col-7 col-md-9 text-dark">
-                    ` + getAchievementDescription(achievement) + `
+                    ` + achievement.description + `
                 </div>
                 <div class="col-5 col-md-3 text-dark" style="text-align: right;">
                     ` + isAchieved(achievement) + `
@@ -88,7 +88,7 @@ function getOpacity(achievement){
     return 'opacity: 0.7; '
 }
 
-function getAchievementDescription(achievement) {
+/*function getAchievementDescription(achievement) {
     if (achievement.name.includes('talk1') || achievement.name.includes('talk2'))
         return achievement.description + ' (concurrent with Workshop Bosch)'
     if (achievement.name.includes('talk3'))
@@ -103,7 +103,7 @@ function getAchievementDescription(achievement) {
         return achievement.description + ' (concurrent with Talk:Social Artificial Intelligence and Talk:Building an Internet for Things and Robots and an Internet of Humans for Everyday Life'
 
     return achievement.description
-}
+}*/
 
 function updateProgress(achievements) {
     let progressBar = document.getElementById('progress-bar')
