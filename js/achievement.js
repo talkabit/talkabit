@@ -28,7 +28,7 @@ function addAchievement() {
 		body: `achievementUuid=${achievement_id}`
 	}).then((response) => {
 		if (response.status == 200)
-			window.location = "./achievements.html";
+			window.location = "./pages/achievements.html";
 		else{
 			response.json().then((body) => {
 				alert(body["error"]["message"]);
