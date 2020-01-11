@@ -6,12 +6,12 @@ function addAchievement() {
 	let userUuid = localStorage.getItem('uuid');
 	
 	if (!userToken || !userUuid){
-		window.location = "./login.html?redirect=" + encodeURIComponent(window.location.href);
+		window.location = "./pages/login.html?redirect=" + encodeURIComponent(window.location.href);
 	}
 
 	var achievement_id = new URL(window.location.href).searchParams.get("id");
 	if(!achievement_id){
-		window.location = "../index.html"
+		window.location = "./index.html"
 	}
 	
 	let expAt = localStorage.getItem('expiresAt')
@@ -32,7 +32,7 @@ function addAchievement() {
 		else{
 			response.json().then((body) => {
 				alert(body["error"]["message"]);
-				window.location = "../index.html";
+				window.location = "./index.html";
 			});
 		}
 	}).catch(err => {
