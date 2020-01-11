@@ -22,7 +22,7 @@ function addAchievement() {
 	fetch(url, {
 		method: 'POST',
 		headers: {
-			'Authorization': 'Bearer' + userToken,
+			'Authorization': 'Bearer ' + userToken,
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		body: `achievementUuid=${achievement_id}`
