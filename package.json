@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "talkabit",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Talk A Bit 2021 Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Talk A Bit <geral@talkabit.org>",
   "dependencies": {
     "gatsby": "^2.24.79",
     "gatsby-image": "^2.4.21",
