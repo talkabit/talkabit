@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
-const Speaker = ({
-    speaker: { name, occupations, bio, role, img, linkedin },
-}) => (
+import { SpeakerShape } from "../../utils/props";
+
+const Speaker = ({ name, occupations, bio, role, img, linkedin }) => (
     <div>
         <h3>
             {name}
@@ -32,24 +31,6 @@ const Speaker = ({
     </div>
 );
 
-Speaker.propTypes = {
-    speaker: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        occupations: PropTypes.arrayOf(
-            PropTypes.shape({
-                what: PropTypes.string.isRequired,
-                where: PropTypes.string.isRequired,
-            })
-        ).isRequired,
-        bio: PropTypes.string.isRequired,
-        role: PropTypes.string,
-        linkedin: PropTypes.string.isRequired,
-        img: PropTypes.shape({
-            childImageSharp: PropTypes.shape({
-                fluid: PropTypes.node,
-            }),
-        }).isRequired,
-    }),
-};
+Speaker.propTypes = SpeakerShape;
 
 export default Speaker;
