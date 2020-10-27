@@ -1,19 +1,23 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 
 export const SpeakerShape = {
-    name: PropTypes.string.isRequired,
-    occupations: PropTypes.arrayOf(
-        PropTypes.shape({
-            what: PropTypes.string,
-            where: PropTypes.string,
-        })
-    ).isRequired,
-    bio: PropTypes.string.isRequired,
-    role: PropTypes.string,
-    linkedin: PropTypes.string.isRequired,
-    img: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-            fluid: PropTypes.object,
-        }),
-    }).isRequired,
-};
+  name: PropTypes.string.isRequired,
+  occupations: PropTypes.arrayOf(
+    PropTypes.shape({
+      what: PropTypes.string,
+      where: PropTypes.string,
+    })
+  ).isRequired,
+  bio: PropTypes.string.isRequired,
+  role: PropTypes.string,
+  linkedin: PropTypes.string.isRequired,
+}
+gi
+export const MemberShape = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      fluid: PropTypes.object,
+    }),
+  }).isRequired,
+}
