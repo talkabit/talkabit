@@ -30,7 +30,7 @@ main,
 menu,
 nav,
 section,
-summary {
+summary { 
   display: block;
 }
 audio,
@@ -594,4 +594,17 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+.main-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 95px);
+}
+
+.main-container main {
+  flex-grow: 1;
 }
