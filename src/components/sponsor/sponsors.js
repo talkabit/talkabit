@@ -1,83 +1,79 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
-import Sponsor from "./sponsor"
+import Sponsor from "./sponsor";
 
 const Sponsors = () => {
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/sponsors/" } }) {
         edges {
           node {
             frontmatter {
-              img {
-                childImageSharp {
-                  fluid(maxWidth: 400) {
-                    ...GatsbyImageSharpFluid
+              gold {
+                name
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 400) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
-              name
-              tier
+              silver {
+                name
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 400) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              bronze {
+                name
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 400) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
     }
-  `)
+  `);
 
-  const groupedData = data.allMarkdownRemark.edges.reduce((storage, item) => {
-    const group = item.node.frontmatter["tier"]
-    storage[group] = storage[group] || []
-
-    storage[group].push(item)
-    return storage
-  }, {})
-
-  return (
-    <div>
-      <h2>Sponsors</h2>
-      {groupedData.Gold && (
+    return (
         <div>
-          <h3>Gold</h3>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            {groupedData.Gold.map(item => (
-              <Sponsor
-                key={item.node.frontmatter.name}
-                {...item.node.frontmatter}
-              />
-            ))}
-          </div>
+            <h2>Sponsors</h2>
+            {data.allMarkdownRemark.edges.length !== 1 ? (
+                <h5>No sponsors to be displayed!</h5>
+            ) : (
+                <div>
+                    {Object.keys(data.allMarkdownRemark.edges[0].node.frontmatter).map(
+                        (key) => (
+                            <div key={key}>
+                                <h3 style={{ textTransform: "capitalize" }}>
+                                    {key}
+                                </h3>
+                                <div style={{ display: "flex", flexDirection: "row" }}>
+                                    {data.allMarkdownRemark.edges[0].node.frontmatter[key].map(
+                                        (sponsor) => (
+                                            <Sponsor key={sponsor.name} {...sponsor} />
+                                        )
+                                    )}
+                                </div>
+                            </div>
+                        )
+                    )}
+                </div>
+            )}
         </div>
-      )}
-      {groupedData.Silver && (
-        <div>
-          <h3>Silver</h3>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            {groupedData.Silver.map(item => (
-              <Sponsor
-                key={item.node.frontmatter.name}
-                {...item.node.frontmatter}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-      {groupedData.Bronze && (
-        <div>
-          <h3>Bronze</h3>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            {groupedData.Bronze.map(item => (
-              <Sponsor
-                key={item.node.frontmatter.name}
-                {...item.node.frontmatter}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
+    );
+};
 
-export default Sponsors
+export default Sponsors;
