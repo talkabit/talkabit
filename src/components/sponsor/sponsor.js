@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-const Sponsor = ({ name, img, tier }) => (
-  <div className="sponsor-item">
+const Sponsor = ({ name, img }) => (
+  <div style={{ margin: "0.5rem", flexGrow: 1, maxWidth: 300 }}>
     <Img fluid={img.childImageSharp.fluid} />
-    <p className="t-center">{name}</p>
+    <p style={{ textAlign: "center" }}>{name}</p>
   </div>
 )
 
@@ -16,7 +16,6 @@ Sponsor.propTypes = {
       fluid: PropTypes.object,
     }),
   }).isRequired,
-  tier: PropTypes.string.isRequired,
 }
 
 export default Sponsor

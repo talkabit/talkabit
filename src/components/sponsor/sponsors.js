@@ -3,8 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Sponsor from "./sponsor"
 
-import "./sponsors.css"
-
 const Sponsors = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -42,7 +40,7 @@ const Sponsors = () => {
       {groupedData.Gold && (
         <div>
           <h3>Gold</h3>
-          <div className="sponsor-list">
+          <div style={{ display: "flex", flexDirection: "row" }}>
             {groupedData.Gold.map(item => (
               <Sponsor
                 key={item.node.frontmatter.name}
@@ -55,7 +53,7 @@ const Sponsors = () => {
       {groupedData.Silver && (
         <div>
           <h3>Silver</h3>
-          <div className="sponsor-list">
+          <div style={{ display: "flex", flexDirection: "row" }}>
             {groupedData.Silver.map(item => (
               <Sponsor
                 key={item.node.frontmatter.name}
@@ -68,7 +66,7 @@ const Sponsors = () => {
       {groupedData.Bronze && (
         <div>
           <h3>Bronze</h3>
-          <div className="sponsor-list">
+          <div style={{ display: "flex", flexDirection: "row" }}>
             {groupedData.Bronze.map(item => (
               <Sponsor
                 key={item.node.frontmatter.name}
