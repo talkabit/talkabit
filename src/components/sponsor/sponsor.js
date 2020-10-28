@@ -3,10 +3,9 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 const Sponsor = ({ name, img, tier }) => (
-  <div>
-    <h6>{name}</h6>
-    <p>{tier}</p>
+  <div className="sponsor-item">
     <Img fluid={img.childImageSharp.fluid} />
+    <p className="t-center">{name}</p>
   </div>
 )
 
