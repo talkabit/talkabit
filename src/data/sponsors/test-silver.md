@@ -1,5 +1,5 @@
 ---
 name: Google
-img: "../../images/sponsors/rockstar-games.png"
+img: "../../images/sponsors/google.png"
 tier: Silver
 ---
