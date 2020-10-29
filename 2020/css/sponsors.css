@@ -1,0 +1,112 @@
+/* Color pattern: https://www.schemecolor.com/gold-silver-and-bronze-color-palette.php */
+body {
+  background-color: #102f50;
+  color: #e6edf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sponsors {
+  font-family: "DecimaABold";
+}
+
+#sponsors.container {
+  text-align: left;
+  margin-top: 4rem;
+}
+
+#sponsors #title {
+  font-family: 'DecimaABold';
+  font-size: 4vw;
+  color: white;
+}
+
+#sponsors .box {
+  margin-bottom: 8rem;
+}
+
+#sponsors .line {
+  height: 0.1rem;
+}
+
+#sponsors i.fas {
+  margin-right: 0.5rem;
+}
+
+#sponsors #main-title {
+  color: #31c0ff;
+}
+
+#sponsors #main-line {
+  background-color: #31c0ff;
+}
+
+#sponsors #supported-title {
+  color: #2e7d32;
+}
+
+#sponsors #supported-line {
+  background-color: #2e7d32;
+}
+
+@media(min-width: 992px) {
+  #sponsors #main-sponsor-img {
+    width: 60%;
+    height: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media(max-width: 992px) {
+  #sponsors #main-sponsor-img {
+    width: 85%;
+    height: auto;
+    padding-top: 2rem;
+  }
+}
+
+#sponsors #gold-title {
+  color: #c9b037;
+}
+
+#sponsors #gold-line {
+  background-color: #c9b037;
+}
+
+#sponsors #silver-title {
+  color: #979696;
+}
+
+#sponsors #silver-line {
+  background-color: #979696;
+}
+
+#sponsors #bronze-title {
+  color: #ad8a56;
+}
+
+#sponsors #bronze-line {
+  background-color: #ad8a56;
+}
+
+#sponsors #partners-title {
+  color: black;
+}
+
+#sponsors #partners-line {
+  background-color: black;
+}
+
+#sponsors .box {
+  padding: 2em;
+  background-color: white !important;
+  border-radius: 10px;
+  border: solid 0.1rem;
+  margin-top: 2rem;
+}
+
+#sponsors .row .col-sm {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Talk A Bit 2020</title>
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/navbar.css" />
+	<link rel="stylesheet" href="../css/organization.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="manifest" href="../manifest.json">
+	<meta name="theme-color" content="white" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/hello-icon-152.png">
+	<!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+	<meta name="theme-color" content="white" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Hello World">
+	<meta name="msapplication-TileImage" content="../images/hello-icon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+
+<body>
+	<!-- Organization page -->
+	<div id="organization" class="container-fluid">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
+				<i class="fas fa-bars text-white"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="nav navbar-nav mx-auto navbar-first-list">
+					<li class="nav-item">
+						<a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+						<i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+							data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#tickets">Tickets</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./program.html">Program</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#location">Location</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+					<a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
+						<img height="40" src="../images/logo_sem.png" />
+					</a>
+				</ul>
+
+				<ul id="user-navbar" class="nav navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./sevents.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./organization.html">Organization</a>
+					</li>
+					<li class="nav-item dropdown" id="prevVersions">
+						<a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Previous Editions
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+							<a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+							<a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+							<a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+							<a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+							<a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+							<a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+						</div>
+					</li>
+					<li class="nav-item" id="loginLnk" style="display: none;">
+						<a class="nav-link py-0" href="./login.html">Login</a>
+					</li>
+					<li class="nav-item" id="registerLnk" style="display: none;">
+						<a class="nav-link py-0" href="./register.html">Register</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid org-cont">
+			<h1 id="title">Meet Our Team</h1>
+			<div class="row align-items-center">
+				<div class="col-md-4">
+					<div class="flipper conf" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-conf">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/conference1.png" alt="joao"
+											class="member-image">
+									</div>
+									<div class="member-name">João Carvalho</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/conference2.png" alt="joao"
+											class="member-image">
+									</div>
+									<div class="member-name">Verónica Fradique
+									</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/conference3.png" alt="joao"
+											class="member-image">
+									</div>
+									<div class="member-name">Francisca Pessanha
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="conf">
+							<img src="../images/organization/departments/conference.jpg" alt="conference"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper image" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-image">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/image1.png" alt="david"
+											class="member-image">
+									</div>
+									<div class="member-name">David Falcão</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/image2.png" alt="antero"
+											class="member-image">
+									</div>
+									<div class="member-name">Antero Gandra</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/image3.png" alt="claudia"
+											class="member-image">
+									</div>
+									<div class="member-name">Cláudia Guedes</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="image">
+							<img src="../images/organization/departments/image.jpg" alt="image"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper com" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-com">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/communication1.png" alt="joao"
+											class="member-image">
+									</div>
+									<div class="member-name">João Monteiro</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/communication2.png" alt="marisa"
+											class="member-image">
+									</div>
+									<div class="member-name">Marisa Oliveira
+									</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/communication3.png" alt="sergio"
+											class="member-image">
+									</div>
+									<div class="member-name">Sérgio Salgado</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="com">
+							<img src="../images/organization/departments/communication.jpg" alt="conference"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+				<div class="col-md-4">
+					<div class="flipper tech" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-tech">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/tech1.png" alt="mario"
+											class="member-image">
+									</div>
+									<div class="member-name">Mário Santos</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/tech2.png" alt="mateus"
+											class="member-image">
+									</div>
+									<div class="member-name">Mateus Pedroza</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/tech3.png" alt="david"
+											class="member-image">
+									</div>
+									<div class="member-name">David Reis</div>
+								</div>
+							</div>
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/tech4.png" alt="bruno"
+											class="member-image">
+									</div>
+									<div class="member-name">Bruno Piedade</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/tech5.png" alt="danny"
+											class="member-image">
+									</div>
+									<div class="member-name">Danny Soares</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="tech">
+							<img src="../images/organization/departments/tech.jpg" alt="tech" class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper prog" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-prog">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/program1.png" alt="joao"
+											class="member-image">
+									</div>
+									<div class="member-name">João Barbosa</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/program2.png" alt="daniel"
+											class="member-image">
+									</div>
+									<div class="member-name">Daniel Pinho</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/program3.png" alt="tiago"
+											class="member-image">
+									</div>
+									<div class="member-name">Tiago Magalhães
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="prog">
+							<img src="../images/organization/departments/program.jpg" alt="prog"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper spon" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-spon">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/sponsors1.png" alt="pedro"
+											class="member-image">
+									</div>
+									<div class="member-name">Pedro Gomes</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/sponsors2.png" alt="tiago"
+											class="member-image">
+									</div>
+									<div class="member-name">Tiago Santos
+									</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/sponsors3.png" alt="mariana"
+											class="member-image">
+									</div>
+									<div class="member-name">Mariana Guimarães
+									</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/sponsors4.png" alt="diogo"
+											class="member-image">
+									</div>
+									<div class="member-name">Diogo Reis</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="spon">
+							<img src="../images/organization/departments/sponsors.jpg" alt="spon"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+				<div class="col-md-4">
+					<div class="flipper social" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-social">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/social1.png" alt="paulo"
+											class="member-image">
+									</div>
+									<div class="member-name">Paulo Correia</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/social2.png" alt="margarida"
+											class="member-image">
+									</div>
+									<div class="member-name">Margarida Silva
+									</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/social3.png" alt="igor"
+											class="member-image">
+									</div>
+									<div class="member-name">Igor Silveira</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="social">
+							<img src="../images/organization/departments/social-program.jpg" alt="social"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper ope" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-ope">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/operations1.png" alt="nelson"
+											class="member-image">
+									</div>
+									<div class="member-name">Nelson Costa</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/operations2.png" alt="pedro"
+											class="member-image">
+									</div>
+									<div class="member-name">Pedro França</div>
+								</div>
+							</div>
+							<div class="row align-items-center px-1 space-center">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/operations3.png" alt="jose"
+											class="member-image">
+									</div>
+									<div class="member-name">José Machado
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="ope">
+							<img src="../images/organization/departments/operations.jpg" alt="ope"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="flipper trea" onclick="toggleRotate(this);">
+						<div class="detail-img back hide" id="detail-trea">
+							<div class="row align-items-center space-even">
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/treasury1.png" alt="francisco"
+											class="member-image">
+									</div>
+									<div class="member-name">Francisco Andrade
+									</div>
+								</div>
+								<div class="col-4 col-md-4">
+									<div class="img-fluid text-center">
+										<img src="../images/organization/members/treasury2.png" alt="margarida"
+											class="member-image">
+									</div>
+									<div class="member-name">Margarida Abranches
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-fluid dep-img front" id="trea">
+							<img src="../images/organization/departments/treasury.jpg" alt="trea"
+								class="department-image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="page-footer font-small mt-5">
+
+		<!-- meter links das redes sociais -->
+		<div class="container-fluid text-center">
+			<div class="row social">
+				<ul class="list-group list-group-horizontal mx-auto mt-3">
+					<li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+								class="fab fa-facebook-f"></i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+								class="fab fa-instagram"></i></a></li>
+					<li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+								class="fab fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-logo-feup ">
+				<a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+						src="../2019/res/img/feup-logo.png" /></a>
+			</div>
+
+			<div class="footer-copyright text-center py-3">
+				Copyright Ⓒ 2020 Talk a Bit. All rights reserved.
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<script type="text/javascript" src="../js/user.js"></script>
+	<script type="text/javascript" src="../js/hide-navbar.js"></script>
+	<script type="text/javascript" src="../js/organization.js"></script>
+</body>
+
+</html>

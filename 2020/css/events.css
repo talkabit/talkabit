@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(15, 46, 81) !important;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+@media(max-width: 1200px) {
+    #mainContainer {
+        width: 80%;
+    }   
+}
+
+@media(min-width: 1200px) {
+    #mainContainer {
+        width: 60%;
+    }   
+}
+
