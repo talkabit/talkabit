@@ -53,10 +53,9 @@ const Sponsors = () => {
                     <h3>
                         {cat}
                     </h3>
-                    {data.allMarkdownRemark.edges.filter((edge) => 
-                        { return edge.node.frontmatter.type == cat }).map(edge => {
-                        let activityProps
-                        if (edge.node.fields != null) {
+                    {data.allMarkdownRemark.edges.filter((edge) => edge.node.frontmatter.type === cat).map((edge) => {
+                        let activityProps;
+                        if (edge.node.fields !== null) {
                             activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug }
                         }
                         else
