@@ -12,7 +12,7 @@ function AddLink(slug, content) {
         );
     } else
         return content;
-};
+}
 
 function AddSpeakers(speakers) {
     if (speakers !== null) {
@@ -21,14 +21,14 @@ function AddSpeakers(speakers) {
                 {speakers.map((speaker) => (
                     <p key={speaker.name}>
                         {speaker.name}
-                    </p>
-                ))
-                };
+                    </p>))
+                }
+                ;
             </div>
         );
     } else
         return " ";
-};
+}
 
 const MinActivity = ({ title, date, startTime, slug, speakers }) => {
 
@@ -62,7 +62,7 @@ MinActivity.propTypes = {
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
     slug: PropTypes.string,
-    speakers: PropTypes.arrayOf(PropTypes.shape(SpeakerShape))
+    speakers: PropTypes.arrayOf(PropTypes.shape(SpeakerShape)),
 };
 
 export default MinActivity;

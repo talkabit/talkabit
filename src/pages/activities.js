@@ -42,17 +42,19 @@ const Sponsors = () => {
       }
       `);
 
-    const categories = [...new Set(data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter.type))]
+    const categories = [...new Set(data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter.type))];
 
     return (
         <div>
             <h2>Activities</h2>
 
-            {categories.map(cat => (
+            {categories.map((cat) => (
                 <div key={cat}>
-                    <h3>{cat}</h3>
-                    {data.allMarkdownRemark.edges.filter(edge => { return edge.node.frontmatter.type == cat }
-                    ).map(edge => {
+                    <h3>
+                        {cat}
+                    </h3>
+                    {data.allMarkdownRemark.edges.filter((edge) => 
+                        { return edge.node.frontmatter.type == cat }).map(edge => {
                         let activityProps
                         if (edge.node.fields != null) {
                             activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug }
