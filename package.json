@@ -16,6 +16,7 @@
     "gatsby-transformer-json": "^2.4.14",
     "gatsby-transformer-remark": "^2.8.42",
     "gatsby-transformer-sharp": "^2.5.17",
+    "lint": "^0.7.0",
     "md5": "^2.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

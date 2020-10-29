@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import MinActivity from "../components/minActivity";
 
-const Sponsors = () => {
+const Activities = () => {
     const data = useStaticQuery(graphql`
     {
         allMarkdownRemark {
@@ -56,11 +56,10 @@ const Sponsors = () => {
                     {data.allMarkdownRemark.edges.filter((edge) => edge.node.frontmatter.type === cat).map((edge) => {
                         let activityProps;
                         if (edge.node.fields !== null) {
-                            activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug }
-                        }
-                        else
-                            activityProps = { ...edge.node.frontmatter, html: edge.node.html }
-                        return <MinActivity key={edge.node.frontmatter.title} {...activityProps}></MinActivity>
+                            activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug };
+                        } else
+                            activityProps = { ...edge.node.frontmatter, html: edge.node.html };
+                        return <MinActivity key={edge.node.frontmatter.title} {...activityProps} />;
                     })}
                 </div>
             ))}
@@ -68,4 +67,4 @@ const Sponsors = () => {
     );
 };
 
-export default Sponsors;
+export default Activities;
