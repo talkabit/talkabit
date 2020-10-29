@@ -10,10 +10,9 @@ function AddLink(slug, content) {
                 {content}
             </Link>
         );
-    }
-    else
+    } else
         return content;
-}
+};
 
 function AddSpeakers(speakers) {
     if (speakers !== null) {
@@ -23,29 +22,37 @@ function AddSpeakers(speakers) {
                     <p key={speaker.name}>
                         {speaker.name}
                     </p>
-                ))};
+                ))
+                };
             </div>
-        )
+        );
     } else
         return " ";
-}
+};
 
-const MinActivity = ({ title, date, endTime, startTime, type, slug, speakers }) => {
+const MinActivity = ({ title, date, startTime, slug, speakers }) => {
 
     const content = (
         <div>
             <div>
-                <p>{date}</p>
+                <p>
+                    {date}
+                </p>
+                <p>
+                    {startTime}
+                </p>
             </div>
             <div>
-                <p>{title}</p>
+                <p>
+                    {title}
+                </p>
             </div>
             {AddSpeakers(speakers)}
         </div>
-    )
+    );
 
     return AddLink(slug, content);
-}
+};
 
 MinActivity.propTypes = {
     html: PropTypes.string.isRequired,
