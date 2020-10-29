@@ -1,15 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Speaker } from "./activity/speaker";
 import { SpeakerShape } from "../utils/props";
-import { Link } from "gatsby"
-import md5 from "md5";
+import { Link } from "gatsby";
 
 function AddLink(slug, content) {
-    if (typeof slug !== 'undefined')
-        return <Link to={slug}>{content}</Link>
+    if (typeof slug !== "undefined") {
+        return (
+            <Link to={slug}>
+                {content}
+            </Link>
+        );
+    }
     else
-        return content
+        return content;
 }
 
 function AddSpeakers(speakers) {
@@ -17,14 +20,14 @@ function AddSpeakers(speakers) {
         return (
             <div>
                 {speakers.map((speaker) => (
-                    <p key={speaker.name}>{speaker.name}</p>
-                ))}
+                    <p key={speaker.name}>
+                        {speaker.name}
+                    </p>
+                ))};
             </div>
         )
-    } else 
-        return " "
-
-
+    } else
+        return " ";
 }
 
 const MinActivity = ({ title, date, endTime, startTime, type, slug, speakers }) => {
@@ -41,7 +44,7 @@ const MinActivity = ({ title, date, endTime, startTime, type, slug, speakers }) 
         </div>
     )
 
-    return AddLink(slug, content)
+    return AddLink(slug, content);
 }
 
 MinActivity.propTypes = {
