@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 function AddLink(slug, content) {
     if (typeof slug !== "undefined") {
         return (
-            <Link to={slug}>
+            <Link to={`/${slug}`}>
                 {content}
             </Link>
         );

@@ -2,6 +2,9 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import MinActivity from "../components/minActivity";
 
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+
 const Activities = () => {
     const data = useStaticQuery(graphql`
     {
@@ -45,7 +48,8 @@ const Activities = () => {
     const categories = [...new Set(data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter.type))];
 
     return (
-        <div>
+        <Layout>
+            <Seo title="Activities" />
             <h2>Activities</h2>
 
             {categories.map((cat) => (
@@ -63,7 +67,7 @@ const Activities = () => {
                     })}
                 </div>
             ))}
-        </div >
+        </Layout>
     );
 };
 
