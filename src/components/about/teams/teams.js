@@ -15,6 +15,7 @@ const Teams = () => {
               name
               img {
                 childImageSharp {
+                  id
                   fluid(maxWidth: 400, maxHeight: 250) {
                     ...GatsbyImageSharpFluid
                   }

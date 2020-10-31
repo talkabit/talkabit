@@ -8,7 +8,7 @@ const Team = ({ name, members }) => (
         <h2>
             {name}
         </h2>
-        {members.map((member) => <Member key={member.img} {...member} />)}
+        {members.map((member) => <Member key={member.img.childImageSharp.id} {...member} />)}
     </div>
 );
 
