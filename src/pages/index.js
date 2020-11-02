@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import Seo from "../components/seo";
+import Sponsors from "../components/sponsor/sponsors";
 
 const IndexPage = () => {
     const message = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ const IndexPage = () => {
             <Link to="/page-2/">Go to page 2</Link>
             {" "}
             <br />
+            <Sponsors />
         </Layout>
     );
 };
