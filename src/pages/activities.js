@@ -8,7 +8,9 @@ import Seo from "../components/seo";
 const Activities = () => {
     const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/events/"}, frontmatter: {type: {ne: "default"}}}) {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/events/"}, frontmatter: {type: {ne: "default"}}}, 
+                                  sort: { fields: frontmatter___type }) {
+        group(field: frontmatter___type) {
           edges {
             node {
                 html
@@ -39,28 +41,27 @@ const Activities = () => {
                 fields {
                     slug
                 }
-          
+            }
           }
+
         }
       }
     }
       `);
 
-    // console.log(data.allMarkdownRemark.group[0])
-
-    const categories = [...new Set(data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter.type))];
+    const categories = [...new Set(data.allMarkdownRemark.group.map((group) => group.edges[0].node.frontmatter.type))];
 
     return (
         <Layout>
             <Seo title="Activities" />
             <h2>Activities</h2>
 
-            {categories.map((cat) => (
+            {categories.map((cat, index) => (
                 <div key={cat}>
                     <h3>
                         {cat}
                     </h3>
-                    {data.allMarkdownRemark.edges.filter((edge) => edge.node.frontmatter.type === cat).map((edge) => {
+                    {data.allMarkdownRemark.group[index].edges.map((edge) => {
                         let activityProps;
                         if (edge.node.fields !== null) {
                             activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug };
