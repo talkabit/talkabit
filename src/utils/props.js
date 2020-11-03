@@ -11,6 +11,10 @@ export const SpeakerShape = {
     bio: PropTypes.string.isRequired,
     role: PropTypes.string,
     linkedin: PropTypes.string.isRequired,
+};
+
+export const MemberShape = {
+    name: PropTypes.string.isRequired,
     img: PropTypes.shape({
         childImageSharp: PropTypes.shape({
             fluid: PropTypes.object,

@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Conference",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Tech",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  },
+
+  {
+    "name": "Image and Communication",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  },
+
+  {
+    "name": "Operations",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  },
+
+  {
+    "name": "Program",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Sponsors",
+    "members": [
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      },
+      {
+        "name": "Pedro Fernandes",
+        "img": "../images/team/fernandes.jpg"
+      }
+    ]
+  }
+]
