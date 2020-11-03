@@ -9,7 +9,7 @@ const Activities = () => {
     const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/events/"}, frontmatter: {type: {ne: "default"}}}, 
-                                  sort: { fields: frontmatter___type }) {
+        sort: { fields: frontmatter___type }) {
         group(field: frontmatter___type) {
           edges {
             node {
@@ -43,30 +43,25 @@ const Activities = () => {
                 }
             }
           }
+          fieldValue
 
         }
       }
     }
       `);
 
-    const categories = [...new Set(data.allMarkdownRemark.group.map((group) => group.edges[0].node.frontmatter.type))];
-
     return (
         <Layout>
             <Seo title="Activities" />
             <h2>Activities</h2>
 
-            {categories.map((cat, index) => (
-                <div key={cat}>
+            {data.allMarkdownRemark.group.map((category) => (
+                <div key={category.fieldValue}>
                     <h3>
-                        {cat}
+                        {category.fieldValue}
                     </h3>
-                    {data.allMarkdownRemark.group[index].edges.map((edge) => {
-                        let activityProps;
-                        if (edge.node.fields !== null) {
-                            activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug };
-                        } else
-                            activityProps = { ...edge.node.frontmatter, html: edge.node.html };
+                    {category.edges.map((edge) => {
+                        const activityProps = { ...edge.node.frontmatter, html: edge.node.html, slug: edge.node.fields.slug };
                         return <MinActivity key={edge.node.frontmatter.title} {...activityProps} />;
                     })}
                 </div>

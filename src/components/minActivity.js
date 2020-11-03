@@ -3,17 +3,6 @@ import PropTypes from "prop-types";
 import { SpeakerShape } from "../utils/props";
 import { Link } from "gatsby";
 
-function AddLink(slug, content) {
-    if (typeof slug !== "undefined") {
-        return (
-            <Link to={`/${slug}`}>
-                {content}
-            </Link>
-        );
-    } else
-        return content;
-}
-
 function AddSpeakers(speakers) {
     if (speakers !== null) {
         return (
@@ -23,41 +12,35 @@ function AddSpeakers(speakers) {
                         {speaker.name}
                     </p>))
                 }
-                ;
             </div>
         );
     } else
         return " ";
 }
 
-const MinActivity = ({ title, date, startTime, slug, speakers }) => {
-
-    const content = (
+const MinActivity = ({ title, date, startTime, endTime, slug, speakers }) => (
+    <Link to={`/${slug}`}>
         <div>
-            <div>
-                <p>
-                    {date}
-                </p>
-                <p>
-                    {startTime}
-                </p>
-            </div>
-            <div>
-                <p>
-                    {title}
-                </p>
-            </div>
-            {AddSpeakers(speakers)}
+            <p>
+                {date}
+            </p>
+            <p>
+                {startTime}
+                {" - "}
+                {endTime}
+            </p>
         </div>
-    );
-
-    return AddLink(slug, content);
-};
+        <div>
+            <p>
+                {title}
+            </p>
+        </div>
+        {AddSpeakers(speakers)}
+    </Link>
+);
 
 MinActivity.propTypes = {
-    html: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
