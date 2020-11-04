@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import Seo from "../components/seo";
 import Sponsors from "../components/sponsor/sponsors";
+import Schedule from "../components/schedule/Schedule";
 
 const IndexPage = () => {
     const message = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const IndexPage = () => {
             {" "}
             <br />
             <Sponsors />
+            <Schedule />
         </Layout>
     );
 };
