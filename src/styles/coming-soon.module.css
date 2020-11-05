@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.container {
+    display: flex;
+    width: 100%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    margin-top: 100px;
+}
+
+.text_container {
+    width: 60%;
+    padding-top: 30px;
+    padding-right: 10%;
+}
+
+.img_container {
+    width: 40%;
+}
+
+
+.img {
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+.event {
+    font-size: 33px;
+    color: #0F2342;
+    font-family: Inter, sans-serif;
+    margin-bottom: 12px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.dates {
+    display: flex;
+}
+
+.dates .text {
+    color: #444444;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+
+.dates .button {
+    border: 0px;
+    background-color: #5AB8F9;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 10px;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    padding: 0px 4px 0px 4px;
+    margin-left: 15px;
+}
+
+.dates .button:focus {
+    outline: none;
+}
+
+.slogan {
+    font-size: 35px;
+    color: #0F2342;
+    font-family: Inter, sans-serif;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #444444;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.contact {
+    height: 10px;
+    color: #444444;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.contact .email {
+    color: inherit;
+}
+
+.editions {
+    margin-top: 0px;
+    color: #444444;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
