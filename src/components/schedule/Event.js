@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import { SpeakerShape } from "../../utils/props";
 
 const Event = ({ title, startTime, endTime, speakers, slug }) => (
     <div>
@@ -15,11 +16,7 @@ const Event = ({ title, startTime, endTime, speakers, slug }) => (
         </p>
         {speakers && (
             <p>
-                {speakers.map((speaker, index) => (
-                    <span key={speaker.name}>
-                        {`${index > 0 ? ", " : ""} ${speaker.name}`}
-                    </span>
-                ))}
+                {speakers.map((speaker) => (speaker.name)).join(", ")}
             </p>
         )}
     </div>
@@ -31,13 +28,8 @@ Event.propTypes = {
     endTime: PropTypes.string.isRequired,
     speakers: PropTypes.arrayOf(
         PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            occupations: PropTypes.arrayOf(
-                PropTypes.shape({
-                    what: PropTypes.string,
-                    where: PropTypes.string,
-                })
-            ).isRequired,
+            name: SpeakerShape.name,
+            occupations: SpeakerShape.occupations,
         })
     ),
     slug: PropTypes.string,
