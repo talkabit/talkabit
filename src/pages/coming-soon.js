@@ -34,7 +34,7 @@ const ComingSoon = () => (
                 Contact us at&nbsp;
                 <a className={styles.email} href="mailto:geral@talkabit.org">geral@talkabit.org</a>
             </p>
-            <a className={styles.editions} href="www.google.com">Check out last year&#39;s edition here.</a>
+            <a className={styles.editions} href="https://talkabit.org/2020/">Check out last year&#39;s edition here.</a>
         </div>
         <div className={styles.img_container}>
             <img className={styles.img} src={img} />
