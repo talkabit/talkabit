@@ -4,7 +4,7 @@ import styles from "../styles/coming-soon.module.css";
 
 import Seo from "../components/seo";
 
-import img from "../images/coming_soon.png";
+import img from "../images/coming-soon.png";
 
 
 const ComingSoon = () => (
