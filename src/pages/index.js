@@ -18,7 +18,7 @@ const ComingSoon = () => (
                     className={styles.link}
                     rel="noreferrer"
                     target="_blank"
-                    href="https://tinyurl.com/y6ngkqfe"
+                    href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210212T000000Z/20210213T000000Z&location=Online&text=Talk+a+Bit+2021&details"
                 >
                     <p className={styles.button}>
                         Add to calendar
