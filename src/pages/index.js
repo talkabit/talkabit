@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import Seo from "../components/seo";
+import CalendarExport from "../components/home/CalendarExport";
 import Sponsors from "../components/sponsor/sponsors";
 
 const IndexPage = () => {
@@ -29,6 +30,7 @@ const IndexPage = () => {
             <div style={{ maxWidth: "300px", marginBottom: "1.45rem" }}>
                 <Image />
             </div>
+            <CalendarExport/>
             <Link to="/page-2/">Go to page 2</Link>
             {" "}
             <br />
