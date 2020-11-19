@@ -10,3 +10,6 @@ Gemfile
 Gemfile.lock
 
 files
+node_modules
+.cache
+.vscode
