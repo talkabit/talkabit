@@ -25,6 +25,9 @@ const HackathonPage = () => {
             tier
           }
           registration
+          regulation {
+            publicURL
+          }
           winners {
             name
             github
@@ -40,7 +43,9 @@ const HackathonPage = () => {
         prizes,
         registration,
         winners,
+        regulation,
     } = data.markdownRemark.frontmatter;
+
 
     return (
         <Layout>
@@ -65,6 +70,11 @@ const HackathonPage = () => {
             <a href={registration} target="_blank" rel="noreferrer">
                 Register
             </a>
+            {regulation ? (
+                <a href={regulation.publicURL} download>
+                    Regulation
+                </a>
+            ) : null}
             {winners ? (
                 <ul>
                     {winners.map(({ github, name }) => (
