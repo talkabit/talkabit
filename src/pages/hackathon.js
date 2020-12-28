@@ -1,9 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Prizes from "../components/hackathon/Prizes";
+import Winners from "../components/hackathon/Winners";
 
 const HackathonPage = () => {
     const data = useStaticQuery(graphql`
@@ -54,19 +55,7 @@ const HackathonPage = () => {
             <div>
                 {`${startDate} - ${endDate}`}
             </div>
-            <ul>
-                {prizes.map(({ tier, name, img }) => (
-                    <li key={tier}>
-                        <h5>
-                            {name}
-                        </h5>
-                        <div>
-                            {tier}
-                        </div>
-                        <Img fluid={img.childImageSharp.fluid} />
-                    </li>
-                ))}
-            </ul>
+            <Prizes prizes={prizes} />
             <a href={registration} target="_blank" rel="noreferrer">
                 Register
             </a>
@@ -76,18 +65,7 @@ const HackathonPage = () => {
                 </a>
             ) : null}
             {winners ? (
-                <ul>
-                    {winners.map(({ github, name }) => (
-                        <li key={github}>
-                            <h6>
-                                {name}
-                            </h6>
-                            <a href={github} target="_blank" rel="noreferrer">
-                                Repository
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+                <Winners winners={winners} />
             ) : null}
         </Layout>
     );
