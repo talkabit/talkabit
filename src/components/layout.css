@@ -26,6 +26,10 @@ body {
   background: var(--primary-color-1);
 }
 
+.svg-container > svg {
+  max-height: 120px;
+}
+
 article,
 aside,
 details,
