@@ -1,18 +1,18 @@
-@import "../styles/palette.css";
+@import "../styles/global.css";
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: scroll; 
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-color-1);
-  font-family: 'Inter', serif !important;
+  font-family: var(--inf-font); 
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -41,7 +41,7 @@ main,
 menu,
 nav,
 section,
-summary { 
+summary {
   display: block;
 }
 audio,
@@ -92,7 +92,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: var(--primary-color-2);
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -270,7 +270,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -286,7 +286,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -302,7 +302,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -318,7 +318,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -334,7 +334,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Miriam Libre', sans-serif;
+  font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -604,7 +604,7 @@ pre tt:after {
   margin: 0 auto;
   max-width: 960px;
   padding: 1rem;
-  
+
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 95px);
