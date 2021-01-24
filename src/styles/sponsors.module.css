@@ -1,0 +1,25 @@
+.tierContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gold{ 
+    width: 33%;
+    align-self: center;
+}
+
+.silver {
+    width: 20%;
+    align-self: center;
+}
+
+.bronze {
+    width: 15%;
+    align-self: center;
+}
+
+.logo {
+    width: 85%;
+}
