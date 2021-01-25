@@ -12,7 +12,7 @@
 
 .nav{
     transform: skewY(2deg) translateY(0.7rem);
-    width:60%;
+    width:50%;
     display: flex;
     justify-content: space-between;
 }
@@ -26,8 +26,10 @@
 }
 
 .navItemLink {
+    display:inline-block;
     transform: skewY(2deg);
     color: var(--primary-color-3);
+    font-family: var(--title-font);
 }
 
 .navItemLink:hover {

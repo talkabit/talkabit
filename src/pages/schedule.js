@@ -52,7 +52,7 @@ const Activities = () => {
 
     return (
         <Layout>
-            <Seo title="Activities" />
+            <Seo title="Schedule" />
             <h2>Activities</h2>
 
             {data.allMarkdownRemark.group.map((category) => (
