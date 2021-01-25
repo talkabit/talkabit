@@ -33,7 +33,7 @@ const Header = ({ navLinks, siteTitle }) => (
         </div>
         <nav className={NavStyles.navContainer}>
             <ul className={NavStyles.nav}>
-                {navLinks.map(link => (
+                {navLinks.map((link) => (
                     <li
                         key={link.name}
                         className={NavStyles.navItem}
@@ -51,6 +51,7 @@ const Header = ({ navLinks, siteTitle }) => (
 
 Header.propTypes = {
     siteTitle: PropTypes.string,
+    navLinks: PropTypes.array,
 };
 
 Header.defaultProps = {
