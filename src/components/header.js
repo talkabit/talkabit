@@ -31,30 +31,22 @@ const Header = ({ navLinks, siteTitle }) => (
                 </Link>
             </h1>
         </div>
-        <div className={NavStyles.navbarContainer}>
-            <nav>
-                <ul style={{ display: "flex", flex: 1 }}>
-                    {navLinks.map(link => (
-                        <div className={NavStyles.navItem}>
-                            <li
-                                key={link.name}
-                                style={{
-                                    listStyleType: `none`,
-                                    padding: `1rem`,
-                                }}
-                            >
-                                <Link style={{ color: `white` }} to={link.link}>
-                                    {link.name}
-                                </Link>
-                            </li>
-                        </div>
+        <nav className={NavStyles.navContainer}>
+            <ul className={NavStyles.nav}>
+                {navLinks.map(link => (
+                    <li
+                        key={link.name}
+                        className={NavStyles.navItem}
+                    >
+                        <Link className={NavStyles.navItemLink} to={link.link} activeStyle={{ color: "#17a1c6" }}>
+                            {link.name}
+                        </Link>
+                    </li>
 
-                    ))}
-                </ul>
-            </nav>
-        </div>
-
-    </header>
+                ))}
+            </ul>
+        </nav>
+    </header >
 );
 
 Header.propTypes = {

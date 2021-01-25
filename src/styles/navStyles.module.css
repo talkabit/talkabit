@@ -1,0 +1,36 @@
+@import "./global.css";
+
+.navContainer {
+    text-align: center;
+    background-color: var(--primary-color-3); 
+    padding:1rem;
+    transform: skewY(-2deg) translateY(2rem);  
+    margin-bottom:4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    transform: skewY(2deg) translateY(0.7rem);
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navItem {
+    background-color: var(--primary-color-1);
+    padding: 0.5rem;
+    width: 8rem;
+    list-style-type: none;
+    transform: skewY(-2deg) translateY(0.35rem);
+}
+
+.navItemLink {
+    transform: skewY(2deg);
+    color: var(--primary-color-3);
+}
+
+.navItemLink:hover {
+    text-decoration: none;
+    color: var(--primary-color-2); 
+}
