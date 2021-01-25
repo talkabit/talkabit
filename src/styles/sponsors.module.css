@@ -3,23 +3,45 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .gold{ 
     width: 33%;
+    margin-bottom: 10px;
     align-self: center;
 }
 
 .silver {
     width: 22%;
+    margin-bottom: 10px;
     align-self: center;
 }
 
 .bronze {
     width: 12.5%;
+    margin-bottom: 10px;
     align-self: center;
 }
 
 .logo {
     width: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+    .gold{ 
+        width: 50%;
+    }
+    
+    .silver {
+        width: 30%;
+    }
+    
+    .bronze {
+        width: 20%;
+    }
+
+    .logo {
+        width: 85%;
+    }
 }
