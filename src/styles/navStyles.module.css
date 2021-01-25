@@ -15,6 +15,7 @@
     width:50%;
     display: flex;
     justify-content: space-between;
+    margin:auto;
 }
 
 .navItem {
@@ -36,3 +37,17 @@
     text-decoration: none;
     color: var(--primary-color-2); 
 }
+
+@media (max-width: 600px) {
+        
+    .nav{
+        display: inline-block; 
+        width:100%;
+    }
+
+    .navItem {
+        display: inline-block; 
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+  }
