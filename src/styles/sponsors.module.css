@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .gold{ 
@@ -11,12 +11,12 @@
 }
 
 .silver {
-    width: 20%;
+    width: 22%;
     align-self: center;
 }
 
 .bronze {
-    width: 15%;
+    width: 12.5%;
     align-self: center;
 }
 
