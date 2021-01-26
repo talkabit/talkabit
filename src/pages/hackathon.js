@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Prizes from "../components/hackathon/Prizes";
 import Winners from "../components/hackathon/Winners";
+import SignIn from "../components/hackathon/SignIn";
 
 const HackathonPage = () => {
     const data = useStaticQuery(graphql`
@@ -56,9 +57,7 @@ const HackathonPage = () => {
                 {`${startDate} - ${endDate}`}
             </div>
             <Prizes prizes={prizes} />
-            <a href={registration} target="_blank" rel="noreferrer">
-                Register
-            </a>
+            <SignIn registration={registration}/>
             {regulation ? (
                 <a href={regulation.publicURL} download>
                     Regulation

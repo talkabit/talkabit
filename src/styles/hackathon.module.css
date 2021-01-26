@@ -12,6 +12,32 @@
   align-items: center;
 }
 
+.signInContainer {
+  transform: skewY(-5deg);
+  background-color: var(--primary-color-2);
+  width: 10rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.signInTitle {
+  color: var(--primary-color-3);
+  transform: skewY(5deg);
+  padding: 1rem;
+}
+
+.signInTitle:hover {
+    color: var(--primary-color-2);
+}
+
+.title h2 {
+  margin: 0;
+}
+
 .title {
   color: var(--primary-color-3);
   padding: 0.5rem;
@@ -64,56 +90,56 @@
 }
 
 .winners {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .winner {
-    margin-bottom: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .winnerTitle {
-    color: var(--primary-color-3);
-    margin-bottom: 1rem;
-    text-align: center;
+  color: var(--primary-color-3);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .repoLink {
-    color: var(--primary-color-2);
-    margin-left: 1rem;
+  color: var(--primary-color-2);
+  margin-left: 1rem;
 }
 
 .linkWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media(max-width: 500px){
-    .prizes {
-        align-items: center;
-    }
+@media (max-width: 500px) {
+  .prizes {
+    align-items: center;
+  }
 
-    .item {
-        align-self: center;
-        margin: 2rem 0;
-    }
+  .item {
+    align-self: center;
+    margin: 2rem 0;
+  }
 
-    .prize-first .image {
-        width: 350px;
-    }
+  .prize-first .image {
+    width: 350px;
+  }
 
-    .prize-second .image {
-        width: 300px;
-    }
+  .prize-second .image {
+    width: 300px;
+  }
 
-    .prize-third .image {
-        width: 250px;
-    }
+  .prize-third .image {
+    width: 250px;
+  }
 
-    .linkWrapper{
-        flex-direction: column;
-    }
+  .linkWrapper {
+    flex-direction: column;
+  }
 }
