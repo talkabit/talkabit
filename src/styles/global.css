@@ -1,0 +1,12 @@
+:root {
+  --primary-color-1: #001747;
+  --primary-color-2: #17a1c6;
+  --primary-color-3: #ffffff;
+
+  --secondary-color-1: #38c7bd;
+  --secondary-color-2: #647593;
+  --secondary-color-3: #1d1d1b;
+
+  --title-font: "Miriam Libre", sans-serif;
+  --inf-font: "Inter", sans-serif;
+}
