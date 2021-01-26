@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 import { WinnerShape } from "../../utils/props";
 import Winner from "./Winner";
 
+import styles from "../../styles/hackathon.module.css";
+
 const Winners = ({ winners }) => (
-    <ul>
+    <ul className={styles.winners}>
         {winners.map((winner) => (
             <li key={winner.github}>
                 <Winner {...winner} />
