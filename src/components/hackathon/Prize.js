@@ -1,16 +1,15 @@
 import React from "react";
 import Img from "gatsby-image";
 import { PrizeShape } from "../../utils/props";
+import PrizeTitle from "./PrizeTitle";
+import classnames from "classnames";
+
+import styles from "../../styles/hackathon.module.css";
 
 const Prize = ({ name, tier, img }) => (
-    <div>
-        <h5>
-            {name}
-        </h5>
-        <div>
-            {tier}
-        </div>
-        <Img fluid={img.childImageSharp.fluid} />
+    <div className={classnames(styles.prize, styles[`prize${tier}`])}>
+        <PrizeTitle title={name} />
+        <Img fluid={img.childImageSharp.fluid} className={styles.image} />
     </div>
 );
 

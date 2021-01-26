@@ -4,15 +4,15 @@ endDate: 2021-02-16
 registration: https://google.com
 
 prizes:
-  - name: Hello
+  - name: 1st Prize
     img: "../images/speakers/spk.jpg"
-    tier: first
-  - name: Hey
+    tier: First
+  - name: 2nd Prize
     img: "../images/speakers/spk.jpg"
-    tier: second
-  - name: Hi
+    tier: Second
+  - name: 3rd Prize
     img: "../images/speakers/spk.jpg"
-    tier: third
+    tier: Third
 
 winners:
   - name: Rekicho1

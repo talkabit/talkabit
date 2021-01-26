@@ -1,0 +1,87 @@
+.titleContainer {
+  position: absolute;
+  z-index: 2;
+  top: -1.8rem;
+  left: -1rem;
+  transform: skewY(-5deg);
+  background-color: var(--primary-color-2);
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--primary-color-3);
+  padding: 0.5rem;
+  transform: skewY(5deg);
+}
+
+.item {
+  list-style-type: none;
+  flex-grow: 1;
+  margin: 2rem 0;
+}
+
+.image {
+  border: 1px solid var(--primary-color-3);
+}
+
+.prize {
+  position: relative;
+}
+
+.item-first {
+  align-self: flex-start;
+}
+
+.prize-first .image {
+  width: 400px;
+}
+
+.item-second {
+  align-self: flex-end;
+}
+
+.prize-second .image {
+  width: 350px;
+}
+
+.item-third {
+  align-self: flex-start;
+  margin-left: 5rem;
+}
+
+.prize-third .image {
+  width: 300px;
+}
+
+.prizes {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+@media(max-width: 500px){
+    .prizes {
+        align-items: center;
+    }
+
+    .item {
+        align-self: center;
+        margin: 2rem 0;
+    }
+
+    .prize-first .image {
+        width: 350px;
+    }
+
+    .prize-second .image {
+        width: 300px;
+    }
+
+    .prize-third .image {
+        width: 250px;
+    }
+}
