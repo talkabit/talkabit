@@ -7,7 +7,8 @@ import Prizes from "../components/hackathon/Prizes";
 import Winners from "../components/hackathon/Winners";
 import Link from "../components/hackathon/Link";
 
-import styles from "../styles/hackathon.module.css"
+import styles from "../styles/hackathon.module.css";
+import Title from "../components/common/Title";
 
 const HackathonPage = () => {
     const data = useStaticQuery(graphql`
@@ -50,22 +51,23 @@ const HackathonPage = () => {
         regulation,
     } = data.markdownRemark.frontmatter;
 
-
     return (
         <Layout>
             <Seo title="Hackathon" />
-            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} className={styles.text}/>
+            <Title title="Hackathon" />
+            <div
+                dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+                className={styles.text}
+            />
             <div>
                 {`${startDate} - ${endDate}`}
             </div>
-            {regulation ? ( 
-                <Link href={regulation.publicURL} download title="Regulation"/>
+            {regulation ? (
+                <Link href={regulation.publicURL} download title="Regulation" />
             ) : null}
             <Prizes prizes={prizes} />
-            <Link href={registration} title="Sign In!"/>
-            {winners ? (
-                <Winners winners={winners} />
-            ) : null}
+            {registration ? <Link href={registration} title="Sign In!" /> : null}
+            {winners ? <Winners winners={winners} /> : null}
         </Layout>
     );
 };
