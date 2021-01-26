@@ -12,26 +12,16 @@
   align-items: center;
 }
 
-.signInContainer {
+.linkContainer {
   transform: skewY(-5deg);
   background-color: var(--primary-color-2);
-  width: 10rem;
-  height: 3.5rem;
+  width: 15rem;
+  height: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 2rem auto;
-}
-
-.signInTitle {
-  color: var(--primary-color-3);
-  transform: skewY(5deg);
-  padding: 1rem;
-}
-
-.signInTitle:hover {
-    color: var(--primary-color-2);
 }
 
 .title h2 {
@@ -42,6 +32,11 @@
   color: var(--primary-color-3);
   padding: 0.5rem;
   transform: skewY(5deg);
+  display: flex;
+}
+
+.icon {
+    margin-right: 0.5rem;
 }
 
 .item {
@@ -86,7 +81,7 @@
 .prizes {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 5rem 0;
 }
 
 .winners {
@@ -94,6 +89,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5rem 0;
 }
 
 .winner {
@@ -115,6 +111,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.text {
+    color: var(--primary-color-3);
 }
 
 @media (max-width: 500px) {

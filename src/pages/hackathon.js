@@ -5,7 +5,9 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Prizes from "../components/hackathon/Prizes";
 import Winners from "../components/hackathon/Winners";
-import SignIn from "../components/hackathon/SignIn";
+import Link from "../components/hackathon/Link";
+
+import styles from "../styles/hackathon.module.css"
 
 const HackathonPage = () => {
     const data = useStaticQuery(graphql`
@@ -52,17 +54,15 @@ const HackathonPage = () => {
     return (
         <Layout>
             <Seo title="Hackathon" />
-            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} className={styles.text}/>
             <div>
                 {`${startDate} - ${endDate}`}
             </div>
-            <Prizes prizes={prizes} />
-            <SignIn registration={registration}/>
-            {regulation ? (
-                <a href={regulation.publicURL} download>
-                    Regulation
-                </a>
+            {regulation ? ( 
+                <Link href={regulation.publicURL} download title="Regulation"/>
             ) : null}
+            <Prizes prizes={prizes} />
+            <Link href={registration} title="Sign In!"/>
             {winners ? (
                 <Winners winners={winners} />
             ) : null}
