@@ -3,6 +3,24 @@ module.exports = {
     title: `Talk A Bit`,
     description: `Talk A Bit 2021 Website`,
     author: `@talkabit`,
+    navLinks:[
+      {
+        name:'Speakers',
+        link:'/speakers'
+      },
+      {
+        name:'Schedule',
+        link:'/schedule'
+      },
+      {
+        name:'Hackathon',
+        link:'/hackathon'
+      },
+      {
+        name:'About',
+        link:'/about'
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-sharp`,

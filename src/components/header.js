@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Logo from "../images/Tab4v-02.inline.svg";
+import NavStyles from "../styles/navStyles.module.css";
 
-const Header = ({ siteTitle }) => (
+const Header = ({ navLinks, siteTitle }) => (
     <header className="header">
         <div
             style={{
@@ -30,11 +31,27 @@ const Header = ({ siteTitle }) => (
                 </Link>
             </h1>
         </div>
-    </header>
+        <nav className={NavStyles.navContainer}>
+            <ul className={NavStyles.nav}>
+                {navLinks.map((link) => (
+                    <li
+                        key={link.name}
+                        className={NavStyles.navItem}
+                    >
+                        <Link className={NavStyles.navItemLink} to={link.link} activeStyle={{ color: "#17a1c6" }}>
+                            {link.name}
+                        </Link>
+                    </li>
+
+                ))}
+            </ul>
+        </nav>
+    </header >
 );
 
 Header.propTypes = {
     siteTitle: PropTypes.string,
+    navLinks: PropTypes.array,
 };
 
 Header.defaultProps = {
