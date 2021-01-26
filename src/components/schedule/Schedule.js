@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Event from "./Event";
 
+
 const Schedule = () => {
     const data = useStaticQuery(graphql`
     {
@@ -28,6 +29,13 @@ const Schedule = () => {
                     what
                     where
                   }
+                  img {
+                    childImageSharp {
+                      fluid(maxWidth: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -51,10 +59,12 @@ const Schedule = () => {
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
+                                showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
                     </div>
                 </div>
+
             ))}
         </div>
     );

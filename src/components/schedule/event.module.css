@@ -1,0 +1,19 @@
+.event {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 2em;
+}
+
+.eventPicture {
+    /* padding-right: 2em;
+    box-sizing: border-box; */
+}
+
+.speakerEntry {
+    display: grid;
+    grid-template-columns: 80px auto;
+    column-gap: 2em;
+}
+
+/* .titleAuthor {
+} */
