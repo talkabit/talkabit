@@ -1,3 +1,23 @@
+/* .sponsorContainer {
+    text-align: center;
+    background-color: var(--primary-color-3); 
+    padding:1rem;
+    padding-bottom:3rem;
+    transform: skewY(-2deg) translateY(2rem);  
+    margin-bottom:4rem;
+    display: flex;
+    justify-content: center;
+} */
+
+.sponsorContainer {
+    background-color: var(--primary-color-3); 
+    transform: skewY(-2deg) translateY(2rem);  
+    padding: 4rem;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+
 .tierContainer{
     display: flex;
     flex-direction: row;

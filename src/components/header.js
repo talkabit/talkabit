@@ -2,10 +2,9 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
-import Logo from "../images/Tab4v-02.inline.svg";
 import NavStyles from "../styles/navStyles.module.css";
 
-const Header = ({ navLinks, siteTitle }) => (
+const Header = ({ navLinks, siteTitle, Logo }) => (
     <header className="header">
         <div
             style={{
@@ -13,13 +12,15 @@ const Header = ({ navLinks, siteTitle }) => (
                 alignItems: "center",
                 margin: "0 auto",
                 maxWidth: 960,
-                padding: "1.45rem 1.0875rem",
+                // padding: "1.45rem 1.0875rem",
             }}
         >
-            <div className="svg-container">
-                <Logo />
+            <div className={NavStyles.logo}>
+                <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+                    <Logo />
+                </Link>
             </div>
-            <h1 style={{ margin: 0 }}>
+            {/* <h1 style={{ margin: 0 }}>
                 <Link
                     to="/"
                     style={{
@@ -29,7 +30,7 @@ const Header = ({ navLinks, siteTitle }) => (
                 >
                     {siteTitle}
                 </Link>
-            </h1>
+            </h1> */}
         </div>
         <nav className={NavStyles.navContainer}>
             <ul className={NavStyles.nav}>

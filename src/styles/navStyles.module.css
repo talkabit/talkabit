@@ -1,9 +1,21 @@
 @import "./global.css";
 
+.logo {
+    width: 100%;
+}
+
+.logo svg {
+    margin-top: 1rem;
+    width: 12%;
+    height: 12%;
+    margin-left: 44%;
+}
+
 .navContainer {
     text-align: center;
     background-color: var(--primary-color-3); 
     padding:1rem;
+    padding-bottom:3rem;
     transform: skewY(-2deg) translateY(2rem);  
     margin-bottom:4rem;
     display: flex;
@@ -33,6 +45,7 @@
     transform: skewY(2deg);
     color: var(--primary-color-3);
     font-family: var(--title-font);
+    font-size: 15px;
 }
 
 .navItemLink:hover {

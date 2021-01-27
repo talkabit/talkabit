@@ -30,7 +30,7 @@ const Sponsors = () => {
   `);
 
     return (
-        <div>
+        <div className={styles.sponsorContainer}>
             {data.allSponsorsJson.group.map((tier) => (
                 <div key={tier.fieldValue}>
                     <div className={styles.tierContainer}>

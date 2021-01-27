@@ -1,0 +1,42 @@
+@import "./global.css";
+
+.layout {
+    background-color: var(--primary-color-1); 
+}
+
+.title {
+    background-color: var(--primary-color-3);
+    padding: 1rem;
+    /* width: 8rem; */
+    display: inline-block; 
+    margin-left: 3rem;
+    margin-right: 3rem;
+    list-style-type: none;
+    transform: skewY(-2deg) translateY(0.35rem);
+    text-align: center;
+}
+
+.title span {
+    display:inline-block;
+    transform: skewY(2deg);
+    color: var(--primary-color-1);
+    font-size: 30px;
+    font-family: var(--title-font);
+}
+
+.footer {
+    height: 50px;
+}
+
+.footer .footerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.footer .footerContainer .iconContainer {
+    width: 150px;
+}
+.footer .footerContainer .iconContainer *{
+    margin-left: 10px;
+}
