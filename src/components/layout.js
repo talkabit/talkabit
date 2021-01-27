@@ -13,6 +13,7 @@ import Header from "./header";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./layout.css";
+import { Container } from "react-bootstrap";
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -28,9 +29,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header siteTitle={data.site.siteMetadata?.title || "Title"} />
-            <div
-                className="main-container"
-            >
+            <Container >
                 <main>
                     {children}
                 </main>
@@ -46,7 +45,7 @@ const Layout = ({ children }) => {
                     {" "}
                     <a href="https://www.gatsbyjs.com">Gatsby</a>
                 </footer>
-            </div>
+            </Container>
         </>
     );
 };
