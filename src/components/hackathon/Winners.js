@@ -6,7 +6,7 @@ import Winner from "./Winner";
 import styles from "../../styles/hackathon.module.css";
 import Title from "../common/Title";
 
-const Winners = ({ winners }) => (
+const Winners = ({ winners }) => winners ? (
     <div className={styles.winnersWrapper}>
         <Title title="Winners" />
         <ul className={styles.winners}>
@@ -17,7 +17,7 @@ const Winners = ({ winners }) => (
             ))}
         </ul>
     </div>
-);
+) : null;
 
 Winners.propTypes = {
     winners: PropTypes.arrayOf(PropTypes.shape(WinnerShape)),

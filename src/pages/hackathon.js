@@ -16,8 +16,8 @@ const HackathonPage = () => {
       markdownRemark(fileAbsolutePath: { regex: "/hackathon/" }) {
         html
         frontmatter {
-          startDate(formatString: "D MMMM")
-          endDate(formatString: "D MMMM")
+          startDate(formatString: "D MMMM HH:mm")
+          endDate(formatString: "D MMMM HH:mm")
           prizes {
             img {
               childImageSharp {
@@ -55,19 +55,17 @@ const HackathonPage = () => {
         <Layout>
             <Seo title="Hackathon" />
             <Title title="Hackathon" />
+            <div className={styles.dates}>
+                {`${startDate} - ${endDate}`}
+            </div>
             <div
                 dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
                 className={styles.text}
             />
-            <div>
-                {`${startDate} - ${endDate}`}
-            </div>
-            {regulation ? (
-                <Link href={regulation.publicURL} download title="Regulation" />
-            ) : null}
+            <Link href={regulation.publicURL} download title="Regulation" />
             <Prizes prizes={prizes} />
-            {registration ? <Link href={registration} title="Sign In!" /> : null}
-            {winners ? <Winners winners={winners} /> : null}
+            <Link href={registration} title="Sign In!" />
+            <Winners winners={winners} />
         </Layout>
     );
 };

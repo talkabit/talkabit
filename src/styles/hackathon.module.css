@@ -33,6 +33,7 @@
   padding: 0.5rem;
   transform: skewY(5deg);
   display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -119,6 +120,14 @@
 
 .text {
     color: var(--primary-color-3);
+}
+
+.dates {
+  color: var(--primary-color-3);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 500px) {

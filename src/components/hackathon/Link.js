@@ -4,7 +4,7 @@ import { FaFileDownload } from "react-icons/fa";
 
 import styles from "../../styles/hackathon.module.css";
 
-const Link = ({ href, download, title }) => (
+const Link = ({ href, download, title }) => href ? (
     <div className={styles.linkContainer}>
         <a
             href={href}
@@ -19,7 +19,7 @@ const Link = ({ href, download, title }) => (
             </h2>
         </a>
     </div>
-);
+) : null;
 
 Link.propTypes = {
     title: PropTypes.string.isRequired,
