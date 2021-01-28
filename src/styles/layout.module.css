@@ -11,6 +11,7 @@
     display: inline-block; 
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-bottom: 3rem;
     list-style-type: none;
     transform: skewY(-2deg) translateY(0.35rem);
     text-align: center;
@@ -32,11 +33,4 @@
     display: flex;
     justify-content: center;
     margin-top: 70px;
-}
-
-.footer .footerContainer .iconContainer {
-    width: 150px;
-}
-.footer .footerContainer .iconContainer *{
-    margin-left: 10px;
 }
