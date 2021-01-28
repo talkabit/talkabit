@@ -1,15 +1,14 @@
 import React from "react";
 
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { ImTicket } from 'react-icons/im';
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { ImTicket } from "react-icons/im";
 import { IconContext } from "react-icons";
-
 
 
 import styles from "../styles/social.module.css";
 
 const Social = () => (
-    <IconContext.Provider value={{ color: 'white', size: '25px' }}>
+    <IconContext.Provider value={{ color: "white", size: "25px" }}>
         <div className={styles.iconContainer}>
             <a href="/" style={{ color: "white", textDecoration: "none" }}>
                 <ImTicket />

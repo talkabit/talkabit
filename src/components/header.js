@@ -1,21 +1,21 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import Nav from "./nav"
+import Nav from "./nav";
 import Logo from "../images/logo.png";
 import NavStyles from "../styles/navStyles.module.css";
 
-const Header = ({ navLinks, siteTitle }) => {
-    // const [offset, setOffset] = useState(0);
+const Header = ({ navLinks }) =>
+// const [offset, setOffset] = useState(0);
 
-    // useEffect(() => {
-    //     window.onscroll = () => {
-    //         setOffset(window.pageYOffset)
-    //     }
-    // }, []);
+// useEffect(() => {
+//     window.onscroll = () => {
+//         setOffset(window.pageYOffset)
+//     }
+// }, []);
 
-    return (
+    (
         <header className="header">
             <div
                 style={{
@@ -51,15 +51,10 @@ const Header = ({ navLinks, siteTitle }) => {
             </nav> */}
         </header >
     )
-};
+;
 
 Header.propTypes = {
-    siteTitle: PropTypes.string,
     navLinks: PropTypes.array,
-};
-
-Header.defaultProps = {
-    siteTitle: "",
 };
 
 export default Header;

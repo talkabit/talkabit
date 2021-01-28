@@ -11,16 +11,15 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import Social from "./social";
-import Seo from "./seo";
 import Sponsors from "./sponsor/sponsors";
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/layout.module.css";
-//import "./layout.css";
+// import "./layout.css";
 
 const Layout = ({ children, title }) => {
-	const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -34,30 +33,32 @@ const Layout = ({ children, title }) => {
     }
   `);
 
-	return (
-		<div className={styles.layout}>
-			{console.log(document.body.scrollTop)}
-			<Header navLinks={data.site.siteMetadata.navLinks} siteTitle={data.site.siteMetadata?.title || "Title"}/>
-			<div className="main-container">
-				<div className={styles.title}>
-					<span>{title}</span>
-				</div>
-				<main>
+    return (
+        <div className={styles.layout}>
+            <Header navLinks={data.site.siteMetadata.navLinks} />
+            <div className="main-container">
+                <div className={styles.title}>
+                    <span>
+                        {title}
+                    </span>
+                </div>
+                <main>
                     {children}
                 </main>
-			</div>
-			<Sponsors />
-			<div className={styles.footer}>
-				<div className={styles.footerContainer}>
-					<Social />
-				</div>
-			</div>
-		</div>
-	);
+            </div>
+            <Sponsors />
+            <div className={styles.footer}>
+                <div className={styles.footerContainer}>
+                    <Social />
+                </div>
+            </div>
+        </div>
+    );
 };
 
 Layout.propTypes = {
-	children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
+    title: PropTypes.string,
 };
 
 export default Layout;
