@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { SpeakerShape } from "../../utils/props";
 import Img from "gatsby-image";
 
-import styles from "./event.module.css";
+import styles from "./schedule.module.css";
 
 const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
     <>
@@ -64,7 +64,7 @@ EventDetailsSpeaker.propTypes = {
 const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true }) => (
     <div className={styles.event}>
         <div className={styles.time}>
-            {`${startTime}-${endTime}`}
+            {startTime}
         </div>
         <div className={styles.eventDetails}>
             {speakers ?
@@ -89,8 +89,6 @@ const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true }
                 )
             }
         </div>
-
-
     </div>
 );
 
@@ -107,5 +105,23 @@ Event.propTypes = {
     ),
     slug: PropTypes.string,
 };
+
+export const PromotedEvent = ({ title, startTime, endTime }) => (
+    <div className={styles.promotedEvent}>
+        <div className={styles.time}>
+            {`${startTime} - ${endTime}`}
+        </div>
+        <div className={styles.title}>
+            {title}
+        </div>
+    </div>
+);
+
+PromotedEvent.propTypes = {
+    title: PropTypes.string.isRequired,
+    startTime: PropTypes.string.isRequired,
+    endTime: PropTypes.string.isRequired,
+};
+
 
 export default Event;

@@ -15,5 +15,11 @@
     column-gap: 2em;
 }
 
-/* .titleAuthor {
-} */
+.daySchedule {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+.promotedEvent {
+    background-color: --var();
+}
