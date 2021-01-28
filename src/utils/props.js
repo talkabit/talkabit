@@ -26,7 +26,9 @@ export const MemberShape = {
 
 export const PrizeShape = {
     name: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
     tier: PropTypes.string.isRequired,
+    tierName: PropTypes.string.isRequired,
     img: ImageShape.isRequired,
 };
 

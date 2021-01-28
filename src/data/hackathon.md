@@ -4,15 +4,21 @@ endDate: "2021-02-16 17:00"
 registration: https://google.com
 
 prizes:
-  - name: 1st Prize
+  - name: Cyberpunk 2077
+    brand: PC
     img: "../images/speakers/spk.jpg"
     tier: First
-  - name: 2nd Prize
+    tierName: 1st Place
+  - name: Redmi Airdots
+    brand: Xiaomi
     img: "../images/speakers/spk.jpg"
     tier: Second
-  - name: 3rd Prize
+    tierName: 2nd Place
+  - name: Keyboard and Mouse
+    brand: MARS Gaming
     img: "../images/speakers/spk.jpg"
     tier: Third
+    tierName: 3rd Place
 
 winners:
   - name: Rekicho1

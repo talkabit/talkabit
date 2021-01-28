@@ -28,6 +28,8 @@ const HackathonPage = () => {
             }
             name
             tier
+            tierName
+            brand
           }
           registration
           regulation {

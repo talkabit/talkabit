@@ -6,10 +6,20 @@ import classnames from "classnames";
 
 import styles from "../../styles/hackathon.module.css";
 
-const Prize = ({ name, tier, img }) => (
+const Prize = ({ name, brand, tier, tierName, img }) => (
     <div className={classnames(styles.prize, styles[`prize${tier}`])}>
-        <PrizeTitle title={name} />
-        <Img fluid={img.childImageSharp.fluid} className={styles.image} />
+        <div className={styles.imageContainer}>
+            <PrizeTitle title={tierName} />
+            <Img fluid={img.childImageSharp.fluid} className={styles.image} />
+        </div>
+        <div className={styles.prizeInfo}>
+            <div>
+                {name}
+            </div>
+            <div>
+                {brand}
+            </div>
+        </div>
     </div>
 );
 
