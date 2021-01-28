@@ -9,8 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Logo from "../images/Tab4v-02.inline.svg";
-
 import Header from "./header";
 import Social from "./social";
 import Seo from "./seo";
@@ -39,7 +37,7 @@ const Layout = ({ children, title }) => {
 	return (
 		<div className={styles.layout}>
 			{console.log(document.body.scrollTop)}
-			<Header navLinks={data.site.siteMetadata.navLinks} siteTitle={data.site.siteMetadata?.title || "Title"} Logo={Logo} />
+			<Header navLinks={data.site.siteMetadata.navLinks} siteTitle={data.site.siteMetadata?.title || "Title"}/>
 			<div className="main-container">
 				<div className={styles.title}>
 					<span>{title}</span>

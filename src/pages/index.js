@@ -13,7 +13,7 @@ import Nav from "../components/nav"
 import styles from "../styles/home.module.css";
 
 import Background from "../images/background.png";
-import Logo from "../images/Tab4v-02.inline.svg";
+import Logo from "../images/logo.png";
 
 const IndexPage = () => {
 
@@ -36,7 +36,8 @@ const IndexPage = () => {
 			backgroundImage: `url(${Background})`
 		}}>
 			<Seo title="Home" />
-			<Logo className={styles.logo}></Logo>
+			{/* <Logo className={styles.logo}></Logo> */}
+			<img src={Logo} alt="Logo" className={styles.logo}/>
 			<h2 className={styles.date}>FEBRUARY 12 & 13</h2>
 			<h2 className={styles.title}>HOW SOCIETY IS BEING SHAPED BY TECHNOLOGY</h2>
 			<div className={styles.social}>

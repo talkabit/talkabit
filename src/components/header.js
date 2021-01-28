@@ -3,21 +3,20 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 
 import Nav from "./nav"
-
+import Logo from "../images/logo.png";
 import NavStyles from "../styles/navStyles.module.css";
 
-const Header = ({ navLinks, siteTitle, Logo }) => {
-    const [offset, setOffset] = useState(0);
+const Header = ({ navLinks, siteTitle }) => {
+    // const [offset, setOffset] = useState(0);
 
-    useEffect(() => {
-        window.onscroll = () => {
-            setOffset(window.pageYOffset)
-        }
-    }, []);
+    // useEffect(() => {
+    //     window.onscroll = () => {
+    //         setOffset(window.pageYOffset)
+    //     }
+    // }, []);
 
     return (
         <header className="header">
-            {console.log(offset)}
             <div
                 style={{
                     display: "flex",
@@ -29,7 +28,8 @@ const Header = ({ navLinks, siteTitle, Logo }) => {
             >
                 <div className={NavStyles.logo}>
                     <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                        <Logo />
+                        {/* <Logo /> */}
+                        <img src={Logo} alt="Logo" />
                     </Link>
                 </div>
             </div>
