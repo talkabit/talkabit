@@ -16,7 +16,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
                             <Img fluid={speaker.img.childImageSharp.fluid}/>
                         </div>
                         <div className={styles.titleAuthor}>
-                            <div className={styles.title}>
+                            <div className={styles.eventTitle}>
                                 {slug ? (
                                     <Link to={`/${slug}`}>
                                         {title}
@@ -33,7 +33,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
             :
             (
                 <div className={styles.titleAuthor}>
-                    <div className={styles.title}>
+                    <div className={styles.eventTitle}>
                         {slug ? (
                             <Link to={`/${slug}`}>
                                 {title}
@@ -78,7 +78,7 @@ const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true }
                 />
                 :
                 (
-                    <div className={styles.title}>
+                    <div className={styles.eventTitle}>
                         {
                             slug ? (
                                 <Link to={`/${slug}`}>
@@ -112,7 +112,9 @@ export const PromotedEvent = ({ title, startTime, endTime }) => (
             {`${startTime} - ${endTime}`}
         </div>
         <div className={styles.title}>
-            {title}
+            <p>
+                {title}
+            </p>
         </div>
     </div>
 );

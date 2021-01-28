@@ -1,25 +1,97 @@
+@import "../../styles/global.css";
+
+
 .event {
     display: grid;
     grid-template-columns: 20% 80%;
     margin-top: 2em;
+    color: var(--primary-color-3);
 }
 
-.eventPicture {
-    /* padding-right: 2em;
-    box-sizing: border-box; */
+.event .eventTitle, .event .eventTitle a {
+    color: var(--primary-color-3);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .speakerEntry {
     display: grid;
-    grid-template-columns: 80px auto;
+    grid-template-columns: 60px auto;
     column-gap: 2em;
 }
 
 .daySchedule {
     display: grid;
+    grid-template-rows: max-content auto;
     grid-template-columns: 6fr 4fr;
 }
 
-.promotedEvent {
-    background-color: --var();
+.daySchedule .promotedSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
+
+.daySchedule .dayScheduleLeft.promotedSection {
+    /* background-color: blueviolet; */
+    text-align: right;
+    align-items: flex-end;
+}
+
+.daySchedule .dayScheduleRight.promotedSection {
+    /* background-color: gold; */
+    padding-left: 2em;
+}
+
+.dayScheduleDate {
+    grid-column: 1 / span 2;
+}
+
+.dayScheduleDate .dayTitle {
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding: 0.8em;
+    text-align: center;
+    color: var(--primary-color-3);
+    background-color: var(--primary-color-2);
+    transform: skewY(-2deg) translateY(2rem);
+}
+
+.dayScheduleDate .dayTitle p{
+    transform: skewY(2deg);
+    margin: 0;
+    font-weight: bold;
+}
+
+.dayScheduleDate_right {
+    text-align: right;
+}
+
+.promotedEvent {
+    width: 16em;
+    /* padding: 2em; */
+}
+
+.promotedEvent .time {
+    margin-bottom: -2em;
+    color: var(--primary-color-2);
+}
+
+.promotedEvent .title {
+    padding: 0.8em 1.2em;
+    text-align: center;
+    color: var(--primary-color-3);
+    background-color: var(--primary-color-2);
+    transform: skewY(-2deg) translateY(2rem);
+}
+
+.promotedEvent .title p {
+    transform: skewY(2deg);
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+

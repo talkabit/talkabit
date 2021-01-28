@@ -5,13 +5,17 @@ import Event, { PromotedEvent } from "./Event";
 import styles from "./schedule.module.css";
 
 const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) => (
-    <div>
-        <h3>
-            {date}
-        </h3>
+    <div className={styles.daySchedule}>
+        <div className={`${styles.dayScheduleDate} ${styles[`dayScheduleDate_${align}`]}`}>
+            <div className={styles.dayTitle}>
+                <p>
+                    {date}
+                </p>
+            </div>
+        </div>
         {align === "left" ?
             (
-                <div className={styles.daySchedule}>
+                <>
                     <div className={styles.dayScheduleLeft}>
                         {eventNodes.map(({ node }) => (
                             <Event
@@ -22,7 +26,7 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
-                    <div className={styles.dayScheduleRight}>
+                    <div className={`${styles.dayScheduleRight} ${styles.promotedSection}`}>
                         {promotedEventNodes.map(({ node }) => (
                             <PromotedEvent
                                 key={node.frontmatter.title}
@@ -32,14 +36,14 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
-                </div>
+                </>
             )
             :
             (
-                <div className={styles.daySchedule}>
-                    <div className={styles.dayScheduleLeft}>
+                <>
+                    <div className={`${styles.dayScheduleLeft} ${styles.promotedSection}`}>
                         {promotedEventNodes.map(({ node }) => (
-                            <Event
+                            <PromotedEvent
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
@@ -57,10 +61,9 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
-                </div>
+                </>
             )
         }
-
     </div>
 );
 
