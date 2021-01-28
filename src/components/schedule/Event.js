@@ -6,7 +6,7 @@ import Img from "gatsby-image";
 
 import styles from "./schedule.module.css";
 
-const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
+const EventDetailsSpeaker = ({ speakers, slug, title, description, showPicture }) => (
     <>
         {showPicture ?
             (
@@ -26,6 +26,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
                             <div className={styles.author}>
                                 {speaker.name}
                             </div>
+                            <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}/>
                         </div>
                     </div>
                 ))
@@ -52,6 +53,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, showPicture }) => (
 EventDetailsSpeaker.propTypes = {
     showPicture: PropTypes.bool,
     title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
     speakers: PropTypes.arrayOf(
         PropTypes.shape({
             name: SpeakerShape.name,
@@ -61,7 +63,7 @@ EventDetailsSpeaker.propTypes = {
     slug: PropTypes.string,
 };
 
-const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true }) => (
+const Event = ({ title, html: description, startTime, endTime, speakers, slug, showPicture = true }) => (
     <div className={styles.event}>
         <div className={styles.time}>
             {startTime}
@@ -71,6 +73,7 @@ const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true }
                 <EventDetailsSpeaker
                     showPicture={showPicture}
                     title={title}
+                    description={description}
                     startTime={startTime}
                     endTime={endTime}
                     speakers={speakers}

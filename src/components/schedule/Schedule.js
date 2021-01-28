@@ -22,6 +22,7 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
+                                html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
@@ -57,6 +58,7 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
+                                html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
@@ -78,6 +80,7 @@ const Schedule = () => {
           fieldValue
           edges {
             node {
+              html
               fields {
                 slug
               }
@@ -121,35 +124,6 @@ const Schedule = () => {
                     promotedEventNodes={group.edges.filter(({ node }) => node.frontmatter.promoted)}
                     date={group.edges[0].node.frontmatter.date}
                 />
-                // <div key={group.fieldValue}>
-                //     <h3>
-                //         {group.edges[0].node.frontmatter.date}
-                //     </h3>
-                //     <div>
-                //         {group.edges
-                //             .filter(({ node }) => !node.frontmatter.promoted)
-                //             .map(({ node }) => (
-                //                 <Event
-                //                     key={node.frontmatter.title}
-                //                     {...node.frontmatter}
-                //                     {...node.fields}
-                //                     showPicture={node.frontmatter.type !== "panel"}
-                //                 />
-                //             ))}
-                //         each of these should be done in a component that receives a left or right prop to align stuffs
-                //         {group.edges
-                //             .filter(({ node }) => node.frontmatter.promoted)
-                //             .map(({ node }) => (
-                //                 <Event
-                //                     key={node.frontmatter.title}
-                //                     {...node.frontmatter}
-                //                     {...node.fields}
-                //                     showPicture={node.frontmatter.type !== "panel"}
-                //                 />
-                //             ))}
-                //     </div>
-                // </div>
-
             ))}
         </div>
     );
