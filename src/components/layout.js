@@ -16,7 +16,7 @@ import Sponsors from "./sponsor/sponsors";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/layout.module.css";
-// import "./layout.css";
+import { Container } from "react-bootstrap";
 
 const Layout = ({ children, title }) => {
     const data = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ const Layout = ({ children, title }) => {
     return (
         <div className={styles.layout}>
             <Header navLinks={data.site.siteMetadata.navLinks} />
-            <div className="main-container">
+            <Container className={styles.container}>
                 <div className={styles.title}>
                     <span>
                         {title}
@@ -45,7 +45,7 @@ const Layout = ({ children, title }) => {
                 <main>
                     {children}
                 </main>
-            </div>
+            </Container>
             <Sponsors />
             <div className={styles.footer}>
                 <div className={styles.footerContainer}>

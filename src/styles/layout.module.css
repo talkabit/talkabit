@@ -4,6 +4,10 @@
     background-color: var(--primary-color-1); 
 }
 
+.container {
+    padding-top: 5vh;
+}
+
 .title {
     background-color: var(--primary-color-3);
     padding: 1rem;
@@ -27,6 +31,7 @@
 
 .footer {
     height: 50px;
+    padding-bottom: 80px;
 }
 
 .footer .footerContainer {

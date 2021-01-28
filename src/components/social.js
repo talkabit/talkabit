@@ -8,7 +8,7 @@ import { IconContext } from "react-icons";
 import styles from "../styles/social.module.css";
 
 const Social = () => (
-    <IconContext.Provider value={{ color: "white", size: "25px" }}>
+    <IconContext.Provider value={{ color: "white", size: "50px" }}>
         <div className={styles.iconContainer}>
             <a href="/" style={{ color: "white", textDecoration: "none" }}>
                 <ImTicket />
