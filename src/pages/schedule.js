@@ -51,7 +51,7 @@ const Activities = () => {
       `);
 
     return (
-        <Layout>
+        <Layout title="Schedule">
             <Seo title="Schedule" />
             <h2>Activities</h2>
 

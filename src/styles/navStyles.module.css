@@ -1,9 +1,21 @@
 @import "./global.css";
 
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    align-self: center;
+    margin-top: 2rem;
+    width: 13%;
+}
+
 .navContainer {
     text-align: center;
     background-color: var(--primary-color-3); 
     padding:1rem;
+    padding-bottom:3rem;
     transform: skewY(-2deg) translateY(2rem);  
     margin-bottom:4rem;
     display: flex;
@@ -14,7 +26,7 @@
     transform: skewY(2deg) translateY(0.7rem);
     width:100%;
     display: inline-block; 
-    margin:auto;
+    padding-left: 0px;
 }
 
 .navItem {
@@ -33,6 +45,7 @@
     transform: skewY(2deg);
     color: var(--primary-color-3);
     font-family: var(--title-font);
+    font-size: 15px;
 }
 
 .navItemLink:hover {
@@ -45,5 +58,14 @@
     .navItem {
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .logo img {
+        margin-top: 2rem;
+        width: 30%;
+    }  
+
+    .navItem {
+        margin-bottom: 1rem;
     }
 }
