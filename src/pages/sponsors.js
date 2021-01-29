@@ -13,9 +13,14 @@ const Sponsors = () => {
           edges {
             node {
               name
+              website
               tier
-              file {
-                publicURL
+              files {
+                path {
+                  publicURL
+                  extension
+                }
+                name
               }
               img {
                 childImageSharp {

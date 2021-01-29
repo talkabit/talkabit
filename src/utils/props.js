@@ -24,13 +24,15 @@ export const MemberShape = {
 
 export const SponsorShape = {
     name: PropTypes.string.isRequired,
+    website: PropTypes.string.isRequired,
     img: PropTypes.shape({
         childImageSharp: PropTypes.shape({
             fluid: PropTypes.object,
         }),
     }).isRequired,
     tier: PropTypes.string.isRequired,
-    file: PropTypes.shape({
-        publicURL: PropTypes.string,
-    }),
+    files: PropTypes.arrayOf(PropTypes.shape({
+        path: PropTypes.shape({ publicURL: PropTypes.string }),
+        name: PropTypes.string,
+    })),
 };
