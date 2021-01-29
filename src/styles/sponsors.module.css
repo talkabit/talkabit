@@ -28,6 +28,67 @@
     width: 85%;
 }
 
+/* SPONSORS PAGE */
+
+.sponsorContainer {
+    display: flex;
+    flex-direction: row;
+    background: var(--primary-color-3);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.titleContainer {
+    transform: skewY(-2deg);
+    background-color: var(--primary-color-2);
+    padding: 1rem;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 12rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.tierTitle {
+    text-align: center;
+    color: var(--primary-color-3);
+    transform: skewY(2deg);
+    margin: 0;
+}
+
+.fileList {
+    margin: 1rem 0;
+}
+
+.tier {
+    margin: 3rem 0;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.name {
+    color: var(--primary-color-1);
+}
+
+.name:hover {
+    color: var(--primary-color-2);
+}
+
 @media only screen and (max-width: 600px) {
     .gold{ 
         width: 50%;
