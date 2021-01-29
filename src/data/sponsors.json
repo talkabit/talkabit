@@ -2,56 +2,67 @@
   {
     "name": "ABConsulting",
     "img": "../images/sponsors/abc-nexllence.png",
-    "tier": "0-Gold"
+    "tier": "0-Gold",
+    "file": "./files/sample.zip"
   },
   {
     "name": "KPMG",
     "img": "../images/sponsors/KPMG.png",
-    "tier": "0-Gold"
+    "tier": "0-Gold",
+    "file": "./files/sample.zip"
   },
   {
     "name": "SonaeBit",
     "img": "../images/sponsors/bit.png",
-    "tier": "0-Gold"
+    "tier": "0-Gold",
+    "file": "./files/sample.zip"
   },
   {
     "name": "Fraunhofer",
     "img": "../images/sponsors/fraunhofer.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "INESC TEC",
     "img": "../images/sponsors/inesc.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "Inova-Ria",
     "img": "../images/sponsors/inovaria.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "msg life",
     "img": "../images/sponsors/msglife.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "OutSystem",
     "img": "../images/sponsors/outsystem.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "Xpand IT",
     "img": "../images/sponsors/xpand.png",
-    "tier": "1-Silver"
+    "tier": "1-Silver",
+    "file": "./files/sample.zip"
   },
   {
     "name": "Natixis",
     "img": "../images/sponsors/natixis.png",
-    "tier": "2-Bronze"
+    "tier": "2-Bronze",
+    "file": "./files/sample.zip"
   },
   {
     "name": "Two Impulse",
     "img": "../images/sponsors/twoimpulse.png",
-    "tier": "2-Bronze"
+    "tier": "2-Bronze",
+    "file": "./files/sample.zip"
   }
 ]

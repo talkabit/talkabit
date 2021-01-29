@@ -21,3 +21,16 @@ export const MemberShape = {
         }),
     }).isRequired,
 };
+
+export const SponsorShape = {
+    name: PropTypes.string.isRequired,
+    img: PropTypes.shape({
+        childImageSharp: PropTypes.shape({
+            fluid: PropTypes.object,
+        }),
+    }).isRequired,
+    tier: PropTypes.string.isRequired,
+    file: PropTypes.shape({
+        publicURL: PropTypes.string,
+    }),
+};
