@@ -1,0 +1,48 @@
+@import "./global.css";
+
+.layout {
+    background-color: var(--primary-color-1); 
+}
+
+.container {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.title {
+    background-color: var(--primary-color-3);
+    padding: 1rem;
+    min-width: 20%;
+    display: inline-block; 
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    list-style-type: none;
+    transform: skewY(-2deg) translateY(0.35rem);
+    text-align: center;
+}
+
+.title span {
+    display:inline-block;
+    transform: skewY(2deg);
+    color: var(--primary-color-1);
+    font-size: 30px;
+    font-family: var(--title-font);
+}
+
+.footer {
+    height: 50px;
+    padding-bottom: 80px;
+}
+
+.footer .footerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+@media (max-width: 700px) {
+    .title {
+        min-width: 50%;
+    }
+}
