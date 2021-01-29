@@ -1,22 +1,57 @@
 [
   {
-    "name": "Rockstar Games",
-    "img": "../images/sponsors/rockstar-games.png",
+    "name": "ABConsulting",
+    "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold"
   },
   {
-    "name": "Facebook",
-    "img": "../images/sponsors/facebook.jpg",
+    "name": "KPMG",
+    "img": "../images/sponsors/KPMG.png",
     "tier": "0-Gold"
   },
   {
-    "name": "Google",
-    "img": "../images/sponsors/google.png",
+    "name": "SonaeBit",
+    "img": "../images/sponsors/bit.png",
+    "tier": "0-Gold"
+  },
+  {
+    "name": "Fraunhofer",
+    "img": "../images/sponsors/fraunhofer.png",
     "tier": "1-Silver"
   },
   {
-    "name": "Fabamaq",
-    "img": "../images/sponsors/fabamaq.png",
+    "name": "INESC TEC",
+    "img": "../images/sponsors/inesc.png",
+    "tier": "1-Silver"
+  },
+  {
+    "name": "Inova-Ria",
+    "img": "../images/sponsors/inovaria.png",
+    "tier": "1-Silver"
+  },
+  {
+    "name": "msg life",
+    "img": "../images/sponsors/msglife.png",
+    "tier": "1-Silver"
+  },
+  {
+    "name": "OutSystem",
+    "img": "../images/sponsors/outsystem.png",
+    "tier": "1-Silver"
+  },
+  {
+    "name": "Xpand IT",
+    "img": "../images/sponsors/xpand.png",
+    "tier": "1-Silver"
+  },
+  {
+    "name": "Natixis",
+    "img": "../images/sponsors/natixis.png",
+    "tier": "2-Bronze"
+  },
+  {
+    "name": "Two Impulse",
+    "img": "../images/sponsors/twoimpulse.png",
     "tier": "2-Bronze"
   }
 ]
