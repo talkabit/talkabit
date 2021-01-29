@@ -8,7 +8,6 @@ import Winners from "../components/hackathon/Winners";
 import Link from "../components/hackathon/Link";
 
 import styles from "../styles/hackathon.module.css";
-import Title from "../components/common/Title";
 
 const HackathonPage = () => {
     const data = useStaticQuery(graphql`
@@ -54,9 +53,8 @@ const HackathonPage = () => {
     } = data.markdownRemark.frontmatter;
 
     return (
-        <Layout>
+        <Layout title="Hackathon">
             <Seo title="Hackathon" />
-            <Title title="Hackathon" />
             <div className={styles.dates}>
                 {`${startDate} - ${endDate}`}
             </div>
