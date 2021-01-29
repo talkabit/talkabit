@@ -21,8 +21,8 @@ const HackathonPage = () => {
           prizes {
             img {
               childImageSharp {
-                fluid(maxWidth: 400, maxHeight: 250) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 400) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

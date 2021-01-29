@@ -6,21 +6,21 @@ registration: https://google.com
 prizes:
   - name: Cyberpunk 2077
     brand: PC
-    img: "../images/speakers/spk.jpg"
+    img: "../images/hackathon/cyberpunk.png"
     tier: First
     tierName: 1st Place
   - name: Redmi Airdots
     brand: Xiaomi
-    img: "../images/speakers/spk.jpg"
+    img: "../images/hackathon/airbuds.png"
     tier: Second
     tierName: 2nd Place
   - name: Keyboard and Mouse
     brand: MARS Gaming
-    img: "../images/speakers/spk.jpg"
+    img: "../images/hackathon/mars.png"
     tier: Third
     tierName: 3rd Place
 
-winners:
+winners: 
   - name: Rekicho1
     github: https://github.com/microsoft/vscode
   - name: Rekicho2

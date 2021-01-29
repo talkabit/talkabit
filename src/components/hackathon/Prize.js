@@ -10,7 +10,12 @@ const Prize = ({ name, brand, tier, tierName, img }) => (
     <div className={classnames(styles.prize, styles[`prize${tier}`])}>
         <div className={styles.imageContainer}>
             <PrizeTitle title={tierName} />
-            <Img fluid={img.childImageSharp.fluid} className={styles.image} />
+            <Img
+                style={{ height: "100%", width: "100%" }}
+                imgStyle={{ objectFit: "contain" }}
+                fluid={img.childImageSharp.fixed}
+                className={styles.image}
+            />
         </div>
         <div className={styles.prizeInfo}>
             <div>

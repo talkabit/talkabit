@@ -48,11 +48,14 @@
 
 .image {
   border: 1px solid var(--primary-color-3);
+  width: 100%;
+  height: 100%;
 }
 
 .prize {
   position: relative;
   display: flex;
+  background-color: var(--primary-color-1);
 }
 
 .item-first {
@@ -60,8 +63,9 @@
   position: relative;
 }
 
-.prize-first .image {
+.prize-first .imageContainer {
   width: 400px;
+  height: 250px;
 }
 
 .item-second {
@@ -108,8 +112,9 @@
   z-index: -1;
 }
 
-.prize-second .image {
+.prize-second .imageContainer {
   width: 350px;
+  height: 220px;
 }
 
 .item-third {
@@ -118,8 +123,9 @@
   position: relative;
 }
 
-.prize-third .image {
+.prize-third .imageContainer {
   width: 300px;
+  height: 200px;
 }
 
 .prizes {
@@ -197,6 +203,8 @@
 
 .imageContainer {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .prize-third .prizeInfo {
@@ -302,15 +310,15 @@
     align-items: center;
   }
 
-  .prize-first .image {
+  .prize-first .imageContainer {
     width: 350px;
   }
 
-  .prize-second .image {
+  .prize-second .imageContainer {
     width: 300px;
   }
 
-  .prize-third .image {
+  .prize-third .imageContainer {
     width: 250px;
   }
 
