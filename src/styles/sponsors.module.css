@@ -9,7 +9,7 @@
     justify-content: center;
 } */
 
-.sponsorContainer {
+/* .sponsorContainer {
     background-color: var(--primary-color-3); 
     transform: skewY(-2deg) translateY(2rem);  
     padding: 4rem;
@@ -47,7 +47,7 @@
 
 .logo {
     width: 85%;
-}
+} */
 
 /* SPONSORS PAGE */
 
@@ -60,7 +60,7 @@
 }
 
 .logoContainer {
-    height: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,6 +95,7 @@
     color: var(--primary-color-3);
     transform: skewY(2deg);
     margin: 0;
+    font-family: var(--title-font);
 }
 
 .fileList {
@@ -112,11 +113,14 @@
 .link {
     display: flex;
     align-items: center;
+    font-family: var(--inf-font);
+    font-size: 1.2rem;
 }
 
 
 
 .name {
+    font-family: var(--title-font);
     color: var(--primary-color-1);
 }
 

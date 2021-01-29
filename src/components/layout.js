@@ -46,7 +46,7 @@ const Layout = ({ children, title }) => {
                     {children}
                 </main>
             </Container>
-            <Sponsors />
+            {/* <Sponsors /> */}
             <div className={styles.footer}>
                 <div className={styles.footerContainer}>
                     <Social />

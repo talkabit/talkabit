@@ -38,7 +38,7 @@ const Sponsors = () => {
   `);
 
     return (
-        <Layout>
+        <Layout title="Sponsors">
             <Seo title="Sponsors" />
             <SponsorsList tiers={data.allSponsorsJson.group} />
         </Layout>
