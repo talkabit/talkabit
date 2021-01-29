@@ -33,7 +33,7 @@ const Sponsor = ({ website, files, img, name }) => (
                 alt={name}
                 className={styles.imageContainer}
             >
-                <Image fluid={img.childImageSharp.fluid} alt={name} />
+                <Image fluid={img.childImageSharp.fluid} alt={name} className={styles.image}/>
             </a>
         </Col>
         <Col md="6" xs="12">

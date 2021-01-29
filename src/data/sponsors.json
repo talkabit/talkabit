@@ -4,42 +4,42 @@
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://www.abconsulting.pt/"
   },
   {
     "name": "KPMG",
     "img": "../images/sponsors/KPMG.png",
     "tier": "0-Gold",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://home.kpmg/pt/pt/home.html"
   },
   {
     "name": "SonaeBit",
     "img": "../images/sponsors/bit.png",
     "tier": "0-Gold",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://sonaemc.com/"
   },
   {
     "name": "Fraunhofer",
     "img": "../images/sponsors/fraunhofer.png",
     "tier": "1-Silver",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://www.aicos.fraunhofer.pt/en/home.html"
   },
   {
     "name": "INESC TEC",
     "img": "../images/sponsors/inesc.png",
     "tier": "1-Silver",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://www.inesctec.pt/en"
   },
   {
     "name": "Inova-Ria",
     "img": "../images/sponsors/inovaria.png",
     "tier": "1-Silver",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "http://www.inova-ria.pt/"
   },
   {
     "name": "msg life",
@@ -49,11 +49,11 @@
     "website": "https://google.com"
   },
   {
-    "name": "OutSystem",
+    "name": "OutSystems",
     "img": "../images/sponsors/outsystem.png",
     "tier": "1-Silver",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://www.outsystems.com/"
   },
   {
     "name": "Xpand IT",
@@ -70,13 +70,20 @@
     "img": "../images/sponsors/natixis.png",
     "tier": "2-Bronze",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://www.natixis.com/natixis/en/home-j_6.html"
   },
   {
     "name": "Two Impulse",
     "img": "../images/sponsors/twoimpulse.png",
     "tier": "2-Bronze",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
-    "website": "https://google.com"
+    "website": "https://twoimpulse.com/"
+  },
+  {
+    "name": "Dellent",
+    "img": "../images/sponsors/dellent.png",
+    "tier": "2-Bronze",
+    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "website": "https://dellentconsulting.com/"
   }
 ]
