@@ -1,19 +1,14 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-// import Layout from "../components/layout";
-// import Image from "../components/image";
 import Seo from "../components/seo";
 import Social from "../components/social";
 import Nav from "../components/nav";
-// import CalendarExport from "../components/home/CalendarExport";
-// import Sponsors from "../components/sponsor/sponsors";
-// import Schedule from "../components/schedule/Schedule";
 
 import styles from "../styles/home.module.css";
 
 import Background from "../images/background.png";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo-hd.png";
 
 const IndexPage = () => {
 

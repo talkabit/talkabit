@@ -10,7 +10,7 @@ import styles from "../styles/social.module.css";
 const Social = () => (
     <IconContext.Provider value={{ color: "white", size: "50px" }}>
         <div className={styles.iconContainer}>
-            <a href="/" style={{ color: "white", textDecoration: "none" }}>
+            <a href="https://www.eventbrite.com/e/talk-a-bit-2021-tickets-138847672125" style={{ color: "white", textDecoration: "none" }}>
                 <ImTicket />
             </a>
             <a href="https://www.facebook.com/talkabit" style={{ color: "white", textDecoration: "none" }}>

@@ -2,12 +2,13 @@
 
 .logo {
     width: 100%;
+    text-align: center;
 }
 
 .logo img {
+    align-self: center;
     margin-top: 2rem;
-    width: 16%;
-    margin-left: 42%;
+    width: 13%;
 }
 
 .navContainer {
@@ -61,8 +62,7 @@
 
     .logo img {
         margin-top: 2rem;
-        width: 36%;
-        margin-left: 32%;
+        width: 30%;
     }  
 
     .navItem {
