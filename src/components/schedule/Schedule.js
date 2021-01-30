@@ -16,13 +16,13 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
         {align === "left" ?
             (
                 <>
-                    <div className={styles.dayScheduleLeft}>
+                    <div className={`${styles.dayScheduleLeft} ${styles.leftAlign}`}>
                         {eventNodes.map(({ node }) => (
                             <Event
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
-                                html={node.html}
+                                // html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
@@ -52,13 +52,13 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
-                    <div className={styles.dayScheduleRight}>
+                    <div className={`${styles.dayScheduleRight} ${styles.rightAlign}`}>
                         {eventNodes.map(({ node }) => (
                             <Event
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
-                                html={node.html}
+                                // html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
