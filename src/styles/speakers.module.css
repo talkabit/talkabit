@@ -1,0 +1,20 @@
+.speakerRight * {
+  /* width: 80%; */
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
+.speakerLeft * {
+  /* width: 80%; */
+  height: 250px;
+  margin-left: 3rem;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
+.speakerImg {
+  width: 100%;
+  height: 100%;
+  float: right;
+}
