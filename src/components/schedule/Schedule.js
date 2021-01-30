@@ -1,15 +1,18 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { useViewport } from "../utils/viewport";
 import Event, { PromotedEvent } from "./Event";
 
 import styles from "./schedule.module.css";
 
-const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) => (
+const MOBILE_BREAKPOINT_PX = 600;
+
+const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date, mobile }) => (
     <div className={styles.daySchedule}>
         <div className={`${styles.dayScheduleDate} ${styles[`dayScheduleDate_${align}`]}`}>
             <div className={styles.dayTitle}>
                 <p>
-                    {date}
+                    {`${date}`}
                 </p>
             </div>
         </div>
@@ -27,6 +30,7 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
+                    {!mobile &&
                     <div className={`${styles.dayScheduleRight} ${styles.promotedSection}`}>
                         {promotedEventNodes.map(({ node }) => (
                             <PromotedEvent
@@ -37,11 +41,13 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
+                    }
                 </>
             )
             :
             (
                 <>
+                    {!mobile &&
                     <div className={`${styles.dayScheduleLeft} ${styles.promotedSection}`}>
                         {promotedEventNodes.map(({ node }) => (
                             <PromotedEvent
@@ -52,6 +58,7 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date }) =
                             />
                         ))}
                     </div>
+                    }
                     <div className={`${styles.dayScheduleRight} ${styles.rightAlign}`}>
                         {eventNodes.map(({ node }) => (
                             <Event
@@ -113,6 +120,8 @@ const Schedule = () => {
     }
   `);
 
+    const isMobile = useViewport().width < MOBILE_BREAKPOINT_PX;
+
     return (
         <div>
             <h2>Schedule</h2>
@@ -120,7 +129,8 @@ const Schedule = () => {
                 <DaySchedule
                     key={group.fieldValue}
                     align={i % 2 === 0 ? "left" : "right"}
-                    eventNodes={group.edges.filter(({ node }) => !node.frontmatter.promoted)}
+                    mobile={isMobile}
+                    eventNodes={group.edges.filter(({ node }) => isMobile || !node.frontmatter.promoted)}
                     promotedEventNodes={group.edges.filter(({ node }) => node.frontmatter.promoted)}
                     date={group.edges[0].node.frontmatter.date}
                 />

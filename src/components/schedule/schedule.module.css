@@ -102,6 +102,26 @@
     text-transform: uppercase;
 }
 
+.event.promotedInline .time {
+    color: var(--primary-color-2);
+}
+.event.promotedInline .eventTitle {
+    margin-top: -2em;
+    margin-bottom: 1em;
+    padding: 0.8em 1.2em;
+    text-align: center;
+    color: var(--primary-color-3);
+    background-color: var(--primary-color-2);
+    transform: skewY(-2deg) translateY(2rem);
+}
+
+.event.promotedInline .eventTitle p {
+    transform: skewY(2deg);
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* Mobile stuff */
 @media only screen and (max-width: 600px) {
     .daySchedule {

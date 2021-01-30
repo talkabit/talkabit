@@ -63,13 +63,13 @@ EventDetailsSpeaker.propTypes = {
     slug: PropTypes.string,
 };
 
-const Event = ({ title, html: description, startTime, endTime, speakers, slug, showPicture = true }) => (
-    <div className={styles.event}>
+const Event = ({ title, html: description, startTime, endTime, speakers, slug, showPicture = true, promoted }) => (
+    <div className={`${styles.event} ${promoted ? styles.promotedInline : ""}`}>
         <div className={styles.time}>
             {startTime}
         </div>
         <div className={styles.eventDetails}>
-            {speakers ?
+            {speakers && !promoted ?
                 <EventDetailsSpeaker
                     showPicture={showPicture}
                     title={title}
@@ -86,7 +86,11 @@ const Event = ({ title, html: description, startTime, endTime, speakers, slug, s
                             slug ? (
                                 <Link to={`/${slug}`}>
                                     {title}
-                                </Link>) : title
+                                </Link>)
+                                :
+                                <p>
+                                    {title}
+                                </p>
                         }
                     </div>
                 )
