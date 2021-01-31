@@ -103,3 +103,8 @@
     font-size: 1.5rem;
     margin: 0;
 }
+
+.edition:hover {
+    text-decoration: none;
+    color:var(--primary-color-1);
+}
