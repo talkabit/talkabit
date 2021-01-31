@@ -17,6 +17,13 @@
     padding-top: 1rem;
 }
 
+.titleLeft2 {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+}
+
 .titleRight {
     color: var(--primary-color-3);
     font-family: var(--inf-font);
@@ -45,13 +52,14 @@
 }
 
 .teamContainer {
-    display:flex;
-    justify-content: center;
+    text-align:center;
 }
 
 .memberContainer{
     width:20%;
     display:inline-block;
+    text-align:center;
+    margin:auto;
     margin: 1rem;
 }
 
@@ -70,5 +78,28 @@
     color: var(--primary-color-3);
     transform: skewY(2deg);
     font-size: 1.2rem;
+    margin: 0;
+}
+
+.editionsContainer {
+    width:70%;
+}
+
+.editionContainer{
+    display:inline-block;
+    transform: skewY(-2deg) translateY(-0.7rem);
+    background-color: var(--primary-color-2);
+    padding: 0.2rem;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.edition{
+    color: var(--primary-color-3);
+    font-family: var(--title-font);
+    transform: skewY(2deg);
+    font-size: 1.5rem;
     margin: 0;
 }
