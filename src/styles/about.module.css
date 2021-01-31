@@ -1,0 +1,74 @@
+@import "./global.css";
+
+.aboutContainer{
+    padding-bottom:1rem;    
+}
+
+.text {
+    color: var(--primary-color-2);
+    font-family: var(--inf-font);
+    width:70%;
+}
+
+.titleLeft {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.titleRight {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: right;
+}
+
+.titleContainer {
+    transform: skewY(-2deg);
+    background-color: var(--primary-color-2);
+    padding: 1rem;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 12rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.teamTitle {
+    text-align: center;
+    color: var(--primary-color-3);
+    transform: skewY(2deg);
+    margin: 0;
+}
+
+.teamContainer {
+    display:flex;
+    justify-content: center;
+}
+
+.memberContainer{
+    width:20%;
+    display:inline-block;
+    margin: 1rem;
+}
+
+.memberNameContainer{
+    transform: skewY(-2deg) translateY(-0.7rem);
+    background-color: var(--primary-color-2);
+    padding: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.memberName{
+    text-align: center;
+    color: var(--primary-color-3);
+    transform: skewY(2deg);
+    font-size: 1.2rem;
+    margin: 0;
+}
