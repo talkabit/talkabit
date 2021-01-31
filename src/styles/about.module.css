@@ -34,13 +34,9 @@
 
 .titleContainer {
     transform: skewY(-2deg);
-    background-color: var(--primary-color-2);
     padding: 1rem;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    width: 12rem;
-    text-align: center;
+    border-bottom: 2px solid var(--primary-color-2);
+    width: 20rem;
     margin: 2rem auto;
 }
 
@@ -56,10 +52,9 @@
 }
 
 .memberContainer{
-    width:20%;
+    width:15rem;
     display:inline-block;
     text-align:center;
-    margin:auto;
     margin: 1rem;
     transform: skewY(-2deg) translateY(-0.7rem);
     border: 1px solid var(--primary-color-3);
@@ -68,9 +63,9 @@
 .memberNameContainer{
     position:absolute;
     background-color: var(--primary-color-2);
-    padding: 0.5rem;
+    padding: 0.4rem;
     justify-content: center;
-    width: 70%;
+    width: 11rem;
     float: right;
     text-align: center;
     transform: skewY(2deg) translateY(-2.8rem) translateX(3.5rem);
@@ -81,7 +76,7 @@
     text-align: center;
     color: var(--primary-color-3);
     font-family: var(--title-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -91,7 +86,7 @@
     height: 0;
     border-top: 1.5rem solid var(--primary-color-2);
     border-left: 1.5rem solid transparent;
-    transform: skewX(10deg) translateY(-0.7rem) translateX(10rem);
+    transform: skewX(10deg) translateY(-0.7rem) translateX(11rem);
 }
 
 .editionsContainer {
@@ -120,4 +115,17 @@
 .edition:hover {
     text-decoration: none;
     color:var(--primary-color-1);
+}
+
+
+@media (max-width: 600px) {
+
+    .editionsContainer {
+        width:100%;
+    }
+
+    .editionContainer{
+        width: 7rem;
+        text-align: center;
+    }
 }
