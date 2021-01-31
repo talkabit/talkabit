@@ -23,6 +23,8 @@ export const MemberShape = {
 };
 
 export const PreviousEditionShape = {
-    year: PropTypes.string.isRequired,
-    website: PropTypes.string.isRequired,
+    node: PropTypes.shape({
+        year: PropTypes.string.isRequired,
+        website: PropTypes.string.isRequired,
+    }),
 };

@@ -11,7 +11,7 @@ const PreviousEditions = ({ editions }) => (
     <div>
         <h2 className={AboutStyles.titleLeft2}>Previous Editions</h2>
         <div className={AboutStyles.editionsContainer}>
-            {editions.edges.map(({ node }) => (
+            {editions.map(({ node }) => (
                 <PreviousEdition key={node.year} {...node} />
             ))}
         </div>

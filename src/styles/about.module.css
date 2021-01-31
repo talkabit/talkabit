@@ -122,10 +122,44 @@
 
     .editionsContainer {
         width:100%;
+        text-align: center;
     }
 
     .editionContainer{
         width: 7rem;
         text-align: center;
+        margin: 0rem 1rem 2rem 1rem;
     }
+
+    .aboutContainer{
+        display: flex;
+        justify-content: center;  
+    }
+
+    .titleRight {
+        color: var(--primary-color-3);
+        font-family: var(--inf-font);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .titleLeft {
+        color: var(--primary-color-3);
+        font-family: var(--inf-font);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .titleLeft2 {
+        color: var(--primary-color-3);
+        font-family: var(--inf-font);
+        padding-bottom: 3rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+
+
 }

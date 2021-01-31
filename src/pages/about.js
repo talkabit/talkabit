@@ -29,7 +29,7 @@ const AboutPage = () => {
             <Seo title="About" />
             <About />
             <Teams />
-            <PreviousEditions editions={data.allPreviousEditionsJson} />
+            <PreviousEditions editions={data.allPreviousEditionsJson.edges} />
         </Layout>
     );
 };
