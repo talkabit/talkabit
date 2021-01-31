@@ -130,7 +130,7 @@
 .prizes {
   display: flex;
   flex-direction: column;
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 
 .winners {
@@ -209,6 +209,7 @@
   width: 100%;
   height: 100%;
   background-color: var(--primary-color-1);
+  z-index: 1;
 }
 
 .prize-third .prizeInfo {
