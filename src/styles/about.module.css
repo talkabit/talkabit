@@ -61,24 +61,37 @@
     text-align:center;
     margin:auto;
     margin: 1rem;
+    transform: skewY(-2deg) translateY(-0.7rem);
+    border: 1px solid var(--primary-color-3);
 }
 
 .memberNameContainer{
-    transform: skewY(-2deg) translateY(-0.7rem);
+    position:absolute;
     background-color: var(--primary-color-2);
     padding: 0.5rem;
     justify-content: center;
-    width: 100%;
+    width: 70%;
+    float: right;
     text-align: center;
-    z-index: 1;
+    transform: skewY(2deg) translateY(-2.8rem) translateX(3.5rem);
+    /* z-index: 1; */
 }
 
 .memberName{
     text-align: center;
     color: var(--primary-color-3);
-    transform: skewY(2deg);
-    font-size: 1.2rem;
+    font-family: var(--title-font);
+    font-size: 0.9rem;
     margin: 0;
+}
+
+.triangleShape {
+    position:absolute;
+    width: 0;
+    height: 0;
+    border-top: 1.5rem solid var(--primary-color-2);
+    border-left: 1.5rem solid transparent;
+    transform: skewX(10deg) translateY(-0.7rem) translateX(10rem);
 }
 
 .editionsContainer {
