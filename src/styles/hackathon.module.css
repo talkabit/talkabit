@@ -30,6 +30,11 @@
   margin: 2rem auto;
 }
 
+.linkContainer a:hover {
+  text-decoration: none;
+  color: var(--primary-color-1);
+}
+
 .title h2 {
   margin: 0;  
 }
@@ -324,16 +329,11 @@
     align-items: center;
   }
 
-  .prize-first .imageContainer {
-    width: 350px;
-  }
-
-  .prize-second .imageContainer {
+  .prize-first .imageContainer,
+  .prize-second .imageContainer,
+  .prize-third .imageContainer
+   {
     width: 300px;
-  }
-
-  .prize-third .imageContainer {
-    width: 250px;
   }
 
   .linkWrapper {
