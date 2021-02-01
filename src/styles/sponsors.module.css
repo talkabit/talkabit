@@ -1,15 +1,4 @@
-/* .sponsorContainer {
-    text-align: center;
-    background-color: var(--primary-color-3); 
-    padding:1rem;
-    padding-bottom:3rem;
-    transform: skewY(-2deg) translateY(2rem);  
-    margin-bottom:4rem;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .sponsorContainer {
+.sponsorContainer {
     background-color: var(--primary-color-3); 
     transform: skewY(-2deg) translateY(2rem);  
     padding: 4rem;
@@ -47,11 +36,11 @@
 
 .logo {
     width: 85%;
-} */
+}
 
 /* SPONSORS PAGE */
 
-.sponsorContainer {
+.sponsorItemContainer {
   display: flex;
   flex-direction: row;
   background: var(--primary-color-3);

@@ -19,7 +19,7 @@ const getIcon = (extension) => {
 };
 
 const Sponsor = ({ website, files, img, name }) => (
-    <Row className={styles.sponsorContainer}>
+    <Row className={styles.sponsorItemContainer}>
         <Col className={styles.logoContainer} md="6" xs="12">
             <a href={website} target="_blank" rel="noreferrer" alt={name}>
                 <h2 className={styles.name}>
