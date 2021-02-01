@@ -21,3 +21,10 @@ export const MemberShape = {
         }),
     }).isRequired,
 };
+
+export const PreviousEditionShape = {
+    node: PropTypes.shape({
+        year: PropTypes.string.isRequired,
+        website: PropTypes.string.isRequired,
+    }),
+};
