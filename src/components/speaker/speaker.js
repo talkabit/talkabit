@@ -9,19 +9,21 @@ const Speaker = ({ name, bio, img, even }) => {
     return (
         even ? (
             <Row className={styles.speakerLeft}>
-                <Col className={styles.speakerImgContainer} md={{ span: 4, offset: 0}} xs="12">
+                <Col className={styles.speakerImgContainer} md={{ span: 5, offset: 0}} lg="4" xs="12">
                     <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
                 </Col>
-                <Col md="6" xs="12">
-                    <p>{bio}</p>
+                <Col md={{ span: 7, offset: 0}} lg={{ span: 6, offset: 0}} xs="12">
+                    <h2 className={styles.speakerName}>{name}</h2>
+                    <p className={styles.speakerBio}>{bio}</p>
                 </Col>
             </Row>
         ) : (
             <Row className={styles.speakerRight}>
-                <Col md={{ span: 6, offset: 2}} xs="12">
-                    <p>{bio}</p>
+                <Col md={{ span: 7, offset: 2}} lg={{ span: 6, offset: 2}} xs="12">
+                    <h2 className={styles.speakerName}>{name}</h2>
+                    <p className={styles.speakerBio}>{bio}</p>
                 </Col>
-                <Col md="4" xs="12">
+                <Col className={styles.speakerImgContainer} md={{ span: 5, offset: 0}} lg="4" xs="12">
                     <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
                 </Col>
             </Row>
