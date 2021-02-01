@@ -3,21 +3,41 @@
     "name": "Conference",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Luís Silva",
+        "img": "../images/team/conference/lsilva.jpg"
+      },
+      {
+        "name": "Mariana Costa",
+        "img": "../images/team/conference/mcosta.jpg"
+      },
+      {
+        "name": "Miguel Duarte",
+        "img": "../images/team/conference/mduarte.jpg"
       }
     ]
   },
   {
-    "name": "Tech",
+    "name": "Technology",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "André Esteves",
+        "img": "../images/team/tech/aesteves.jpg"
+      },
+      {
+        "name": "Ângelo Teixeira",
+        "img": "../images/team/tech/ateixeira.jpg"
+      },
+      {
+        "name": "Francisco Filipe",
+        "img": "../images/team/tech/ffilipe.jpg"
       },
       {
         "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "img": "../images/team/tech/pfernandes.jpg"
+      },
+      {
+        "name": "Pedro Neto",
+        "img": "../images/team/tech/pneto.jpg"
       }
     ]
   },
@@ -26,20 +46,24 @@
     "name": "Image and Communication",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Gonçalo Bernardo",
+        "img": "../images/team/communication/gnbernardo.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Guilherme Vale",
+        "img": "../images/team/communication/gvale.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "José Martins",
+        "img": "../images/team/communication/jdmartins.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Nuno Lopes",
+        "img": "../images/team/communication/nlopes.jpg"
+      },
+      {
+        "name": "Teresa Ferreira",
+        "img": "../images/team/communication/mtferreira.jpg"
       }
     ]
   },
@@ -48,20 +72,24 @@
     "name": "Operations",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Ana Silva",
+        "img": "../images/team/operations/asilva.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Duarte Oliveira",
+        "img": "../images/team/operations/doliveira.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Fábio Azevedo",
+        "img": "../images/team/operations/fazevedo.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Mariana Aguiar",
+        "img": "../images/team/operations/maguiar.jpg"
+      },
+      {
+        "name": "Maria Viana",
+        "img": "../images/team/operations/mviana.jpg"
       }
     ]
   },
@@ -70,53 +98,58 @@
     "name": "Program",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Fábio Oliveira",
+        "img": "../images/team/program/foliveira.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "João Barbosa",
+        "img": "../images/team/program/jbarbosa.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Miguel Teixeira",
+        "img": "../images/team/program/mteixeira.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Pedro Costa",
+        "img": "../images/team/program/pcosta.jpg"
+      },
+      {
+        "name": "Pedro Pinho",
+        "img": "../images/team/program/ppinho.jpg"
+      },
+      {
+        "name": "Ricardo Moura",
+        "img": "../images/team/program/rmoura.jpg"
       }
+     
     ]
   },
   {
     "name": "Sponsors",
     "members": [
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Filipa Durão",
+        "img": "../images/team/sponsors/fdurao.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Hugo Fernandes",
+        "img": "../images/team/sponsors/hfernandes.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "João Miguel",
+        "img": "../images/team/sponsors/jmiguel.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Joana Silva",
+        "img": "../images/team/sponsors/jsilva.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Mariana Dias",
+        "img": "../images/team/sponsors/mdias.jpg"
       },
       {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
-      },
-      {
-        "name": "Pedro Fernandes",
-        "img": "../images/team/fernandes.jpg"
+        "name": "Rui Alves",
+        "img": "../images/team/sponsors/ralves.jpg"
       }
     ]
   }
