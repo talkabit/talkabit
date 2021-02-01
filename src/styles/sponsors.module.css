@@ -143,4 +143,14 @@
   .logo {
     width: 85%;
   }
+
+  .imageContainer {
+    width: 250px;
+  }
+}
+
+@media(max-width: 374px){
+  .imageContainer {
+    width: 200px;
+  }
 }
