@@ -9,8 +9,6 @@ import styles from "../styles/home.module.css";
 
 import Background from "../images/background.png";
 import Logo from "../images/logo-hd.png";
-import Schedule from "../components/schedule/Schedule";
-import Layout from "../components/layout";
 
 const IndexPage = () => {
 
@@ -48,11 +46,6 @@ const IndexPage = () => {
                     <Nav navLinks={data.site.siteMetadata.navLinks} />
                 </div>
             </div>
-
-            <Layout title="Schedule" showHeader={false}>
-                <Seo title="Schedule" />
-                <Schedule />
-            </Layout>
         </>
     );
 };
