@@ -6,11 +6,15 @@
   transform: skewY(-5deg);
   background-color: var(--primary-color-2);
   width: 11rem;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--title-font);
+}
+
+.titleContainer h3 {
+  margin: 0;
 }
 
 .linkContainer {
@@ -27,7 +31,7 @@
 }
 
 .title h2 {
-  margin: 0;
+  margin: 0;  
 }
 
 .title {
@@ -303,6 +307,11 @@
 @media (max-width: 767px) {
   .prizes {
     align-items: center;
+    padding: 0;
+  }
+
+  .winners {
+    padding: 0;
   }
 
   .item {
