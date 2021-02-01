@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import Social from "./social";
-import Sponsors from "./sponsor/sponsors";
 import Title from "./common/Title";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -42,7 +41,6 @@ const Layout = ({ children, title }) => {
                     {children}
                 </main>
             </Container>
-            <Sponsors />
             <div className={styles.footer}>
                 <div className={styles.footerContainer}>
                     <Social />

@@ -3,6 +3,9 @@ import React from "react";
 import Team from "./team";
 import { useStaticQuery, graphql } from "gatsby";
 
+import AboutStyles from "../../../styles/about.module.css";
+
+
 const Teams = () => {
 
     const teams = useStaticQuery(graphql`
@@ -16,7 +19,7 @@ const Teams = () => {
               img {
                 childImageSharp {
                   id
-                  fluid(maxWidth: 400, maxHeight: 250) {
+                  fluid(maxWidth: 500, maxHeight: 600) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -30,7 +33,7 @@ const Teams = () => {
 
     return (
         <div>
-            <h2>Teams</h2>
+            <h2 className={AboutStyles.titleRight}>Meet the Team</h2>
             {teams.allTeamsJson.edges.map((team) => <Team key={team.node.name} {...team.node} />)}
         </div>
     );
