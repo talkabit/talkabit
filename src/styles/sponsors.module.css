@@ -52,105 +52,106 @@
 /* SPONSORS PAGE */
 
 .sponsorContainer {
-    display: flex;
-    flex-direction: row;
-    background: var(--primary-color-3);
-    margin: 1rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  background: var(--primary-color-3);
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .logoContainer {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 300px;
 }
 
 .imageContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  width: 300px;
+  height: calc(300px - 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .image {
-    margin: auto;
-    width: 100%;
+  margin: auto;
+  width: 100%;
 }
 
 .titleContainer {
-    transform: skewY(-2deg);
-    background-color: var(--primary-color-2);
-    padding: 1rem;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    width: 12rem;
-    text-align: center;
-    margin: 2rem auto;
+  transform: skewY(-2deg);
+  background-color: var(--primary-color-2);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 .tierTitle {
-    text-align: center;
-    color: var(--primary-color-3);
-    transform: skewY(2deg);
-    margin: 0;
-    font-family: var(--title-font);
+  text-align: center;
+  color: var(--primary-color-3);
+  transform: skewY(2deg);
+  margin: 0;
+  font-family: var(--title-font);
 }
 
 .fileList {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .tier {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .icon {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .link {
-    display: flex;
-    align-items: center;
-    font-family: var(--inf-font);
-    font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--inf-font);
+  color: var(--primary-color-2);
+  font-size: 1.2rem;
 }
 
-
-
-.name {
-    font-family: var(--title-font);
+.link:hover {
     color: var(--primary-color-1);
 }
 
+.name {
+  font-family: var(--title-font);
+  color: var(--primary-color-1);
+}
+
 .name:hover {
-    color: var(--primary-color-2);
+  color: var(--primary-color-2);
 }
 
 @media only screen and (max-width: 600px) {
+  .sponsorContainer {
+    background-color: var(--primary-color-3);
+    transform: skewY(-2deg) translateY(2rem);
+    padding: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    .sponsorContainer {
-        background-color: var(--primary-color-3); 
-        transform: skewY(-2deg) translateY(2rem);  
-        padding: 2rem;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-    
-    .gold{ 
-        width: 50%;
-    }
-    
-    .silver {
-        width: 30%;
-    }
-    
-    .bronze {
-        width: 20%;
-    }
+  .gold {
+    width: 50%;
+  }
 
-    .logo {
-        width: 85%;
-    }
+  .silver {
+    width: 30%;
+  }
+
+  .bronze {
+    width: 20%;
+  }
+
+  .logo {
+    width: 85%;
+  }
 }
