@@ -31,8 +31,17 @@ export const SponsorShape = {
         }),
     }).isRequired,
     tier: PropTypes.string.isRequired,
-    files: PropTypes.arrayOf(PropTypes.shape({
-        path: PropTypes.shape({ publicURL: PropTypes.string }),
-        name: PropTypes.string,
-    })),
+    files: PropTypes.arrayOf(
+        PropTypes.shape({
+            path: PropTypes.shape({ publicURL: PropTypes.string }),
+            name: PropTypes.string,
+        })
+    ),
+};
+
+export const PreviousEditionShape = {
+    node: PropTypes.shape({
+        year: PropTypes.string.isRequired,
+        website: PropTypes.string.isRequired,
+    }),
 };
