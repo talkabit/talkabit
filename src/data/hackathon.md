@@ -26,9 +26,9 @@ winners:
   - name: Rekicho2
     github: https://github.com/facebook/react
   - name: Rekicho3
-    github: https://github.com/flutter/flutter
+    github: https://github.com/flutter/flutter 
 
-regulation: "./files/Talk a Bit 2021 Hackathon Regulation.pdf"
+regulation: "./files/tab21_regulation.pdf" 
 ---
 
 Digital technologies are always evolving, often at a scale much larger than humans can keep up with. Technological breakthroughs are an everyday occurrence, promising to make our lives simpler and easier. Nonetheless, it remains unclear if we’ve reached a turning point in which more software no longer translates to a better quality of life.
