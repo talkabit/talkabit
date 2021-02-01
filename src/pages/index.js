@@ -9,7 +9,8 @@ import styles from "../styles/home.module.css";
 
 import Background from "../images/background.png";
 import Logo from "../images/logo-hd.png";
-import { ViewportProvider } from "../components/utils/viewport";
+import Schedule from "../components/schedule/Schedule";
+import Layout from "../components/layout";
 
 const IndexPage = () => {
 
@@ -28,7 +29,7 @@ const IndexPage = () => {
   `);
 
     return (
-        <ViewportProvider>
+        <>
             <div
                 className={styles.home} style={{
                     backgroundImage: `url(${Background})`,
@@ -47,7 +48,12 @@ const IndexPage = () => {
                     <Nav navLinks={data.site.siteMetadata.navLinks} />
                 </div>
             </div>
-        </ViewportProvider>
+
+            <Layout title="Schedule" showHeader={false}>
+                <Seo title="Schedule" />
+                <Schedule />
+            </Layout>
+        </>
     );
 };
 

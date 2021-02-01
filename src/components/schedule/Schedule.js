@@ -1,11 +1,32 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { useViewport } from "../utils/viewport";
+import PropTypes from "prop-types";
 import Event, { PromotedEvent } from "./Event";
 
 import styles from "./schedule.module.css";
 
 const MOBILE_BREAKPOINT_PX = 600;
+
+/** ************************************* */
+// This is needed due to the build being executed in the server side, with no browser variables access
+// such as `window`. This will mock the utils that use the window object
+// When it is undefined, to let the build continue
+const _IS_RUNNING_ON_BROWSER = typeof window !== "undefined";
+
+// eslint-disable-next-line react/prop-types
+const DummyViewportProvider = ({ children }) => (
+    <>
+        {children}
+    </>
+);
+const viewportUtils = _IS_RUNNING_ON_BROWSER ? require("../utils/viewport")
+    : {
+        useViewport: () => ({ width: 1920, height: 1080 }),
+        ViewportProvider: DummyViewportProvider,
+    };
+
+/** ************************************** */
+
 
 const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date, mobile }) => (
     <div className={styles.daySchedule}>
@@ -25,7 +46,6 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date, mob
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
-                                // html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
@@ -65,7 +85,6 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date, mob
                                 key={node.frontmatter.title}
                                 {...node.frontmatter}
                                 {...node.fields}
-                                // html={node.html}
                                 showPicture={node.frontmatter.type !== "panel"}
                             />
                         ))}
@@ -75,6 +94,14 @@ const DaySchedule = ({ align = "left", eventNodes, promotedEventNodes, date, mob
         }
     </div>
 );
+
+DaySchedule.propTypes = {
+    align: PropTypes.oneOf(["left", "right"]),
+    eventNodes: PropTypes.array.isRequired,
+    promotedEventNodes: PropTypes.array,
+    date: PropTypes.string.isRequired,
+    mobile: PropTypes.bool.isRequired,
+};
 
 const Schedule = () => {
     const data = useStaticQuery(graphql`
@@ -120,11 +147,10 @@ const Schedule = () => {
     }
   `);
 
-    const isMobile = useViewport().width < MOBILE_BREAKPOINT_PX;
+    const isMobile = viewportUtils.useViewport().width < MOBILE_BREAKPOINT_PX;
 
     return (
-        <div>
-            <h2>Schedule</h2>
+        <div className={styles.schedule}>
             {data.allMarkdownRemark.group.map((group, i) => (
                 <DaySchedule
                     key={group.fieldValue}
@@ -139,4 +165,12 @@ const Schedule = () => {
     );
 };
 
-export default Schedule;
+const ResponsiveSchedule = (props) => (
+
+    <viewportUtils.ViewportProvider>
+        <Schedule {...props}/>
+    </viewportUtils.ViewportProvider>
+
+);
+
+export default ResponsiveSchedule;

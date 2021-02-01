@@ -1,5 +1,8 @@
 @import "../../styles/global.css";
 
+.schedule {
+    font-family: var(--title-font);
+}
 
 .event {
     display: grid;
@@ -18,6 +21,10 @@
     display: grid;
     grid-template-columns: 60px auto;
     column-gap: 2em;
+}
+
+.speakerEntry .author {
+    font-family: var(--inf-font);
 }
 
 .daySchedule {

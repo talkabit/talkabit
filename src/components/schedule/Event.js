@@ -63,7 +63,7 @@ EventDetailsSpeaker.propTypes = {
     slug: PropTypes.string,
 };
 
-const Event = ({ title, html: description, startTime, endTime, speakers, slug, showPicture = true, promoted }) => (
+const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, promoted }) => (
     <div className={`${styles.event} ${promoted ? styles.promotedInline : ""}`}>
         <div className={styles.time}>
             {startTime}
@@ -73,7 +73,6 @@ const Event = ({ title, html: description, startTime, endTime, speakers, slug, s
                 <EventDetailsSpeaker
                     showPicture={showPicture}
                     title={title}
-                    description={description}
                     startTime={startTime}
                     endTime={endTime}
                     speakers={speakers}
@@ -102,6 +101,7 @@ const Event = ({ title, html: description, startTime, endTime, speakers, slug, s
 Event.propTypes = {
     showPicture: PropTypes.bool,
     title: PropTypes.string.isRequired,
+    promoted: PropTypes.bool,
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
     speakers: PropTypes.arrayOf(
