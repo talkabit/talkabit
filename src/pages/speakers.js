@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Speaker from "../components/speaker/speaker";
 
+import styles from "../styles/speakers.module.css";
+
 const Speakers = () => {
     const data = useStaticQuery(graphql`
     query {
@@ -29,17 +31,22 @@ const Speakers = () => {
         }
     }
   `);
-    let count = 0;
-    
+
     return (
         <Layout title="Speakers">
             <Seo title="Speakers" />
-            
-            {data.allMarkdownRemark.edges.map((list, index) => (
-                list.node.frontmatter.speakers.map((edge) => {
-                    return <Speaker key={edge.name} {...edge} even={count++ % 2 === 0} />;
-                })
-            ))}
+            <ul className={styles.speakers}>
+                {data.allMarkdownRemark.edges.map((list) => (
+                    list.node.frontmatter.speakers.map((edge) => (
+                      <li
+                          key={edge.name}
+                          className={styles.item}
+                      >
+                        <Speaker {...edge} />
+                      </li>
+                    ))
+                ))}
+            </ul>
         </Layout>
     );
 }
