@@ -38,17 +38,17 @@ const Speakers = () => {
             <ul className={styles.speakers}>
                 {data.allMarkdownRemark.edges.map((list) => (
                     list.node.frontmatter.speakers.map((edge) => (
-                      <li
-                          key={edge.name}
-                          className={styles.item}
-                      >
-                        <Speaker {...edge} />
-                      </li>
+                        <li
+                            key={edge.name}
+                            className={styles.item}
+                        >
+                            <Speaker {...edge} />
+                        </li>
                     ))
                 ))}
             </ul>
         </Layout>
     );
-}
+};
 
 export default Speakers;

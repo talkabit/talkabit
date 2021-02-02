@@ -137,10 +137,18 @@
     height: 50px;
   }
 
-  .item:last-child .lines:after {
+  .item:last-child:nth-child(even) .lines:after {
+    top: -20%;
+    right: 14%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    height: 50px;
+  }
+
+  .item:last-child:nth-child(odd) .lines:after {
     top: -19%;
     left: 14%;
-    right: 14%;
     border-top: none;
     border-right: none;
     border-bottom: none;
