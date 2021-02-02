@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Img from "gatsby-image";
 import classnames from "classnames";
-
+import { SpeakerPageShape } from "../../utils/props";
 import styles from "../../styles/speakers.module.css";
 
 const Speaker = ({ name, bio, img }) => (
@@ -21,14 +20,6 @@ const Speaker = ({ name, bio, img }) => (
     </div>
 );
 
-Speaker.propTypes = {
-    name: PropTypes.string.isRequired,
-    bio: PropTypes.string.isRequired,
-    img: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-            fluid: PropTypes.object,
-        }),
-    }).isRequired,
-};
+Speaker.propTypes = SpeakerPageShape;
 
 export default Speaker;

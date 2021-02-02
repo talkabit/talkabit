@@ -13,6 +13,16 @@ export const SpeakerShape = {
     linkedin: PropTypes.string.isRequired,
 };
 
+export const SpeakerPageShape = {
+    name: PropTypes.string.isRequired,
+    bio: PropTypes.string.isRequired,
+    img: PropTypes.shape({
+        childImageSharp: PropTypes.shape({
+            fluid: PropTypes.object,
+        }),
+    }).isRequired,
+};
+
 export const MemberShape = {
     name: PropTypes.string.isRequired,
     img: PropTypes.shape({
