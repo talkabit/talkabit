@@ -1,7 +1,7 @@
 ---
-title: How society is being shaped by technology
+title: How society is being shaped by technology -TODO
 type: panel
-date: 2020-01-12
+date: 2020-02-12
 startTime: 14h30
 endTime: 16h00
 

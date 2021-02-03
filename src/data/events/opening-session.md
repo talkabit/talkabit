@@ -2,7 +2,7 @@
 title: Opening Session
 type: default
 
-date: 2020-01-11
+date: 2020-02-12
 startTime: 10h30
 endTime: 11h00
 ---

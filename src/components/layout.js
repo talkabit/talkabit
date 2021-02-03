@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/layout.module.css";
 import { Container } from "react-bootstrap";
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, showHeader = true }) => {
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,7 +34,7 @@ const Layout = ({ children, title }) => {
 
     return (
         <div className={styles.layout}>
-            <Header navLinks={data.site.siteMetadata.navLinks} />
+            {showHeader && <Header navLinks={data.site.siteMetadata.navLinks} />}
             <Container className={styles.container}>
                 <Title title={title} />
                 <main>
@@ -53,6 +53,7 @@ const Layout = ({ children, title }) => {
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
     title: PropTypes.string,
+    showHeader: PropTypes.bool,
 };
 
 export default Layout;
