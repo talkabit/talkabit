@@ -85,5 +85,12 @@
     "tier": "2-Bronze",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
     "website": "https://dellentconsulting.com/"
+  },
+  {
+    "name": "Switch",
+    "img": "../images/sponsors/switch.png",
+    "tier": "2-Bronze",
+    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "website": "https://switchpayments.com"
   }
 ]
