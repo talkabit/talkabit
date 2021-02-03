@@ -25,7 +25,7 @@ const Speakers = () => {
                 bio
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 100, maxHeight: 100) {
+                    fluid(maxWidth: 400, maxHeight: 400) {
                       ...GatsbyImageSharpFluid
                     }
                   }
