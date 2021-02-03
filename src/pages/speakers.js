@@ -10,25 +10,31 @@ import styles from "../styles/speakers.module.css";
 const Speakers = () => {
     const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/events/"}, frontmatter: {type: {ne: "default"}}}, sort: {fields: frontmatter___type}) {
-            edges {
-              node {
-                frontmatter {
-                  speakers {
-                    name
-                    bio
-                    img {
-                        childImageSharp {
-                            fluid(maxWidth: 100, maxHeight: 100) {
-                              ...GatsbyImageSharpFluid
-                            }
-                        }
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { regex: "/data/events/" }
+          frontmatter: { type: { eq: "talk" } }
+        }
+        sort: { fields: frontmatter___type }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              speakers {
+                name
+                bio
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 100, maxHeight: 100) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
               }
             }
+          }
         }
+      }
     }
   `);
 
@@ -36,16 +42,13 @@ const Speakers = () => {
         <Layout title="Speakers">
             <Seo title="Speakers" />
             <ul className={styles.speakers}>
-                {data.allMarkdownRemark.edges.map((list) => (
+                {data.allMarkdownRemark.edges.map((list) =>
                     list.node.frontmatter.speakers.map((edge) => (
-                        <li
-                            key={edge.name}
-                            className={styles.item}
-                        >
+                        <li key={edge.name} className={styles.item}>
                             <Speaker {...edge} />
                         </li>
                     ))
-                ))}
+                )}
             </ul>
         </Layout>
     );
