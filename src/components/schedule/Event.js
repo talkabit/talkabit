@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import { SpeakerShape } from "../../utils/props";
 import Img from "gatsby-image";
 
 import styles from "./schedule.module.css";
 
-const EventDetailsSpeaker = ({ speakers, slug, title, description, showPicture }) => (
+const EventDetailsSpeaker = ({ speakers, title, description, showPicture }) => (
     <>
         {showPicture ?
             (
@@ -17,10 +16,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, description, showPicture }
                         </div>
                         <div className={styles.titleAuthor}>
                             <div className={styles.eventTitle}>
-                                {slug ? (
-                                    <Link to={`/${slug}`}>
-                                        {title}
-                                    </Link>) : title}
+                                {title}
                             </div>
 
                             <div className={styles.author}>
@@ -35,10 +31,7 @@ const EventDetailsSpeaker = ({ speakers, slug, title, description, showPicture }
             (
                 <div className={styles.titleAuthor}>
                     <div className={styles.eventTitle}>
-                        {slug ? (
-                            <Link to={`/${slug}`}>
-                                {title}
-                            </Link>) : title}
+                        {title}
                     </div>
 
                     <div className={styles.author}>
@@ -60,7 +53,6 @@ EventDetailsSpeaker.propTypes = {
             occupations: SpeakerShape.occupations,
         })
     ),
-    slug: PropTypes.string,
 };
 
 const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, promoted }) => (
@@ -81,16 +73,9 @@ const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, 
                 :
                 (
                     <div className={styles.eventTitle}>
-                        {
-                            slug ? (
-                                <Link to={`/${slug}`}>
-                                    {title}
-                                </Link>)
-                                :
-                                <p>
-                                    {title}
-                                </p>
-                        }
+                        <p>
+                            {title}
+                        </p>
                     </div>
                 )
             }
