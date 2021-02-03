@@ -1,8 +1,8 @@
 ---
-title: Closing Session -TODO
+title: Closing Session
 type: default
 
 date: 2020-02-13
-startTime: 16h00
-endTime: 16h30
+startTime: 17h15
+endTime: 17h45
 ---

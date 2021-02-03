@@ -1,5 +1,5 @@
 ---
-title: Opening Session - TODO
+title: Opening Session
 type: default
 
 date: 2020-02-12
