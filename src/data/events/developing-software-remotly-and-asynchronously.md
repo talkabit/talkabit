@@ -12,7 +12,7 @@ speakers:
         where: Doist
     bio: Gonçalo is the CTO at Doist, creators of Todoist and Twist. He's been working remotely for over a decade, and managing remote teams for most of that time. He loves long-term ambition, asynchronous communication, and programming.
     role: Speaker
-    img: "../../images/speakers/spk.jpg" #change
+    img: "../../images/speakers/goncalo_silva.jpg"
     linkedin: https://www.linkedin.com/in/goncalossilva/
 ---
 

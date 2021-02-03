@@ -12,7 +12,7 @@ speakers:
         where: Globality
     bio: Isabel Costa is a Software Engineer and works at Globality. She is also an admin for AnitaB.org Open Source and GitHub Star. She was a Google Summer of Code (GSoC) student in 2018, and an admin in 2020, as well as a Google Code-in Mentor in 2019. Since participating in GSoC she maintains the project started during the program, helping newcomers make their first contributions or find new ways to contribute to Open Source.
     role: Speaker
-    img: "../../images/speakers/spk.jpg" #change
+    img: "../../images/speakers/isabel_costa.png"
     linkedin: https://www.linkedin.com/in/isabelcmdcosta/
 ---
 

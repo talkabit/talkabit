@@ -10,9 +10,9 @@ speakers:
     occupations:
       - what: COO
       - where: Char49
-    bio: David Sopas is a security researcher with more than 15 anos of experience. Currently David leads a talented team of researchers at Checkmarx and at the same time manages is own security company Char49.  Best known for his published work on finding vulnerabilities for companies like Google, Microsoft, Adobe, eBay, Amazon and many others. Also each year you can find him speaking at local and international security conferences.
+    bio: David Sopas is a security researcher with more than 15 years of experience. Currently David leads a talented team of researchers at Checkmarx and at the same time manages is own security company Char49.  Best known for his published work on finding vulnerabilities for companies like Google, Microsoft, Adobe, eBay, Amazon and many others. Also each year you can find him speaking at local and international security conferences.
     role: Speaker
-    img: ../../images/speakers/davidsopas.jpg
+    img: "../../images/speakers/davidsopas.jpg"
     linkedin: https://www.linkedin.com/in/dsopas
 ---
 

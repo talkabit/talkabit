@@ -12,7 +12,7 @@ speakers:
       - where: Subvisual
     bio: Mendes exchanges coffee for code at Subvisual. He has a background in Distributed Systems and Cryptography, having won multiple national awards for academic excellence. Previously at UTrust and thoughtbot, he also does a lot of volunteering, being the founder of \#include <braga> and a former champion of CoderDojo Braga. '); DROP TABLE speakers; --
     role: Speaker
-    img: ../../images/speakers/spk.jpg #change
+    img: "../../images/speakers/fernando_mendes.png"
     linkedin: https://pt.linkedin.com/in/fribmendes
 ---
 

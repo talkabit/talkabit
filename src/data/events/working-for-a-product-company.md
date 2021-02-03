@@ -12,7 +12,7 @@ speakers:
         where: Farfetch
     bio: Gil Faria has a degree in Computer Engineering from the Faculty of Science and Technology, New University of Lisbon. He started programming at age 9, shortly after receiving his first computer, a Commodore 64. Since then, he hasn't been able to stop feeding his interest in Technology and programming. Gil is currently working as an Engineering Manager at Farfetch, focusing on developing high-performance teams, delivering value on time, and guaranteeing quality while promoting a friendly and professional atmosphere.
     role: Speaker
-    img: ../../images/speakers/spk.jpg # change
+    img: "../../images/speakers/gil_faria.jpeg"
     linkedin: https://www.linkedin.com/in/gilfaria/
 ---
 
