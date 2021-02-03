@@ -44,7 +44,7 @@ const Layout = ({ children, title }) => {
             <div className={styles.footer}>
                 <div className={styles.footerContainer}>
                     <Social />
-                    <p className={styles.copyright}>Copyright &copy; 2020 Talk a Bit. All rights reserved.</p>
+                    <p className={styles.copyright}>Copyright &copy; 2021 Talk a Bit. All rights reserved.</p>
                 </div>
             </div>
         </div>
