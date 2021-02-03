@@ -1,0 +1,23 @@
+.titleContainer {
+  transform: skewY(-5deg);
+  background-color: var(--primary-color-3);
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  font-family: var(--title-font);
+}
+
+.titleContainer h1 {
+    color: var(--primary-color-1);
+    transform: skewY(5deg);
+    margin: 0;
+}
+
+@media(max-width: 500px){
+    .titleContainer {
+        margin: 3rem auto;
+    }
+}

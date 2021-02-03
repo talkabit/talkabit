@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import Social from "./social";
+import Title from "./common/Title";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/layout.module.css";
@@ -35,11 +36,7 @@ const Layout = ({ children, title }) => {
         <div className={styles.layout}>
             <Header navLinks={data.site.siteMetadata.navLinks} />
             <Container className={styles.container}>
-                <div className={styles.title}>
-                    <span>
-                        {title}
-                    </span>
-                </div>
+                <Title title={title} />
                 <main>
                     {children}
                 </main>
