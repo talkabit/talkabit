@@ -33,12 +33,21 @@
 .footer {
     height: 50px;
     padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer .footerContainer {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    margin-top: 1rem;
 }
 
 @media (max-width: 700px) {

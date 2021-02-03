@@ -35,36 +35,15 @@ const IndexPage = () => {
             <Seo title="Home" />
             {/* <Logo className={styles.logo}></Logo> */}
             <img src={Logo} alt="Logo" className={styles.logo}/>
-            <h2 className={styles.date}>FEBRUARY 12 & 13</h2>
+            <h2 className={styles.date}>FEBRUARY 12 &amp; 13</h2>
             <h2 className={styles.title}>HOW SOCIETY IS BEING SHAPED BY TECHNOLOGY</h2>
             <div className={styles.social}>
                 <Social />
             </div>
-            <div className={styles.footer} />
             <div className={styles.nav}>
-                <Nav navLinks={data.site.siteMetadata.navLinks} />
+                <Nav navLinks={data.site.siteMetadata.navLinks} className={styles.navLinks}/>
             </div>
         </div>
-    // <Layout title="Schedule">
-    //     <Seo title="Home" />
-    //     <h1>Hi people</h1>
-    //     <p>Welcome to your new Gatsby site.</p>
-    //     <p>Now go build something great.</p>
-    //     <p>
-    //         <em>
-    //             {message.dataJson.message}
-    //         </em>
-    //     </p>
-    //     <div style={{ maxWidth: "300px", marginBottom: "1.45rem" }}>
-    //         <Image />
-    //     </div>
-    //     <CalendarExport/>
-    //     <Link to="/page-2/">Go to page 2</Link>
-    //     {" "}
-    //     <br />
-    //     <Sponsors />
-    //     <Schedule />
-    // </Layout>
     );
 };
 
