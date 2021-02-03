@@ -9,9 +9,9 @@ import AboutStyles from "../../../styles/about.module.css";
 const Team = ({ name, members }) => (
     <div>
         <div className={AboutStyles.titleContainer}>
-            <h2 className={AboutStyles.teamTitle}>
+            <h3 className={AboutStyles.teamTitle}>
                 {name}
-            </h2>
+            </h3>
         </div>
         <div className={AboutStyles.teamContainer}>
             {members.map((member) => <Member key={member.img.childImageSharp.id} {...member} />)}
