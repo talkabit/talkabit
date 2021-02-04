@@ -4,8 +4,8 @@ import Img from "gatsby-image";
 import classnames from "classnames";
 import styles from "../../styles/speakers.module.css";
 
-const ListItem = ({ name, img, children, link }) => (
-    <div className={classnames(styles.lines, styles.speaker)}>
+const ListItem = ({ name, img, children, link, className }) => (
+    <div className={classnames(styles.lines, styles.speaker, className)}>
         <div className={classnames(styles.speakerImgContainer)}>
             {img.childImageSharp.fluid ?             <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
                 :             <Img fixed={img.childImageSharp.fixed} className={styles.speakerImg} />
@@ -36,6 +36,7 @@ ListItem.propTypes = {
     }).isRequired,
     children: PropTypes.node.isRequired,
     link: PropTypes.string,
+    className: PropTypes.string,
 };
 
 export default ListItem;

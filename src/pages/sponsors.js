@@ -24,7 +24,7 @@ const Sponsors = () => {
               }
               img {
                 childImageSharp {
-                  fixed(width: 250) {
+                  fixed(width: 230) {
                     ...GatsbyImageSharpFixed
                   }
                 }

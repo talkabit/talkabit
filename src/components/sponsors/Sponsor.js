@@ -18,7 +18,7 @@ const getIcon = (extension) => {
 };
 
 const Sponsor = ({ website, files, img, name }) => (
-    <ListItem name={name} img={img} link={website}>
+    <ListItem name={name} img={img} link={website} className={styles.wrapper}>
         <ul className={styles.fileList}>
             {files.map(({ name, path }) => (
                 <div key={name}>

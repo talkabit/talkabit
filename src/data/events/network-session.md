@@ -1,5 +1,5 @@
 ---
-title: Sessão de Networking
+title: Networking Session
 type: enterprise
 promoted: true
 tickets: https://google.com

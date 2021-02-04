@@ -17,7 +17,7 @@
     text-transform: uppercase;
 }
 
-.speakerEntry .eventTitle:hover {
+.speakerEntry .author:hover, .eventPicture:hover {
     text-decoration: underline;
     cursor: pointer;
 }

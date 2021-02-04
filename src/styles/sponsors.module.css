@@ -6,7 +6,6 @@
     padding-right: 15%;
 }
 
-
 .tierContainer{
     transform: skewY(2deg) translateY(2rem); 
     display: flex;

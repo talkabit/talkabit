@@ -13,15 +13,15 @@ const EventDetailsSpeaker = ({ speakers, title, description, showPicture }) => (
             (
                 speakers.map((speaker, i) => ( // It's ok to use i as key, since the elements won't change
                     <div key={i} className={styles.speakerEntry}>
-                        <div className={styles.eventPicture}>
+                        <div className={styles.eventPicture} onClick={() => navigate(`/speakers/#${speaker.name.replace(" ", "-")}`)}>
                             <Img fluid={speaker.img.childImageSharp.fluid}/>
                         </div>
                         <div className={styles.titleAuthor}>
-                            <div className={styles.eventTitle} onClick={() => navigate(`/speakers/#${speaker.name.replace(" ", "-")}`)}>
+                            <div className={styles.eventTitle}>
                                 {title}
                             </div>
 
-                            <div className={styles.author}>
+                            <div className={styles.author} onClick={() => navigate(`/speakers/#${speaker.name.replace(" ", "-")}`)}>
                                 {speaker.name}
                             </div>
                             <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}/>
