@@ -15,7 +15,8 @@
   margin-top: 1rem;
   text-align: center;
   margin: 0;
-  padding: 3rem 1rem 1rem 1rem;
+  flex-shrink: 0;
+  padding: 1rem;
 }
 
 .logo {
@@ -59,7 +60,7 @@
   height: 100%;
   margin: 0;
   transform: none;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .navLinks > * {
@@ -90,9 +91,3 @@
   }
 }
 
-@media(max-width: 500px){
-
-  .copyright {
-    padding-top: 1rem;
-  }
-}

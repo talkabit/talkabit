@@ -33,12 +33,13 @@ const IndexPage = () => {
             }}
         >
             <Seo title="Home" />
-            {/* <Logo className={styles.logo}></Logo> */}
-            <img src={Logo} alt="Logo" className={styles.logo}/>
-            <h2 className={styles.date}>FEBRUARY 12 &amp; 13</h2>
-            <h2 className={styles.title}>HOW SOCIETY IS BEING SHAPED BY TECHNOLOGY</h2>
-            <div className={styles.social}>
-                <Social />
+            <div style={{ flex: "1 0 auto" }}>
+                <img src={Logo} alt="Logo" className={styles.logo}/>
+                <h2 className={styles.date}>FEBRUARY 12 &amp; 13</h2>
+                <h2 className={styles.title}>HOW SOCIETY IS BEING SHAPED BY TECHNOLOGY</h2>
+                <div className={styles.social}>
+                    <Social />
+                </div>
             </div>
             <div className={styles.nav}>
                 <Nav navLinks={data.site.siteMetadata.navLinks} className={styles.navLinks}/>
