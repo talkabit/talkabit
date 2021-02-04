@@ -76,7 +76,7 @@
     "name": "Two Impulse",
     "img": "../images/sponsors/twoimpulse.png",
     "tier": "2-Bronze",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://twoimpulse.com/"
   },
   {
@@ -88,7 +88,7 @@
   },
   {
     "name": "Switch",
-    "img": "../images/sponsors/switch.png",
+    "img": "../images/sponsors/switch2.png",
     "tier": "2-Bronze",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
     "website": "https://switchpayments.com"

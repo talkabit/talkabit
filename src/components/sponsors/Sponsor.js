@@ -20,7 +20,7 @@ const getIcon = (extension) => {
 
 const Sponsor = ({ website, files, img, name }) => (
     <Row className={styles.sponsorItemContainer}>
-        <Col className={styles.logoContainer} md="6" xs="12">
+        <Col className={styles.logoContainer} md={files && files.length > 0 ? "6" : "12"} xs="12">
             <a href={website} target="_blank" rel="noreferrer" alt={name}>
                 <h2 className={styles.name}>
                     {name}
@@ -36,18 +36,20 @@ const Sponsor = ({ website, files, img, name }) => (
                 <Image fluid={img.childImageSharp.fluid} alt={name} className={styles.image}/>
             </a>
         </Col>
-        <Col md="6" xs="12">
-            <ul className={styles.fileList}>
-                {files.map(({ name, path }) => (
-                    <div key={name}>
-                        <a href={path.publicURL} download className={styles.link}>
-                            {getIcon(path.extension)}
-                            {name}
-                        </a>
-                    </div>
-                ))}
-            </ul>
-        </Col>
+        {files ? (
+            <Col md="6" xs="12">
+                <ul className={styles.fileList}>
+                    {files.map(({ name, path }) => (
+                        <div key={name}>
+                            <a href={path.publicURL} download className={styles.link}>
+                                {getIcon(path.extension)}
+                                {name}
+                            </a>
+                        </div>
+                    ))}
+                </ul>
+            </Col>
+        ) : null}
     </Row>
 );
 

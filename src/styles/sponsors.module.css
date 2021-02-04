@@ -53,7 +53,7 @@
 }
 
 .imageContainer {
-  width: 250px;
+  width: 300px;
   height: calc(300px - 2rem);
   display: flex;
   justify-content: center;
