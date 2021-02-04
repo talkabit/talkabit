@@ -3,7 +3,7 @@
   z-index: 2;
   top: -1.8rem;
   left: -1rem;
-  transform: skewY(-5deg);
+  transform: skewY(-2deg);
   background-color: var(--primary-color-2);
   width: 11rem;
   height: 4rem;
@@ -18,7 +18,7 @@
 }
 
 .linkContainer {
-  transform: skewY(-5deg);
+  transform: skewY(-2deg);
   background-color: var(--primary-color-2);
   width: 15rem;
   height: 4.5rem;
@@ -42,7 +42,7 @@
 .title {
   color: var(--primary-color-3);
   padding: 0.5rem;
-  transform: skewY(5deg);
+  transform: skewY(2deg);
   display: flex;
   align-items: center;
 }
