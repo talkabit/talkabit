@@ -31,13 +31,13 @@ const HackathonPage = () => {
             brand
           }
           registration
-          regulation {
-            publicURL
-          }
-          winners {
-            name
-            github
-          }
+          # regulation {
+          #   publicURL
+          # }
+          # winners {
+          #   name
+          #   github
+          # }
         }
       }
     }
@@ -62,7 +62,7 @@ const HackathonPage = () => {
                 dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
                 className={styles.text}
             />
-            <Link href={regulation.publicURL} download title="Regulation" />
+            {regulation ? <Link href={regulation.publicURL} download title="Regulation" /> : null}
             <Prizes prizes={prizes} />
             <Link href={registration} title="Sign In!" />
             <Winners winners={winners} />
