@@ -24,8 +24,8 @@ const Sponsors = () => {
               }
               img {
                 childImageSharp {
-                  fluid(maxWidth: 400) {
-                    ...GatsbyImageSharpFluid
+                  fixed(width: 250) {
+                    ...GatsbyImageSharpFixed
                   }
                 }
               }

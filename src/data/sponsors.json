@@ -1,6 +1,6 @@
 [
   {
-    "name": "ABConsulting",
+    "name": "ABConsulting + Nexellence",
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
@@ -35,7 +35,7 @@
     "website": "https://www.inesctec.pt/en"
   },
   {
-    "name": "Inova-Ria",
+    "name": "Inova-Ria + Altice Labs",
     "img": "../images/sponsors/inovaria.png",
     "tier": "1-Silver",
     "files": [{ "path": "./files/sample.zip", "name": "Sample" }],

@@ -18,12 +18,12 @@ module.exports = {
                 link: "/hackathon",
             },
             {
-                name: "About",
-                link: "/about",
-            },
-            {
                 name: "Sponsors",
                 link: "/sponsors",
+            },
+            {
+                name: "About",
+                link: "/about",
             },
         ],
     },

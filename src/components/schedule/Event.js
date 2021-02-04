@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { SpeakerShape } from "../../utils/props";
 import Img from "gatsby-image";
+import { navigate } from "@reach/router";
 
 import styles from "./schedule.module.css";
+import { ImTicket } from "react-icons/im";
 
 const EventDetailsSpeaker = ({ speakers, title, description, showPicture }) => (
     <>
@@ -15,7 +17,7 @@ const EventDetailsSpeaker = ({ speakers, title, description, showPicture }) => (
                             <Img fluid={speaker.img.childImageSharp.fluid}/>
                         </div>
                         <div className={styles.titleAuthor}>
-                            <div className={styles.eventTitle}>
+                            <div className={styles.eventTitle} onClick={() => navigate(`/speakers/#${speaker.name.replace(" ", "-")}`)}>
                                 {title}
                             </div>
 
@@ -98,15 +100,24 @@ Event.propTypes = {
     slug: PropTypes.string,
 };
 
-export const PromotedEvent = ({ title, startTime, endTime }) => (
+export const PromotedEvent = ({ title, startTime, endTime, tickets }) => (
     <div className={styles.promotedEvent}>
         <div className={styles.time}>
             {`${startTime} - ${endTime}`}
         </div>
         <div className={styles.title}>
-            <p>
-                {title}
-            </p>
+            {tickets ?   (
+                <a href={tickets} style={{ color: "white", textDecoration: "none" }} className={styles.tickets} target="_blank" rel="noreferrer">
+                    <ImTicket size="1.5rem"/>
+                    <p>
+                        {title}
+                    </p>
+                </a>
+            ) : (
+                <p>
+                    {title}
+                </p>
+            )}
         </div>
     </div>
 );
@@ -115,6 +126,7 @@ PromotedEvent.propTypes = {
     title: PropTypes.string.isRequired,
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
+    tickets: PropTypes.string,
 };
 
 

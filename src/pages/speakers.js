@@ -20,6 +20,8 @@ const Speakers = () => {
         edges {
           node {
             frontmatter {
+              date(formatString: "D MMM", locale: "en-US")
+              startTime
               speakers {
                 name
                 bio
@@ -45,7 +47,7 @@ const Speakers = () => {
                 {data.allMarkdownRemark.edges.map((list) =>
                     list.node.frontmatter.speakers.map((edge) => (
                         <li key={edge.name} className={styles.item}>
-                            <Speaker {...edge} />
+                            <Speaker {...edge} startTime={list.node.frontmatter.startTime} date={list.node.frontmatter.date} />
                         </li>
                     ))
                 )}

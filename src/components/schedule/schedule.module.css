@@ -17,6 +17,11 @@
     text-transform: uppercase;
 }
 
+.speakerEntry .eventTitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .speakerEntry {
     display: grid;
     grid-template-columns: 60px auto;
@@ -78,6 +83,7 @@
     transform: skewY(2deg);
     margin: 0;
     font-weight: bold;
+    font-size: 1.8rem;
 }
 
 .dayScheduleDate_right {
@@ -85,13 +91,19 @@
 }
 
 .promotedEvent {
-    width: 16em;
+    width: 18em;
     /* padding: 2em; */
 }
 
 .promotedEvent .time {
     margin-bottom: -2em;
     color: var(--primary-color-2);
+}
+
+.promotedEvent .tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .promotedEvent .title {
@@ -107,6 +119,7 @@
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
+    margin-left: 0.5rem;
 }
 
 .event.promotedInline .time {
