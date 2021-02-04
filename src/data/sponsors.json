@@ -1,15 +1,15 @@
 [
   {
-    "name": "ABConsulting + Nexellence",
+    "name": "ABConsulting + Nexllence",
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
     "files": [
       {
-        "path": "./files/nexcellence/abc_nexcellence_images.zip",
+        "path": "./files/nexllence/abc_nexllence_images.zip",
         "name": "Images"
       },
       {
-        "path": "./files/nexcellence/Brochura-Nexllence[21139].pdf",
+        "path": "./files/nexllence/Brochura-Nexllence[21139].pdf",
         "name": "Brochure"
       }
     ],
