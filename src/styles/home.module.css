@@ -8,6 +8,16 @@
   padding-top: 8vh;
 }
 
+.copyright {
+  color: var(--primary-color-1);
+  background-color: white;
+  font-family: var(--inf-font);
+  margin-top: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
 .logo {
   margin-left: 40vw;
   width: 20vw;
@@ -77,5 +87,12 @@
 
   .nav {
     bottom: 4vh;
+  }
+}
+
+@media(max-width: 500px){
+
+  .copyright {
+    padding-top: 1rem;
   }
 }
