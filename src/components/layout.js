@@ -34,16 +34,19 @@ const Layout = ({ children, title, showHeader = true }) => {
 
     return (
         <div className={styles.layout}>
-            {showHeader && <Header navLinks={data.site.siteMetadata.navLinks} />}
-            <Container className={styles.container}>
-                <Title title={title} />
-                <main>
-                    {children}
-                </main>
-            </Container>
+            <div className={styles.contentWrapper}>
+                {showHeader && <Header navLinks={data.site.siteMetadata.navLinks} />}
+                <Container className={styles.container}>
+                    <Title title={title} />
+                    <main>
+                        {children}
+                    </main>
+                </Container>
+            </div>
             <div className={styles.footer}>
                 <div className={styles.footerContainer}>
                     <Social />
+                    <p className={styles.copyright}>Copyright &copy; 2021 Talk a Bit. All rights reserved.</p>
                 </div>
             </div>
         </div>

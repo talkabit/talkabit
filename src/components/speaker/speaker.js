@@ -1,22 +1,18 @@
 import React from "react";
-import Img from "gatsby-image";
-import classnames from "classnames";
 import { SpeakerPageShape } from "../../utils/props";
 import styles from "../../styles/speakers.module.css";
+import ListItem from "../utils/ListItem";
 
-const Speaker = ({ name, bio, img }) => (
-    <div className={styles.speaker}>
-        <div className={classnames(styles.lines, styles.speakerImgContainer)}>
-            <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
-        </div>
-        <div className={styles.speakerInfo}>
-            <h2 className={styles.speakerName}>
-                {name}
-            </h2>
+const Speaker = ({ name, bio, img, date, startTime }) => (
+    <div id={name.replace(" ", "-")}>
+        <ListItem name={name} img={img}>
+            <p className={styles.start}>
+                {`${date} - ${startTime}`}
+            </p>
             <p className={styles.speakerBio}>
                 {bio}
             </p>
-        </div>
+        </ListItem>
     </div>
 );
 

@@ -1,11 +1,12 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+import classnames from "classnames";
 
 import NavStyles from "../styles/navStyles.module.css";
 
-const Nav = ({ navLinks }) => (
-    <nav className={NavStyles.navContainer}>
+const Nav = ({ navLinks, className }) => (
+    <nav className={classnames(NavStyles.navContainer, className)}>
         <ul className={NavStyles.nav}>
             {navLinks.map((link) => (
                 <li
@@ -24,6 +25,7 @@ const Nav = ({ navLinks }) => (
 
 Nav.propTypes = {
     navLinks: PropTypes.array,
+    className: PropTypes.string,
 };
 
 Nav.defaultProps = {

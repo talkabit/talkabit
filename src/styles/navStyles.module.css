@@ -1,4 +1,4 @@
-@import "./global.css";
+    @import "./global.css";
 
 .logo {
     width: 100%;
@@ -27,6 +27,7 @@
     width:100%;
     display: inline-block; 
     padding-left: 0px;
+    margin: 0.5rem;
 }
 
 .navItem {
@@ -34,8 +35,7 @@
     padding: 0.5rem;
     width: 8rem;
     display: inline-block; 
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0.5rem 3rem;
     list-style-type: none;
     transform: skewY(-2deg) translateY(0.35rem);
 }
@@ -64,8 +64,4 @@
         margin-top: 2rem;
         width: 30%;
     }  
-
-    .navItem {
-        margin-bottom: 1rem;
-    }
 }

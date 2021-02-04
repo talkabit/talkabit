@@ -1,6 +1,6 @@
 ---
-startDate: "2021-02-11 14:00"
-endDate: "2021-02-16 17:00"
+startDate: "2021-02-10 14:00"
+endDate: "2021-02-13 17:00"
 registration: https://forms.gle/3J4hmjQmRag2h8aQ6
 
 prizes:
@@ -27,8 +27,6 @@ winners:
     github: https://github.com/facebook/react
   - name: Rekicho3
     github: https://github.com/flutter/flutter 
-
-regulation: "./files/tab21_regulation.pdf" 
 ---
 
 Digital technologies are always evolving, often at a scale much larger than humans can keep up with. Technological breakthroughs are an everyday occurrence, promising to make our lives simpler and easier. Nonetheless, it remains unclear if we’ve reached a turning point in which more software no longer translates to a better quality of life.

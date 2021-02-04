@@ -1,166 +1,165 @@
 @import "./global.css";
 
-.aboutContainer{
-    padding-bottom:1rem;    
+.aboutContainer {
+  padding-bottom: 1rem;
 }
 
 .text {
-    color: var(--primary-color-2);
-    font-family: var(--inf-font);
-    width:70%;
+  color: var(--primary-color-2);
+  font-family: var(--inf-font);
+  width: 70%;
 }
 
 .titleLeft {
-    color: var(--primary-color-3);
-    font-family: var(--title-font);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+  color: var(--primary-color-3);
+  font-family: var(--title-font);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .titleLeft2 {
-    color: var(--primary-color-3);
-    font-family: var(--title-font);
-    padding-bottom: 3rem;
-    padding-top: 5rem;
+  color: var(--primary-color-3);
+  font-family: var(--title-font);
+  padding-bottom: 3rem;
+  padding-top: 5rem;
 }
 
 .titleRight {
-    color: var(--primary-color-3);
-    font-family: var(--title-font);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    text-align: right;
+  color: var(--primary-color-3);
+  font-family: var(--title-font);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .titleContainer {
-    transform: skewY(-2deg);
-    padding: 1rem;
-    border-bottom: 2px solid var(--primary-color-2);
-    width: 20rem;
-    margin: 2rem auto;
+  transform: skewY(-2deg);
+  padding: 1rem;
+  border-bottom: 2px solid var(--primary-color-2);
+  width: 20rem;
+  margin: 2rem auto;
 }
 
 .teamTitle {
-    text-align: center;
-    font-family: var(--title-font);
-    color: var(--primary-color-3);
-    transform: skewY(2deg);
-    margin: 0;
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--primary-color-3);
+  transform: skewY(2deg);
+  margin: 0;
 }
 
 .teamContainer {
-    text-align:center;
+  text-align: center;
 }
 
-.memberContainer{
-    width:15rem;
-    display:inline-block;
-    text-align:center;
-    margin: 1rem;
-    transform: skewY(-2deg) translateY(-0.7rem);
-    border: 1px solid var(--primary-color-3);
+.memberContainer {
+  width: 15rem;
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+  transform: skewY(-2deg) translateY(-0.7rem);
+  border: 1px solid var(--primary-color-3);
 }
 
-.memberNameContainer{
-    position:absolute;
-    background-color: var(--primary-color-2);
-    padding: 0.4rem;
-    justify-content: center;
-    width: 11rem;
-    float: right;
-    text-align: center;
-    transform: skewY(2deg) translateY(-2.8rem) translateX(3.5rem);
-    /* z-index: 1; */
+.memberNameContainer {
+  position: absolute;
+  background-color: var(--primary-color-2);
+  padding: 0.4rem;
+  justify-content: center;
+  width: 11rem;
+  float: right;
+  text-align: center;
+  transform: skewY(2deg) translateY(-2.8rem) translateX(3.5rem);
+  /* z-index: 1; */
 }
 
-.memberName{
-    text-align: center;
-    color: var(--primary-color-3);
-    font-family: var(--title-font);
-    font-size: 1rem;
-    margin: 0;
+.memberName {
+  text-align: center;
+  color: var(--primary-color-3);
+  font-family: var(--title-font);
+  font-size: 1rem;
+  margin: 0;
 }
 
 .triangleShape {
-    position:absolute;
-    width: 0;
-    height: 0;
-    border-top: 1.5rem solid var(--primary-color-2);
-    border-left: 1.5rem solid transparent;
-    transform: skewX(10deg) translateY(-0.7rem) translateX(11rem);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid var(--primary-color-2);
+  border-left: 1.5rem solid transparent;
+  transform: skewX(10deg) translateY(-0.7rem) translateX(11rem);
 }
 
 .editionsContainer {
-    width:70%;
+  width: 70%;
 }
 
-.editionContainer{
-    display:inline-block;
-    transform: skewY(-2deg) translateY(-0.7rem);
-    background-color: var(--primary-color-2);
-    padding: 0.2rem;
-    margin-right:2rem;
-    margin-bottom: 2rem;
-    width: 10rem;
-    text-align: center;
+.editionContainer {
+  display: inline-block;
+  transform: skewY(-2deg) translateY(-0.7rem);
+  background-color: var(--primary-color-2);
+  padding: 0.2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+  text-align: center;
 }
 
-.edition{
-    color: var(--primary-color-3);
-    font-family: var(--title-font);
-    transform: skewY(2deg);
-    font-size: 1.5rem;
-    margin: 0;
+.edition {
+  color: var(--primary-color-3);
+  font-family: var(--title-font);
+  transform: skewY(2deg);
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .edition:hover {
-    text-decoration: none;
-    color:var(--primary-color-1);
+  text-decoration: none;
+  color: var(--primary-color-1);
 }
 
-
 @media (max-width: 600px) {
+  .editionsContainer {
+    width: 100%;
+    text-align: center;
+  }
 
-    .editionsContainer {
-        width:100%;
-        text-align: center;
-    }
+  .editionContainer {
+    width: 7rem;
+    text-align: center;
+    margin: 0rem 1rem 2rem 1rem;
+  }
 
-    .editionContainer{
-        width: 7rem;
-        text-align: center;
-        margin: 0rem 1rem 2rem 1rem;
-    }
+  .aboutContainer {
+    display: flex;
+    justify-content: center;
+  }
 
-    .aboutContainer{
-        display: flex;
-        justify-content: center;  
-    }
+  .titleRight {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
 
-    .titleRight {
-        color: var(--primary-color-3);
-        font-family: var(--inf-font);
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        text-align: center;
-    }
+  .titleLeft {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
 
-    .titleLeft {
-        color: var(--primary-color-3);
-        font-family: var(--inf-font);
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        text-align: center;
-    }
+  .titleLeft2 {
+    color: var(--primary-color-3);
+    font-family: var(--inf-font);
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
 
-    .titleLeft2 {
-        color: var(--primary-color-3);
-        font-family: var(--inf-font);
-        padding-bottom: 3rem;
-        padding-top: 5rem;
-        text-align: center;
-    }
-
-
-
+  .text {
+    width: 95%;
+  }
 }

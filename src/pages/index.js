@@ -27,26 +27,25 @@ const IndexPage = () => {
   `);
 
     return (
-        <>
-            <div
-                className={styles.home} style={{
-                    backgroundImage: `url(${Background})`,
-                }}
-            >
-                <Seo title="Home" />
-                {/* <Logo className={styles.logo}></Logo> */}
+        <div
+            className={styles.home} style={{
+                backgroundImage: `url(${Background})`,
+            }}
+        >
+            <Seo title="Home" />
+            <div style={{ flex: "1 0 auto" }}>
                 <img src={Logo} alt="Logo" className={styles.logo}/>
-                <h2 className={styles.date}>FEBRUARY 12 & 13</h2>
+                <h2 className={styles.date}>FEBRUARY 12 &amp; 13</h2>
                 <h2 className={styles.title}>HOW SOCIETY IS BEING SHAPED BY TECHNOLOGY</h2>
                 <div className={styles.social}>
                     <Social />
                 </div>
-                <div className={styles.footer} />
-                <div className={styles.nav}>
-                    <Nav navLinks={data.site.siteMetadata.navLinks} />
-                </div>
             </div>
-        </>
+            <div className={styles.nav}>
+                <Nav navLinks={data.site.siteMetadata.navLinks} className={styles.navLinks}/>
+            </div>
+            <p className={styles.copyright}>Copyright &copy; 2021 Talk a Bit. All rights reserved.</p>
+        </div>
     );
 };
 

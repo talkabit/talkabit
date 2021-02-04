@@ -1,5 +1,5 @@
 .titleContainer {
-  transform: skewY(-5deg);
+  transform: skewY(-2deg);
   background-color: var(--primary-color-3);
   width: 15rem;
   height: 4rem;
@@ -12,7 +12,7 @@
 
 .titleContainer h1 {
     color: var(--primary-color-1);
-    transform: skewY(5deg);
+    transform: skewY(2deg);
     margin: 0;
 }
 

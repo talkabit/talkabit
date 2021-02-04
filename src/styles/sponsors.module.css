@@ -6,7 +6,6 @@
     padding-right: 15%;
 }
 
-
 .tierContainer{
     transform: skewY(2deg) translateY(2rem); 
     display: flex;
@@ -88,6 +87,7 @@
 
 .fileList {
   margin: 1rem 0;
+  padding: 0;
 }
 
 .tier {
@@ -102,12 +102,13 @@
   display: flex;
   align-items: center;
   font-family: var(--inf-font);
-  color: var(--primary-color-2);
+  color: var(--primary-color-3);
   font-size: 1.2rem;
 }
 
 .link:hover {
-    color: var(--primary-color-1);
+    color: var(--primary-color-2);
+    text-decoration: none;
 }
 
 .name {

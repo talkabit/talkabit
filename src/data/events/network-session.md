@@ -1,7 +1,8 @@
 ---
-title: Sessão de Networking
+title: Networking Session
 type: enterprise
 promoted: true
+tickets: https://google.com
 
 date: 2020-02-12
 startTime: 15h00

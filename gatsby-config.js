@@ -1,7 +1,8 @@
 module.exports = {
     siteMetadata: {
         title: "Talk A Bit",
-        description: "Talk A Bit 2021 Website",
+        description:
+      "Talk a Bit is a conference where technology is discussed and is back for its 9th edition! Join us on the 12th and 13th of February, 2021!",
         author: "@talkabit",
         navLinks: [
             {
@@ -17,12 +18,12 @@ module.exports = {
                 link: "/hackathon",
             },
             {
-                name: "About",
-                link: "/about",
-            },
-            {
                 name: "Sponsors",
                 link: "/sponsors",
+            },
+            {
+                name: "About",
+                link: "/about",
             },
         ],
     },
@@ -63,7 +64,7 @@ module.exports = {
                 background_color: "#663399",
                 theme_color: "#663399",
                 display: "minimal-ui",
-                icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+                icon: "src/images/Tab4v-04.png", // This path is relative to the root of the site.
             },
         },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -4,6 +4,7 @@ import Sponsor from "./Sponsor";
 import { SponsorShape } from "../../utils/props";
 
 import styles from "../../styles/sponsors.module.css";
+import styles2 from "../../styles/speakers.module.css";
 
 const Sponsors = ({ tiers }) => (
     <div>
@@ -14,10 +15,16 @@ const Sponsors = ({ tiers }) => (
                         {tier.fieldValue.slice(2)}
                     </h1>
                 </div>
+                <ul className={styles2.speakers}>
 
-                {tier.edges.map(({ node }) => (
-                    <Sponsor key={node.name} {...node} />
-                ))}
+                    {tier.edges.map(({ node }) => (
+                        <li className={styles2.item} key={node.name}>
+                            <Sponsor  {...node} />
+                        </li>
+
+                    ))}
+                </ul>
+
             </div>
         ))}
     </div>
