@@ -3,73 +3,87 @@
     "name": "ABConsulting + Nexellence",
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [
+      {
+        "path": "./files/nexcellence/abc_nexcellence_images.zip",
+        "name": "Images"
+      },
+      {
+        "path": "./files/nexcellence/Brochura-Nexllence[21139].pdf",
+        "name": "Brochure"
+      }
+    ],
     "website": "https://www.abconsulting.pt/"
   },
   {
     "name": "KPMG",
     "img": "../images/sponsors/KPMG.png",
     "tier": "0-Gold",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://home.kpmg/pt/pt/home.html"
   },
   {
     "name": "SonaeBit",
     "img": "../images/sponsors/bit.png",
     "tier": "0-Gold",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://sonaemc.com/"
   },
   {
     "name": "Fraunhofer",
     "img": "../images/sponsors/fraunhofer.png",
     "tier": "1-Silver",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://www.aicos.fraunhofer.pt/en/home.html"
   },
   {
     "name": "INESC TEC",
     "img": "../images/sponsors/inesc.png",
     "tier": "1-Silver",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://www.inesctec.pt/en"
   },
   {
     "name": "Inova-Ria + Altice Labs",
     "img": "../images/sponsors/inovaria.png",
     "tier": "1-Silver",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [
+      { "path": "./files/inovaria/feup_banner.jpg", "name": "Banner" },
+      { "path": "./files/inovaria/feup_poster.jpg", "name": "Poster" },
+      { "path": "./files/inovaria/inquerito_ir_altice.png", "name": "Survey" },
+      {
+        "path": "./files/inovaria/logo_inovaria_genius_alticelabs.jpg",
+        "name": "Logo"
+      }
+    ],
     "website": "http://www.inova-ria.pt/"
   },
   {
     "name": "msg life",
     "img": "../images/sponsors/msglife.png",
     "tier": "1-Silver",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://google.com"
   },
   {
     "name": "OutSystems",
     "img": "../images/sponsors/outsystem.png",
     "tier": "1-Silver",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://www.outsystems.com/"
   },
   {
     "name": "Xpand IT",
     "img": "../images/sponsors/xpand.png",
     "tier": "1-Silver",
-    "files": [
-      { "path": "./files/sample.pdf", "name": "Sample" },
-      { "path": "./files/sample.zip", "name": "SampleZip" }
-    ],
+    "files": [],
     "website": "https://google.com"
   },
   {
     "name": "Natixis",
     "img": "../images/sponsors/natixis.png",
     "tier": "2-Bronze",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://www.natixis.com/natixis/en/home-j_6.html"
   },
   {
@@ -83,14 +97,14 @@
     "name": "Dellent",
     "img": "../images/sponsors/dellent.png",
     "tier": "2-Bronze",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://dellentconsulting.com/"
   },
   {
     "name": "Switch",
     "img": "../images/sponsors/switch2.png",
     "tier": "2-Bronze",
-    "files": [{ "path": "./files/sample.zip", "name": "Sample" }],
+    "files": [],
     "website": "https://switchpayments.com"
   }
 ]
