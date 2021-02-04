@@ -1,7 +1,11 @@
 @import "./global.css";
 
 .layout {
-    background-color: var(--primary-color-1); 
+    background-color: var(--primary-color-1);
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -30,11 +34,18 @@
     font-family: var(--title-font);
 }
 
+.contentWrapper {
+    flex: 1 0 auto;
+    background-color: var(--primary-color-1);
+}
+
 .footer {
     height: 50px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--primary-color-1);
 }
 
 .footer .footerContainer {
