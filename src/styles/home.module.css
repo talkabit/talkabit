@@ -5,7 +5,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* padding-top: 8vh; */
+  padding-top: 8vh;
 }
 
 .copyright {
@@ -17,14 +17,13 @@
   margin: 0;
   flex-shrink: 0;
   padding: 1rem;
-  /* padding-top: 7rem; */
+  padding-top: 7rem;
 }
 
 .logo {
   margin-left: 40vw;
   width: 20vw;
   margin-bottom: 2vh;
-  margin-top: 3rem;
 }
 
 .date {
@@ -54,7 +53,6 @@
 
 .nav {
   width: 100%;
-  height: 20rem;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -62,7 +60,7 @@
   height: 100%;
   margin: 0;
   transform: none;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 0;
 }
 
