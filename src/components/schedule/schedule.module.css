@@ -15,6 +15,9 @@
     color: var(--primary-color-3);
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.event .eventTitle a {
     display: flex;
     justify-content: center;
 }
