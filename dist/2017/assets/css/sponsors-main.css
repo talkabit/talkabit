@@ -1,0 +1,96 @@
+.sponsors div .row {
+    text-align: center;
+}
+
+#sponsors .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#sponsors .sponsor-type h4 {
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    background-color: #009AD7;
+    margin: 50px auto;
+    width: 280px;
+    font-family: 'DecimaLight';
+    font-weight: bold;
+}
+
+#sponsors .sponsors a img {
+    margin: 20px;
+}
+.gold a img {
+    height: 200px;
+}
+
+.silver a img {
+    height: 125px;
+}
+
+.bronze a img,
+.friends a img {
+    height: 75px;
+}
+
+#accenture img {
+    height: 90px;
+}
+
+#critical_manufacturing img {
+    height: 150px;
+}
+
+#deloitte img {
+    height: 60px;
+}
+
+#farfetch img {
+    height: 60px;
+}
+
+#critical_software img {
+    height: 100px;
+}
+
+#itgrow img,
+#feedzai img {
+    height: 50px;
+}
+
+
+#uber {
+    margin-top: 10px;
+}
+
+#uber img {
+    height: 20px;
+}
+
+#novabase img {
+    height: 55px;
+}
+
+#best_porto img {
+  height: 60px;
+}
+
+#feup img {
+  height: 60px;
+}
+
+#niaefeup img {
+  height: 80px;
+}
+
+#ieee img {
+  height: 50px;
+}
+
+#aefeup img {
+  height: 50px;
+}

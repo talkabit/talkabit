@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Talk A Bit 2020</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="white" />
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../images/hello-icon-152.png" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css" />
+
+  <!-- Sponsors CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/sponsors.css" />
+
+  <meta name="theme-color" content="white" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Hello World" />
+  <meta name="msapplication-TileImage" content="../images/hello-icon-144.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav mx-auto navbar-first-list">
+        <li class="nav-item">
+          <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+          <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="../index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="../index.html#tickets">Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="./speakers.html">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="./program.html">Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="../index.html#location">Location</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+        <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
+          <img height="40" src="../images/logo_sem.png" />
+        </a>
+      </ul>
+
+      <ul id="user-navbar" class="nav navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link py-0" href="./sevents.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0" href="./organization.html">Organization</a>
+        </li>
+        <li class="nav-item dropdown" id="prevVersions">
+          <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Previous Editions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+            <a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+            <a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+            <a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+            <a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+            <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+            <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+          </div>
+
+        </li>
+        <li class="nav-item" id="loginLnk" style="display: none;">
+          <a class="nav-link py-0" href="./login.html">Login</a>
+        </li>
+        <li class="nav-item" id="registerLnk" style="display: none;">
+          <a class="nav-link py-0" href="./register.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sponsors page -->
+  <div id="sponsors" class="container">
+    <h1 class="mt-3 mb-5" id="title">Meet Our Sponsors</h1>
+
+    <!-- Main -->
+    <div class="box">
+      <h3 id="partners-title">Main</h3>
+      <hr id="partners-line" class="line" />
+
+      <div class="row mx-1 pb-3">
+        <div class="col-12 text-center my-auto pb-3">
+          <a href="https://switchpayments.com/#/">
+            <img id="main-sponsor-img" src="../images/sponsors/switch.png" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gold -->
+    <div class="box">
+      <h3 id="gold-title">Gold</h3>
+      <hr id="gold-line" class="line" />
+
+      <div class="row mx-1 pb-3" style="justify-content: space-evenly;">
+        <div class="col-8 col-md-4 mx-5 my-auto">
+          <a href="https://www.talkdesk.com/">
+            <img src="../images/sponsors/talkdesk.png" class="img-fluid my-4" />
+          </a>
+        </div>
+
+        <div class="col-8 col-md-4 mx-5 my-auto">
+          <a href="https://www.xpand-it.com/pt-pt/">
+            <img src="../images/sponsors/xpandit.png" class="img-fluid my-4" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Silver -->
+    <div class="box">
+      <h3 id="silver-title"></i>Silver</h3>
+      <hr id="silver-line" class="line" />
+
+      <div class="row mx-1 pb-3" style="justify-content: space-evenly;">
+        <div class="col-5 col-md-3 my-auto">
+          <a href="http://www.inova-ria.pt/">
+            <img src="../images/sponsors/inovaria.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://group.jumia.com/">
+            <img src="../images/sponsors/jumia.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.devscope.net/">
+            <img src="../images/sponsors/devscope.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.sisqual.com/pt-pt/">
+            <img src="../images/sponsors/sisqual.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.finantech.pt/">
+            <img src="../images/sponsors/finantec.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://uptec.up.pt/pt-pt/empresas/losch/">
+            <img src="../images/sponsors/losch.jpeg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.inesc.pt/pt/">
+            <img src="../images/sponsors/inesc.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.aicos.fraunhofer.pt/en/home.html">
+            <img src="../images/sponsors/fraunhoffer.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.worten.pt/">
+            <img src="../images/sponsors/worten.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.johnsoncontrols.com/">
+            <img src="../images/sponsors/jc.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://devexperts.com/">
+            <img src="../images/sponsors/devexperts.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.criticalmanufacturing.com/">
+            <img src="../images/sponsors/criticalman.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.novabase.pt/pt">
+            <img src="../images/sponsors/novabase.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="http://weirdmath.com/">
+            <img src="../images/sponsors/semasio.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.rumos.pt/">
+            <img src="../images/sponsors/rumos.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://www.criticaltechworks.com/">
+            <img src="../images/sponsors/critical.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-5 col-md-3 my-auto">
+          <a href="https://blip.pt/">
+            <img src="../images/sponsors/blip.png" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bronze -->
+    <div class="box">
+      <h3 id="bronze-title"></i>Bronze</h3>
+      <hr id="bronze-line" class="line" />
+
+      <div class="row  mx-1 pb-3" style="justify-content: space-evenly;">
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://platforme.com/">
+            <img src="../images/sponsors/platforme.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.natixis.com/">
+            <img src="../images/sponsors/natixis.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.msg-life.pt/">
+            <img src="../images/sponsors/msg-life.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.velocidi.com/">
+            <img src="../images/sponsors/velocidi.png" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="box">
+      <h3 id="main-title">
+        Partners
+      </h3>
+      <hr id="main-line" class="line" />
+
+      <div class="row mx-1" style="justify-content: space-evenly;">
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.bosch.pt/">
+            <img src="../images/sponsors/bosch.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://dei.fe.up.pt/">
+            <img src="../images/sponsors/dei.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://up.ieee-pt.org/">
+            <img src="../images/sponsors/ieee.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.junifeup.pt/">
+            <img src="../images/sponsors/junifeup.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.aefeup.pt/">
+            <img src="../images/sponsors/aefeup.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://ni.fe.up.pt/">
+            <img src="../images/sponsors/niaefeup.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.facebook.com/CervejaNortada/">
+            <img src="../images/sponsors/nortada.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.facebook.com/SaboresdosAlquimia/">
+            <img src="../images/sponsors/alquimiadossabores.png" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.misspavlova.pt/">
+            <img src="../images/sponsors/misspavlova.jpeg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://www.museudocarroelectrico.pt/">
+            <img src="../images/sponsors/museu.jpg" class="img-fluid" />
+          </a>
+        </div>
+      </div>      
+    </div>
+
+    <div class="box">
+      <h3 id="supported-title">
+        Supported by
+      </h3>
+      <hr id="supported-line" class="line" />
+
+      <div class="row mx-1" style="justify-content: space-evenly;">
+        <div class="col-4 col-md-2 my-auto mx-2 mx-md-0">
+          <a href="https://scaleupporto.pt/">
+            <img src="../images/sponsors/scaleup.jpg" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="page-footer font-small mt-5">
+
+    <!-- meter links das redes sociais -->
+    <div class="container-fluid text-center">
+      <div class="row social">
+        <ul class="list-group list-group-horizontal mx-auto mt-3">
+          <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fab fa-instagram"></i></a></li>
+          <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-logo-feup ">
+        <a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+            src="../2019/res/img/feup-logo.png" /></a>
+      </div>
+
+      <div class="footer-copyright text-center py-3">
+        Copyright Ⓒ 2020 Talk a Bit. All rights reserved.
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+<!-- JS Includes -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- <script src="js/main.js"></script> -->
+<script type="text/javascript" src="../js/user.js"></script>
+<script type="text/javascript" src="../js/hide-navbar.js"></script>
+
+</html>

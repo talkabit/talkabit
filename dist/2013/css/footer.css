@@ -1,0 +1,92 @@
+@import url("http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,600italic,900italic,500italic,400italic,300italic,200italic,100italic,700italic,800italic");
+@import url("http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic");
+/* line 23, typography.css.scss */
+* {
+  color: #333; }
+
+/* line 36, typography.css.scss */
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+  text-shadow: 0 0 0 #f00, 0 0 1px transparent;
+  text-rendering: optimizeLegibility; }
+
+/* line 41, typography.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', Georgia, Times, serif;
+  font-weight: 400;
+  font-weight: 400; }
+
+/* line 45, typography.css.scss */
+p, span, p small {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-weight: 300; }
+
+/* line 50, typography.css.scss */
+p small {
+  line-height: 130%; }
+
+/* line 61, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.375em; }
+
+/* line 69, typography.css.scss */
+.no-margin {
+  margin: 0; }
+
+/* line 4, footer.css.scss */
+footer {
+  background: url("../img/footer-noisy-texture3.png");
+  margin-top: 10px;
+  padding: 10px 0 20px 0; }
+  /* line 9, footer.css.scss */
+  footer .zone {
+    width: 21%;
+    margin: 2%;
+    float: left; }
+  /* line 14, footer.css.scss */
+  footer p, footer span {
+    color: #555; }
+
+/* line 18, footer.css.scss */
+footer h6 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase; }
+/* line 27, footer.css.scss */
+footer p {
+  line-height: 19px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999; }
+/* line 34, footer.css.scss */
+footer .footer-link {
+  font-weight: bold;
+  font-style: normal;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #333333; }
+  /* line 6, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+  footer .footer-link:active, footer .footer-link:focus {
+    outline: none; }
+  /* line 18, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  footer .footer-link:visited {
+    color: #333333; }
+  /* line 21, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  footer .footer-link:focus {
+    color: #333333; }
+  /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  footer .footer-link:hover {
+    color: #333333; }
+  /* line 27, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  footer .footer-link:active {
+    color: #333333; }

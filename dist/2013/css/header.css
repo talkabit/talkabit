@@ -1,0 +1,178 @@
+@import url("http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,600italic,900italic,500italic,400italic,300italic,200italic,100italic,700italic,800italic");
+@import url("http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic");
+/* line 23, typography.css.scss */
+* {
+  color: #333; }
+
+/* line 36, typography.css.scss */
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+  text-shadow: 0 0 0 #f00, 0 0 1px transparent;
+  text-rendering: optimizeLegibility; }
+
+/* line 41, typography.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', Georgia, Times, serif;
+  font-weight: 400;
+  font-weight: 400; }
+
+/* line 45, typography.css.scss */
+p, span, p small {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-weight: 300; }
+
+/* line 50, typography.css.scss */
+p small {
+  line-height: 130%; }
+
+/* line 61, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.375em; }
+
+/* line 69, typography.css.scss */
+.no-margin {
+  margin: 0; }
+
+/* line 5, header.css.scss */
+header {
+  background: url("../img/subtlepatterns/brillant/brillant.png"); }
+  /* line 19, header.css.scss */
+  header #logo {
+    background-image: url("../img/logotipo_horizontal_s_fundo_cropped.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    margin-top: -37.5px;
+    margin-left: 20px;
+    text-indent: -9999px; }
+    @media (min-width: 1em) {
+      /* line 19, header.css.scss */
+      header #logo {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        background-size: auto 100%;
+        background-position: 50%; } }
+    @media (min-width: 60em) {
+      /* line 19, header.css.scss */
+      header #logo {
+        position: relative;
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%;
+        background-position: 90% 100%;
+        background-size: 100%; } }
+  /* line 29, header.css.scss */
+  header ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 49, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+    header ul li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline;
+      white-space: nowrap; }
+    @media (min-width: 1em) {
+      /* line 29, header.css.scss */
+      header ul {
+        width: 50%;
+        float: left;
+        margin-top: 170px;
+        height: 70px; }
+        /* line 31, header.css.scss */
+        header ul.nav-group-two {
+          float: right; } }
+    @media (min-width: 35em) {
+      /* line 29, header.css.scss */
+      header ul {
+        height: 50px;
+        margin-top: 170px; } }
+    @media (min-width: 60em) {
+      /* line 29, header.css.scss */
+      header ul {
+        width: auto;
+        float: left;
+        height: 100px;
+        margin-top: 80px; } }
+    /* line 34, header.css.scss */
+    header ul li {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (min-width: 1em) {
+        /* line 34, header.css.scss */
+        header ul li {
+          width: 100%;
+          float: left; } }
+      @media (min-width: 35em) {
+        /* line 34, header.css.scss */
+        header ul li {
+          width: 50%;
+          float: left; } }
+      @media (min-width: 60em) {
+        /* line 34, header.css.scss */
+        header ul li {
+          width: 150px;
+          float: left; } }
+      /* line 40, header.css.scss */
+      header ul li a {
+        color: inherit;
+        text-decoration: inherit;
+        cursor: inherit;
+        color: #333333;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        text-shadow: 0px 1px 1px #b8e0f8;
+        letter-spacing: 2px;
+        padding: 5px 7px;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
+        /* line 6, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+        header ul li a:active, header ul li a:focus {
+          outline: none; }
+        /* line 18, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+        header ul li a:visited {
+          color: #333333; }
+        /* line 21, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+        header ul li a:focus {
+          color: #333333; }
+        /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+        header ul li a:hover {
+          color: #333333; }
+        /* line 27, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+        header ul li a:active {
+          color: #333333; }
+        /* line 49, header.css.scss */
+        header ul li a:hover, header ul li a.active {
+          background: rgba(0, 141, 243, 0.6); }
+        /* line 50, header.css.scss */
+        header ul li a:active {
+          position: relative;
+          top: 2px; }

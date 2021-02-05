@@ -1,0 +1,15 @@
+<div class="person col-1_2">
+    {% if member.linkedin %}
+    <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
+    {% endif %}
+        <div class="avatar">
+            <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
+        </div>
+        <div class="details">
+            <div class="name">{{ member.name }}</div>
+            <div class="department">{{ member.department }}</div>
+        </div>
+    {% if member.linkedin %}
+    </a>
+    {% endif %}
+</div>

@@ -1,0 +1,184 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Talk A Bit - 4th edition</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/organization.css">
+</head>
+<body>
+<nav id="site-nav" class="navbar navbar-solid navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="logo svg" href="index.html">
+                <div class="site-branding">
+                    <object style="pointer-events: none;" width="auto" height="38px" type="image/svg+xml" data="assets/images/menu.svg">Talk A Bit Conference</object>
+                </div>
+            </a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://ti.to/talkabit/2016-edition">Tickets</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#speakers">Speakers</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#sponsors">Sponsors</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li class="active"><a href="organization.html">Organization</a></li>
+                <li><a href="https://www.facebook.com/talkabit">Facebook</a></li>
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
+
+<section id="organization" class="section organization">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Committee</h3>
+                <p>TalkABit is organized by graduating students in Software
+                    Engineering at FEUP.</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.data.organization.committee %}
+            <div class="col-md-4">
+                <figure class="snip1218">
+                    <div class="image">
+                    </div>
+                    <figcaption>
+                        <h3>{{ member.name | split: ' ' | first }}<span> {{ member.name | split: ' ' | last }}</span></h3>
+                        <h5>{{ member.title }}</h5>
+                        <div class="icons">
+                            {% if member.sifeup %}
+                            <a href="{{ member.sifeup }}">
+                                <img src="assets/images/uporto.png" alt="U. Porto">
+                            </a>
+                            {% endif %}
+                            {% if member.github %}
+                            <a href="{{ member.github }}">
+                                <i class="ion-social-github"></i>
+                            </a>
+                            {% endif %}
+                            {% if member.linkedin %}
+                            <a href="{{ member.linkedin }}">
+                                <i class="ion-social-linkedin"></i>
+                            </a>
+                            {% endif %}
+                            {% if member.personal %}
+                            <a href="{{ member.personal }}">
+                                <i class="ion-link"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Steering Committee</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.data.organization.steering %}
+            <div class="col-md-4">
+                <figure class="snip1218">
+                    <div class="image">
+                    </div>
+                    <figcaption>
+                        <h3>{{ member.name | split: ' ' | first }}<span> {{ member.name | split: ' ' | last }}</span></h3>
+                        <h5>{{ member.title }}</h5>
+                        <div class="icons">
+                            {% if member.sifeup %}
+                            <a href="{{ member.sifeup }}">
+                                <img src="assets/images/uporto.png" alt="U. Porto">
+                            </a>
+                            {% endif %}
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Volunteers</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.data.organization.others %}
+            <div class="col-md-4">
+                <figure class="snip1218">
+                    <div class="image">
+                    </div>
+                    <figcaption>
+                        <h3>{{ member.name | split: ' ' | first }}<span> {{ member.name | split: ' ' | last }}</span></h3>
+                        <h5>{{ member.title }}</h5>
+                        <div class="icons">
+                            {% if member.sifeup %}
+                            <a href="{{ member.sifeup }}">
+                                <img src="assets/images/uporto.png" alt="U. Porto">
+                            </a>
+                            {% endif %}
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-block">
+                    <li><a href="https://twitter.com/talkabitconf"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/talkabit"><i class="ion-social-facebook"></i></a></li>
+                    <li>#talkabit</li>
+                </ul>
+                <a class="btn btn-default" title="3rd edition - 2015" href="2015" role="button">Previous Edition</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- script -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70982862-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* src: http://codepen.io/littlesnippets/pen/VvOwbw */
+
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1218 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #34495e;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+figure.snip1218 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+figure.snip1218 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+figure.snip1218 .image {
+    position: relative;
+    border-bottom: 4px solid #1399D6;
+    /* z-index: 1; */
+}
+figure.snip1218 .image:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #34495e transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -15px);
+    transform: translate(-50%, -15px);
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+figure.snip1218 .image p {
+    font-weight: 500;
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-style: italic;
+}
+figure.snip1218 figcaption {
+    background-color: #ffffff;
+    padding: 25px;
+}
+figure.snip1218 h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+figure.snip1218 h3 span {
+    font-weight: 800;
+}
+figure.snip1218 h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #1399D6;
+}
+
+figure.snip1218:hover .image:before,
+figure.snip1218.hover .image:before {
+    border-color: #34495e transparent transparent transparent;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+figure.snip1218:hover .image p,
+figure.snip1218.hover .image p {
+    opacity: 1;
+}
+figure.snip1218:hover img,
+figure.snip1218.hover img {
+    opacity: 0.2;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

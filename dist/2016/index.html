@@ -1,0 +1,936 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Talk A Bit - 4th edition</title>
+
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:url" content="http://talkabit.org/">
+    <meta property="og:site_name" content="Talk A Bit 2016">
+    <meta property="og:title" content="Talk A Bit 2016">
+    <meta property="og:description" content="Talk A Bit is a student organised conference where technology hot topics are discussed, in a motivating and friendly environment. This year's topic is The Social Impact of Technology. Join us for free!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://talkabit.org/assets/images/media.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/timetable.css">
+    <style type="text/css">
+        #map {
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="logo svg" href="#">
+                <div class="site-branding">
+                    <object style="pointer-events: none;" width="auto" height="38px" type="image/svg+xml" data="assets/images/menu.svg">Talk A Bit Conference</object>
+                </div>
+            </a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- navigation menu -->
+                <li><a href="https://ti.to/talkabit/2016-edition">Tickets</a></li>
+                <li><a data-scroll href="#about">About</a></li>
+                <li><a data-scroll href="#speakers">Speakers</a></li>
+                <li><a data-scroll href="#schedule">Schedule</a></li>
+                <li><a data-scroll href="#faq">FAQ</a></li>
+                <li><a data-scroll href="#sponsors">Sponsors</a></li>
+                <li><a data-scroll href="#location">Location</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="https://www.facebook.com/talkabit">Facebook</a></li>
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
+
+<header id="site-header" class="site-header valign-center">
+    <div class="intro">
+        <object width="40%" height="40%" type="image/svg+xml" data="assets/images/TAB-ASS-2.svg">Talk A Bit Conference - 30 Jan 2016 @ Porto</object>
+        <br><br>
+        <p id="topics-introduction">
+            Let's talk a bit about the social impact of&nbsp;
+            <span class="element"></span>
+        </p>
+        <br><br>
+        <!-- <h1><a href="https://ti.to/talkabit/2016-edition"><h1 class="btn btn-default call">TICKETS AVAILABLE</h1></a></h1> -->
+        <h1>See you next year!</h1>
+        <br><br>
+        <p><strong>4th edition</strong> of the Student Organized Tech Conference @ Porto</p>
+    </div>
+    <img width="15%" src="assets/images/feup.png" style="margin: 0 5px 10px 10px; position: absolute; bottom: 0; right: 0;">
+</header>
+<section id="about" class="section about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">About Talk A Bit</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>Talk A Bit is a student organised conference where technology
+                    hot topics are discussed, in a motivating and friendly environment. This year's topic is
+                    The Social Impact of Technology. Join us for free!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="icon-circle-large">
+                        <i class="ion-mic-a"></i>
+                    </a>
+                </div>
+                <h2 class="text-center">
+                    Talk A Bit
+                </h2>
+                <p class="text-justify">Our talks will include: <strong>Startup A Bit</strong> - talks by Portuguese startups,
+                    <strong>Revolutionize A Bit</strong> - talks by important players,
+                    <strong>Research A Bit</strong> - ideas for the future,
+                    <strong>Learn A Bit</strong> - dive into technology hot topics,
+                    <strong>Code A Bit</strong> - 5 minutes pitches about FEUP projects and
+                    <strong>Discover A Bit</strong> - 5 minutes intros to subjects.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="icon-circle-large">
+                        <i class="ion-settings"></i>
+                    </a>
+                </div>
+                <h2 class="text-center">Make A Bit</h2>
+                <p class="text-justify">A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff.
+                    We will provide the tools so you just need to bring loads of motivation!</p>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="icon-circle-large">
+                        <i class="ion-chatbubbles"></i>
+                    </a>
+                </div>
+                <h2 class="text-center">Network A Bit</h2>
+                <p class="text-justify">Are you graduating soon and looking for job opportunities in the tech area?
+                    Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="speakers" class="section speakers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Speakers</h3>
+            </div>
+        </div>
+
+        <div class="row row-centered">
+            {% for speaker in site.data.speakers %}
+            <div class="col-md-4 col-centered">
+                <figure class="snip1218">
+                    <div class="image"><img src="{{ speaker.picture }}" alt="{{ speaker.alt }}"/>
+                        <p>{{ speaker.quote }}</p>
+                    </div>
+                    <figcaption>
+                        <h3>{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></h3>
+                        <h5><a href="{{ speaker.url }}">{{ speaker.role }}</a></h5>
+                        <!-- <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div> -->
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="schedule" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Schedule</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 schedule">
+                <h3>Morning</h3>
+                <div class="col-sm-6">
+                    <ol>
+                        {% for scheduleEntry in site.data.schedule.morning_1 %}
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                            <li>
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else if %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
+                                    </div>
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
+                                    {% if scheduleEntry.description %}
+                                    <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
+                                    {% endif %}
+                                </a>
+                            </li>
+                            {% if scheduleEntry.description %}
+                            <li class="schedule-entry-description">
+                                <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
+                                        <span class="schedule-entry-description-title">Abstract:</span>
+                                        {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.organizationBio %}
+                                        <span class="schedule-entry-description-title">Organization:</span>
+                                        {{scheduleEntry.organizationBio}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.speakerBio %}
+                                        <span class="schedule-entry-description-title">Speaker:</span>
+                                        {{scheduleEntry.speakerBio}}<br>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </ol>
+                </div>
+                <!-- Morning 2 -->
+                <div class="col-sm-6">
+                    <ol>
+                        {% for scheduleEntry in site.data.schedule.morning_2 %}
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                            <li>
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
+                                    </div>
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            {% if scheduleEntry.description %}
+                            <li class="schedule-entry-description">
+                                <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
+                                        <span class="schedule-entry-description-title">Abstract:</span>
+                                        {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.organizationBio %}
+                                        <span class="schedule-entry-description-title">Organization:</span>
+                                        {{scheduleEntry.organizationBio}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.speakerBio %}
+                                        <span class="schedule-entry-description-title">Speaker:</span>
+                                        {{scheduleEntry.speakerBio}}<br>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-xs-12 schedule">
+                <!-- Afternoon -->
+                <h3>Afternoon</h3>
+                <div class="col-xs-12">
+                    <ol>
+                        {% for scheduleEntry in site.data.schedule.afternoon %}
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                            <li>
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else if %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
+                                    </div>
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
+                                    {% if scheduleEntry.description %}
+                                    <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
+                                    {% endif %}
+                                </a>
+                            </li>
+                            {% if scheduleEntry.description %}
+                            <li class="schedule-entry-description">
+                                <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
+                                        <span class="schedule-entry-description-title">Abstract:</span>
+                                        {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.organizationBio %}
+                                        <span class="schedule-entry-description-title">Organization:</span>
+                                        {{scheduleEntry.organizationBio}}<br>
+                                        {% endif %}
+                                        {% if scheduleEntry.speakerBio %}
+                                        <span class="schedule-entry-description-title">Speaker:</span>
+                                        {{scheduleEntry.speakerBio}}<br>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="section faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Frequently Asked Questions</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is the price of the ticket?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0">
+                            <div class="panel-body">
+                                The ticket is entirely free. Get them <a href="https://ti.to/talkabit/2016-edition">here</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is included in my ticket?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0">
+                            <div class="panel-body">The ticket includes access to the talks, pitch room, coffee-breaks and identification badge.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What languages are spoken?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0">
+                            <div class="panel-body">
+                                The event talks will be in mostly in Portuguese however some will be in English. All the supporting slides will be in English.
+                                If you want to join Talk a Bit and you don't understand Portuguese please let us know via  <a href="mailto:hello@talkabit.org">hello@talkabit.org</a>.
+                                We'll find a solution!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Is there any requirement for attending TalkABit?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0">
+                            <div class="panel-body">
+                                No! Just a load of motivation and curiosity is needed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How to get to Talk A Bit?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0">
+                            <div class="panel-body">
+                                <h4>By plane:</h4>
+
+                                <p>
+                                    To Aeroporto Sá Carneiro (OPorto), and then by car or subway (line E) with line
+                                    changing in Trindade to line D with direction to Hospital S.João with exit on station IPO.
+                                </p>
+
+                                <h4>By car:</h4>
+
+                                <p>
+                                <ul>
+                                    <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow the signs toward the Hospital de S. João.</li>
+                                    <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the Hospital de S. João.</li>
+                                    <li>Coming from A3: Take the direction to Hospital de S. João</li>
+                                    <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the direction to Hospital de S. João.</li>
+                                </ul>
+                                </p>
+
+                                <h4>By bus:</h4>
+
+                                <p>
+                                    From Rodonorte/Rede Expressos/Tâmega station, follow to Aliados Avenue and take the subway with direction Hospital S. João (line D).
+                                    Or take bus number: 204, 300, 301 and 803.
+                                    There are also other buses near Hospital de São João.
+
+                                    For more information: <a href="http://www.stcp.pt/">www.stcp.pt</a>
+                                </p>
+
+                                <h4>By train:</h4>
+
+                                <p>
+                                    If coming by train, there are two main stations:
+                                <ul>
+                                    <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change to D line.</li>
+                                    <li>São Bento – and then get in the subway (line D)</li>
+                                </ul>
+
+                                If coming by subway, take the one from line D (yellow) going to Hospital de São João and exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP.
+
+                                For more information: <a href="http://www.metrodoporto.pt/">www.metrodoporto.pt</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    I'm attending the morning sessions, where can I have lunch?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix" aria-expanded="false">
+                            <div class="panel-body">
+                                <p>There are several places within walking distance from FEUP:</p>
+                                <p>You can have lunch at the FEP cantine (3min) for a very cheap price
+                                    although you need to buy the lunch ticket on the day before (Friday, 29th)
+                                    or you won't be able to have lunch.</p>
+                                <p>Shopping Campus S.João offers a variety of restaurants from fast
+                                    food to some healtier options (7min).</p>
+                                <p>Snack-bars:
+                                <ul>
+                                    <li>Já lá foste (3min)</li>
+                                    <li>Lunatic Burger (7min)</li>
+                                    <li>Tappas Caffé Porto (10min)</li>
+                                    <li>100 Montaditos (10min)</li>
+                                    <li>Tropical Burger (12min)</li>
+                                </ul>
+                                </p>
+                                <p>Restaurants:
+                                <ul>
+                                    <li>Republica do Churrasco (7min)</li>
+                                    <li>Restaurante Leitão&Coisas (13min)</li>
+                                    <li>Marisqueira A Lagosta Da Mauritânia (14min)</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    I have specific questions that are not addressed here. Who can help me?
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven" aria-expanded="false">
+                            <div class="panel-body">
+                                Feel free to contact us at <a href="mailto:hello@talkabit.org">hello@talkabit.org</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .sponsors div .row{
+        text-align: center;
+    }
+    #sponsors .sponsors{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #delloite{
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #critical img{
+        height: 125px;
+    }
+    #critical{
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #accenture img{
+        height: 90px;
+    }
+    #accenture{
+        position: relative;
+        top: -10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #strongstep img{
+        height: 138px;
+    }
+    #strongstep{
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #aefeup img,#esop img{
+        height: 58px;
+        width: 189px;
+    }
+
+    #nuieee{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #nuieee img{
+        width: 165px;
+        height: 50px;
+    }
+
+    #aefeup img{
+        height: 44px;
+    }
+    #aefeup{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #esop{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #aguedaliving{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #delloite img{
+        height: 110px;
+    }
+    #uber img{
+        width: 210px;
+    }
+    #uber{
+        position: relative;
+        left: -50px;
+        top: 4px;
+    }
+    #farfetch img{
+        height: 51px;
+    }
+    #farfetch{
+        position: relative;
+        top: 9px;
+    }
+    #topdox img{
+        height: 100px;
+    }
+    #topdox{
+        position: relative;
+        left: 40px;
+    }
+    #novabase img{
+        height: 80px;
+    }
+    #novabase{
+        left: 69px;
+        position: relative;
+    }
+    #sage img{
+        height: 75px;
+    }
+    #sage{
+        position: relative;
+        left: -174px;
+        top:73px;
+    }
+
+    #inovaria img{
+        height: 100px;
+    }
+    #inovaria{
+        position: relative;
+        left: -20px;
+        top: 40px;
+    }
+
+    #portoio img{
+        height: 85px;
+    }
+    #portoio{
+        position: relative;
+        left: 107px;
+        top: 40px;
+    }
+    
+    #microsoft img{
+        height: 90px;
+    }
+    #microsoft {
+        position: relative;
+        left: 215px;
+        top: 61px;
+    }
+
+    #sonae img{
+        height: 190px;
+    }
+
+    #uber,#farfetch,#topdox,#novabase{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #institutional{
+        margin-top: 100px;
+    }
+
+    .sponsor-type div[class*="col-"] *{
+        color: white;
+        height: 35px;
+        line-height: 35px;
+        background-color: #00B1E8;
+        margin: 50px auto;
+        width: 280px;
+    }
+
+
+    @media (max-width:1137px){
+        #strongstep{
+            display: block;
+            width: 100%;
+            position: static;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    }
+    @media (max-width:1199px){
+        #novabase{
+            left: -110px;
+            top:40px;
+        }
+        #strongstep{
+            position: relative;
+            top: 30px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #aguedaliving{
+            position: relative;
+            top: 30px;
+        }
+        #sage{
+            left: -35px;
+        }
+        #inovaria{
+            left: 35px;
+
+        }
+    }
+
+    @media (max-width:1024px){
+        #sponsors a{
+            display: block;
+            width: 100%;
+            position: static;
+            margin: 50px 0;
+        }
+        #strongstep{
+            top: 0px;
+        }
+    }
+
+
+</style>
+<section id="sponsors" class="section sponsors">
+    <div class="container">
+<!--        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="section-title">Sponsors</h3>
+            </div>
+        </div>-->
+        <div class="row sponsor-type" id="gold">
+            <div class="col-xs-12">
+                <h4>Gold Sponsors</h4>
+            </div>
+        </div>
+        <div class="sponsors">
+            <a href="https://www.linkedin.com/company/bit-sonae" target="_blank" id="sonae" ><img  src="assets/images/sponsors/sonae.png" alt=""></a>
+        </div>
+        <div class="row sponsor-type" id="silver">
+            <div class="col-xs-12">
+                <h4>Silver Sponsors</h4>
+            </div>
+        </div>
+        <div class="sponsors">
+            <a href="http://www.deloitte.com"        target="_blank" id="delloite" ><img  src="assets/images/sponsors/delloite.png" alt=""></a>
+            <a href="http://www.criticalmanufacturing.com/" target="_blank" id="critical" ><img  src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
+            <a href="https://www.accenture.com"             target="_blank" id="accenture" ><img  src="assets/images/sponsors/accenture.png" alt=""></a>
+            <a href="http://strongstep.pt/"             target="_blank" id="strongstep" ><img  src="assets/images/sponsors/strongstep.jpg" alt=""></a>
+        </div>
+        <div class="row sponsor-type" id="friends">
+            <div class="col-xs-12">
+                <h4>Friends</h4>
+            </div>
+        </div>
+        <div class="sponsors" id="friends_logos">
+            <a href="https://www.uber.com/" target="_blank" id="uber"><img src="assets/images/sponsors/uber.png" alt=""></a>
+            <a href="http://www.farfetch.com" target="_blank" id="farfetch" ><img src="assets/images/sponsors/farfetch.png" alt=""></a>
+            <a href="https://topdox.com" target="_blank" id="topdox"><img src="assets/images/sponsors/topdox.png" alt=""></a>
+            <a href="http://www.novabase.pt" target="_blank" id="novabase" ><img src="assets/images/sponsors/novabase.svg" alt=""></a>
+            <a href="http://www.sage.pt/" target="_blank" id="sage"><img src="assets/images/sponsors/sage.png" alt=""></a>
+            <a href="http://www.inova-ria.pt/" target="_blank" id="inovaria"><img src="assets/images/sponsors/inovaria.jpg" alt=""></a>
+            <a href="http://porto.io/" target="_blank" id="portoio"><img src="assets/images/sponsors/portoio.png" alt=""></a>
+            <a href="https://www.microsoft.com/pt-pt/" target="_blank" id="microsoft"><img src="assets/images/sponsors/microsoft.png" alt=""></a>
+        </div>
+        <div class="row sponsor-type" id="institutional">
+            <div class="col-xs-12">
+                <h4>Institutional Partners</h4>
+            </div>
+        </div>
+        <div class="sponsors">
+            <a href="http://www.aefeup.pt/"  id="aefeup"><img src="assets/images/sponsors/aefeup.png" alt=""></a>
+            <a href="http://www.esop.pt/"  id="esop"><img src="assets/images/sponsors/esop.png" alt=""></a>
+            <a href="http://nuieee.fe.up.pt/"  id="nuieee"><img src="assets/images/sponsors/nuieee.png" alt=""></a>
+            <a href="http://all.cm-agueda.pt/"  id="aguedaliving"><img src="assets/images/sponsors/aguedaliving" alt=""></a>
+        </div>
+
+        <div class="row">
+            <br><br><br>
+            <p>
+                <small>For sponsorship plans, please visit <a href="sponsorship.html">Sponsorship</a></small>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="location" class="section location">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">Event Location</h3>
+                <address>
+                    <p>Faculdade de Engenharia da Universidade do Porto<br>Rua Dr. Roberto Frias, s/n<br> Phone: +351 22 508 14 00<br> Email: <a href="mailto:hello@talkabit.org">hello@talkabit.org</a></p>
+                </address>
+            </div>
+            <div class="col-sm-9">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-block">
+                    <li><a href="https://twitter.com/talkabitconf"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/talkabit"><i class="ion-social-facebook"></i></a></li>
+                    <li>#talkabit</li>
+                </ul>
+                <a class="btn btn-default" title="3rd edition - 2015" href="/2015" role="button">Previous Edition</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- script -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyAkjQJHWVuaZrnTkYbAj79D-hzO0GMayrQ"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/typed.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Internet of Things", "Biotechnology", "Information Security", "Uberification", "Smart Cities", "Enterprise Mobility"],
+            typeSpeed: 0,
+            loop: true,
+            showCursor: false
+        });
+    });
+</script>
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 15,
+
+            scrollwheel: false,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(41.1780, -8.5980),
+
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
+        };
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        new google.maps.Marker({
+            position: new google.maps.LatLng(41.1780, -8.5980),
+            map: map,
+            title: 'TalkABit!',
+            icon: 'assets/images/talkabit.png'
+        });
+
+        new google.maps.event.addListener(map, 'click', function(event) {
+            this.setOptions({
+                scrollwheel: true
+            });
+        });
+
+        new google.maps.event.addListener(map, 'mouseout', function(event) {
+            this.setOptions({
+                scrollwheel: false
+            });
+        });
+    }
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70982862-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

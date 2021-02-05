@@ -1,0 +1,18 @@
+/* line 9, grid.css.scss */
+.wrapper {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
+  /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 13, grid.css.scss */
+header, footer, body {
+  clear: both; }

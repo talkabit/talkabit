@@ -1,0 +1,218 @@
+morning_1:
+  - id: 1
+    title: 'Check in'
+    startTime: '08:30'
+    endTime: '09:30'
+
+  - id: 2
+    title: ''
+    speaker: Opening Session
+    startTime: '09:30'
+    endTime: '09:45'
+
+  - id: 3
+    title: '<strong>Startup a Bit</strong> How big of a human problem are you solving?'
+    speaker: Virgílio Bento, Sword Health
+    speakerBio: "Virgílio Bento was born in Guarda, Portugal, in 1984. <br> Having realized from an early age that there was much to do and so little being done in the field of rehabilitation, he knew he should step in to change that. <br> He was aware that the key for a democratic and efficient global health was in the development of technologies that overcome socioeconomic barriers and explore how humans have the potential to self-rehabilitate. <br> That was why, during his PhD in Electronics Engineering, Virgílio developed SWORD, a disruptive tool in motor rehabilitation that empowers patients, extending the therapeutic footprint to their homes. <br> Following his PhD work, he founded Sword Health, where he’s leading the design and development of innovative digital health systems, targeted at the medical market of cognitive and motor rehabilitation. <br> Always seeking to solve problems through technology, Virgílio also co-developed an innovative tracking system for children and pets, without monthly fees. In 2014, the idea was funded with more than $100k on Indiegogo, leading to the inception of Findster of which he is one of the founders. <br> Findster broke several geographic barriers being one of the first Portuguese technologies to be featured on TechCrunch and backed by 700 contributors from more than 45 countries. <br> Besides owning 3 patents at the age of 30, Virgílio has already authored and co-authored more than 40 research papers. Having his footprint in diverse fields such as sensor fusion algorithms, motion quantification systems, neuroplasticity or stroke rehabilitation, he was featured in some of the most relevant scientific publications and took part in the most important MedTech conferences. <br> He’s also a Professor at University Institute of Maia, Portugal, where he teaches Innovation and Entrepreneurship. <br> Daring in design, cautious in execution, Virgílio's path is being shaped by his will to make a dent in the universe, having technology as his major ally."
+    description: true
+    abstract: 'We see technology changing our lives everyday, from something so simple as a social network to self-driving cars and deep learning. The problem with the current trend in the technological world is that we are not applying our talent towards hard problems that have a real and significant impact in humanity. At SWORD Health, we believe in empowering our best engineers towards the solution of big problems. We started by reinventing how physical rehabilitation is performed globally. And we’re just starting.'
+    organizationBio: 'At SWORD Health, we created the first digital therapy in the physical rehabilitation industry that automates the 1-to-1 patient-therapist interaction, plummeting healthcare costs, empowering patients and ensuring accountability. SWORD is considered by the European Commission as one of the most innovative companies in Europe.'
+    startTime: '09:45'
+    endTime: '10:05'
+
+  - id: 4
+    title: '<strong>Startup a Bit</strong> Theory of Change'
+    speaker: Rui Ramos, eSolidar
+    startTime: '10:05'
+    endTime: '10:25'
+    description: true
+    speakerBio: "I became passionate about technology early in life. My academic career has always been linked to this world. I am a dynamic person and my career is also connected to technology companies. During university I was one of the founders of the Sétima - Tecnologias Informação e Comunicação (web and mobile development company) and also a co-founder and COO of the Esolidar project. One of my main objectives is to be involved in technological projects that can challenge me daily."
+    organizationBio: "We are a dynamic team that is passionate about developing technology and creating social impact. Our focus is to harness these tools to create an online community that benefits charities around the world. eSolidar is an innovative online platform for people to support the causes they really care about. It is our goal at eSolidar to be the all-encompassing way for charities to fundraise online in a timely and cost-effective way, creating an online community that can help charities from the bottom up."
+
+  - id: 5
+    title: '<strong>Startup a Bit</strong> Facial Biometry in cars'
+    speaker: André Azevedo, HealthyRoad
+    startTime: '10:25'
+    endTime: '10:45'
+    description: true
+    organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
+
+  - id: 6
+    speaker: 'Pedro Torres & Rita Viana, bit | Sonae'
+    startTime: '10:45'
+    endTime: '11:00'
+    title: "<strong>Network a Bit</strong> Core Activity, Scrum and Social Impact"
+
+  - id: 7
+    speaker: 'Network a Bit'
+    startTime: '11:00'
+    endTime: '12:45'
+    title: "Are you graduating soon and looking for job opportunities in the tech area? Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!"
+
+morning_2:
+  - id: 101
+    title: Check in
+    startTime: '08:30'
+    endTime: '09:00'
+
+  - id: 102
+    speaker: 'Make a Bit #1'
+    title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
+    startTime: '09:00'
+    endTime: '11:00'    
+  - id: 103
+    speaker: 'Make a Bit #2'
+    title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
+    startTime: '11:00'
+    endTime: '13:00'
+
+afternoon:
+
+  - id: 201
+    title: "<strong>Check in</strong> Only for the attendees who did not checked in before"
+    speaker: ''
+    startTime: '13:30'
+    endTime: '14:00'
+
+  - id: 202
+    title: ''
+    startTime: '14:00'
+    endTime: '14:15'
+    speaker: Opening session
+
+  - id: 203
+    title: '<strong>Revolutionize a Bit</strong> Uniting the Internet through language'
+    speaker: Paulo Dimas, Unbabel
+    description: true
+    abstract: "The entrance of billions of new users on the Internet has lead to the emergence of multiple internets, divided by languages like Arabic, Russian or Chinese. It's a new babelization of the world that contradicts the prediction, made when 80% of the Web was in English, of a global lingua franca. Unbabel's mission is to unite these internets by empowering human translators with Artificial Intelligence, making communication in dozens of languages seamless."
+    organizationBio: 'Unbabel empowers with Artificial Intelligence technology a worldwide community of 40K translators to dramatically increase the speed of delivering human quality translation. In a world where 80% of the Internet is in English but only 20% of the population has any English skills, Unbabel is building the technology to bridge this gap, extending the global reach of businesses worldwide.'
+    speakerBio: "Paulo Dimas is the Head of Product at Unbabel, empowering the fastest growing community of translators worldwide with AI technology to achieve Unbabel's vision of connecting the all world through language. Paulo has a passion for products, having developed his first commercial one when he was 14 years old. After joining INESC at 16 to do research on interactive systems, Paulo has founded 3 startups, the last one Wizi, a VC funded geo-social startup that partnered with carriers in 3 continents to take geo-location and social discovery to all mobile subscribers. Paulo has created patents in geo-location technology and developed award-winning projects for major companies in the Media and Telecom industries."
+    startTime: '14:15'
+    endTime: '14:40'
+
+  - id: 204
+    title: '<strong>Code a Bit</strong>'
+    speaker: "Welomobile"
+    startTime: '14:40'
+    endTime: '14:45'
+    description: yes
+    abstract: "Health care is deeply underdeveloped and disconnected in Nigeria. When people fall sick, finding the right health professionals or consultation for their specific needs in times of emergency is almost impossible. Welomobile’s aim is to create a centralized information system to provide accessible, affordable, and quality healthcare for underserved rural communities in Nigeria. Welomobile consists of an android application that gives its users detailed information about the closest ambulances, hospitals, pharmacies or blood banks in a quick and easy way."
+
+  - id: 205
+    title: '<strong>Research a Bit</strong> What the hell is BRAIN?'
+    speaker: Hugo Choupina, BrainLab - INESC TEC
+    startTime: '14:45'
+    endTime: '15:05'
+    description: yes
+    speakerBio: "Hugo Choupina was born in 1991. Hugo holds a Bachelor degree in Bioengineering – Biomedical Engineering (Catholic University – 2012) and a Master degree in Biomedical Engineering (FEUP – 2014). Currently works as a Biomedical Engineer at the Epilepsy center of Klinikum GroBhardern LMU Hospital, Munchen, Germany and as a researcher at BRAIN@INESC TEC, Porto. Co-author of several scientific papers. Hugo is a BRAIN (Biomedical Research And INnovation) researcher since 2013. He is also a Kinect for Windows developer. Hugo has a strong passion for the Healthcare Industry. Focused in technology development, optimization and usage by Healthcare profissionals."
+    organizationBio: "The Institute for Systems and Computer Engineering, Technology and Science – INESC TEC is an Associate Laboratory with 30 years of experience in R&D and technology transfer. Present in 6 sites in the cities of Porto, Braga and Vila Real, INESC TEC incorporates 12 R&D Centres and one Associate Unit with complementary competences, always looking to the international market."
+    abstract: "BRAIN (Biomedical Research And INnovation) is a transversal, pluridisciplinary R&D group that has its main focus on two areas: NeuroEngineering and Wearable & Mobile Technologies for human sensing, crossing all the areas of C-BER and interacting with other INESC-TEC centres."
+
+  - id: 206
+    title: '<strong>Discover a Bit</strong> Smart Cities'
+    startTime: '15:05'
+    endTime: '15:10'
+
+  - id: 207
+    title: '<strong>Revolutionize a Bit</strong> Helping build smart cities'
+    speaker: Rui Bento, Uber
+    startTime: '15:10'
+    endTime: '15:45'
+    description: yes
+    speakerBio: "After living several years outside of Portugal, Rui joined Uber to bring an innovative mobility alternative to Portuguese cities. Rui studied Engineering at Instituto Super Técnico in Lisbon and did an MBA at Berkeley, in California. Rui was a consultant at McKinsey, and before joining Uber, he worked in Business Development at Apple in London."
+    organizationBio: "Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers. From our founding in 2009 to our launches in hundreds of cities today, Uber's rapidly expanding global presence continues to bring people and their cities closer."
+    abstract: "As the major cities of the world continue to grow, it is essential to implement innovative solutions to deal with traffic congestion, air pollution and high energy costs. Uber, at the intersection of technology and mobility, has a privileged position to help the world's main cities."
+
+  - id: 208
+    title: Coffee Break & meet the companies
+    startTime: '15:45'
+    endTime: '16:05'
+
+  - id: 209
+    title: '<strong>Learn a Bit</strong> Feel Safe, Feel Yazaki'
+    speaker: Nelson Carvalho, Yazaki
+    startTime: '16:05'
+    endTime: '16:20'
+    description: true
+    abstract: "Yazaki is not just a OEM supplier, is a culture, a meaning of quality and safety for their customers. Nowadays more than 40 car makers rely on Yazaki products to achieve the highest demands of the automotive industry."
+    speakerBio: "Nelson Carvalho the electrical coordinator in PTC- Laboratory since 2014, responsible to manage all electrical test activities as well as coach a team of technicians/ engineers. It´s high motivation pushes him to the excellence and demand of automotive industry, the must´s and values of this Japanese company. Nelson Carvalho also acquired competencies in low voltage distribution systems, solar photovoltaics and electronics sustained during his work activities in Madrid, Sicily, Rome and Cologne."
+    organizationBio: "The success story of our long-established, family-owned company started already in 1929 in Japan. Today, Yazaki is the number one in the global automotive wiring harness market and supplier of innovative solutions to all major car manufacturers worldwide. More than 275,000 committed and highly motivated employees at 476 locations in 45 countries contribute to Yazaki’s global success. Our customers have come to appreciate our core competencies consulting, development, industrialization and manufacturing. In doing so, we always pay special attention to creating a reasonable balance between our customers’ needs and a responsible use of our environment"
+
+  - id: 210
+    title: '<strong>Discover a Bit</strong> Internet of Things'
+    startTime: '16:20'
+    endTime: '16:25'
+
+  - id: 211
+    title: '<strong>Research a Bit</strong> Factories of the Future'
+    description: true
+    abstract: 'The key aspect of the factories of the futures lies on a concept, which is as striking as it is fascinating: Cyber-Physical Systems, the Internet of Things and the Internet of Services will collectively result in a disruptive impact on every business domain of manufacturing companies. It is a fusion of the physical and the virtual worlds into what is being called the 4th industrial revolution, which unlike all others is being predicted before it happens.'
+    speaker: Francisco Almada Lobo, Critical Manufacturing
+    speakerBio: "Francisco Almada Lobo holds an MBA and an Electrical Engineering Degree from University of Porto. He started his career in a CIM R&D institute, and joined Siemens Semiconductor in 1997. Throughout Siemens, Infineon and Qimonda, he gained experience in several manufacturing areas having, in 2004, led the first migration of a Manufacturing Execution System (MES) in a running high-volume facility. Between 2005 and 2009, he managed the Porto Development Center for Infineon and Qimonda, with implementation of automation projects in the group plants in Europe, Asia and USA. Since 2010 he's Critical Manufacturing's CEO, leading the company to be part of the top MES providers worldwide."
+    organizationBio: 'Critical Manufacturing provides innovative software technology and advanced services that empower operations for some of the most advanced manufacturers worldwide. Its new generation Manufacturing Execution System (MES), built end-to-end on proven Microsoft layers, provides unified flexibility for modeling complex industry requirements, increasing manufacturers’ performance, control and quality. The company is part of the Critical Group, a private group of companies founded in 1998 to provide solutions for mission and business critical information systems.'
+    startTime: '16:25'
+    endTime: '16:45'
+
+  - id: 212
+    title: '<strong>Learn a Bit</strong> Dark side of the Net'
+    description: true
+    abstract: 'The need for higher level of anonymity introduced Darknets - parts of the Internet that are not directly available. Darknets provide protection from authorities in repressed countries, but are also used for various suspicious activities. We analyze their social impact and try to identify the need for their existence.'
+    speaker: Valter Vasić, University of Zagreb
+    speakerBio: 'Valter Vasić received his M.Sc. in Computer Science in 2010 from the Faculty of Electrical Engineering and Computing, University of Zagreb. In 2010 he started pursuing his Ph.D. degree in Computer science on the same University. He is currently employed as a research associate at the same faculty within the E-IMUNES project funded by Ericsson Nikola Tesla. His research interests include security, network simulation and virtualization.'
+    organizationBio: 'University of Zagreb, Faculty of Electrical Engineering and Computing'
+    startTime: '16:45'
+    endTime: '17:25'
+
+  - id: 213
+    title: Coffee Break & meet the companies
+    startTime: '17:25'
+    endTime: '17:55'
+
+  - id: 214
+    title: '<strong>Code a Bit</strong>'
+    speaker: "City Feels"
+    startTime: '17:55'
+    endTime: '18:00'
+    abstract: "O City Feels é um Sistema de Orientação Multissensorial desenvolvido em parceria com a Câmara Municipal do Porto e o Places4All que permite obter informação em tempo real através da interacção entre o smartphone e o meio físico. O sistema recebe informação graças a um leitor de RFIDs integrado numa bengala desenvolvida pelo INESC. Deste modo é possivel fornecer informações precisas e rápidas sobre a localização de uma pessoa com mobilidade reduzida na cidade para uma mais fácil orientação."
+    description: true
+
+  - id: 215
+    title: "<strong>Revolutionize a Bit</strong> Airbnb's impact in the travel industry"
+    speaker: Ricardo Macieira, Airbnb
+    startTime: '18:00'
+    endTime: '18:30'
+    abstract: "Since its creation Airbnb and its community has changed the way in which we perceive travel. Connecting travelers and hosts, Airbnb made possible for people to not only to visit a destination but to get to live there like a local. We will take a look at some facts an figures of how Airbnb changed the way we travel."
+    description: true
+    speakerBio: "With a degree in Visual Production Design, Ricardo Macieira worked as a graphic designer, art director and he was one of the founders of Alok Design Brands, a company in the brand representation area. Since May 2014 he has been working as the Airbnb coordinator for the Portuguese market."
+    organizationBio: "Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. "
+
+  - id: 216
+    title: '<strong>Discover a Bit</strong> Smart Cars'
+    startTime: '18:30'
+    endTime: '18:35'
+
+  - id: 217
+    title: '<strong>Revolutionize A Bit</strong> Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country'
+    speaker: "Carlos Azevedo, IES - Social Business School"
+    startTime: '18:35'
+    endTime: '19:00'
+    description: true
+    abstract: "The impact economics is the space of intervention of social entrepreneurs. This space is not defined by the existing sectoral dichotomies or the artificial frontiers between economic sectors. A fertile ecosystem that manages social entrepreneurship initiatives demands a greater articulation and cooperation between sectors, identifying business opportunities from important and neglected problems in society, and the construction of sustainable solutions with impact. Education and technology play a major role in the construction of this new paradigm."
+    speakerBio: "Graduated in Economics by the Católica Porto Business School. Academic Director and member of the IES-SBS Statutory Board. ESLIDER-PORTUGAL's (national network for civil society leaders) founder and Chairman of the Board. Former researched at INSEAD. Former assistant researcher at Católica Porto Business School. College professor. PhD in Economics from Universidade do Minho."
+    organizationBio: "IES - Social Business School is a school of social businesses whose mission is to inspire and enable for a better world through education. Research-action and community building. IES-SBS is composed by four complementary units - School, Social Businesses Lab, Social Investment Lab and Social Innovation Lab."
+
+  - id: 218
+    title: "<strong>Laugh A Bit</strong> Re-Engineer yourself (it's not coaching sh*t)"
+    description: true
+    abstract: "You decide what you want to be in life. You grow. You change your mind. Your personal and professional path is not going to be what you planned. How can new technologies and social media make an impact on what you will become."
+    speaker: Guilherme Duarte
+    speakerBio: "Guilherme Duarte, 31 years old, is a Software Engineer graduated at Instituto Superior Técnico. He worked as an IT consultant. He quit his job to travel around Europe to search for the best street artists. He got back and started to write on a blog and to do stand up comedy. He then had to pay the bills and started his role of Entrepreneur-in-Residence at Build Up Labs, a venture builder that creates several startups in parallel. He published a book with the best texts from his blog that he still writes when his boss isn't looking. He loves dogs. He's from Buraca so don't mess with him."
+    organizationBio: "Por Falar Noutra Coisa is a blog created in the beginning of 2014. It has reached almost 7 million views and has more than 145 thousand followers. Portugal is full of people with bad taste. He writes about his youth, about philosophical questions (sometimes), international politics, sex, french kisses, sex, stupid stuff, sex, and bad odor on public transportation. He tries to be funny but doesn't always succeed. <br> Build Up Labs (http://builduplabs.com/) is a venture builder that created several startups in parallel. A studio with a core team that delivers digital products and experiences. Social by design. AI by added value."
+    startTime: '19:00'
+    endTime: '19:15'
+
+  - id: 219
+    speaker: Closing session
+    title: ''
+    startTime: '19:15'
+    endTime: '19:30'

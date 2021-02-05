@@ -1,0 +1,74 @@
+.schedule h3 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.07em
+}
+
+.schedule ol {
+  list-style: none;
+  margin: 0 -0.48225em 1.44em;
+  padding: 0;
+}
+
+.schedule li a {
+  text-decoration: none;
+  display: flex;
+  padding: 0.5em;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+/* Avoid pointer cursor for entries with no description */
+.schedule li a.no-description{
+  cursor: default;
+}
+
+
+.schedule li a,
+.schedule li a:visited,
+.schedule li a:hover,
+.schedule li a:active{
+  color: #000;
+}
+
+.schedule-entry-time {
+  padding: 0 0.83333em;
+  text-align: center;
+}
+
+.schedule-entry-time time {
+  font-size: 0.83333em;
+  display: block;
+}
+.schedule-entry-time time:nth-of-type(2) {
+  color: #999;
+}
+
+.schedule-entry-title {
+  overflow: hidden;
+  border-left: 2px solid #1399D6;
+  padding-left: 0.69444em;
+  width: 100%;
+}
+
+.schedule h3 {
+  margin: 0 0 0.3349em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.schedule-entry-speaker {
+  color: #999;
+  font-size: 0.83333em;
+}
+
+.schedule-entry-description-title {
+  font-weight: bold;
+}
+
+.schedule-entry-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-right: 5px;
+}

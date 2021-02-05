@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Talk a Bit</title>
+  <meta name="description" content="a conference about the impact of software engineering in modern society">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+    <div class="wrapper">
+      <!-- <section class="top-info">
+        <span>February 22th, 2012 / Porto</span>
+      </section> -->
+      <ul class="nav-group-one">
+        <li><a href="./program.html" id="conference">Program</a></li>
+        <li><a href="./registration.html" id="registration">Registration</a></li>
+      </ul>
+      <a href="./" id="logo">Talk a Bit</a>
+      <ul class="nav-group-two">
+        <li><a href="./sponsors.html" id="sponsors">Sponsors</a></li>
+        <li><a href="./guide.html" id="guide">Guide</a></li>
+      </ul>
+    </div>
+  </header>
+  <div role="main">
+    <div class="wrapper" style="text-align: center;">
+	<div style="width: 80%; margin: auto 10%; text-align: center;">
+		<h2>Welcome to <strong>Talk a Bit</strong>, a conference on <strong>February 8<sup>nd</sup>, 2013</strong> about the impact of software engineering in modern society.</h2>
+	</div>
+	
+	<div style="width: 100%; overflow:">
+		<!-- <h2>Our Awesome Keynote Speakers</h2> -->
+
+		<div class="mosaic-wrapper" style="margin:0 auto;">
+			<a href="program.html#sidorenko" class="box mosaic-box1 bg1"></a>
+			<a href="program.html#vala" class="box mosaic-box2 bg2"></a>
+			<a href="program.html#amaral" class="box mosaic-box1 bg6"></a>
+			<a href="https://www.facebook.com/talkabit" class="box mosaic-box2 bg10"></a>
+			<a href="program.html" class="box mosaic-box2 bg15"></a>
+			<a href="program.html#desport" class="box mosaic-box2 bg3"></a>
+		</div> <!-- end of mosaic wrapper -->	
+		<div class="mosaic-wrapper" style="margin:0 auto;">
+			
+			<a href="sponsors.html" class="box mosaic-box2 bg13"></a>
+			<a href="program.html#linda" class="box mosaic-box1 bg12"></a>
+			
+			<a href="registration.html" class="box mosaic-box2 bg16"></a>
+			
+			<a href="program.html#cunha" class="box mosaic-box1 bg4"></a>
+
+			<a href="program.html#cguerra" class="box mosaic-box2 bg11"></a>
+			
+			<a href="guide.html" class="box mosaic-box2 bg14"></a>
+			
+			
+			
+			
+		</div> <!-- end of mosaic wrapper -->
+
+		
+			<!-- <img src="" style="margin: 5px;"> -->
+		
+	</div>
+
+</div>
+
+  </div>
+  <footer>
+    <div class="wrapper">
+      <section class="zone">
+        <h6>Facebook</h6>
+        <p>Stay in touch and share your love with us on <a class="footer-link" href="https://www.facebook.com/talkabit">facebook</a>.</p>
+      </section>
+      <section class="zone">
+        <h6>Team</h6>
+        <p>This conference is entirely made by students. Share your love.</p>
+      </section>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDE0gstCSUWkPFNQvKEaLXi7E_7wIjTGoo&sensor=false"></script>
+  <script src="js/libs/jquery.masonry.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
