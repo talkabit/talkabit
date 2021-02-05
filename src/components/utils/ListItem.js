@@ -6,11 +6,11 @@ import styles from "../../styles/speakers.module.css";
 
 const ListItem = ({ name, img, children, link, className }) => (
     <div className={classnames(styles.lines, styles.speaker, className)}>
-        <div className={classnames(styles.speakerImgContainer)}>
-            {img.childImageSharp.fluid ?             <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
-                :             <Img fixed={img.childImageSharp.fixed} className={styles.speakerImg} />
-            }
-        </div>
+        {link ? (
+            <a href={link} target="_blank" rel="noreferrer" style={{ zIndex: 2 }}>
+                <ImageContainer img={img}/>
+            </a>
+        ) : <ImageContainer img={img}/>}
         <div className={styles.speakerInfo}>
             <h2 className={styles.speakerName}>
                 {
@@ -25,6 +25,22 @@ const ListItem = ({ name, img, children, link, className }) => (
         </div>
     </div>
 );
+
+const ImageContainer = ({ img }) => (
+    <div className={classnames(styles.speakerImgContainer)}>
+        {img.childImageSharp.fluid ?             <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
+            :             <Img fixed={img.childImageSharp.fixed} className={styles.speakerImg} />}
+    </div>
+);
+
+ImageContainer.propTypes = {
+    img: PropTypes.shape({
+        childImageSharp: PropTypes.shape({
+            fluid: PropTypes.object,
+            fixed: PropTypes.object,
+        }),
+    }).isRequired,
+};
 
 ListItem.propTypes = {
     name: PropTypes.string.isRequired,
