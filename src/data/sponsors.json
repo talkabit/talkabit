@@ -19,7 +19,12 @@
     "name": "KPMG",
     "img": "../images/sponsors/KPMG.png",
     "tier": "0-Gold",
-    "files": [{ "path": "./files/kpmg/kpmg_graduates.jpg", "name": "Graduates Programme" }],
+    "files": [
+      {
+        "path": "./files/kpmg/kpmg_graduates.jpg",
+        "name": "Graduates Programme"
+      }
+    ],
     "website": "https://home.kpmg/pt/pt/home.html"
   },
   {
@@ -150,7 +155,12 @@
     "name": "Xpand IT",
     "img": "../images/sponsors/xpand.png",
     "tier": "1-Silver",
-    "files": [],
+    "files": [
+      {
+        "path": "./files/xpandit/xpandit_brochura_digital.pdf",
+        "name": "Brochure"
+      }
+    ],
     "website": "https://www.xpand-it.com/"
   },
   {
