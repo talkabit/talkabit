@@ -1,40 +1,44 @@
 .sponsorContainer {
-    background-color: var(--primary-color-3); 
-    transform: skewY(-2deg) translateY(2rem);  
-    padding: 4rem;
-    padding-left: 15%;
-    padding-right: 15%;
+  background-color: var(--primary-color-3);
+  transform: skewY(-2deg) translateY(2rem);
+  padding: 4rem;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.tierContainer{
-    transform: skewY(2deg) translateY(2rem); 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
+.noContent > div:nth-child(2) {
+margin-right: 1rem !important;
 }
 
-.gold{ 
-    width: 33%;
-    margin-bottom: 10px;
-    align-self: center;
+.tierContainer {
+  transform: skewY(2deg) translateY(2rem);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gold {
+  width: 33%;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
 .silver {
-    width: 22%;
-    margin-bottom: 10px;
-    align-self: center;
+  width: 22%;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
 .bronze {
-    width: 12.5%;
-    margin-bottom: 10px;
-    align-self: center;
+  width: 12.5%;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
 .logo {
-    width: 85%;
+  width: 85%;
 }
 
 /* SPONSORS PAGE */
@@ -88,7 +92,7 @@
 .fileList {
   margin: 0;
   padding: 0;
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 200px;
@@ -114,8 +118,8 @@
 }
 
 .link:hover {
-    color: var(--primary-color-2);
-    text-decoration: none;
+  color: var(--primary-color-2);
+  text-decoration: none;
 }
 
 .name {
@@ -127,13 +131,13 @@
   color: var(--primary-color-2);
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .link {
     font-size: 0.85rem;
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .link {
     font-size: 1rem;
   }
@@ -144,6 +148,11 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .link {
+    font-size: 0.8rem;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .sponsorContainer {
@@ -175,7 +184,7 @@
   }
 }
 
-@media(max-width: 374px){
+@media (max-width: 374px) {
   .imageContainer {
     width: 200px;
   }

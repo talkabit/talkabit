@@ -122,7 +122,8 @@
   }
 
   .item:nth-child(even) .speakerInfo {
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: auto;
   }
 
   .item:nth-child(odd) .speakerInfo {
@@ -188,8 +189,8 @@
 
 @media (min-width: 992px) {
   .item:nth-child(even) .speakerInfo {
-    margin-left: 8rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: auto;
   }
 
   .item:nth-child(odd) .speakerInfo {
@@ -197,6 +198,9 @@
     margin-left: 3rem;
   }
 
+  .item:nth-child(even) .speakerImgContainer {
+    margin-left: 1rem;
+  }
   .item:nth-child(odd):not(:first-child):not(:last-child) .lines:after,
   .item:nth-child(even):not(:last-child) .lines:after,
   .item:first-child .lines:after,

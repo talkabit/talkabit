@@ -2,6 +2,7 @@ import React from "react";
 import { SponsorShape } from "../../utils/props";
 import { FaFileImage, FaFilePdf, FaFileVideo, FaFileAlt } from "react-icons/fa";
 import { lookup } from "mime-types";
+import classnames from "classnames";
 import styles from "../../styles/sponsors.module.css";
 import ListItem from "../utils/ListItem";
 
@@ -18,7 +19,7 @@ const getIcon = (extension) => {
 };
 
 const Sponsor = ({ website, files, img, name }) => (
-    <ListItem name={name} img={img} link={website} className={styles.wrapper}>
+    <ListItem name={name} img={img} link={website} className={classnames(styles.wrapper, files.length === 0 ? styles.noContent : null)}>
         <ul className={styles.fileList}>
             {files.map(({ name, path }) => (
                 <div key={name}>
