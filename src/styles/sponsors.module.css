@@ -86,8 +86,14 @@
 }
 
 .fileList {
-  margin: 1rem 0;
+  margin: 0;
   padding: 0;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+  text-align: center;
+  justify-content: center;
 }
 
 .tier {
@@ -103,7 +109,8 @@
   align-items: center;
   font-family: var(--inf-font);
   color: var(--primary-color-3);
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
 }
 
 .link:hover {
@@ -119,6 +126,24 @@
 .name:hover {
   color: var(--primary-color-2);
 }
+
+@media only screen and (max-width: 992px){
+  .link {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .link {
+    font-size: 1rem;
+  }
+
+  .fileList {
+    align-content: center;
+    max-height: 250px;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .sponsorContainer {
