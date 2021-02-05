@@ -19,7 +19,7 @@
     "name": "KPMG",
     "img": "../images/sponsors/KPMG.png",
     "tier": "0-Gold",
-    "files": [],
+    "files": [{ "path": "./files/kpmg/kpmg_graduates.jpg", "name": "Graduates Programme" }],
     "website": "https://home.kpmg/pt/pt/home.html"
   },
   {
@@ -33,7 +33,81 @@
     "name": "Fraunhofer",
     "img": "../images/sponsors/fraunhofer.png",
     "tier": "1-Silver",
-    "files": [],
+    "files": [
+      {
+        "path": "./files/fraunhofer/CT_EmbeddedSystem_flyer.pdf",
+        "name": "Embedded Systems"
+      },
+      {
+        "path": "./files/fraunhofer/CT_MobileDevelopment_flyer.pdf",
+        "name": "Mobile Development"
+      },
+      { "path": "./files/fraunhofer/FhP_AUDIT_brochure.pdf", "name": "AUDIT" },
+      {
+        "path": "./files/fraunhofer/FhP_COMMUNITY_brochure.pdf",
+        "name": "COMMUNITY"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_CONNECT_brochure.pdf",
+        "name": "CONNECT"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_DERMA_brochure.pdf",
+        "name": "DERMA"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_DIGITALFABRICATION_brochure.pdf",
+        "name": "DIGITALFABRICATION"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_Institutional_Presentation.pdf",
+        "name": "Presentation"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_MICRON_brochure.pdf",
+        "name": "MICRON"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_MOTION_brochure.pdf",
+        "name": "MOTION"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_NUTRITION_brochure.pdf",
+        "name": "NUTRITION"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_OPHTHA_brochure.pdf",
+        "name": "OPHTHA"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_PERSONAL_brochure.pdf",
+        "name": "PERSONAL"
+      },
+      {
+        "path": "./files/fraunhofer/FhP_SENSE_brochure.pdf",
+        "name": "SENSE"
+      },
+      {
+        "path": "./files/fraunhofer/Fraunhofer_AICOS_Institutional_Flyer.pdf",
+        "name": "Institutional flyer"
+      },
+      {
+        "path": "./files/fraunhofer/Fraunhofer_AICOS_Portfolio_Booklet.pdf",
+        "name": "Portfolio"
+      },
+      {
+        "path": "./files/fraunhofer/HCD_UserResearch_Usability_flyer.pdf",
+        "name": "User Research"
+      },
+      {
+        "path": "./files/fraunhofer/IS_DeepLearning_flyer.pdf",
+        "name": "Deep Learning"
+      },
+      {
+        "path": "./files/fraunhofer/IS_MachineLearning_flyer.pdf",
+        "name": "Machine Learning"
+      }
+    ],
     "website": "https://www.aicos.fraunhofer.pt/en/home.html"
   },
   {
@@ -97,7 +171,11 @@
     "name": "Dellent",
     "img": "../images/sponsors/dellent.png",
     "tier": "2-Bronze",
-    "files": [],
+    "files": [
+      { "path": "./files/dellent/Dellent_jobs.png", "name": "Jobs" },
+      { "path": "./files/dellent/Dellent_team.jpg", "name": "Team" },
+      { "path": "./files/dellent/Dellent_poster_2021.pdf", "name": "Poster" }
+    ],
     "website": "https://dellentconsulting.com/"
   },
   {
