@@ -15,6 +15,12 @@
     color: var(--primary-color-3);
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.event.promotedInline .tickets p {
+    margin-left: 0.5rem;
 }
 
 .speakerEntry .author:hover, .eventPicture:hover {
@@ -114,6 +120,10 @@
     transform: skewY(-2deg) translateY(2rem);
 }
 
+.promotedEvent .title:hover p {
+    color: var(--primary-color-1);
+}
+
 .promotedEvent .title p {
     transform: skewY(2deg);
     margin: 0;
@@ -137,7 +147,7 @@
 
 .event.promotedInline .eventTitle p {
     transform: skewY(2deg);
-    margin: 0;
+    margin-bottom: 0;
     font-weight: bold;
     text-transform: uppercase;
 }

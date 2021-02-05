@@ -57,7 +57,7 @@ EventDetailsSpeaker.propTypes = {
     ),
 };
 
-const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, promoted }) => (
+const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, promoted, tickets }) => (
     <div className={`${styles.event} ${promoted ? styles.promotedInline : ""}`}>
         <div className={styles.time}>
             {startTime}
@@ -75,9 +75,18 @@ const Event = ({ title, startTime, endTime, speakers, slug, showPicture = true, 
                 :
                 (
                     <div className={styles.eventTitle}>
-                        <p>
-                            {title}
-                        </p>
+                        {tickets ?   (
+                            <a href={tickets} style={{ color: "white", textDecoration: "none" }} className={styles.tickets} target="_blank" rel="noreferrer">
+                                <ImTicket size="1.5rem"/>
+                                <p>
+                                    {title}
+                                </p>
+                            </a>
+                        ) : (
+                            <p>
+                                {title}
+                            </p>
+                        )}
                     </div>
                 )
             }
@@ -97,6 +106,7 @@ Event.propTypes = {
             occupations: SpeakerShape.occupations,
         })
     ),
+    tickets: PropTypes.string,
     slug: PropTypes.string,
 };
 

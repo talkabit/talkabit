@@ -125,6 +125,7 @@ const Schedule = () => {
                 startTime
                 endTime
                 promoted
+                tickets
                 speakers {
                   name
                   occupations {
