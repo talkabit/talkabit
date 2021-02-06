@@ -119,7 +119,72 @@
     "name": "INESC TEC",
     "img": "../images/sponsors/inesc.png",
     "tier": "1-Silver",
-    "files": [],
+    "files": [
+      {
+        "path": "./files/inesc/Artificial_Intelligence_and_Decision_Support.pdf",
+        "name": "AI and Decision Support"
+      },
+      {
+        "path": "./files/inesc/DNA.pdf",
+        "name": "DNA"
+      },
+      {
+        "path": "./files/inesc/Find_The_Right_Answer_for_You.pdf",
+        "name": "Find The Right Answer for You"
+      },
+      {
+        "path": "./files/inesc/Highlights.pdf",
+        "name": "Highlights"
+      },
+      {
+        "path": "./files/inesc/In_Brief.pdf",
+        "name": "In Brief"
+      },
+      {
+        "path": "./files/inesc/Information_Systems.pdf",
+        "name": "Information Systems"
+      },
+      {
+        "path": "./files/inesc/Manufacturing.pdf",
+        "name": "Manufacturing"
+      },
+      {
+        "path": "./files/inesc/Market.pdf",
+        "name": "Market"
+      },
+      {
+        "path": "./files/inesc/Power_Systems.pdf",
+        "name": "Power Systems"
+      },
+      {
+        "path": "./files/inesc/Robotics.pdf",
+        "name": "Robotics"
+      },
+      {
+        "path": "./files/inesc/Science.pdf",
+        "name": "Science"
+      },
+      {
+        "path": "./files/inesc/Sensors.pdf",
+        "name": "Sensors"
+      },
+      {
+        "path": "./files/inesc/Telecom.pdf",
+        "name": "Telecom"
+      },
+      {
+        "path": "./files/inesc/What_Moves_Us.pdf",
+        "name": "What Moves Us"
+      },
+      {
+        "path": "./files/inesc/Where_Are_We.pdf",
+        "name": "Where Are We"
+      },
+      {
+        "path": "./files/inesc/Why_Will_You_Enjoy_Working_at_INESC_TEC.pdf",
+        "name": "Working at INESC TEC"
+      }
+    ],
     "website": "https://www.inesctec.pt/en"
   },
   {
