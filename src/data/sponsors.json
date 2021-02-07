@@ -157,6 +157,10 @@
         "name": "Power Systems"
       },
       {
+        "path": "./files/inesc/Why_Will_You_Enjoy_Working_at_INESC_TEC.pdf",
+        "name": "Working at INESC TEC"
+      },
+      {
         "path": "./files/inesc/Robotics.pdf",
         "name": "Robotics"
       },
@@ -179,10 +183,6 @@
       {
         "path": "./files/inesc/Where_Are_We.pdf",
         "name": "Where Are We"
-      },
-      {
-        "path": "./files/inesc/Why_Will_You_Enjoy_Working_at_INESC_TEC.pdf",
-        "name": "Working at INESC TEC"
       }
     ],
     "website": "https://www.inesctec.pt/en"
