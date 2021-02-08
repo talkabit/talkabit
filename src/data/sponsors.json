@@ -191,7 +191,7 @@
     "website": "https://www.inesctec.pt/en"
   },
   {
-    "name": "Inova-Ria + Altice Labs",
+    "jointName": ["Inova-Ria", "Altice Labs"],
     "img": "../images/sponsors/inovaria.png",
     "tier": "1-Silver",
     "files": [
@@ -203,7 +203,8 @@
         "name": "Logo"
       }
     ],
-    "website": "http://www.inova-ria.pt/"
+    "website": "http://www.inova-ria.pt/",
+    "jointWebsite": ["http://www.inova-ria.pt/", "https://www.alticelabs.com/"]
   },
   {
     "name": "msg life",
