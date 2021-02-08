@@ -55,8 +55,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "predeploy": "npm run build && cp -r public/* dist/",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "rm -rf build && mkdir build && npm run clean && npm run build && cp -r public/* build/ && cp -r dist/* build/",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
