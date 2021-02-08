@@ -5,10 +5,6 @@
     "tier": "0-Gold",
     "files": [
       {
-        "path": "./files/nexllence/abc_nexllence_images.zip",
-        "name": "Images"
-      },
-      {
         "path": "./files/nexllence/Brochura-Nexllence[21139].pdf",
         "name": "Brochure"
       }
