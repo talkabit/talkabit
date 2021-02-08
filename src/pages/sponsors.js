@@ -19,6 +19,10 @@ const Sponsors = () => {
               name
               website
               tier
+              links {
+                path
+                name
+              }
               files {
                 path {
                   publicURL

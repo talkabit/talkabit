@@ -1,10 +1,18 @@
 import React from "react";
 import { SponsorShape } from "../../utils/props";
-import { FaFileImage, FaFilePdf, FaFileVideo, FaFileAlt } from "react-icons/fa";
+import {
+    FaFileImage,
+    FaFilePdf,
+    FaFileVideo,
+    FaFileAlt,
+    FaLink,
+} from "react-icons/fa";
 import { lookup } from "mime-types";
 import classnames from "classnames";
 import styles from "../../styles/sponsors.module.css";
 import ListItem from "../utils/ListItem";
+import PropTypes from "prop-types";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 const getIcon = (extension) => {
     // eslint-disable-next-line no-unused-vars
@@ -21,7 +29,32 @@ const getIcon = (extension) => {
     return <FaFileAlt color="#fff" className={styles.icon} />;
 };
 
-const Sponsor = ({ website, files, img, name, className }) => (
+const Link = ({ path, name, download }) =>
+    download ? (
+        <a href={path.publicURL} download className={styles.link}>
+            {getIcon(path.extension)}
+            {name}
+        </a>
+    ) : (
+        <a href={path} className={styles.link} target="_blank" rel="noreferrer">
+            <FaLink color="#fff" className={styles.icon} />
+            {name}
+        </a>
+    );
+
+Link.propTypes = {
+    name: PropTypes.string.isRequired,
+    download: PropTypes.bool,
+    path: PropTypes.oneOfType([
+        PropTypes.shape({
+            publicURL: propTypes.string,
+            extension: PropTypes.string,
+        }),
+        PropTypes.string,
+    ]),
+};
+
+const Sponsor = ({ website, files, links, img, name, className }) => (
     <ListItem
         name={name}
         img={img}
@@ -32,16 +65,12 @@ const Sponsor = ({ website, files, img, name, className }) => (
             className
         )}
     >
-        {files ? (
+        {files || links ? (
             <ul className={styles.fileList}>
-                {files.map(({ name, path }) => (
-                    <div key={name}>
-                        <a href={path.publicURL} download className={styles.link}>
-                            {getIcon(path.extension)}
-                            {name}
-                        </a>
-                    </div>
-                ))}
+                {files
+                    ? files.map((file) => <Link {...file} key={file.name} download />)
+                    : null}
+                {links ? links.map((link) => <Link {...link} key={link.name} />) : null}
             </ul>
         ) : null}
     </ListItem>
