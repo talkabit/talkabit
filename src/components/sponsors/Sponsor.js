@@ -54,9 +54,11 @@ Link.propTypes = {
     ]),
 };
 
-const Sponsor = ({ website, files, links, img, name, className }) => (
+const Sponsor = ({ website, jointWebsite, files, links, img, name, jointName, className }) => (
     <ListItem
         name={name}
+        jointName={jointName}
+        jointWebsite={jointWebsite}
         img={img}
         link={website}
         className={classnames(

@@ -17,7 +17,9 @@ const Sponsors = () => {
           edges {
             node {
               name
+              jointName
               website
+              jointWebsite
               tier
               links {
                 path

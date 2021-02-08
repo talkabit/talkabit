@@ -1,6 +1,6 @@
 [
   {
-    "name": "ABConsulting + Nexllence",
+    "jointName": ["ABConsulting", "Nexllence"],
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
     "files": [
@@ -15,7 +15,8 @@
         "name": "Recruitment"
       }
     ],
-    "website": "https://www.abconsulting.pt/"
+    "website": "https://www.abconsulting.pt/",
+    "jointWebsite": ["https://www.abconsulting.pt/", "https://www.nexllence.com/"]
   },
   {
     "name": "KPMG",
