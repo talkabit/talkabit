@@ -1,19 +1,22 @@
 [
   {
-    "name": "ABConsulting + Nexllence",
+    "jointName": ["ABConsulting", "Nexllence"],
     "img": "../images/sponsors/abc-nexllence.png",
     "tier": "0-Gold",
     "files": [
-      {
-        "path": "./files/nexllence/abc_nexllence_images.zip",
-        "name": "Images"
-      },
       {
         "path": "./files/nexllence/Brochura-Nexllence[21139].pdf",
         "name": "Brochure"
       }
     ],
-    "website": "https://www.abconsulting.pt/"
+    "links": [
+      {
+        "path": "https://recrutamento.nexllence.com/Offers",
+        "name": "Recruitment"
+      }
+    ],
+    "website": "https://www.abconsulting.pt/",
+    "jointWebsite": ["https://www.abconsulting.pt/", "https://www.nexllence.com/"]
   },
   {
     "name": "KPMG",

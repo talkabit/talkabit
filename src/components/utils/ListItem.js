@@ -1,25 +1,50 @@
+/* eslint-disable no-nested-ternary */
 import React from "react";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 import classnames from "classnames";
 import styles from "../../styles/speakers.module.css";
 
-const ListItem = ({ name, img, children, link, className }) => (
+const ListItem = ({
+    name,
+    jointName,
+    jointWebsite,
+    img,
+    children,
+    link,
+    className,
+}) => (
     <div className={classnames(styles.lines, styles.speaker, className)}>
         {link ? (
             <a href={link} target="_blank" rel="noreferrer" style={{ zIndex: 2 }}>
-                <ImageContainer img={img}/>
+                <ImageContainer img={img} />
             </a>
-        ) : <ImageContainer img={img}/>}
+        ) : (
+            <ImageContainer img={img} />
+        )}
         <div className={styles.speakerInfo}>
             <h2 className={styles.speakerName}>
-                {
-                    link ? (
-                        <a href={link} target="_blank" rel="noreferrer" className={styles.link}>
-                            {name}
-                        </a>
-                    ) : name
-                }
+                {jointName ? (
+                    jointName.map((name, i) => (
+                        <>
+                            {i > 0 ? " + " : null}
+                            <a key={name} href={jointWebsite[i]} className={styles.link}>
+                                {name}
+                            </a>
+                        </>
+                    ))
+                ) : link ? (
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.link}
+                    >
+                        {name}
+                    </a>
+                ) : (
+                    name
+                )}
             </h2>
             {children}
         </div>
@@ -28,8 +53,11 @@ const ListItem = ({ name, img, children, link, className }) => (
 
 const ImageContainer = ({ img }) => (
     <div className={classnames(styles.speakerImgContainer)}>
-        {img.childImageSharp.fluid ?             <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
-            :             <Img fixed={img.childImageSharp.fixed} className={styles.speakerImg} />}
+        {img.childImageSharp.fluid ? (
+            <Img fluid={img.childImageSharp.fluid} className={styles.speakerImg} />
+        ) : (
+            <Img fixed={img.childImageSharp.fixed} className={styles.speakerImg} />
+        )}
     </div>
 );
 
@@ -53,6 +81,8 @@ ListItem.propTypes = {
     children: PropTypes.node.isRequired,
     link: PropTypes.string,
     className: PropTypes.string,
+    jointName: PropTypes.arrayOf(PropTypes.string),
+    jointWebsite: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default ListItem;
