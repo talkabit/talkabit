@@ -28,7 +28,7 @@ const ListItem = ({
                     jointName.map((name, i) => (
                         <>
                             {i > 0 ? " + " : null}
-                            <a key={name} href={jointWebsite[i]} className={styles.link}>
+                            <a key={name} href={jointWebsite[i]} className={styles.link} target="_blank" rel="noreferrer">
                                 {name}
                             </a>
                         </>
