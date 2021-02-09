@@ -15,7 +15,7 @@ const Speakers = () => {
           fileAbsolutePath: { regex: "/data/events/" }
           frontmatter: { type: { eq: "talk" } }
         }
-        sort: { fields: frontmatter___type }
+        sort: { fields: [frontmatter___date, frontmatter___startTime] }
       ) {
         edges {
           node {
