@@ -281,10 +281,22 @@
     "tier": "2-Bronze",
     "files": [],
     "links": [
-      { "path": "https://forms.gle/KZ9ZDp7y12Fmsc3W7", "name": "Natixis Initiatives" },
-      { "path": "https://www.linkedin.com/company/natixis-in-portugal/mycompany/", "name": "LinkedIn" },
-      { "path": "https://www.youtube.com/playlist?list=PLCffxNP5tKRRSRMhCwpaQ-Ot1tQwTYIDr", "name": "Youtube" },
-      { "path": "https://bit.ly/NatixisPortugalOfficeTour", "name": "Office 360º Streetview Tour" }
+      {
+        "path": "https://forms.gle/KZ9ZDp7y12Fmsc3W7",
+        "name": "Natixis Initiatives"
+      },
+      {
+        "path": "https://www.linkedin.com/company/natixis-in-portugal/mycompany/",
+        "name": "LinkedIn"
+      },
+      {
+        "path": "https://www.youtube.com/playlist?list=PLCffxNP5tKRRSRMhCwpaQ-Ot1tQwTYIDr",
+        "name": "Youtube"
+      },
+      {
+        "path": "https://bit.ly/NatixisPortugalOfficeTour",
+        "name": "Office 360º Streetview Tour"
+      }
     ],
     "website": "https://www.natixis.com/natixis/en/home-j_6.html"
   },
@@ -293,6 +305,24 @@
     "img": "../images/sponsors/twoimpulse.png",
     "tier": "2-Bronze",
     "files": [],
+    "links": [
+      {
+        "path": "https://ultratimeseries.com/",
+        "name": "Ultra Time Series"
+      },
+      {
+        "path": "https://hiringcue.com/",
+        "name": "Hiringcue"
+      },
+      {
+        "path": "https://cosibot.org/",
+        "name": "Cosibot"
+      },
+      {
+        "path": "https://robo-ai.com",
+        "name": "ROBO.AI"
+      }
+    ],
     "website": "https://twoimpulse.com/"
   },
   {
