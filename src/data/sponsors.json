@@ -293,7 +293,16 @@
     "name": "Natixis",
     "img": "../images/sponsors/natixis.png",
     "tier": "2-Bronze",
-    "files": [],
+    "files": [
+      {
+        "path": "./files/natixis/description_Natixis_2020.pdf",
+        "name": "Recruitment"
+      },
+      {
+        "path": "./files/natixis/techStackIT.pdf",
+        "name": "Tech Stack IT"
+      }
+    ],
     "links": [
       {
         "path": "https://forms.gle/KZ9ZDp7y12Fmsc3W7",
