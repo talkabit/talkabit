@@ -254,6 +254,20 @@
     "img": "../images/sponsors/msglife.png",
     "tier": "1-Silver",
     "files": [],
+    "links": [
+      {
+        "path": "https://www.linkedin.com/company/msg-life-iberia",
+        "name": "LinkedIn"
+      },
+      {
+        "path": "https://www.msg-life.pt/en/work-at-msg-life-iberia/",
+        "name": "Working at msg life Iberia"
+      },
+      {
+        "path": "https://www.linkedin.com/showcase/msg-life-iberia-people-&-culture/",
+        "name": "People & Culture"
+      }
+    ],
     "website": "https://www.msg-life.pt"
   },
   {
