@@ -31,16 +31,19 @@ const getIcon = (extension) => {
 
 const Link = ({ path, name, download }) =>
     download ? (
-        <a href={path.publicURL} download className={styles.link}>
+        <a href={path.publicURL} download className={styles.link} title={name}>
             {getIcon(path.extension)}
-            {name}
+            {shortName(name, 35)}
         </a>
     ) : (
-        <a href={path} className={styles.link} target="_blank" rel="noreferrer">
+        <a href={path} className={styles.link} target="_blank" rel="noreferrer" title={name}>
             <FaLink color="#fff" className={styles.icon} />
-            {name}
+            {shortName(name, 35)}
         </a>
     );
+
+const shortName = (name, maxLength) =>
+    name.length >= maxLength ? name.slice(0, maxLength - 3).concat("...") : name;
 
 Link.propTypes = {
     name: PropTypes.string.isRequired,
@@ -54,7 +57,16 @@ Link.propTypes = {
     ]),
 };
 
-const Sponsor = ({ website, jointWebsite, files, links, img, name, jointName, className }) => (
+const Sponsor = ({
+    website,
+    jointWebsite,
+    files,
+    links,
+    img,
+    name,
+    jointName,
+    className,
+}) => (
     <ListItem
         name={name}
         jointName={jointName}
