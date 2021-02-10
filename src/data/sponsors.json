@@ -204,6 +204,46 @@
       {
         "path": "./files/inovaria/logo_inovaria_genius_alticelabs.jpg",
         "name": "Logo"
+      },
+      {
+        "path": "./files/inovaria/redes_sociais.jpg",
+        "name": "Social Networks"
+      },
+      {
+        "path": "./files/inovaria/Presentation.pdf",
+        "name": "Presentation"
+      },
+      {
+        "path": "./files/inovaria/BR_HistoryAndValue_EN.pdf",
+        "name": "History and Value"
+      },
+      {
+        "path": "./files/inovaria/BR_ENTER_ALB_EN.pdf",
+        "name": "ENTER Programme"
+      },
+      {
+        "path": "./files/inovaria/BR_AlticeLabs_EN.pdf",
+        "name": "Altice Labs Brochure"
+      },
+      {
+        "path": "./files/inovaria/Altice_Labs_Tabela_Sintese_dos_Projetos_Talk a bit_2021.pdf",
+        "name": "Internship Program"
+      },
+      {
+        "path": "./files/inovaria/2021_N46_Funcoes+de+rede+virtualizadas+para+small+cells+5G+(DU-high)_Sam....pdf",
+        "name": "Proposal: Funções de rede virtualizadas para small cells 5G (DU-high)"
+      },
+      {
+        "path": "./files/inovaria/2021_N44_Reinforcement+Learning+@+Self_+Networks_Luis Cortesao.pdf",
+        "name": "Proposal: Reinforcement Learning @ Self* Networks"
+      },
+      {
+        "path": "./files/inovaria/2021_N24_Cloud-driven+architecture+for+agile+deployment_Filipe Delgado.pdf",
+        "name": "Proposal: Cloud driven architecture for agile deployment"
+      },
+      {
+        "path": "./files/inovaria/2021_N22_Encaminhamento,+interoperabilidade,+e+controlo+de+carga+de+serv....pdf",
+        "name": "Proposal: Encaminhamento, interoperabilidade e controlo de carga de serviços em redes 5G"
       }
     ],
     "website": "http://www.inova-ria.pt/",
