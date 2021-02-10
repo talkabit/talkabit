@@ -1,5 +1,5 @@
 ---
-startDate: "2021-02-10 14:00"
+startDate: "2021-02-10 09:00"
 endDate: "2021-02-13 17:00"
 registration: https://forms.gle/3J4hmjQmRag2h8aQ6
 regulation: "./files/TaB21_Hackathon_Regulation.pdf"
