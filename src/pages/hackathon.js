@@ -31,9 +31,9 @@ const HackathonPage = () => {
             brand
           }
           registration
-          # regulation {
-          #   publicURL
-          # }
+          regulation {
+            publicURL
+          }
           # winners {
           #   name
           #   github
