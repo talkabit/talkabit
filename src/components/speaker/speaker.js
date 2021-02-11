@@ -3,11 +3,11 @@ import { SpeakerPageShape } from "../../utils/props";
 import styles from "../../styles/speakers.module.css";
 import ListItem from "../utils/ListItem";
 
-const Speaker = ({ name, bio, img, date, startTime }) => (
+const Speaker = ({ name, bio, img, date, startTime, role }) => (
     <div id={name.replace(" ", "-")}>
         <ListItem name={name} img={img}>
             <p className={styles.start}>
-                {`${date} - ${startTime}`}
+                {role ? role : `${date} - ${startTime}`}
             </p>
             <p className={styles.speakerBio}>
                 {bio}
