@@ -36,8 +36,15 @@ const EventDetailsSpeaker = ({ speakers, title, description, showPicture }) => (
                         {title}
                     </div>
 
-                    <div className={styles.author}>
-                        {speakers.map((speaker) => speaker.name).join(", ")}
+                    <div>
+                        {speakers.map((speaker, i) => (
+                            <>
+                                {i > 0 ? ", " : null}
+                                <span key={speaker.name} className={styles.author} onClick={() => navigate(`/speakers/#${speaker.name.replace(" ", "-")}`)}>
+                                    {speaker.name}
+                                </span>
+                            </>
+                        ))}
                     </div>
                 </div>
             )

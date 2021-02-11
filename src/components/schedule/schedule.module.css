@@ -26,7 +26,7 @@
     margin-left: 0.5rem;
 }
 
-.speakerEntry .author:hover, .eventPicture:hover {
+.author:hover, .eventPicture:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -37,7 +37,7 @@
     column-gap: 2em;
 }
 
-.speakerEntry .author {
+.author {
     font-family: var(--inf-font);
 }
 
