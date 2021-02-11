@@ -71,6 +71,7 @@
 .speakerBio {
   color: var(--primary-color-2);
   font-size: 0.8rem;
+  margin-bottom: 0;
 }
 
 .item:first-child {
