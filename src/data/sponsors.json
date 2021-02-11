@@ -363,7 +363,38 @@
     "name": "Switch",
     "img": "../images/sponsors/switch2.png",
     "tier": "2-Bronze",
-    "files": [],
+    "files": [
+      {
+        "name": "Meet Switch",
+        "path": "./files/switch/Meet_Switch.pdf"
+      },
+      {
+        "name": "Switch Product Overview",
+        "path": "./files/switch/Switch_Product_Overview.pdf"
+      },
+      {
+        "name": "Switch Values",
+        "path": "./files/switch/Switch_Values.pdf"
+      }
+    ],
+    "links": [
+      {
+        "name": "Working at Switch",
+        "path": "https://switchpayments.com/#/careers"
+      },
+      {
+        "name": "17 Questions with Ruca",
+        "path": "https://www.youtube.com/watch?v=OPCtrWI0Cvs"
+      },
+      {
+        "name": "Join the Office",
+        "path": "https://drive.google.com/file/d/1I_OIyG-ghhS4nByyjawv00TbZ8PBwtwt/view?usp=sharing"
+      },
+      {
+        "name": "LinkedIn",
+        "path": "https://www.linkedin.com/company/switchpayments/"
+      }
+    ],
     "website": "https://switchpayments.com"
   }
 ]
