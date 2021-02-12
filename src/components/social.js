@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ImTicket } from "react-icons/im";
 import { IconContext } from "react-icons";
 
@@ -24,6 +24,9 @@ const Social = () => (
             </a>
             <a href="https://twitter.com/talkabitconf/" style={{ color: "white", textDecoration: "none" }} target="_blank" rel="noreferrer">
                 <FaTwitter />
+            </a>
+            <a href="https://www.youtube.com/channel/UCozp1TXwZcWVdHtgcn3mh8A" style={{ color: "white", textDecoration: "none" }} target="_blank" rel="noreferrer">
+                <FaYoutube />
             </a>
         </div>
     </IconContext.Provider>
