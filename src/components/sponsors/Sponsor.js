@@ -75,7 +75,7 @@ const Sponsor = ({
         link={website}
         className={classnames(
             styles.wrapper,
-            !files || files.length === 0 ? styles.noContent : null,
+            (!files || files.length === 0) && (!links || links.length === 0) ? styles.noContent : null,
             className
         )}
     >
