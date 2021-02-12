@@ -80,6 +80,14 @@ Membro do Conselho de Administração da Fundação da Juventude, entre 2007 e
       bio: Liliana Ferreira is is the director of the Fraunhofer Research Center for Assistive Information and Communication Solutions (AICOS) in Portugal and Full Professor Invited at Department of Informatics of the Faculty of Engineering of the University of Porto. Her research focuses mainly on the areas of Natural Language Processing, Medical Knowledge Representation, Information Extraction, and Health Informatics. Liliana holds a degree in Applied Mathematics and Technology by the Faculty of Sciences of the University of Porto (2002), an MSc in Electronics and Telecommunications Engineering, University of Aveiro (2005), and a Ph.D. in Informatics (2011) also from the University of Aveiro, Portugal. Liliana has developed her research in industry and research organizations as Philips Research Eindhoven (NL), IBM Research and Development Böblingen (DE), the Institute of Electronics and Telematics Engineering of Aveiro (PT), the Ubiquitous Knowledge Lab of the Technical University of Darmstadt (DE) and the University of Tübingen (DE).
       img: "../../images/speakers/liliana_ferreira.jpg"
       linkedin: https://www.linkedin.com/in/liliana-ferreira-12769639/
+    - name: Pedro Saleiro
+      occupations:
+        - what: Senior Research Manager
+          where: Feedzai
+      role: Participant
+      bio: Pedro Saleiro is a senior research manager at Feedzai where he leads the research group on Fairness, Accountability, Transparency, and Ethics (FATE). He is responsible for several initiatives related to improving model explainability, bias auditing and algorithmic fairness, experimentation and A/B testing, ML governance and reproducibility. Previously, Pedro was postdoc at the University of Chicago and research data scientist at the Center for Data Science and Public Policy working with Rayid Ghani, on the development of new methods and open source tools (Aequitas library) to detect and reduce bias and discrimination in AI, and doing data science for projects with government and non-profit partners in diverse policy areas. Pedro holds a Phd in Machine Learning from University of Porto.
+      img: "../../images/speakers/pedro_saleiro.jpg"
+      linkedin: https://www.linkedin.com/in/saleiro
 ---
 
 Technology is being integrated into our daily lives more than ever and is inevitably affecting social interactions and society itself as a result. Social media has reached a scale where it influences global politics, social stratification, and human and media psychology. Streaming platforms revolutionize how people consume entertainment. Digital technologies are being applied to socioeconomic domains, bringing great benefits to them. However, this also brings tremendous responsibility to directors, managers, and engineers responsible for these products, bringing up concepts like Ethical AI.
