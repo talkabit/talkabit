@@ -1,0 +1,20 @@
+#editions h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 36px;
+}
+
+#editionsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#editionsList a {
+  display: block;
+  transform: skew(-20deg);
+  color: inherit;
+  text-decoration: none;
+}

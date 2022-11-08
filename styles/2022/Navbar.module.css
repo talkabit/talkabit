@@ -1,0 +1,107 @@
+#navbar {
+  padding: 1.5rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+#navbar.darkNavbar {
+  background-color: black;
+  padding: 0.5rem 2rem;
+}
+
+#navbarToggler {
+  justify-content: flex-end;
+}
+
+.logo {
+  position: relative;
+  top: 7px;
+}
+
+#navbar ul {
+  align-items: center;
+}
+
+.navItem {
+  margin-left: 50px;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.navItem:hover .navLink {
+  color: #14c491;
+}
+
+#navbar a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #14c491;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+#navbar #navbarToggler {
+  color: var(--dark);
+  border: none;
+  background: none;
+  padding-right: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+#navbar #navbarToggler:hover {
+  background: none;
+}
+
+#navbarToggler span {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='22' viewBox='0 0 6 22'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23f5f5f5;stroke:%23f5f5f5;stroke-width:0.75px;%7D.b%7Bstroke:none;%7D.c%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-370 -20)'%3E%3Cg class='a' transform='translate(370 20)'%3E%3Ccircle class='b' cx='3' cy='3' r='3'/%3E%3Ccircle class='c' cx='3' cy='3' r='2.625'/%3E%3C/g%3E%3Cg class='a' transform='translate(370 28)'%3E%3Ccircle class='b' cx='3' cy='3' r='3'/%3E%3Ccircle class='c' cx='3' cy='3' r='2.625'/%3E%3C/g%3E%3Cg class='a' transform='translate(370 36)'%3E%3Ccircle class='b' cx='3' cy='3' r='3'/%3E%3Ccircle class='c' cx='3' cy='3' r='2.625'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto;
+}
+
+@media only screen and (max-width: 1105px) {
+  #registerNav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .logo {
+    visibility: hidden;
+  }
+
+  #navbar.darkNavbar .logo {
+    visibility: visible;
+  }
+
+  #registerNav {
+    display: block;
+  }
+
+  #navbar {
+    padding-top: 0.5rem;
+    /* background-color: black; */
+  }
+
+  #navbar.open {
+    background-color: black;
+  }
+
+  .navItem {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}

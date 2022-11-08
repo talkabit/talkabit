@@ -1,0 +1,117 @@
+#tabSelector button {
+  border: none;
+  background: none;
+  padding: 21px 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  transition: ease all 0.3s;
+}
+
+#tabSelector button.selected,
+#tabSelector button:hover {
+  font-weight: 600;
+}
+
+#talksButton {
+  width: 137px;
+}
+
+#othersButton {
+  width: 224px;
+}
+
+#tabSelector {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.eventEntry {
+  margin: 46px 0;
+  padding: 0 25px;
+}
+
+.eventTop {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.eventName {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+}
+
+.eventTime {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.eventSpeaker {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #272727;
+  text-align: left;
+}
+
+#lunch {
+  background: #e5e5e5;
+  padding: 25px 0;
+}
+
+#closing {
+  background: rgba(20, 159, 196, 0.52);
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closing .eventSpeaker,
+#opening .eventSpeaker {
+  color: white;
+}
+
+#opening {
+  background: rgba(20, 159, 196, 0.52);
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#others h4 {
+  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: rgba(20, 159, 196, 0.52);
+}
+
+#others .eventEntry:nth-child(2) {
+  margin-top: 0;
+}
+
+.eventBottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.eventTickets {
+  font-weight: 300;
+  font-size: 13.25px;
+  line-height: 20px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #272727;
+}

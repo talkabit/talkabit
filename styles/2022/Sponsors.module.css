@@ -1,0 +1,41 @@
+#sponsors h2 {
+  margin-bottom: 50px;
+}
+
+#sponsors h3 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 26.5px;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+#main h3 {
+  color: #72c5dc;
+}
+
+#gold h3 {
+  color: #c4a814;
+}
+
+#silver h3 {
+  color: #8d8d8d;
+}
+
+#bronze h3 {
+  color: #cd7f32;
+}
+
+.sponsorList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+  padding-left: 0;
+}
+
+.sponsor {
+  margin: 1.5rem;
+}
