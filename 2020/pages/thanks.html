@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Talk A Bit 2020</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="manifest" href="../manifest.json">
+	<meta name="theme-color" content="white" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/hello-icon-152.png">
+	<!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+	<meta name="theme-color" content="white" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Hello World">
+	<meta name="msapplication-TileImage" content="../images/hello-icon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+
+<body>
+	<div id="landing" class="landing container-fluid">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
+				<i class="fas fa-bars text-white"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="nav navbar-nav mx-auto navbar-first-list">
+					<li class="nav-item">
+						<a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+						<i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+							data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#tickets">Tickets</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./program.html">Program</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#location">Location</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+					<a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
+						<img height="40" src="../images/logo_sem.png" />
+					</a>
+				</ul>
+
+				<ul id="user-navbar" class="nav navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./sevents.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./organization.html">Organization</a>
+					</li>
+					<li class="nav-item dropdown" id="prevVersions">
+						<a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Previous Editions
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+							<a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+							<a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+							<a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+							<a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+							<a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+							<a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+						</div>
+					</li>
+					<li class="nav-item" id="loginLnk" style="display: none;">
+						<a class="nav-link py-0" href="./login.html">Login</a>
+					</li>
+					<li class="nav-item" id="registerLnk" style="display: none;">
+						<a class="nav-link py-0" href="./register.html">Register</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container main-container px-0">
+			<div class="row mx-3">
+				<div class="col justify-content-center card px-3 py-5 p-sm-5" style="border-radius: 3em;">
+					<div class="title">
+						Thanks for registering!
+					</div>
+					<div id="thanksTemplate" class="pl-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="page-footer font-small">
+		<!-- meter links das redes sociais -->
+		<div class="container-fluid text-center">
+			<div class="row social">
+				<ul class="list-group list-group-horizontal mx-auto mt-3">
+					<li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+								class="fab fa-facebook-f"></i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+								class="fab fa-instagram"></i></a></li>
+					<li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a>
+					</li>
+					<li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+								class="fab fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-logo-feup ">
+				<a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+						src="../2019/res/img/feup-logo.png" /></a>
+			</div>
+
+			<div class="footer-copyright text-center py-3">
+				Copyright Ⓒ 2019 Talk a Bit. All rights reserved.
+			</div>
+		</div>
+
+	</footer>
+	<!-- <script src="js/main.js"></script> -->
+	<script type="text/javascript" src="../js/user.js"></script>
+	<script type="text/javascript" src="../js/hide-navbar.js"></script>
+</body>
+
+</html>

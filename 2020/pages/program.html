@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Talk A Bit 2020</title>
+	<link rel="stylesheet" href="../css/program.css">
+	<link rel="stylesheet" href="../css/navbar.css" />
+	<link rel="stylesheet" href="../css/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="manifest" href="../manifest.json">
+	<meta name="theme-color" content="white" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/hello-icon-152.png">
+	<!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+	<meta name="theme-color" content="white" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Hello World">
+	<meta name="msapplication-TileImage" content="../images/hello-icon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+
+<body style="overflow-x: hidden">
+	<div id="landing" class="landing container-fluid">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
+				<i class="fas fa-bars text-white"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="nav navbar-nav mx-auto navbar-first-list">
+					<li class="nav-item">
+						<a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+						<i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
+							data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#tickets">Tickets</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./program.html">Program</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0 sponsors_link" href="./sponsors.html">Sponsors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="../index.html#location">Location</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
+					<a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
+						<img height="40" src="../images/logo_sem.png" />
+					</a>
+				</ul>
+
+				<ul id="user-navbar" class="nav navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./sevents.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0" href="./organization.html">Organization</a>
+					</li>
+					<li class="nav-item dropdown" id="prevVersions">
+						<a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Previous Editions
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+							<a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+							<a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+							<a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+							<a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+							<a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+							<a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+						</div>
+					</li>
+					<li class="nav-item" id="loginLnk" style="display: none;">
+						<a class="nav-link py-0" href="./login.html">Login</a>
+					</li>
+					<li class="nav-item" id="registerLnk" style="display: none;">
+						<a class="nav-link py-0" href="./register.html">Register</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid program-container">
+			<h1 id="title">Program</h1>
+
+			<table class="d-none d-md-inline table table-borderless text-white">
+				<thead>
+					<tr class="row" style="margin: auto">
+						<th scope="col" class="col-1 text-center" style="font-size: 2em">Time</th>
+						<th scope="col" class="col-5 text-center" style="font-size: 2em">Talks</th>
+						<th scope="col" class="col-5 text-center" style="font-size: 2em">Workshops</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">10:00</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3 w-100">
+								<div class="talk-title-center w-100">Opening Session</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row " style="margin: auto;">
+						<td class="col-1 border-bottom" style="font-size: 1.2em; font-weight: bold">10:30</td>
+						<td class="col-5 border-bottom mt-2 ">
+							<div class="row mx-3 ml-4">
+								<div class="workshop-title w-100">The past, present and future of Privacy</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk2_small.png" />
+									<a href="./speakers.html" class="workshop-pos">André Lago</a>
+								</div>
+								<div class="talk-description"></div>
+							</div>
+						</td>
+						<td class="col-5 ml-2 mt-2 mb-0" style="align-self: flex-end;" rowdiv="2">
+							<div class="row mx-3">
+								<div class="workshop-title ml-2 w-100">Why Autonomous Driving is Hard</div>
+								<div class="workshop-place ml-2 w-100">Room B227</div>
+								<div class="workshop-pos ml-2 mb-0 pb-0">
+									<img src="../images/sponsors/bosch.png" style="max-width: 50%" alt="Bosch">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">11:00</td>
+						<td class="col-5 ml-2 mb-2">
+							<div class="row mx-3">
+								<div class="workshop-title w-100">Graphics Technology Evolution During the Current
+									Generation of
+									Consoles</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk_small.png" />
+									<a href="./speakers.html" class="workshop-pos">Peter Sikachev</a>
+								</div>
+								<div class="talk-description">Discuss key game graphics technologies that became
+									industry standard
+									during the current generation of consoles (PlayStation 4, Xbox One).
+								</div>
+							</div>
+						</td>
+						<td class="col-5 ml-2 mt-0 mb-2" rowdiv="2">
+							<div class="row mx-3">
+								<div class="talk-description">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">11:30</td>
+						<td class="col-5 ml-2 mb-2">
+							<div class="row mx-3">
+								<div class="workshop-title w-100">The Challenges of Software Engineering in F1</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk5.png" />
+									<a href="./speakers.html" class="workshop-pos">João Neto</a>
+								</div>
+								<div class="talk-description">
+								</div>
+							</div>
+						</td>
+						<td class="col-5 ml-2 mb-2" rowdiv="2">
+							<div class="row mx-3">
+								<div class="workshop-title ml-2 w-100">How to Build a Multiplatform Desktop App using Web Technologies</div>
+								<div class="workshop-place ml-2 w-100">Room B229</div>
+								<div class="workshop-pos ml-2 mb-0 pb-0">
+									<img src="../images/sponsors/xpandit.png" style="max-width: 50%" alt="Rumos">
+								</div>
+								<div class="talk-description">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">12:00</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100" style="color: rgb(34,187,255);">Network a Bit</div>
+								<div class="talk-title-center w-100" style="font-size: 1rem;">Room B227</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">12:45</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100">Lunch break</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row " style="margin: auto;">
+						<td class="col-1 border-bottom" style="font-size: 1.2em; font-weight: bold">14:00</td>
+						<td class="col-5 border-bottom mt-2 ">
+							<div class="row mx-3 ml-4">
+								<div class="workshop-title w-100">Social Artificial Intelligence</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk4.png" />
+									<a href="./speakers.html" class="workshop-pos">Ana Paiva</a>
+								</div>
+								<div class="talk-description">
+								</div>
+							</div>
+						</td>
+						<td class="col-5 ml-2 mt-2 mb-0" style="align-self: flex-end;" rowdiv="2">
+							<div class="row mx-3">
+								<div class="workshop-title ml-2 w-100">Designing a REST API</div>
+								<div class="workshop-place ml-2 w-100">Room B229</div>
+								<div class="workshop-pos ml-2 mb-0 pb-0">
+									<img src="../images/sponsors/switch_white.png" style="max-width: 50%" alt="Switch">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">14:30</td>
+						<td class="col-5 ml-2 mb-2">
+							<div class="row mx-3">
+								<div class="workshop-title w-100">Building an Internet for Things and Robots and an
+									Internet of Humans
+									for Everyday Life</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk3.png" />
+									<a href="./speakers.html" class="workshop-pos">Rob van Kranenburg</a>
+								</div>
+								<div class="talk-description"></div>
+							</div>
+						</td>
+						<td class="col-5 ml-2 mt-0 mb-2" rowdiv="2">
+							<div class="row mx-3">
+								<div class="talk-description"></div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">15:00</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100">Coffee break</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">15:30</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100">Forum <div
+										style="color: rgb(34,187,255); display: inline;"> "What
+										was, is and will be technology"</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">17:00</td>
+						<td class="col-10 ml-2 mb-2" coldiv="2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100">Closing Session</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="row border-bottom" style="margin: auto;">
+						<td class="col-1" style="font-size: 1.2em; font-weight: bold">17:30</td>
+						<td class="col-10 ml-2 mt-2 mb-2">
+							<div class="row mx-3">
+								<div class="talk-title-center w-100">DrinkABit</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="d-inline d-md-none mx-auto">
+				<ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+					<li class="nav-item p-0 col-3">
+						<div class="nav-link border-0 px-0" style="font-size: 1.2em; font-weight: bold; color: #007bff">
+							Time</div>
+					</li>
+					<li class="nav-item p-0 col-4 text-center">
+						<a class="nav-link active border-0 px-1" id="home-tab" data-toggle="tab" href="#home" role="tab"
+							aria-controls="home" aria-selected="true"
+							style="font-size: 1.2em; font-weight: bold">Talks</a>
+					</li>
+					<li class="nav-item p-0 col-5 text-center">
+						<a class="nav-link border-0 px-1" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+							aria-controls="profile" aria-selected="false"
+							style="font-size: 1.2em; font-weight: bold">Workshops</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane text-white fade show active" id="home" role="tabpanel"
+						aria-labelledby="home-tab">
+						<div class="row border-bottom border-top px-3 py-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">10:00</div>
+							<div class="col-10">
+								<div class="talk-title"><small>Opening Session</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">10:30</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>The past, present and future of Privacy</small>
+								</div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk2_small.png" />
+									<a href="./speakers.html" class="workshop-pos"><small>André Lago</small></a>
+								</div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">11:00</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Graphics Technology Evolution During the
+										Current Generation of
+										Consoles</small></div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk_small.png" />
+									<a href="./speakers.html" class="workshop-pos"><small>Peter Sikachev</small></a>
+								</div>
+								<div class="talk-description">Discuss key game graphics technologies that became
+									industry standard
+									during the current generation of consoles (PlayStation 4, Xbox One).
+								</div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">11:30</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>The Challenges of Software Engineering in
+										F1</small></div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk5.png" />
+									<a href="./speakers.html" class="workshop-pos"><small>João Neto</small></a>
+								</div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">12:45</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Lunch break</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">14:00</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Social Artificial Intelligence</small></div>
+								<div class="flex">
+									<img class="speaker-pic" src="../images/speakers/spk4.png" />
+									<a href="./speakers.html" class="workshop-pos"><small>Ana Paiva</small></a>
+								</div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">14:30</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Building an Internet for Things and Robots and
+										an Internet of
+										Humans for Everyday Life</small></div>
+								<a href="./speakers.html" class="workshop-pos"><small>Rob van Kranenburg</small></a>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">15:00</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Coffee break</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">15:30</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Forum</small></div>
+								<div class="talk-pos"><small>"What was, is and will be technology"</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">17:00</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Closing Session</small></div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane text-white fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="row border-bottom border-top px-3 py-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">10:00</div>
+							<div class="col-10">
+								<div class="talk-title"><small>Opening Session</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">10:30</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Why Autonomous Driving is Hard</small></div>
+								<div class="workshop-place w-100"><small>Room B227</small></div>
+								<div class="workshop-pos"><small>Bosch</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">11:30</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>How to Build a Multiplatform Desktop App using Web Technologies</small></div>
+								<div class="workshop-place w-100"><small>Room B229</small></div>
+								<div class="workshop-pos"><small>Xpand IT</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">12:00</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Network a Bit</small></div>
+								<div class="workshop-place w-100"><small>Room B227</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">12:45</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Lunch break</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">14:00</div>
+							<div class="col-10">
+								<div class="workshop-title w-100"><small>Designing a REST API</small></div>
+								<div class="workshop-place w-100"><small>Room B229</small></div>
+								<div class="workshop-pos"><small>Switch</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">15:00</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Coffee break</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom pb-1 px-3 pt-2">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">15:30</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Forum</small></div>
+								<div class="talk-pos"><small>"What was, is and will be technology"</small></div>
+							</div>
+						</div>
+						<div class="row border-bottom py-2 px-3">
+							<div class="col-2 px-0" style="font-size: 1.2em; font-weight: bold">17:00</div>
+							<div class="col-10">
+								<div class="talk-title w-100"><small>Closing Session</small></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="page-footer font-small">
+
+		<div class="container-fluid text-center">
+			<div class="row social">
+				<ul class="list-group list-group-horizontal mx-auto mt-3">
+					<li><a target="_blank" href="https://www.facebook.com/talkabit"><i
+								class="fab fa-facebook-f"></i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/talkabit/"><i
+								class="fab fa-instagram"></i></a></li>
+					<li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i
+								class="fab fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-logo-feup ">
+				<a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class=""
+						src="../2019/res/img/feup-logo.png" /></a>
+			</div>
+
+			<div class="footer-copyright text-center py-3">
+				Copyright Ⓒ 2020 Talk a Bit. All rights reserved.
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- <script src="js/main.js"></script> -->
+	<script type="text/javascript" src="../js/user.js"></script>
+	<script type="text/javascript" src="../js/hide-navbar.js"></script>
+
+</body>
+
+</html>

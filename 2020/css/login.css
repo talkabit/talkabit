@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'DecimaLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaLight'), url('fonts/decima-light-webfont.woff') format('truetype');
+}
+
+@font-face {
+    font-family: 'Decima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Decima'), url('fonts/Decima-Pro.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DecimaBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaBold'), url('fonts/Decima-Pro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaA';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaA'), url('fonts/Decima-Pro-A.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaALight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaALight'), url('fonts/Decima-Pro-A-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaABold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaABold'), url('fonts/Decima-Pro-A-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(15, 46, 81) !important;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100%; 
+}
+
+html,
+.fullscreen {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
+
+.title {
+    font-size: 3rem;
+    color: rgb(9,28,49);
+    text-align: left;
+    font-family: 'DecimaABold';
+    padding-left: 0.2em;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    /*text-align: center;*/
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.social a {
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 25px;
+    opacity: 0.8;
+}
+
+.social a:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+}
+
+.login-card-container{
+    margin-top: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card{
+    border-radius: 25px;
+    width: 50em;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: rgb(34,187,255) !important;;
+}
+
+.btn-primary:hover {
+    background-color: rgb(27, 150, 202) !important;;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+}
+
+#email, #ticket, #password, #name, #conf_password {
+    background-color: rgb(230, 237, 241);
+}
+
+.login-col{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgb(230, 237, 241);
+    display: flex;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    align-items: center;
+}
+
+.login-btn-submit{
+    width: 100%;
+}
+
+.login-tab-logo{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: url("../images/feup_blurred_darken.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#login-tab-logo-img{
+    max-width: 100%;
+    padding-left: 15px;
+}
+
+#landing {
+    /* background-color: #0F2E51; */
+    min-width: 100vw;
+    /*background-image: url("../images/feup.jpeg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(15, 46, 81, 1);
+    background-blend-mode: darken;
+    padding: 0;
+}
+
+.dropdown-item:hover {
+    color: black !important;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    .login-col{
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    .login-col{
+        border-radius: 25px;
+    }
+
+    .main-container {
+        padding-top: 3em;
+        min-height: 70vh;
+    }
+}

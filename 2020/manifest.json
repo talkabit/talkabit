@@ -1,0 +1,16 @@
+{
+  "name": "Talk A Bit 2020",
+  "short_name": "TAB20",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white",
+  "icons": [
+    {
+      "src": "/images/logo_app.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

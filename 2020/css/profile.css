@@ -1,0 +1,45 @@
+body {
+  background-color: #102f50;
+  color: #e6edf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'DecimaABold';
+}
+
+#profile #title {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  font-family: 'DecimaABold';
+  color: white;
+}
+
+#profile #logged {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media(max-width: 992px) {
+  #profile {
+      width: 80%;
+  }   
+  
+  #title{
+      font-size: 4em !important;
+  }
+}
+
+@media(min-width: 992px) {
+  #profile {
+      width: 60%;
+  }   
+  #title{
+    font-size: 4em !important;
+}
+}
+
+@media (max-width: 768px) {
+  #title{
+      font-size: 3em !important;
+  }
+}

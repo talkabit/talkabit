@@ -1,0 +1,23 @@
+#tickets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+@media(min-width:992px) {
+    #tickets .card {
+        width: 59%;
+    }
+}
+
+@media(max-width:992px) {
+    #tickets .card {
+        width: 60%;
+    }
+}
+
+@media(max-width:740px) {
+    #tickets .card {
+       width: 80%;
+    }
+}

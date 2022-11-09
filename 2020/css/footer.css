@@ -1,0 +1,43 @@
+#footer .footer-logo-feup {
+    position: absolute; 
+    right: 20px; 
+    bottom: 30px;
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.social a {
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 25px;
+    opacity: 0.8;
+}
+
+.social a:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+}
+
+#footer .footer-logo-feup img {
+    height: 50px;
+}
+
+#footer {
+    position: relative;
+    color: rgb(230, 237, 241);
+    background-color: rgb(9,28,49);
+}
+
+@media (max-width: 768px) {
+    #footer .footer-logo-feup {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /*background-color: red;*/
+    }
+
+}
