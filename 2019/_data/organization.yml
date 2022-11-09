@@ -1,0 +1,129 @@
+committee:
+  - name: Ana Sousa
+    title: Program
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777465
+  
+  - name: André Silva
+    title: Conference / Sponsorship
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=779834
+  
+  - name: André Duarte
+    title: Sponsorship
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777410
+  
+  - name: António Soares
+    title: Volunteers
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=774689
+  
+  - name: Augusto Silva
+    title: Program
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777191
+  
+  - name: Carlos Teixeira
+    title: Web Design
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777286
+  
+  - name: Carlos Matias
+    title: Social Program
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776664
+  
+  - name: Diogo Costa
+    title: Volunteers
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777358
+  
+  - name: Duarte Duarte
+    title: Web Design
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777224
+    github: https://github.com/DDuarte
+    linkedin: https://www.linkedin.com/in/dduarted
+
+  - name: Federico Matteo Bencic
+    title: Web Design
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=1324269
+    
+  - name: Gabriel Candal
+    title: Program
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777631
+
+  - name: Georgina Esteves
+    title: Volunteers
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776152
+    
+  - name: João Pinto
+    title: Publicity
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777171
+  
+  - name: João Sá
+    title: Operations
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776810
+  
+  - name: João Pedro Dias
+    title: Conference
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776906
+    personal: http://jpdias.github.io
+  
+  - name: José Faria
+    title: Operations
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776716
+  
+  - name: Leonel Araujo
+    title: Web Design
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777512
+  
+  - name: Luís Araújo
+    title: Sponsorship
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776805
+  
+  - name: Matej Bašić
+    title: Collaborator
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=1324290
+  
+  - name: Miguel Poeira
+    title: Publicity
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776494
+  
+  - name: Nuno Martinho
+    title: Treasure
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776645
+  
+  - name: Paulo Marcos
+    title: Publicity
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=779951
+  
+  - name: Pedro Fernandes
+    title: Collaborator
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777050
+  
+  - name: Ruben Cordeiro
+    title: Social Program
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776934
+  
+  - name: Sérgio Esteves
+    title: Conference
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=776781
+  
+  - name: Vasco Gonçalves
+    title: Operations
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=775507
+  
+  - name: Wilson Oliveira
+    title: Treasure
+    sifeup: https://sigarra.up.pt/feup/pt/vld_entidades_geral.entidade_pagina?pct_id=777513
+
+steering:
+  - name: Raul Vidal
+    title: Professor
+    sifeup: https://sigarra.up.pt/feup/pt/func_geral.formview?p_codigo=206415
+  
+  - name: Ademar Aguiar
+    title: Professor
+    sifeup: https://sigarra.up.pt/feup/pt/func_geral.formview?p_codigo=231081
+
+others:
+  - name: Valter Santos
+    title: Design @ FBAUP
+    sifeup: https://sigarra.up.pt/fbaup/pt/fest_geral.cursos_list?pv_num_unico=201007099
+
+  - name: Diogo Bessa
+    title: Design @ FBAUP
+    sifeup: https://sigarra.up.pt/fbaup/pt/fest_geral.cursos_list?pv_num_unico=201004654
