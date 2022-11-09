@@ -1,0 +1,103 @@
+- firstName: Ricardo
+  lastName: Macieira
+  role: Portugal Head at Airbnb
+  quote: Airbnb's impact in the travel industry
+  picture: assets/images/speakers/airbnb.jpg
+  alt: airbnb
+  url: https://www.airbnb.pt
+
+- firstName: Rui
+  lastName: Bento
+  role: General Manager at Uber Portugal
+  quote: "Uber: Helping build smart cities"
+  picture: assets/images/speakers/uber.jpg
+  alt: Uber
+  url: https://www.uber.com
+
+- firstName: Paulo
+  lastName: Dimas
+  role: Head of Product at Unbabel
+  quote: "Uniting the Internet through language"
+  picture: assets/images/speakers/unbabel.jpg
+  alt:  Unbabel
+  url: https://unbabel.com
+
+- firstName: Francisco
+  lastName: Lobo
+  role: CEO at Critical Manufacturing
+  quote: Factories of the Future
+  picture: assets/images/speakers/criticalm.jpg
+  alt: Critical Manufacturing
+  url: http://www.criticalmanufacturing.com/
+
+- firstName: Valter
+  lastName: Vasić
+  role: Researcher at University of Zagreb
+  quote: Dark side of the Net
+  picture: assets/images/speakers/vasic.jpg
+  alt: University of Zagreb
+  url: https://www.researchgate.net/profile/Valter_Vasic
+
+- firstName: Guilherme
+  lastName: Duarte
+  role: "Entrepreneur in Residence at BuildUP Labs"
+  quote: Re-Engineer yourself (it's not coaching sh*t)
+  picture: assets/images/speakers/guilherme.jpg
+  alt: Guilherme Duarte
+  url: https://www.facebook.com/PorFalarNoutraCoisa/
+
+- firstName: Virgilio 
+  lastName: Bento
+  role: Founder and CEO at Sword Health
+  quote: How big of a human problem are you solving?
+  picture: assets/images/speakers/swordhealth.jpg
+  alt: SWORD Health
+  url: http://swordhealth.com
+
+- firstName: Nelson   
+  lastName: Carvalho
+  role: Yazaki
+  quote: Feel Safe, Feel Yazaki
+  picture: assets/images/speakers/yazaki.jpg
+  alt: Yazaki
+  url: http://yazaki-europe.com/
+
+- firstName: Carlos
+  lastName: Azevedo
+  role: Academic Director at IES - Social Business School
+  quote: "Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country"
+  picture: assets/images/speakers/ies.jpg
+  alt: IES-SBS
+  url: http://www.ies-sbs.org/
+
+- firstName: Rui 
+  lastName: Ramos
+  role: Co-founder at eSolidar
+  quote: "Theory of Change"
+  picture: assets/images/speakers/esolidar.jpg
+  alt: eSolidar
+  url: http://esolidar.com/
+
+- firstName: Hugo
+  lastName: Choupina
+  role: Researcher at BrainLab
+  quote: "What the hell is BRAIN?"
+  picture: assets/images/speakers/brain.jpg
+  alt: BRAIN Group
+  url: http://brain.inesctec.pt/
+
+- firstName: André
+  lastName: Azevedo
+  role: Co-founder at HealthyRoad
+  quote: Facial biometry in cars
+  picture: assets/images/speakers/healthyroad.jpg
+  alt: HealthyRoad
+  url: http://www.healthyroad.pt
+
+- firstName: "Pedro T. & Rita V."
+  lastName:
+  role: bit | Sonae
+  quote: "Network a Bit: keynote"
+  picture: assets/images/speakers/sonae.jpg
+  alt: Sonae
+  url: https://www.linkedin.com/company/bit-sonae

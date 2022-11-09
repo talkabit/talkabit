@@ -1,0 +1,83 @@
+#small-description {
+  font-size: 15pt;
+  height: 50px;
+}
+
+
+#banner {
+  height: 80px;
+}
+
+#call-sponsors {
+  font-size: 20pt;
+  padding: 0px 24pt;
+  height: 36px;
+}
+
+#arrow-button {
+  height: 50px;
+    width: 50px;
+}
+
+#footer {
+  height: 40px;
+}
+
+.footer-icon {
+  height: 20px;
+}
+
+/* This is for the animation */
+#corner {
+  bottom: 0px;
+  left: 23px;
+  height: 20px;
+}
+
+#ring {
+  height: 80px;
+}
+
+/**
+ *
+ * sponsors
+ */
+
+#sponsors .sponsors {
+  flex-direction: column;
+}
+
+/*
+ *
+ *
+ Speakers page*/
+ #spk-h-content {
+  width: 290px;
+  height: 30px;
+}
+
+#spk-speakers{
+  width: 290px;
+}
+
+#tab-about .small-description {
+  width: 220px;
+}
+
+.EDGE-2684740 {
+    -ms-transform: scale(0.35, 0.35);
+    /* IE 9 */
+
+    -webkit-transform: scale(0.35, 0.35);
+    /* Chrome, Safari, Opera */
+
+    transform: scale(0.35, 0.35);
+}
+
+#second-col {
+    padding-top: 20px;
+}
+
+#feup-logo {
+    width: 25%;
+}

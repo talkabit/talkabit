@@ -1,0 +1,212 @@
+conference:
+  - title: Welcome Session
+    speaker: André Lago
+    start: 09:00
+    end: 09:15
+    duration: 15min
+
+  - title: Coding For Social Impact
+    speaker: Ademar Aguiar
+    start: 09:15
+    end: 09:30
+    duration: 15min    
+
+  - title: LDSO Session I
+    speaker: Team 1
+    start: 09:30
+    end: 09:50
+    duration: 20min
+    
+  - title: LDSO Session II
+    speaker: Team 2
+    start: 09:50
+    end: 10:10
+    duration: 20min
+    
+  - title: LDSO Session III
+    speaker: Team 3
+    start: 10:10
+    end: 10:30
+    duration: 20min 
+    
+  - title: Coffee Break
+    start: 10:30
+    end: 10:50
+    duration: 20min
+    
+  - title: LDSO Session IV
+    speaker: Team 4
+    start: 10:50
+    end: 11:10
+    duration: 20min
+    
+  - title: LDSO Session V
+    speaker: Team 5
+    start: 11:10
+    end: 11:30
+    duration: 20min 
+    
+  - title: LDSO Session VI-XV
+    speaker: Team 6-15
+    start: 11:30
+    end: 12:00
+    duration: 30min 
+    
+  - title: Lunch Break
+    start: 12:00
+    end: 13:30
+    duration: 30min
+    
+  - title: Welcome Session
+    speaker: André Lago
+    start: 13:30
+    end: 13:40
+    duration: 10min
+    
+  - title: TBD
+    speaker: SAOM
+    start: 13:40
+    end: 13:45
+    duration: 5min
+    
+  - title: TBD
+    speaker: Natixis - TBD
+    start: 13:45
+    end: 14:15
+    duration: 30min
+    
+  - title: Autism Rocks
+    speaker: José Fonseca
+    start: 14:15
+    end: 14:45
+    duration: 30min
+    
+  - title: TBD
+    speaker: Paulo Lopes
+    start: 14:45
+    end: 15:05
+    duration: 20min
+    
+  - title: Coffee Break
+    start: 15:05
+    end: 15:25
+    duration: 20min
+    
+  - title: Forum
+    speaker: Raúl Vidal & João Amaral & Luís Jerónimo & Filipe Araújo & Ana Pimentel
+    start: 15:25
+    end: 16:25
+    duration: 60min
+    
+  - title: SESI
+    speaker: Hugo Sereno
+    start: 16:25
+    end: 16:40
+    duration: 15min
+    
+  - title: SESI Session I
+    speaker: Team 1
+    start: 16:40
+    end: 16:47
+    duration: 7min
+    
+  - title: SESI Session II
+    speaker: Team 2
+    start: 16:47
+    end: 16:54
+    duration: 7min
+    
+  - title: SESI Session III
+    speaker: Team 3
+    start: 16:54
+    end: 17:01
+    duration: 7min
+    
+  - title: SESI Session IV
+    speaker: Team 4
+    start: 17:01
+    end: 17:08
+    duration: 7min
+    
+  - title: SESI Session V
+    speaker: Team 5
+    start: 17:08
+    end: 17:15
+    duration: 7min
+    
+  - title: SESI Session VI
+    speaker: Team 6
+    start: 17:15
+    end: 17:22
+    duration: 7min
+    
+  - title: SESI Session VII
+    speaker: Team 7
+    start: 17:22
+    end: 17:29
+    duration: 7min
+    
+  - title: Coffee Break
+    start: 17:25
+    end: 17:45
+    duration: 20min
+    
+  - title: Data to save our Planet
+    speaker: Simão Belchior
+    start: 17:45
+    end: 18:15
+    duration: 30min
+    
+  - title: Your computer will use YOU
+    speaker: David Carvalhão
+    start: 18:15
+    end: 18:55
+    duration: 40min
+    
+  - title: Patient Innovation
+    speaker: Pedro Oliveira
+    start: 18:55
+    end: 19:25
+    duration: 30min
+    
+  - title: TBD
+    speaker: Google
+    start: 19:25
+    end: 19:55
+    duration: 30min
+    
+  - title: Ending Session
+    speaker: André Lago
+    start: 19:55
+    end: 20:15
+    duration: 20min
+    
+  - title: Dinner
+    start: 20:15
+
+workshop1:
+  - title: Workshop I
+    speaker: IEEE
+    start: 10:50
+    end: 12:05
+    location: I003
+
+workshop2:
+  - title: Workshop II
+    speaker: NIAEFEUP
+    start: 09:15
+    end: 10:30
+    location: TBD
+    
+  - title: Workshop II
+    speaker: NIAEFEUP
+    start: 10:50
+    end: 12:05
+    location: TBD
+    
+workshop3:
+  - title: Workshop III
+    speaker: BEST
+    start: 09:15
+    end: 10:30
+    location: I-105
