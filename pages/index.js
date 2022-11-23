@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
 import Topbar from '../components/topbar'
-// import Speakers from '../components/speakers'
+import Speakers from '../components/speakers'
 
 export default function Home() {
     return (
@@ -60,7 +60,7 @@ export default function Home() {
                 </section>
             </main>
 
-            {/* <Speakers /> */}
+            <Speakers />
 
             <style jsx global>{`
                 html,
