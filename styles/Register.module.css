@@ -1,0 +1,18 @@
+.background {
+    height: 25vh;
+    background-color: #212c55;
+    overflow: auto;
+}
+
+.register {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.p0 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+}
