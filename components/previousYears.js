@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function previousYears({ refProp }) {
     return (
@@ -9,7 +10,10 @@ export default function previousYears({ refProp }) {
                 <div className="container text-center">
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                         <div className="col">
-                            <a href="/2022" style={{ textDecoration: 'none' }}>
+                            <Link
+                                href="/2022"
+                                style={{ textDecoration: 'none' }}
+                            >
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/2022/assets/porto.svg" />
@@ -19,7 +23,7 @@ export default function previousYears({ refProp }) {
                                         <p className="p2">10th edition</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col">
                             <a href="/2021" style={{ textDecoration: 'none' }}>
