@@ -6,7 +6,9 @@ import LinkedinLogo from '../public/assets/linkedin.svg'
 import InstagramLogo from '../public/assets/instagram.svg'
 import FacebookLogo from '../public/assets/facebook.svg'
 
-export default function Topbar() {
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
+export default function Topbar({ editionsRef }) {
     const [isNavCollapsed, setIsNavCollapsed] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
@@ -204,12 +206,13 @@ export default function Topbar() {
                                     ? 'nav-item'
                                     : 'nav-item col-6 col-lg-auto'
                             }`}
+                            onClick={() => scrollToRef(editionsRef)}
                         >
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link px-lg-2 text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link px-lg-2 text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
                                 href="#"
                                 // target="_blank"
