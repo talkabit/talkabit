@@ -10,37 +10,8 @@ export default function Speakers() {
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="col">
-                        <div className="image_container">
-                            <img src="/assets/diogo.png" />
-                            <div className="bottom">
-                                <p className="p1">Diogo Costa</p>
-                                <p className="p2">Wall@FC Porto</p>
-                            </div>
-                        </div>
-                    </div> */}
-                    <div className="col">
-                        <div className="image_container">
-                            <img src="/assets/diogo.png" />
-                            <div className="bottom">
-                                <p className="p1">Diogo Costa</p>
-                                <p className="p2">Wall@FC Porto</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <img src="/assets/diogo.png" />
-                            <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -50,8 +21,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -61,8 +32,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -72,8 +43,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -83,8 +54,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -94,8 +65,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -105,8 +76,8 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
@@ -116,8 +87,30 @@ export default function Speakers() {
                     </div>
                     <div className="col">
                         <div className="parent_container">
-                            <img src="/assets/diogo.png" />
                             <div className="image_container">
+                                <img src="/assets/diogo.png" />
+                                <div className="bottom">
+                                    <p className="p1">Diogo Costa</p>
+                                    <p className="p2">Wall@FC Porto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="parent_container">
+                            <div className="image_container">
+                                <img src="/assets/diogo.png" />
+                                <div className="bottom">
+                                    <p className="p1">Diogo Costa</p>
+                                    <p className="p2">Wall@FC Porto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="parent_container">
+                            <div className="image_container">
+                                <img src="/assets/diogo.png" />
                                 <div className="bottom">
                                     <p className="p1">Diogo Costa</p>
                                     <p className="p2">Wall@FC Porto</p>
