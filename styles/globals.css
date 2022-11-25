@@ -172,7 +172,7 @@ nav.navscro {
 }
 
 .previousYears .parent_container:hover {
-    animation: effect 0.4s 1;
+    animation: effect 0.5s 1;
 }
 
 .previousYears .image_container {
@@ -231,19 +231,19 @@ nav.navscro {
     }
 
     20% {
-        transform: translateX(-4px) rotate(-4deg);
-    }
-
-    40% {
         transform: translateX(-2px) rotate(-2deg);
     }
 
+    40% {
+        transform: translateX(-1px) rotate(-1deg);
+    }
+
     60% {
-        transform: translateX(4px) rotate(4deg);
+        transform: translateX(2px) rotate(2deg);
     }
 
     80% {
-        transform: translateX(2px) rotate(2deg);
+        transform: translateX(1px) rotate(1deg);
     }
 
     100% {
