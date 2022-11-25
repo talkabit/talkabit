@@ -172,7 +172,7 @@ nav.navscro {
 }
 
 .previousYears .parent_container:hover {
-    animation: effect 0.5s 1;
+    animation: effect 0.2s 2;
 }
 
 .previousYears .image_container {
