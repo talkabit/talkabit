@@ -134,6 +134,7 @@ nav.navscro {
 
 .speakers .image_container {
     position: relative;
+    text-align: left;
     color: white;
     text-shadow: 1px 2px 3px #000;
 }
@@ -179,24 +180,18 @@ nav.navscro {
     border-radius: 20px;
     border: 1px solid #55acee;
     overflow: hidden;
-    position: relative;
+    /* position: relative;
     color: white;
-    text-shadow: 1px 2px 3px #000;
+    text-shadow: 1px 2px 3px #000; */
 }
 
 .previousYears .edition_container {
-    position: absolute;
-    bottom: 0px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    color: white;
-    width: 100%;
-    background: linear-gradient(
-        to bottom,
-        /* rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 1) 100% */ transparent,
-        rgba(33, 67, 93, 1)
-    );
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #55acee;
+    opacity: 80%;
+    margin-top: -70px;
 }
 
 .previousYears div.col img {
@@ -205,14 +200,14 @@ nav.navscro {
 }
 
 .previousYears .p1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
     margin-top: 20px !important;
     margin-bottom: 0 !important;
 }
 
 .previousYears .p2 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #fff;
     margin-bottom: 0px !important;
 }
