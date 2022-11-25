@@ -81,6 +81,10 @@ nav.navscro {
     overflow: hidden;
 }
 
+.previousYears {
+    padding-top: 1.5rem;
+}
+
 .speakers h3 {
     font-weight: 600;
     font-size: 32px;
@@ -168,7 +172,7 @@ nav.navscro {
 }
 
 .previousYears .parent_container:hover {
-    animation: effect 0.4s infinite;
+    animation: effect 0.4s 1;
 }
 
 .previousYears .image_container {

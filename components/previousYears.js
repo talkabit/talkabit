@@ -1,19 +1,15 @@
 import React from 'react'
-import Link from 'next/link'
 
 export default function previousYears({ refProp }) {
     return (
         <div className="yearsBackground">
             <section className="previousYears" ref={refProp}>
-                <h3>Previous Years</h3>
+                <h3>Previous Editions</h3>
 
                 <div className="container text-center">
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2022/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2022" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/2022/assets/porto.svg" />
@@ -26,10 +22,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2021/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2021" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2021.png" />
@@ -42,10 +35,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2020/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2020" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2020.jpeg" />
@@ -58,10 +48,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2019/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2019" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2019.png" />
@@ -74,10 +61,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2018/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2018" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2018.png" />
@@ -90,10 +74,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2017/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2017" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2017.jpg" />
@@ -106,10 +87,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2016/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2016" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2016.jpg" />
@@ -122,10 +100,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2015/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2015" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2015.png" />
@@ -138,10 +113,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2014/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2014" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2014.jpg" />
@@ -154,10 +126,7 @@ export default function previousYears({ refProp }) {
                             </a>
                         </div>
                         <div className="col">
-                            <a
-                                href="https://www.talkabit.org/2013/"
-                                style={{ textDecoration: 'none' }}
-                            >
+                            <a href="/2013" style={{ textDecoration: 'none' }}>
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2013.png" />
