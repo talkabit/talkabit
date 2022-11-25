@@ -17,10 +17,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/2022/assets/porto.svg" />
-                                        <div className="edition_container">
-                                            <p className="p1">2022</p>
-                                            <p className="p2">10th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2022</p>
+                                        <p className="p2">10th edition</p>
                                     </div>
                                 </div>
                             </Link>
@@ -30,10 +30,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2021.png" />
-                                        <div className="edition_container">
-                                            <p className="p1">2021</p>
-                                            <p className="p2">9th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2021</p>
+                                        <p className="p2">9th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -43,10 +43,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2020.jpeg" />
-                                        <div className="edition_container">
-                                            <p className="p1">2020</p>
-                                            <p className="p2">8th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2020</p>
+                                        <p className="p2">8th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -56,10 +56,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2019.png" />
-                                        <div className="edition_container">
-                                            <p className="p1">2019</p>
-                                            <p className="p2">7th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2019</p>
+                                        <p className="p2">7th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -69,10 +69,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2018.png" />
-                                        <div className="edition_container">
-                                            <p className="p1">2018</p>
-                                            <p className="p2">6th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2018</p>
+                                        <p className="p2">6th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -82,10 +82,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2017.jpg" />
-                                        <div className="edition_container">
-                                            <p className="p1">2017</p>
-                                            <p className="p2">5th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2017</p>
+                                        <p className="p2">5th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -95,10 +95,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2016.jpg" />
-                                        <div className="edition_container">
-                                            <p className="p1">2016</p>
-                                            <p className="p2">4th edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2016</p>
+                                        <p className="p2">4th edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -108,10 +108,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2015.png" />
-                                        <div className="edition_container">
-                                            <p className="p1">2015</p>
-                                            <p className="p2">3rd edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2015</p>
+                                        <p className="p2">3rd edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -121,10 +121,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2014.jpg" />
-                                        <div className="edition_container">
-                                            <p className="p1">2014</p>
-                                            <p className="p2">2nd edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2014</p>
+                                        <p className="p2">2nd edition</p>
                                     </div>
                                 </div>
                             </a>
@@ -134,10 +134,10 @@ export default function previousYears({ refProp }) {
                                 <div className="parent_container">
                                     <div className="image_container">
                                         <img src="/assets/background_2013.png" />
-                                        <div className="edition_container">
-                                            <p className="p1">2013</p>
-                                            <p className="p2">1tst edition</p>
-                                        </div>
+                                    </div>
+                                    <div className="edition_container">
+                                        <p className="p1">2013</p>
+                                        <p className="p2">1tst edition</p>
                                     </div>
                                 </div>
                             </a>
