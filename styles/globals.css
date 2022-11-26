@@ -190,7 +190,7 @@ nav.navscro {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #55acee;
-    opacity: 80%;
+    opacity: 75%;
     margin-top: -70px;
 }
 
@@ -200,16 +200,17 @@ nav.navscro {
 }
 
 .previousYears .p1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #fff;
     margin-top: 20px !important;
     margin-bottom: 0 !important;
+    font-weight: 500;
 }
 
 .previousYears .p2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #fff;
-    margin-bottom: 0px !important;
+    margin-top: -6px !important;
 }
 
 /* change navbar background on collapse */
