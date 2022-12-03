@@ -4,9 +4,11 @@ import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
 import Topbar from '../components/topbar'
 import PreviousYears from '../components/previousYears'
+import Sponsors from '../components/sponsors'
 
 export default function Home() {
     const editionsRef = useRef(null)
+    const sponsorsRef = useRef(null)
     return (
         <div className={styles.container}>
             <Head>
@@ -21,7 +23,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Topbar editionsRef={editionsRef} />
+            <Topbar editionsRef={editionsRef} sponsorsRef={sponsorsRef} />
 
             <Landing />
 
@@ -61,6 +63,8 @@ export default function Home() {
                     </p>
                 </section>
             </main>
+
+            <Sponsors refProp={sponsorsRef} />
 
             <PreviousYears refProp={editionsRef} />
 

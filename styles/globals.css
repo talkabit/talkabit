@@ -67,12 +67,14 @@ nav.navscro {
     visibility: hidden;
 }
 
+.sponsorsBackground,
 .yearsBackground {
     background: #212c55;
 }
 
 .speakers,
-.previousYears {
+.previousYears,
+.sponsors {
     max-width: 1044px;
     margin: 0 auto;
     padding: 0.5rem 0rem;
@@ -81,7 +83,8 @@ nav.navscro {
     overflow: hidden;
 }
 
-.previousYears {
+.previousYears,
+.sponsors {
     padding-top: 1.5rem;
 }
 
@@ -94,7 +97,8 @@ nav.navscro {
     padding: 0 1rem;
 }
 
-.previousYears h3 {
+.previousYears h3,
+.sponsors h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -211,6 +215,70 @@ nav.navscro {
     font-size: 0.8rem;
     color: #fff;
     margin-top: -6px !important;
+}
+
+.platinumSponsor,
+.goldSponsor,
+.silverSponsor,
+.bronzeSponsor {
+    margin: auto;
+    /* border: 3px solid green; */
+    margin-bottom: 1.5rem;
+    width: 50%;
+}
+
+.platinumSponsor h4,
+.goldSponsor h4,
+.silverSponsor h4,
+.bronzeSponsor h4 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.platinumSponsor h4 {
+    color: #72c5dc;
+}
+
+.goldSponsor h4 {
+    color: #d4af37;
+}
+
+.silverSponsor h4 {
+    color: #aaa9ad;
+}
+
+.bronzeSponsor h4 {
+    color: #967444;
+}
+
+.sponsors .image_container img {
+    width: 100%;
+    height: auto;
+    margin: 14px 0;
+}
+
+.sponsors .col {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.sponsors .gold_container .col img {
+    margin: 14px 0;
+    width: 75%; /*passar para 100% caso haja outros*/
+    height: auto;
+}
+
+.sponsors .silver_container .col img {
+    width: 70%;
+    height: auto;
+    margin: 14px 0;
+}
+
+.sponsors .bronze_container .col img {
+    width: 50%;
+    height: auto;
+    margin: 14px 0;
 }
 
 /* change navbar background on collapse */
