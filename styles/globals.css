@@ -72,7 +72,8 @@ nav.navscro {
 }
 
 .speakers,
-.previousYears {
+.previousYears,
+.team {
     max-width: 1044px;
     margin: 0 auto;
     padding: 0.5rem 0rem;
@@ -100,6 +101,15 @@ nav.navscro {
     line-height: 48px;
     margin-bottom: 1.5rem;
     color: #fff;
+    padding: 0 1rem;
+}
+
+.team h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 1.5rem;
+    color: #212c55;
     padding: 0 1rem;
 }
 
@@ -211,6 +221,82 @@ nav.navscro {
     font-size: 0.8rem;
     color: #fff;
     margin-top: -6px !important;
+}
+
+.chairman,
+.web,
+.program,
+.sponsors,
+.local,
+.parallel {
+    margin: auto;
+    /* margin-bottom: 1.5rem; */
+    width: 50%;
+}
+
+.teamBackground h4 {
+    font-weight: 600;
+    text-align: center;
+    color: #41b38d;
+}
+
+.chairman_container,
+.web_container,
+.program_container,
+.sponsors_container,
+.local_container,
+.parallel_container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.chairman_container {
+    margin-bottom: 1.5rem;
+}
+
+.teamBackground .member {
+    list-style: none;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0 1rem;
+    /* padding-bottom: 1rem; */
+}
+
+.teamBackground .ul {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: nowrap;
+    margin-bottom: 1.5;
+}
+
+.teamBackground .member_image {
+    max-width: 210px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #55acee;
+    text-align: center;
+}
+
+.teamBackground span {
+    color: #55acee;
+}
+
+.teamBackground p {
+    color: #55acee;
+}
+
+.teamBackground .row {
+    margin-right: -0.125rem;
+    margin-left: -0.125rem;
+}
+
+.teamBackground img {
+    /* max-width: 210px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #55acee; */
+    margin-bottom: 1rem;
 }
 
 /* change navbar background on collapse */
