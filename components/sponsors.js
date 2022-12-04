@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function sponsors({ refProp }) {
     return (
@@ -17,7 +18,12 @@ export default function sponsors({ refProp }) {
                         {/* <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2"> */}
                         {/* descomentar quando houver mais */}
                         <div className="col">
-                            <img src="/assets/sponsors/critical_manufacturing.png" />
+                            <Link
+                                href="https://www.criticalmanufacturing.com/"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <img src="/assets/sponsors/critical_manufacturing.png" />
+                            </Link>
                         </div>
 
                         {/* </div> */}
@@ -28,16 +34,36 @@ export default function sponsors({ refProp }) {
                     <div className="silver_container">
                         <div className="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
                             <div className="col">
-                                <img src="/assets/sponsors/accenture.png" />
+                                <Link
+                                    href="https://www.accenture.com/pt-pt"
+                                    style={{ textDecoration: 'none' }}
+                                >
+                                    <img src="/assets/sponsors/accenture.png" />
+                                </Link>
                             </div>
                             <div className="col">
-                                <img src="/assets/sponsors/critical_techworks.svg" />
+                                <Link
+                                    href="https://www.criticaltechworks.com/"
+                                    style={{ textDecoration: 'none' }}
+                                >
+                                    <img src="/assets/sponsors/critical_techworks.svg" />
+                                </Link>
                             </div>
                             <div className="col">
-                                <img src="/assets/sponsors/worten.svg" />
+                                <Link
+                                    href="https://www.worten.pt/"
+                                    style={{ textDecoration: 'none' }}
+                                >
+                                    <img src="/assets/sponsors/worten.svg" />
+                                </Link>
                             </div>
                             <div className="col">
-                                <img src="/assets/sponsors/inesctec.svg" />
+                                <Link
+                                    href="https://www.inesctec.pt/pt"
+                                    style={{ textDecoration: 'none' }}
+                                >
+                                    <img src="/assets/sponsors/inesctec.svg" />
+                                </Link>
                             </div>
                         </div>
                     </div>
