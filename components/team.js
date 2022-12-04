@@ -11,9 +11,9 @@ export default function team() {
                 <div className="chairman_container">
                     <img
                         className="member_image"
-                        src="/assets/team/Beatriz_Mendes1.jpeg"
+                        src="/assets/team/Samuel_Fernandes.jpeg"
                     />
-                    <p className="member_name">Beatriz Mendes</p>
+                    <p className="member_name">Samuel Fernandes</p>
                 </div>
             </div>
             <div className="web">
@@ -23,29 +23,18 @@ export default function team() {
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Juan_Illescas.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Juan Illescas</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Pedro_Ponte.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Pedro Ponte</p>
                         </li>
                     </ul>
-
-                    {/* <div className="row row-cols-1 row-cols-sm-2">
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <div className="program">
@@ -55,68 +44,44 @@ export default function team() {
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Beatriz_Mendes.jpeg"
                             />
                             <p className="member_name">Beatriz Mendes</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Henrique_Pereira.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Henrique Pereira</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Pedro_Queiros.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Pedro Queirós</p>
                         </li>
                     </ul>
-                    {/* <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <div className="sponsors">
                 <h4>Sponsors</h4>
                 <div className="sponsors_container">
-                    {/* <div className="row row-cols-1 row-cols-sm-2">
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                    </div> */}
                     <ul>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Diana_Freitas.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Diana Freitas</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Mariana_Ramos.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Mariana Ramos</p>
                         </li>
                     </ul>
                 </div>
@@ -124,41 +89,27 @@ export default function team() {
             <div className="local">
                 <h4>Local Organization</h4>
                 <div className="local_container">
-                    {/* <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                    </div> */}
                     <ul>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Luis_Costa.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Luís Costa</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Paulo_Ribeiro.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Paulo Ribeiro</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Pedro_Azevedo.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Pedro Azevedo</p>
                         </li>
                     </ul>
                 </div>
@@ -166,30 +117,20 @@ export default function team() {
             <div className="parallel">
                 <h4>Parallel Events</h4>
                 <div className="parallel_container">
-                    {/* <div className="row row-cols-1 row-cols-sm-2">
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                        <div className="col">
-                            <img src="/assets/team/Beatriz_Mendes1.jpeg" />
-                            <p>Beatriz Mendes</p>
-                        </div>
-                    </div> */}
                     <ul>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Daniel_Monteiro.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Daniel Monteiro</p>
                         </li>
                         <li className="member">
                             <img
                                 className="member_image"
-                                src="/assets/team/Beatriz_Mendes1.jpeg"
+                                src="/assets/team/Rita_Mota.jpeg"
                             />
-                            <p className="member_name">Beatriz Mendes</p>
+                            <p className="member_name">Rita Mota</p>
                         </li>
                     </ul>
                 </div>
