@@ -14,15 +14,17 @@ export default function previousYears({ refProp }) {
                                 href="/2022"
                                 style={{ textDecoration: 'none' }}
                             >
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/2022/assets/porto.svg" />
+                                <a style={{ textDecoration: 'none' }}>
+                                    <div className="parent_container">
+                                        <div className="image_container">
+                                            <img src="/2022/assets/porto.svg" />
+                                        </div>
+                                        <div className="edition_container">
+                                            <p className="p1">2022</p>
+                                            <p className="p2">10th edition</p>
+                                        </div>
                                     </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2022</p>
-                                        <p className="p2">10th edition</p>
-                                    </div>
-                                </div>
+                                </a>
                             </Link>
                         </div>
                         <div className="col">
