@@ -5,6 +5,7 @@ import Landing from '../components/landing'
 import Topbar from '../components/topbar'
 import PreviousYears from '../components/previousYears'
 import Sponsors from '../components/sponsors'
+import Team from '../components/team'
 
 export default function Home() {
     const editionsRef = useRef(null)
@@ -65,6 +66,8 @@ export default function Home() {
             </main>
 
             <Sponsors refProp={sponsorsRef} />
+
+            <Team></Team>
 
             <PreviousYears refProp={editionsRef} />
 
