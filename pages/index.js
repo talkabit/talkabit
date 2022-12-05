@@ -5,9 +5,12 @@ import Landing from '../components/landing'
 import Topbar from '../components/topbar'
 import Speakers from '../components/speakers'
 import PreviousYears from '../components/previousYears'
+import Sponsors from '../components/sponsors'
+import Team from '../components/team'
 
 export default function Home() {
     const editionsRef = useRef(null)
+    const sponsorsRef = useRef(null)
     return (
         <div className={styles.container}>
             <Head>
@@ -22,7 +25,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Topbar editionsRef={editionsRef} />
+            <Topbar editionsRef={editionsRef} sponsorsRef={sponsorsRef} />
 
             <Landing />
 
@@ -64,6 +67,11 @@ export default function Home() {
             </main>
 
             <Speakers />
+            
+            <Sponsors refProp={sponsorsRef} />
+
+            <Team></Team>
+
             <PreviousYears refProp={editionsRef} />
 
             <style jsx global>{`

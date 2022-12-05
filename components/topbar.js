@@ -8,7 +8,7 @@ import FacebookLogo from '../public/assets/facebook.svg'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-export default function Topbar({ editionsRef }) {
+export default function Topbar({ editionsRef, sponsorsRef }) {
     const [isNavCollapsed, setIsNavCollapsed] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
@@ -187,12 +187,13 @@ export default function Topbar({ editionsRef }) {
                                     ? 'nav-item'
                                     : 'nav-item col-6 col-lg-auto'
                             }`}
+                            onClick={() => scrollToRef(sponsorsRef)}
                         >
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link px-lg-2 text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link px-lg-2 text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
                                 href="#"
                             >
