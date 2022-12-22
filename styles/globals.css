@@ -172,6 +172,10 @@ nav.navscro {
     margin-bottom: 0px !important;
 }
 
+.speakers .modal-header a {
+    padding-left: 0.5rem;
+}
+
 .previousYears .parent_container {
     margin-bottom: 50px;
 }
@@ -361,6 +365,23 @@ nav.navscro {
 
     .custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .speakers .modal-image-container {
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .speakers .modal-content {
+        padding: 1rem;
+    }
+
+    .speakers .modal_image {
+        border-radius: 20px;
+        overflow: hidden;
     }
 }
 

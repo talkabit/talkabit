@@ -1,11 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function previousYears({ refProp }) {
+export default function previousYears() {
     return (
         <div className="yearsBackground">
-            <section className="previousYears" ref={refProp}>
-                <h3>Previous Editions</h3>
+            <section
+                className="previousYears"
+                data-bs-spy="scroll"
+                data-bs-target="#topbar"
+                data-bs-offset="0"
+                tabIndex="0"
+            >
+                <h3 id="editionsRef">Previous Editions</h3>
 
                 <div className="container text-center">
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">

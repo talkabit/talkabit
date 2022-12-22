@@ -9,8 +9,6 @@ import Sponsors from '../components/sponsors'
 import Team from '../components/team'
 
 export default function Home() {
-    const editionsRef = useRef(null)
-    const sponsorsRef = useRef(null)
     return (
         <div className={styles.container}>
             <Head>
@@ -25,7 +23,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Topbar editionsRef={editionsRef} sponsorsRef={sponsorsRef} />
+            <Topbar />
 
             <Landing />
 
@@ -67,12 +65,12 @@ export default function Home() {
             </main>
 
             <Speakers />
-            
-            <Sponsors refProp={sponsorsRef} />
+
+            <Sponsors />
 
             <Team></Team>
 
-            <PreviousYears refProp={editionsRef} />
+            <PreviousYears />
 
             <style jsx global>{`
                 html,

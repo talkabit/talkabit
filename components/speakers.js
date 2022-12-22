@@ -1,151 +1,325 @@
-import React from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
+import LinkedinLogo from '../public/assets/linkedin.svg'
 
-export default function Speakers() {
-    return (
-        <section className="speakers">
-            <h3>Our Speakers</h3>
-            {/* <div className="container"> */}
-
-            <div className="container text-center">
-                <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="parent_container">
-                            <div className="image_container">
-                                <img src="/assets/diogo.png" />
-                                <div className="bottom">
-                                    <p className="p1">Diogo Costa</p>
-                                    <p className="p2">Wall@FC Porto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* </div> */}
-        </section>
-    )
+function SplitText(props) {
+    const text = props.text
+    const newText = text
+        .split('\n')
+        .map((str, index) => <p key={index}>{str}</p>)
+    return newText
 }
 
-{
-    /* <div className="row">
-    <div className="column">
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-    </div>
-    <div className="column">
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-    </div>
-    <div className="column">
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-    </div>
-    <div className="column">
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-        <img src="/assets/diogo.png" />
-    </div>
-</div> */
+export default function Speakers() {
+    let speakers = [
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        // {
+        //     name: 'Diogo Costa',
+        //     title: 'Wall @ FC Porto',
+        //     image: '/assets/diogo.png',
+        //     description:
+        //         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        //     linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        // },
+        {
+            name: 'Sónia Liquito',
+            title: 'Engineering Manager @ Spotify',
+            image: '/assets/speakers/sonia_liquito.jpg',
+            description:
+                'With knowledge in data processing and a passion for driving organizational growth, I bring a unique perspective to my role as an Engineering Manager at Spotify.\nI am responsible for overseeing the ingestion and distribution of metadata from Music, Podcasts and Audiobooks, which powers features like Spotify Wrapped and Discovery Weekly. With almost 1 million artists creating new content every day, my team and I work to ensure that this metadata is processed efficiently and with the highest quality.\nI am excited to share my insights and knowledge with others, and I look forward to sharing the impact that Data can have to our creators and users and some of our practices in scaling data processing.',
+            linkedin: 'https://www.linkedin.com/in/sonialiquito/',
+        },
+    ]
+
+    const useMediaQuery = (width) => {
+        const [targetReached, setTargetReached] = useState(false)
+
+        const updateTarget = useCallback((e) => {
+            if (e.matches) {
+                setTargetReached(true)
+            } else {
+                setTargetReached(false)
+            }
+        }, [])
+
+        useEffect(() => {
+            const media = window.matchMedia(`(max-width: ${width}px)`)
+            media.addEventListener('change', (e) => updateTarget(e))
+
+            // Check on mount (callback is not called until a change occurs)
+            if (media.matches) {
+                setTargetReached(true)
+            }
+
+            return () =>
+                media.removeEventListener('change', (e) => updateTarget(e))
+        }, [])
+
+        return targetReached
+    }
+
+    const isBreakpoint = useMediaQuery(768)
+
+    return (
+        <section
+            className="speakers"
+            data-bs-spy="scroll"
+            data-bs-target="#topbar"
+            data-bs-offset="0"
+            tabIndex="0"
+        >
+            <h3 id="speakersRef">Our Speakers</h3>
+            <div className="container text-center">
+                <div className="row row-eq-height row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                    {speakers.map((speaker, index) => (
+                        <div className="col" key={index}>
+                            <div className="parent_container">
+                                <div className="image_container">
+                                    <img
+                                        src={speaker.image}
+                                        data-bs-toggle="modal"
+                                        data-bs-target={
+                                            '#exampleModal' + index.toString()
+                                        }
+                                    />
+                                    <div className="bottom">
+                                        <p className="p1">{speaker.name}</p>
+                                        <p className="p2">{speaker.title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {speakers.map((speaker, index) => (
+                <div key={index}>
+                    {isBreakpoint ? (
+                        <div
+                            className="modal fade"
+                            id={'exampleModal' + index.toString()}
+                            tabIndex="-1"
+                            aria-labelledby={
+                                'exampleModalLabel' + index.toString()
+                            }
+                            aria-hidden="true"
+                        >
+                            <div className="modal-dialog modal-dialog-centered modal-xl">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h1
+                                            className="modal-title fs-5"
+                                            id={
+                                                'exampleModalLabel' +
+                                                index.toString()
+                                            }
+                                            color="#212c55"
+                                        >
+                                            {speaker.name}
+                                            <a
+                                                href={speaker.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <LinkedinLogo
+                                                    width={32}
+                                                    height={32}
+                                                    fill="#00a9ce"
+                                                />
+                                            </a>
+                                            <br />
+                                            <small style={{ color: '#41b38d' }}>
+                                                {speaker.title}
+                                            </small>
+                                        </h1>
+
+                                        <button
+                                            type="button"
+                                            className="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-md-4">
+                                            <div
+                                                className="modal-image-container"
+                                                style={{
+                                                    height: '100%',
+                                                    width: '100%',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                }}
+                                            >
+                                                <div className="modal_image">
+                                                    <img
+                                                        src={speaker.image}
+                                                        style={{
+                                                            width: '100%',
+                                                            height: 'auto',
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="modal-body">
+                                                <SplitText
+                                                    text={speaker.description}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ) : (
+                        <div
+                            className="modal fade"
+                            id={'exampleModal' + index.toString()}
+                            tabIndex="-1"
+                            aria-labelledby={
+                                'exampleModalLabel' + index.toString()
+                            }
+                            aria-hidden="true"
+                        >
+                            <div className="modal-dialog modal-dialog-centered modal-xl">
+                                <div className="modal-content">
+                                    <div className="row">
+                                        <div className="col-md-4">
+                                            <div
+                                                className="modal-image-container"
+                                                style={{
+                                                    height: '100%',
+                                                    width: '100%',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                }}
+                                            >
+                                                <div className="modal_image">
+                                                    <img
+                                                        className="rounded-start"
+                                                        src={speaker.image}
+                                                        style={{
+                                                            width: '100%',
+                                                            height: 'auto',
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            className="col-md-8"
+                                            style={{ textAlign: 'left' }}
+                                        >
+                                            <div className="modal-header">
+                                                <h1
+                                                    className="modal-title fs-5"
+                                                    id={
+                                                        'exampleModalLabel' +
+                                                        index.toString()
+                                                    }
+                                                    color="#212c55"
+                                                >
+                                                    {speaker.name}
+                                                    <a
+                                                        href={speaker.linkedin}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <LinkedinLogo
+                                                            width={32}
+                                                            height={32}
+                                                            fill="#00a9ce"
+                                                        />
+                                                    </a>
+                                                    <br />
+                                                    <small
+                                                        style={{
+                                                            color: '#41b38d',
+                                                        }}
+                                                    >
+                                                        {speaker.title}
+                                                    </small>
+                                                </h1>
+                                                <button
+                                                    type="button"
+                                                    className="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <div className="modal-body">
+                                                <SplitText
+                                                    text={speaker.description}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            ))}
+        </section>
+    )
 }

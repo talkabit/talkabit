@@ -1,10 +1,16 @@
 import React from 'react'
 
-export default function sponsors({ refProp }) {
+export default function sponsors() {
     return (
         <div className="sponsorsBackground">
-            <section className="sponsors" ref={refProp}>
-                <h3>Sponsors</h3>
+            <section
+                className="sponsors"
+                data-bs-spy="scroll"
+                data-bs-target="#topbar"
+                data-bs-offset="0"
+                tabIndex="0"
+            >
+                <h3 id="sponsorsRef">Sponsors</h3>
                 {/* <div className="platinumSponsor">
                     <h4>Platinum Sponsor</h4>
                     <div className="image_container">
