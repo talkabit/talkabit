@@ -67,7 +67,6 @@ nav.navscro {
     visibility: hidden;
 }
 
-.sponsorsBackground,
 .yearsBackground {
     background: #212c55;
 }
@@ -89,7 +88,8 @@ nav.navscro {
     padding-top: 1.5rem;
 }
 
-.speakers h3 {
+.speakers h3,
+.sponsors h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -98,8 +98,7 @@ nav.navscro {
     padding: 0 1rem;
 }
 
-.previousYears h3,
-.sponsors h3 {
+.previousYears h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -263,11 +262,14 @@ nav.navscro {
 .sponsors .col {
     text-align: center;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .sponsors .gold_container .col img {
     margin: 14px 0;
-    width: 75%; /*passar para 100% caso haja outros*/
+    width: 100%;
     height: auto;
 }
 

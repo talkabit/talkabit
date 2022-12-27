@@ -65,12 +65,12 @@ export default function Home() {
             </main>
 
             <Speakers />
-
+            
             <Sponsors />
 
-            <Team></Team>
-
             <PreviousYears />
+
+            <Team />
 
             <style jsx global>{`
                 html,
