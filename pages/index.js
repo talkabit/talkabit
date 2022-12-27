@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
 import Topbar from '../components/topbar'
+import Speakers from '../components/speakers'
 import PreviousYears from '../components/previousYears'
 import Sponsors from '../components/sponsors'
 import Team from '../components/team'
@@ -63,6 +64,8 @@ export default function Home() {
                 </section>
             </main>
 
+            <Speakers />
+            
             <Sponsors />
 
             <PreviousYears />
