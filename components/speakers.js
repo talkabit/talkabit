@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import LinkedinLogo from '../public/assets/linkedin.svg'
 
-function SplitText(props) {
+export function SplitText(props) {
     const text = props.text
     const newText = text
         .split('\n')
@@ -55,10 +55,10 @@ export default function Speakers() {
             className="speakers"
             data-bs-spy="scroll"
             data-bs-target="#topbar"
-            data-bs-offset="0"
+            data-bs-offset="130"
             tabIndex="0"
         >
-            <h3 id="speakersRef">Our Speakers</h3>
+            <h3 id="speakersRef">Speakers</h3>
             <div className="container text-center">
                 <div className="row row-eq-height row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                     {speakers.map((speaker, index) => (

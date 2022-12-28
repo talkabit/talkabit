@@ -8,7 +8,7 @@ export default function previousYears() {
                 className="previousYears"
                 data-bs-spy="scroll"
                 data-bs-target="#topbar"
-                data-bs-offset="0"
+                data-bs-offset="130"
                 tabIndex="0"
             >
                 <h3 id="editionsRef">Previous Editions</h3>

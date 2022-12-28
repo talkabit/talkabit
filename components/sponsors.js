@@ -56,7 +56,7 @@ export default function sponsors() {
                 className="sponsors"
                 data-bs-spy="scroll"
                 data-bs-target="#topbar"
-                data-bs-offset="0"
+                data-bs-offset="130"
                 tabIndex="0"
             >
                 <h3 id="sponsorsRef">Sponsors</h3>
