@@ -30,12 +30,12 @@ export default function Home() {
             <main className={styles.main}>
                 <section className={styles.intro}>
                     <h3>Who We Are</h3>
-                    <p style={{ marginBottom: '1.5rem' }}>
+                    <p>
                         <b>Talk a Bit</b> is a conference organized every year
                         by FEUP students in the last year of the Master&apos;s
                         in Informatics and Computing Engineering.
                     </p>
-                    <p style={{ marginBottom: '1.5rem' }}>
+                    <p>
                         Started in 2013 and currently on the way to its{' '}
                         <b>11th edition</b>, Talk a Bit offers its participants
                         a wide range of conversations with the objective not
@@ -45,12 +45,12 @@ export default function Home() {
                         conference. Participants can also to attend some
                         workshops.
                     </p>
-                    <p style={{ marginBottom: '1.5rem' }}>
+                    <p>
                         With the help of our partners, people will be able to
                         get to know better some companies in the area and even
                         find some job opportunities.
                     </p>
-                    <p style={{ marginBottom: '0' }}>
+                    <p>
                         Finally, in this edition we are back with the event in a
                         fully presential mode on <b>January 28, 2023 at FEUP</b>{' '}
                         with the theme{' '}
