@@ -110,17 +110,13 @@ nav.navscro {
     padding: 0 1rem;
 }
 
-.speakers {
-    padding-bottom: 1.5rem;
-}
-
 .speakers div.container {
     position: relative;
     z-index: 1;
 }
 
 .speakers .row {
-    margin-bottom: -25px;
+    margin-bottom: 1.5rem;
 }
 
 .speakers .parent_container {
@@ -177,12 +173,8 @@ nav.navscro {
     padding-left: 0.5rem;
 }
 
-.previousYears {
-    padding-bottom: 1.5rem;
-}
-
 .previousYears .row {
-    margin-bottom: -25px;
+    margin-bottom: 1.5rem;
 }
 
 .previousYears .parent_container {
