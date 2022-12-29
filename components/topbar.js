@@ -6,26 +6,18 @@ import LinkedinLogo from '../public/assets/linkedin.svg'
 import InstagramLogo from '../public/assets/instagram.svg'
 import FacebookLogo from '../public/assets/facebook.svg'
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
-
-export default function Topbar({ editionsRef }) {
+export default function Topbar() {
     const [isNavCollapsed, setIsNavCollapsed] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
     const handleNavCollapse = () => {
-        // console.log('toggle')
         setIsNavCollapsed(!isNavCollapsed)
-        // console.log(isScrolled)
     }
 
     const changeNavbarColor = () => {
         if (window.scrollY >= 50) {
-            // console.log(window.scrollY)
-            // console.log('scroll')
             setIsScrolled(true)
         } else {
-            // console.log(window.scrollY)
-            // console.log('not scroll')
             setIsScrolled(false)
         }
     }
@@ -35,24 +27,10 @@ export default function Topbar({ editionsRef }) {
         window.addEventListener('scroll', changeNavbarColor)
     }, [])
 
-    // useEffect(() => {
-    //     window.onscroll = () => {
-    //         if (window.scrollY > 50) {
-    //             setIsScrolled(true)
-    //             console.log('scrolled')
-    //         } else {
-    //             setIsScrolled(false)
-    //             console.log('not scrolled')
-    //         }
-    //     }
-    // }, [])
-
     return (
         <nav
+            id="topbar"
             className={`${
-                // isNavCollapsed
-                //     ? 'navbar navbar-expand-lg fixed-top navbar-light navcol'
-                //     : 'navbar navbar-expand-lg fixed-top navbar-light'
                 isNavCollapsed && !isScrolled
                     ? 'navbar navbar-expand-lg container-fluid bd-gutter flex-wrap flex-lg-nowrap fixed-top navbar-light navcol'
                     : isNavCollapsed && isScrolled
@@ -63,9 +41,6 @@ export default function Topbar({ editionsRef }) {
             }`}
         >
             <div className="container-fluid">
-                {/* <a className="navbar-brand" href="/">
-                    <Logo width={200} height={100} />
-                </a> */}
                 <button
                     className={`${
                         isNavCollapsed
@@ -98,7 +73,6 @@ export default function Topbar({ editionsRef }) {
                     onClick={handleNavCollapse}
                     style={{ width: '56px', height: '40px' }}
                 >
-                    {/* <span style={{ color: '#343a40' }}> X </span> */}
                     <span className="btn-close btn-close-white"></span>
                 </button>
 
@@ -152,11 +126,10 @@ export default function Topbar({ editionsRef }) {
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
-                                // aria-current="true"
-                                href="#"
+                                href="#speakersRef"
                             >
                                 Speakers
                             </a>
@@ -191,10 +164,10 @@ export default function Topbar({ editionsRef }) {
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link px-lg-2 text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link px-lg-2 text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
-                                href="#"
+                                href="#sponsorsRef"
                             >
                                 Sponsors
                             </a>
@@ -206,7 +179,6 @@ export default function Topbar({ editionsRef }) {
                                     ? 'nav-item'
                                     : 'nav-item col-6 col-lg-auto'
                             }`}
-                            onClick={() => scrollToRef(editionsRef)}
                         >
                             <a
                                 className={`${
@@ -214,9 +186,7 @@ export default function Topbar({ editionsRef }) {
                                         ? 'nav-link px-lg-2 text-white'
                                         : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
-                                href="#"
-                                // target="_blank"
-                                // rel="noopener"
+                                href="#editionsRef"
                             >
                                 Previous Editions
                             </a>

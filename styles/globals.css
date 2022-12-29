@@ -72,20 +72,27 @@ nav.navscro {
 }
 
 .speakers,
-.previousYears {
+.previousYears,
+.sponsors,
+.team {
     max-width: 1044px;
     margin: 0 auto;
-    padding: 0.5rem 0rem;
+    /* padding: 0.5rem 0rem; */
     font-family: Poppins, sans-serif;
     position: relative;
     overflow: hidden;
 }
 
-.previousYears {
+.previousYears,
+.sponsors,
+.team,
+.speakers {
     padding-top: 1.5rem;
 }
 
-.speakers h3 {
+.speakers h3,
+.sponsors h3,
+.team h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -108,28 +115,23 @@ nav.navscro {
     z-index: 1;
 }
 
-/* .speakers div.parent_container {
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-    margin: 14px 0;
+.speakers .row {
+    margin-bottom: -25px;
 }
 
-.speakers div.parent_container::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    top: 0;
-} */
+.speakers .parent_container {
+    margin-bottom: 25px;
+}
+
+.speakers .image_container {
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 .speakers div.col img {
     width: 100%;
     height: auto;
-    margin: 14px 0;
+    /* margin: 14px 0; */
 }
 
 .speakers .image_container {
@@ -141,7 +143,7 @@ nav.navscro {
 
 .speakers div.bottom {
     position: absolute;
-    bottom: 14px;
+    bottom: 0px;
     padding-bottom: 8px;
     padding-left: 16px;
     font-weight: bold;
@@ -167,11 +169,16 @@ nav.navscro {
     margin-bottom: 0px !important;
 }
 
+.speakers .modal-header a {
+    padding-left: 0.5rem;
+}
+
 .previousYears .parent_container {
     margin-bottom: 50px;
 }
 
-.previousYears .parent_container:hover {
+.previousYears .parent_container:hover,
+.speakers .parent_container:hover {
     animation: effect 0.2s 2;
 }
 
@@ -180,9 +187,6 @@ nav.navscro {
     border-radius: 20px;
     border: 1px solid #55acee;
     overflow: hidden;
-    /* position: relative;
-    color: white;
-    text-shadow: 1px 2px 3px #000; */
 }
 
 .previousYears .edition_container {
@@ -213,6 +217,140 @@ nav.navscro {
     margin-top: -6px !important;
 }
 
+.platinumSponsor,
+.goldSponsor,
+.silverSponsor,
+.bronzeSponsor {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 50%;
+}
+
+.platinumSponsor h4,
+.goldSponsor h4,
+.silverSponsor h4,
+.bronzeSponsor h4 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.platinumSponsor h4 {
+    color: #72c5dc;
+}
+
+.goldSponsor h4 {
+    color: #d4af37;
+}
+
+.silverSponsor h4 {
+    color: #aaa9ad;
+}
+
+.bronzeSponsor h4 {
+    color: #967444;
+}
+
+.sponsors .image_container img {
+    width: 100%;
+    height: auto;
+    margin: 14px 0;
+}
+
+.sponsors .col {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sponsors .gold_container .col img {
+    margin: 14px 0;
+    width: 100%;
+    height: auto;
+}
+
+.sponsors .silver_container .col img {
+    width: 70%;
+    height: auto;
+    margin: 14px 0;
+}
+
+.sponsors .bronze_container .col img {
+    width: 50%;
+    height: auto;
+    margin: 14px 0;
+}
+
+.chairman,
+.web,
+.program,
+.sponsors,
+.local,
+.parallel {
+    margin: auto;
+}
+
+.teamBackground h4 {
+    font-weight: 600;
+    text-align: center;
+    color: #41b38d;
+}
+
+.chairman_container,
+.web_container,
+.program_container,
+.sponsors_container,
+.local_container,
+.parallel_container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.chairman_container {
+    margin-bottom: 1.5rem;
+}
+
+.teamBackground .member {
+    list-style: none;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.teamBackground .ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: nowrap;
+    margin-bottom: 1.5;
+}
+
+.teamBackground .member_image {
+    max-width: 210px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #55acee;
+    text-align: center;
+}
+
+.teamBackground span {
+    color: #55acee;
+}
+
+.teamBackground p {
+    color: #55acee;
+}
+
+.teamBackground .row {
+    margin-right: -0.125rem;
+    margin-left: -0.125rem;
+}
+
+.teamBackground img {
+    margin-bottom: 1rem;
+}
+
 /* change navbar background on collapse */
 @media (max-width: 992px) {
     nav.navcol {
@@ -227,6 +365,23 @@ nav.navscro {
 
     .custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .speakers .modal-image-container {
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .speakers .modal-content {
+        padding: 1rem;
+    }
+
+    .speakers .modal_image {
+        border-radius: 20px;
+        overflow: hidden;
     }
 }
 
