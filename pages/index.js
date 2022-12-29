@@ -3,11 +3,13 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
 import Topbar from '../components/topbar'
+import Speakers from '../components/speakers'
 import Register from '../components/register'
 import PreviousYears from '../components/previousYears'
+import Sponsors from '../components/sponsors'
+import Team from '../components/team'
 
 export default function Home() {
-    const editionsRef = useRef(null)
     return (
         <div className={styles.container}>
             <Head>
@@ -22,7 +24,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Topbar editionsRef={editionsRef} />
+            <Topbar />
 
             <Landing />
 
@@ -64,7 +66,14 @@ export default function Home() {
             </main>
 
             <Register />
-            <PreviousYears refProp={editionsRef} />
+            
+            <Speakers />
+
+            <Sponsors />
+
+            <PreviousYears />
+
+            <Team />
 
             <style jsx global>{`
                 html,

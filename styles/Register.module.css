@@ -1,14 +1,11 @@
 .background {
-    height: 25vh;
     background-color: #212c55;
-    overflow: auto;
 }
 
 .register {
+    padding: 1.5rem 0;
     text-align: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .p0 {
