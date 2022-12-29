@@ -7,6 +7,7 @@ import Speakers from '../components/speakers'
 import PreviousYears from '../components/previousYears'
 import Sponsors from '../components/sponsors'
 import Team from '../components/team'
+import Footer from '../components/footer'
 
 export default function Home() {
     return (
@@ -71,6 +72,8 @@ export default function Home() {
             <PreviousYears />
 
             <Team />
+
+            <Footer />
 
             <style jsx global>{`
                 html,
