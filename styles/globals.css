@@ -29,7 +29,7 @@ ul {
 
 .register-btn,
 .edition-btn {
-    background: #72c5dc;
+    background: #00a9ce;
     font-family: Inter;
     font-weight: bold;
     font-size: 16px;
@@ -189,7 +189,7 @@ nav.navscro {
 .previousYears .image_container {
     height: 122px;
     border-radius: 20px;
-    border: 1px solid #55acee;
+    border: 1px solid #00a9ce;
     overflow: hidden;
 }
 
@@ -197,7 +197,7 @@ nav.navscro {
     height: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #55acee;
+    background-color: #00a9ce;
     opacity: 75%;
     margin-top: -70px;
 }
@@ -334,16 +334,16 @@ nav.navscro {
     max-width: 210px;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #55acee;
+    border: 2px solid #00a9ce;
     text-align: center;
 }
 
 .teamBackground span {
-    color: #55acee;
+    color: #00a9ce;
 }
 
 .teamBackground p {
-    color: #55acee;
+    color: #00a9ce;
 }
 
 .teamBackground .row {
