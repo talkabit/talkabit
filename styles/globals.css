@@ -87,7 +87,7 @@ nav.navscro {
 .sponsors,
 .team,
 .speakers {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .speakers h3,
@@ -115,9 +115,9 @@ nav.navscro {
     z-index: 1;
 }
 
-.speakers .row {
+/* .speakers .row {
     margin-bottom: 1.5rem;
-}
+} */
 
 .speakers .parent_container {
     margin-bottom: 25px;
@@ -173,9 +173,9 @@ nav.navscro {
     padding-left: 0.5rem;
 }
 
-.previousYears .row {
+/* .previousYears .row {
     margin-bottom: 1.5rem;
-}
+} */
 
 .previousYears .parent_container {
     margin-bottom: 25px;
@@ -226,7 +226,7 @@ nav.navscro {
 .silverSponsor,
 .bronzeSponsor {
     margin: auto;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     width: 50%;
 }
 
@@ -290,7 +290,7 @@ nav.navscro {
 .chairman,
 .web,
 .program,
-.sponsors,
+.sponsorsT,
 .local,
 .parallel {
     margin: auto;

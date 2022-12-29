@@ -65,7 +65,7 @@ export default function team() {
                     </ul>
                 </div>
             </div>
-            <div className="sponsors">
+            <div className="sponsorsT">
                 <h4>Sponsors</h4>
                 <div className="sponsors_container">
                     <ul>
