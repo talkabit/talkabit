@@ -65,7 +65,7 @@ export default function Home() {
             </main>
 
             <Speakers />
-            
+
             <Sponsors />
 
             <PreviousYears />

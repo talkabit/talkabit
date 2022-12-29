@@ -84,12 +84,15 @@ nav.navscro {
 }
 
 .previousYears,
-.sponsors {
+.sponsors,
+.team,
+.speakers {
     padding-top: 1.5rem;
 }
 
 .speakers h3,
-.sponsors h3 {
+.sponsors h3,
+.team h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -107,13 +110,8 @@ nav.navscro {
     padding: 0 1rem;
 }
 
-.team h3 {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 48px;
-    margin-bottom: 1.5rem;
-    color: #212c55;
-    padding: 0 1rem;
+.speakers {
+    padding-bottom: 1.5rem;
 }
 
 .speakers div.container {
@@ -121,8 +119,12 @@ nav.navscro {
     z-index: 1;
 }
 
+.speakers .row {
+    margin-bottom: -25px;
+}
+
 .speakers .parent_container {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .speakers .image_container {
@@ -175,8 +177,16 @@ nav.navscro {
     padding-left: 0.5rem;
 }
 
+.previousYears {
+    padding-bottom: 1.5rem;
+}
+
+.previousYears .row {
+    margin-bottom: -25px;
+}
+
 .previousYears .parent_container {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .previousYears .parent_container:hover,
