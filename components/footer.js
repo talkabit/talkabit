@@ -9,7 +9,13 @@ export default function Footer() {
         <div className={style.background}>
             <div className={style.footer}>
                 <div className={style.content}>
-                    <button className="register-btn">Register Now</button>
+                    <a
+                        href="https://hello.last2ticket.com/event/4844"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="register-btn">Register Now</button>
+                    </a>
                     <p>Copyright © 2022 Talk a Bit. All rights reserved.</p>
                 </div>
             </div>
