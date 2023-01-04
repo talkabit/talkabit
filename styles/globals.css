@@ -44,6 +44,20 @@ ul {
     margin: 0 0.5rem 1rem 0.5rem;
 } */
 
+.register-btn-topbar {
+    background: #41b38d;
+    font-weight: semi-bold;
+    font-size: 1em;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+}
+
 .register-btn {
     background: #41b38d;
     font-weight: semi-bold;

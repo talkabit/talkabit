@@ -200,6 +200,11 @@ export default function Topbar() {
                                 : 'navbar-nav flex-row flex-wrap ms-md-auto'
                         }`}
                     >
+                        <li>
+                            <button className="register-btn-topbar">
+                                Register Now
+                            </button>
+                        </li>
                         <li
                             className={`${
                                 isNavCollapsed
