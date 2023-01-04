@@ -201,9 +201,15 @@ export default function Topbar() {
                         }`}
                     >
                         <li>
-                            <button className="register-btn-topbar">
-                                Register Now
-                            </button>
+                            <a
+                                href="https://hello.last2ticket.com/event/4844"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="register-btn-topbar">
+                                    Register Now
+                                </button>
+                            </a>
                         </li>
                         <li
                             className={`${
