@@ -200,6 +200,23 @@ export default function Topbar() {
                                 : 'navbar-nav flex-row flex-wrap ms-md-auto'
                         }`}
                     >
+                        <li>
+                            <a
+                                href="https://hello.last2ticket.com/event/4844"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    className={`${
+                                        isNavCollapsed
+                                            ? 'register-btn-topbar'
+                                            : 'register-btn-topbar resTop'
+                                    }`}
+                                >
+                                    Register Now
+                                </button>
+                            </a>
+                        </li>
                         <li
                             className={`${
                                 isNavCollapsed

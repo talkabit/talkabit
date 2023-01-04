@@ -27,8 +27,7 @@ ul {
     margin-bottom: 0;
 }
 
-.register-btn,
-.edition-btn {
+/* .edition-btn {
     background: #72c5dc;
     font-family: Inter;
     font-weight: bold;
@@ -40,12 +39,39 @@ ul {
     outline: none;
     border: none;
     transition: all 0.3s ease-in-out;
-}
-
-.edition-btn {
     transform: skew(20deg);
     border-radius: 2px;
     margin: 0 0.5rem 1rem 0.5rem;
+} */
+
+.register-btn-topbar {
+    background: #41b38d;
+    font-weight: semi-bold;
+    font-size: 1em;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-btn {
+    background: #41b38d;
+    font-weight: semi-bold;
+    font-size: 1.3em;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    height: 42px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.resTop {
+    margin-right: 8px;
 }
 
 button:hover {
@@ -87,7 +113,7 @@ nav.navscro {
 .sponsors,
 .team,
 .speakers {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .speakers h3,
@@ -115,9 +141,9 @@ nav.navscro {
     z-index: 1;
 }
 
-.speakers .row {
+/* .speakers .row {
     margin-bottom: 1.5rem;
-}
+} */
 
 .speakers .parent_container {
     margin-bottom: 25px;
@@ -173,9 +199,9 @@ nav.navscro {
     padding-left: 0.5rem;
 }
 
-.previousYears .row {
+/* .previousYears .row {
     margin-bottom: 1.5rem;
-}
+} */
 
 .previousYears .parent_container {
     margin-bottom: 25px;
@@ -189,7 +215,7 @@ nav.navscro {
 .previousYears .image_container {
     height: 122px;
     border-radius: 20px;
-    border: 1px solid #55acee;
+    border: 1px solid #00a9ce;
     overflow: hidden;
 }
 
@@ -197,7 +223,7 @@ nav.navscro {
     height: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #55acee;
+    background-color: #00a9ce;
     opacity: 75%;
     margin-top: -70px;
 }
@@ -226,7 +252,7 @@ nav.navscro {
 .silverSponsor,
 .bronzeSponsor {
     margin: auto;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     width: 50%;
 }
 
@@ -290,7 +316,7 @@ nav.navscro {
 .chairman,
 .web,
 .program,
-.sponsors,
+.sponsorsT,
 .local,
 .parallel {
     margin: auto;
@@ -334,16 +360,16 @@ nav.navscro {
     max-width: 210px;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #55acee;
+    border: 2px solid #00a9ce;
     text-align: center;
 }
 
 .teamBackground span {
-    color: #55acee;
+    color: #00a9ce;
 }
 
 .teamBackground p {
-    color: #55acee;
+    color: #00a9ce;
 }
 
 .teamBackground .row {

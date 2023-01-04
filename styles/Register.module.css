@@ -1,0 +1,15 @@
+.background {
+    background-color: #212c55;
+}
+
+.register {
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.p0 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+}
