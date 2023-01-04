@@ -55,7 +55,6 @@ ul {
     outline: none;
     border: none;
     transition: all 0.3s ease-in-out;
-    margin-right: 8px;
 }
 
 .register-btn {
@@ -69,6 +68,10 @@ ul {
     outline: none;
     border: none;
     transition: all 0.3s ease-in-out;
+}
+
+.resTop {
+    margin-right: 8px;
 }
 
 button:hover {
