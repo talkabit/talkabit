@@ -9,6 +9,7 @@ export default function Footer() {
         <div className={style.background}>
             <div className={style.footer}>
                 <div className={style.content}>
+                    <button className="register-btn">Register Now</button>
                     <p>Copyright © 2022 Talk a Bit. All rights reserved.</p>
                 </div>
             </div>

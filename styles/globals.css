@@ -27,9 +27,8 @@ ul {
     margin-bottom: 0;
 }
 
-.register-btn,
-.edition-btn {
-    background: #00a9ce;
+/* .edition-btn {
+    background: #72c5dc;
     font-family: Inter;
     font-weight: bold;
     font-size: 16px;
@@ -40,12 +39,36 @@ ul {
     outline: none;
     border: none;
     transition: all 0.3s ease-in-out;
-}
-
-.edition-btn {
     transform: skew(20deg);
     border-radius: 2px;
     margin: 0 0.5rem 1rem 0.5rem;
+} */
+
+.register-btn-topbar {
+    background: #41b38d;
+    font-weight: semi-bold;
+    font-size: 1em;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+}
+
+.register-btn {
+    background: #41b38d;
+    font-weight: semi-bold;
+    font-size: 1.5em;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    height: 42px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
