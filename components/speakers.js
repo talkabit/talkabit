@@ -19,6 +19,22 @@ export default function Speakers() {
                 'With knowledge in data processing and a passion for driving organizational growth, I bring a unique perspective to my role as an Engineering Manager at Spotify.\nI am responsible for overseeing the ingestion and distribution of metadata from Music, Podcasts and Audiobooks, which powers features like Spotify Wrapped and Discovery Weekly. With almost 1 million artists creating new content every day, my team and I work to ensure that this metadata is processed efficiently and with the highest quality.\nI am excited to share my insights and knowledge with others, and I look forward to sharing the impact that Data can have to our creators and users and some of our practices in scaling data processing.',
             linkedin: 'https://www.linkedin.com/in/sonialiquito/',
         },
+        {
+            name: 'João Gonçalves',
+            title: 'Chief Technical Titan @ Critical TechWorks',
+            image: '/assets/speakers/joao_goncalves.jpg',
+            description:
+                'In CTW since January 2019 as a Chief Technical Titan, currently working with products centered around Data, thriving on the Cloud ecosystem. Passionate about simple solutions. Also, I’m a biker!',
+            linkedin: 'https://www.linkedin.com/in/joagonca/',
+        },
+        {
+            name: 'José Costa',
+            title: 'Chief Technical Titan @ Critical TechWorks',
+            image: '/assets/speakers/jose_costa.jpg',
+            description:
+                'At CTW since the first furniture was bought in some garage sale, started as a Data Engineer to move Data to the Cloud and eventually made it through Chief Technical Titan.',
+            linkedin: 'https://www.linkedin.com/in/jos%C3%A9-costa-3379201b/',
+        },
     ]
 
     const useMediaQuery = (width) => {
