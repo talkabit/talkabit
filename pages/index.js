@@ -3,9 +3,12 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
 import Topbar from '../components/topbar'
+import Speakers from '../components/speakers'
+import Register from '../components/register'
 import PreviousYears from '../components/previousYears'
 import Sponsors from '../components/sponsors'
 import Team from '../components/team'
+import Footer from '../components/footer'
 
 export default function Home() {
     return (
@@ -14,7 +17,7 @@ export default function Home() {
                 <title>Talk A Bit</title>
                 <meta
                     name="description"
-                    content="Currently on the way to its 10th edition, Talk a Bit offers its participants
+                    content="Currently on the way to its 11th edition, Talk a Bit offers its participants
             an event that promotes learning, exchange of ideas and socializing.
             Talk a Bit is one of the largest annual events in FEUP for
             software enthusiasts."
@@ -63,11 +66,17 @@ export default function Home() {
                 </section>
             </main>
 
+            <Register />
+            
+            <Speakers />
+
             <Sponsors />
 
             <PreviousYears />
 
             <Team />
+
+            <Footer />
 
             <style jsx global>{`
                 html,

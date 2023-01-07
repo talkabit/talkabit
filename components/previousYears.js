@@ -2,13 +2,70 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function previousYears() {
+    let previousEd = [
+        {
+            year: '2021',
+            edition: '9th edition',
+            link: '/2021',
+            image: '/assets/backgrounds/background_2021.png',
+        },
+        {
+            year: '2020',
+            edition: '8th edition',
+            link: '/2020',
+            image: '/assets/backgrounds/background_2020.jpeg',
+        },
+        {
+            year: '2019',
+            edition: '7th edition',
+            link: '/2019',
+            image: '/assets/backgrounds/background_2019.png',
+        },
+        {
+            year: '2018',
+            edition: '6th edition',
+            link: '/2018',
+            image: '/assets/backgrounds/background_2018.png',
+        },
+        {
+            year: '2017',
+            edition: '5th edition',
+            link: '/2017',
+            image: '/assets/backgrounds/background_2017.jpg',
+        },
+        {
+            year: '2016',
+            edition: '4th edition',
+            link: '/2016',
+            image: '/assets/backgrounds/background_2016.jpg',
+        },
+        {
+            year: '2015',
+            edition: '3rd edition',
+            link: '/2015',
+            image: '/assets/backgrounds/background_2015.png',
+        },
+        {
+            year: '2014',
+            edition: '2nd edition',
+            link: '/2014',
+            image: '/assets/backgrounds/background_2014.jpg',
+        },
+        {
+            year: '2013',
+            edition: '1st edition',
+            link: '/2013',
+            image: '/assets/backgrounds/background_2013.png',
+        },
+    ]
+
     return (
         <div className="yearsBackground">
             <section
                 className="previousYears"
                 data-bs-spy="scroll"
                 data-bs-target="#topbar"
-                data-bs-offset="0"
+                data-bs-offset="130"
                 tabIndex="0"
             >
                 <h3 id="editionsRef">Previous Editions</h3>
@@ -33,123 +90,27 @@ export default function previousYears() {
                                 </a>
                             </Link>
                         </div>
-                        <div className="col">
-                            <a href="/2021" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2021.png" />
+
+                        {previousEd.map((edition, index) => (
+                            <div className="col" key={index}>
+                                <a
+                                    href={edition.link}
+                                    style={{ textDecoration: 'none' }}
+                                >
+                                    <div className="parent_container">
+                                        <div className="image_container">
+                                            <img src={edition.image} />
+                                        </div>
+                                        <div className="edition_container">
+                                            <p className="p1">{edition.year}</p>
+                                            <p className="p2">
+                                                {edition.edition}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2021</p>
-                                        <p className="p2">9th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2020" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2020.jpeg" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2020</p>
-                                        <p className="p2">8th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2019" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2019.png" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2019</p>
-                                        <p className="p2">7th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2018" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2018.png" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2018</p>
-                                        <p className="p2">6th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2017" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2017.jpg" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2017</p>
-                                        <p className="p2">5th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2016" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2016.jpg" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2016</p>
-                                        <p className="p2">4th edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2015" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2015.png" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2015</p>
-                                        <p className="p2">3rd edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2014" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2014.jpg" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2014</p>
-                                        <p className="p2">2nd edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href="/2013" style={{ textDecoration: 'none' }}>
-                                <div className="parent_container">
-                                    <div className="image_container">
-                                        <img src="/assets/backgrounds/background_2013.png" />
-                                    </div>
-                                    <div className="edition_container">
-                                        <p className="p1">2013</p>
-                                        <p className="p2">1tst edition</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

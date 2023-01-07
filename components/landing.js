@@ -17,7 +17,7 @@ export default function Landing() {
                     <p className={style.p1}>
                         11th Conference Edition | FEUP, PORTO
                     </p>
-                    <p className={style.p2}>28th January 2022</p>
+                    <p className={style.p2}>28th January 2023</p>
                 </div>
                 <div className={style.landingCountdown}>
                     <DynamicTime targetDate={FINAL_DAY_IN_MS} />

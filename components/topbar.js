@@ -29,6 +29,7 @@ export default function Topbar() {
 
     return (
         <nav
+            id="topbar"
             className={`${
                 isNavCollapsed && !isScrolled
                     ? 'navbar navbar-expand-lg container-fluid bd-gutter flex-wrap flex-lg-nowrap fixed-top navbar-light navcol'
@@ -125,10 +126,10 @@ export default function Topbar() {
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
-                                href="#"
+                                href="#speakersRef"
                             >
                                 Speakers
                             </a>
@@ -199,6 +200,23 @@ export default function Topbar() {
                                 : 'navbar-nav flex-row flex-wrap ms-md-auto'
                         }`}
                     >
+                        <li>
+                            <a
+                                href="https://hello.last2ticket.com/event/4844"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    className={`${
+                                        isNavCollapsed
+                                            ? 'register-btn-topbar'
+                                            : 'register-btn-topbar resTop'
+                                    }`}
+                                >
+                                    Register Now
+                                </button>
+                            </a>
+                        </li>
                         <li
                             className={`${
                                 isNavCollapsed
