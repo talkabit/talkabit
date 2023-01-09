@@ -100,7 +100,7 @@ export default function sponsors() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="bronzeSponsor">
+                <div className="bronzeSponsor">
                     <h4>Bronze Sponsor</h4>
                     <div className="bronze_container">
                         <div className="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4">
@@ -116,7 +116,7 @@ export default function sponsors() {
                             ))}
                         </div>
                     </div>
-                </div> */}
+                </div>
             </section>
         </div>
     )
