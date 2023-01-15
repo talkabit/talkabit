@@ -206,7 +206,13 @@ export default function Topbar() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <button className="register-btn-topbar">
+                                <button
+                                    className={`${
+                                        isNavCollapsed
+                                            ? 'register-btn-topbar'
+                                            : 'register-btn-topbar resTop'
+                                    }`}
+                                >
                                     Register Now
                                 </button>
                             </a>

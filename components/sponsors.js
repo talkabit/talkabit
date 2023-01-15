@@ -7,11 +7,11 @@ export default function sponsors() {
             link: 'https://www.criticalmanufacturing.com/',
             image: '/assets/sponsors/critical_manufacturing_blue.svg',
         },
-        // {
-        //     name: 'xelerate.tech',
-        //     link: 'https://www.xelerate.tech/',
-        //     image: '/assets/sponsors/xelerate_tech.png',
-        // },
+        {
+            name: 'ISS',
+            link: 'https://www.issworld.com/',
+            image: '/assets/sponsors/iss.svg',
+        },
     ]
 
     let silverSponsors = [
@@ -22,12 +22,12 @@ export default function sponsors() {
         },
         {
             name: 'Critical TechWorks',
-            link: 'https://www.criticaltechworks.com/',
+            link: '/assets/sponsors/contents/Critical_Techworks.pdf',
             image: '/assets/sponsors/critical_techworks_blue.svg',
         },
         {
             name: 'Deloitte',
-            link: 'https://www2.deloitte.com/pt/pt.html',
+            link: '/assets/sponsors/contents/Deloitte.pdf',
             image: '/assets/sponsors/deloitte.png',
         },
         {
@@ -37,16 +37,16 @@ export default function sponsors() {
         },
         {
             name: 'Worten',
-            link: 'https://www.worten.pt/',
+            link: '/assets/sponsors/contents/Worten.pdf',
             image: '/assets/sponsors/worten.svg',
         },
     ]
 
     let bronzeSponsors = [
         {
-            name: 'Zoom',
-            link: 'https://zoom.us/',
-            image: '/assets/sponsors/zoom.svg',
+            name: 'Natixis',
+            link: 'https://natixis.groupebpce.com/',
+            image: '/assets/sponsors/natixis.svg',
         },
     ]
 
