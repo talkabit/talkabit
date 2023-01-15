@@ -11,7 +11,24 @@ export default function Register() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <button className="register-btn">Register Now</button>
+                    <button
+                        className="register-btn"
+                        style={{ margin: '0.5rem 1rem' }}
+                    >
+                        Register Now
+                    </button>
+                </a>
+                <a
+                    href="https://www.hackerrank.com/talkabit23"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button
+                        className="register-btn"
+                        style={{ margin: '0.5rem 1rem' }}
+                    >
+                        Hackathon Register
+                    </button>
                 </a>
             </div>
         </div>
