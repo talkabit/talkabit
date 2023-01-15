@@ -16,7 +16,9 @@ export default function Footer() {
                     >
                         <button className="register-btn">Register Now</button>
                     </a>
-                    <p>Copyright © 2022 Talk a Bit. All rights reserved.</p>
+                    <p style={{ marginBottom: '0' }}>
+                        Copyright © 2023 Talk a Bit. All rights reserved.
+                    </p>
                 </div>
             </div>
         </div>
