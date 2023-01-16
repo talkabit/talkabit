@@ -35,6 +35,22 @@ export default function Speakers() {
                 'At CTW since the first furniture was bought in some garage sale, started as a Data Engineer to move Data to the Cloud and eventually made it through Chief Technical Titan.',
             linkedin: 'https://www.linkedin.com/in/jos%C3%A9-costa-3379201b/',
         },
+        {
+            name: 'João Silveira',
+            title: 'Big Data Engineer @ Microsoft',
+            image: '/assets/speakers/joao_silveira.jpg',
+            description:
+                'With some years and knowledge in working in both in Big Data Engineer consulting and Big Data Technical support, I hope to share my thoughts and perspectives on the Data World and how cloud can help tackling these challenges. \nI am currently working at Microsoft as a Big Data Engineer where I help Microsoft customers in using the Azure Big Data products to unblock their data challenges and help them built the perfect Data platform for their use cases.',
+            linkedin: 'https://www.linkedin.com/in/joaopssilveira/',
+        },
+        {
+            name: 'João Carvalho',
+            title: 'Managing Partner & Esports Director @ Tandhem Esports',
+            image: '/assets/speakers/joao_carvalho.jpg',
+            description:
+                "I've been involved in a multitude of different projects in the last 10 years, where I was fortunate enough to be involved in the foundation, conceptualization, creation and structuration of more than a dozen of successful companies and projects - mainly in the digital marketing space, but not only. \nIn the last 4, I've focused mainly on the gaming and esports industries where I was actively involved with global and local communities, developing projects, events and digital activations with the main focus of helping in the development of those industries. \nI'll try to explain how big data is helping content creators, players and agencies in getting information about their audience, so they can better serve brands and clients.",
+            linkedin: 'https://www.linkedin.com/in/jocaccarvalho/',
+        },
     ]
 
     const useMediaQuery = (width) => {
