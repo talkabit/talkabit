@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from '../styles/Agenda.module.css'
 
-export default function agenda() {
+export default function Agenda() {
     const [talksOpen, setTalksOpen] = useState(true)
 
     let talks = [
