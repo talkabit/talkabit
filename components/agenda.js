@@ -21,8 +21,8 @@ export default function Agenda() {
             time: '11:00 - 11:45',
         },
         {
-            name: '',
-            speaker: '',
+            name: 'zerozero.pt - A Maior Base de Dados de Futebol do Mundo!',
+            speaker: 'Marco Sousa & Pedro Dias @ zerozero.pt',
             time: '11:45 - 12:30',
         },
         {

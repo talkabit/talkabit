@@ -51,6 +51,22 @@ export default function Speakers() {
                 "I've been involved in a multitude of different projects in the last 10 years, where I was fortunate enough to be involved in the foundation, conceptualization, creation and structuration of more than a dozen of successful companies and projects - mainly in the digital marketing space, but not only. \nIn the last 4, I've focused mainly on the gaming and esports industries where I was actively involved with global and local communities, developing projects, events and digital activations with the main focus of helping in the development of those industries. \nI'll try to explain how big data is helping content creators, players and agencies in getting information about their audience, so they can better serve brands and clients.",
             linkedin: 'https://www.linkedin.com/in/jocaccarvalho/',
         },
+        {
+            name: 'Marco Sousa',
+            title: 'Founder @ zerozero.pt',
+            image: '/assets/speakers/marco_sousa.jpg',
+            description:
+                'Marco Sousa é um dos fundadores do zerozero.pt e atualmente administrador da ZOS Lda que detém o projeto. \nAluno da primeira “fornada” de engenheiros informáticos da FEUP, trabalhou na Esoterica (primeiro ISP português) e na Critical Software, até se aventurar por conta própria com a Memória Visual com diversos projetos web e mobile. Esteve com o projeto zerozero.pt desde o seu início, que começou como um hobbie e cresceu para se tornar um dos maiores websites em Portugal. Desde 2017, as duas empresas partilham espaço e recursos, criando uma atmosfera de trabalho altamente motivante.',
+            linkedin: 'https://www.linkedin.com/in/marco-alex-sousa/',
+        },
+        {
+            name: 'Pedro Dias',
+            title: 'Founder & COO @ zerozero.pt',
+            image: '/assets/speakers/pedro_dias.jpg',
+            description:
+                'Pedro Dias é engenheiro de formação e football geek por vocação. \nTambém aluno da primeira geração de Engenheiros Informáticos da FEUP (1994/99), começou por estar 10 anos a tentar ajudar as fábricas a serem mais eficientes em áreas como Planeamento de Produção e Shop Floor Control. Em paralelo, desde 2003, ajudou a idealizar, modelizar e implementar o zerozero.pt, um projeto que é de facto a sua "cadeira de sonho".',
+            linkedin: 'https://www.linkedin.com/in/pedro-dias-09146b1/',
+        },
     ]
 
     const useMediaQuery = (width) => {
