@@ -52,7 +52,7 @@ export default function Agenda() {
             time: '16:45 - 17:30',
         },
         {
-            name: '',
+            name: 'How Cloud changed the Data World?',
             speaker: 'João Silveira @ Microsoft',
             time: '17:30 - 18:15',
         },
