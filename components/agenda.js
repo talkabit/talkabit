@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from '../styles/Agenda.module.css'
 
-export default function agenda() {
+export default function Agenda() {
     const [talksOpen, setTalksOpen] = useState(true)
 
     let talks = [
@@ -21,8 +21,8 @@ export default function agenda() {
             time: '11:00 - 11:45',
         },
         {
-            name: '',
-            speaker: '',
+            name: 'zerozero.pt - A Maior Base de Dados de Futebol do Mundo!',
+            speaker: 'Marco Sousa & Pedro Dias @ zerozero.pt',
             time: '11:45 - 12:30',
         },
         {
@@ -52,7 +52,7 @@ export default function agenda() {
             time: '16:45 - 17:30',
         },
         {
-            name: '',
+            name: 'How Cloud changed the Data World?',
             speaker: 'João Silveira @ Microsoft',
             time: '17:30 - 18:15',
         },
