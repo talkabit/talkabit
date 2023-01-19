@@ -1,0 +1,130 @@
+#tabSelector button {
+    border: none;
+    background: none;
+    padding: 21px 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition: ease all 0.3s;
+}
+
+#tabSelector button.selected,
+#tabSelector button:hover {
+    font-weight: 600;
+}
+
+#talksButton {
+    width: 137px;
+    color: #41b38d;
+}
+
+#othersButton {
+    width: 300px;
+    color: #41b38d;
+}
+
+#tabSelector {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.eventEntry {
+    margin: 46px 0;
+    padding: 0 25px;
+}
+
+.eventTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.eventName {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    color: #ffffff;
+    padding-right: 0.5rem;
+}
+
+.eventTime {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.eventSpeaker {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: left;
+}
+
+#lunch {
+    background: #e5e5e5;
+    padding: 25px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#closing {
+    background: rgba(0, 169, 206, 0.52);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 0 0 0 !important;
+}
+
+#closing .eventSpeaker,
+#opening .eventSpeaker {
+    color: white;
+}
+
+#opening {
+    background: rgba(0, 169, 206, 0.52);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#others h4 {
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: rgba(65, 179, 141, 0.8);
+}
+
+#others .eventEntry:nth-child(2) {
+    margin-top: 0;
+}
+
+.eventBottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.eventTickets {
+    font-weight: 300;
+    font-size: 13.25px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.eventTickets a {
+    color: #00a9ce;
+    text-decoration: none;
+}

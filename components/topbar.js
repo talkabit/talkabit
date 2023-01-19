@@ -145,10 +145,10 @@ export default function Topbar() {
                             <a
                                 className={`${
                                     isNavCollapsed
-                                        ? 'nav-link px-lg-2 text-white disabled'
-                                        : 'nav-link py-2 px-0 px-lg-2 text-white disabled'
+                                        ? 'nav-link px-lg-2 text-white'
+                                        : 'nav-link py-2 px-0 px-lg-2 text-white'
                                 }`}
-                                href="#"
+                                href="#agendaRef"
                             >
                                 Agenda
                             </a>
