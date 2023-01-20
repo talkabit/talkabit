@@ -67,6 +67,22 @@ export default function Speakers() {
                 'Pedro Dias é engenheiro de formação e football geek por vocação. \nTambém aluno da primeira geração de Engenheiros Informáticos da FEUP (1994/99), começou por estar 10 anos a tentar ajudar as fábricas a serem mais eficientes em áreas como Planeamento de Produção e Shop Floor Control. Em paralelo, desde 2003, ajudou a idealizar, modelizar e implementar o zerozero.pt, um projeto que é de facto a sua "cadeira de sonho".',
             linkedin: 'https://www.linkedin.com/in/pedro-dias-09146b1/',
         },
+        {
+            name: 'Cristiana Ramos',
+            title: 'Senior Manager @ Deloitte',
+            image: '/assets/speakers/cristiana_ramos.jpg',
+            description:
+                'Cristiana is one of the leads of the Cloud & Technology Strategy practice and the head of the Next Generation Operating Models offering. \nCristiana has more than 11 years of experience leading several projects around the world in the areas of IT Strategy definition, Technology Governance and Project Management. \nCristiana has led several advisory projects with different scopes, but her focus is helping clients adopting IT operating and governance models trends by designing conceptual models and implementation roadmaps to adopt agile by design.',
+            linkedin: 'https://www.linkedin.com/in/cristianaramos/',
+        },
+        {
+            name: 'Ricardo Martins',
+            title: 'Associate Partner @ Deloitte',
+            image: '/assets/speakers/ricardo_martins.jpg',
+            description:
+                'Ricardo joined Deloitte in 2021 as a member of our Global Smart Cities & Urban Transformation team. He is responsible for the development and growth of Synergy’s business and its technological alliances. \nWith more than 20 years of experience directing full-scale projects and business development initiatives for global corporations, he worked in areas such as Consulting, Government, Telecommunications, and Information Technology. \nBefore joining Deloitte, Ricardo worked for Philips where he was responsible for the development of the Smart Cities strategy for the Iberian Market, new business models, and technological partnerships. \nHe is also Advisor to technology-based Startups and an Expert for European Community Horizon 2020 Program.',
+            linkedin: 'https://www.linkedin.com/in/ricardofmartins/',
+        },
     ]
 
     const useMediaQuery = (width) => {
