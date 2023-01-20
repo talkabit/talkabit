@@ -52,7 +52,7 @@ export default function Agenda() {
             time: '16:45 - 17:30',
         },
         {
-            name: '',
+            name: 'How Cloud changed the Data World?',
             speaker: 'João Silveira @ Microsoft',
             time: '17:30 - 18:15',
         },
@@ -64,6 +64,15 @@ export default function Agenda() {
     ]
 
     let others_1 = [
+        {
+            name: 'Workshop: Como liderar equipas para conseguirmos os melhores projetos e resultados',
+            time: '14:30 - 15:30',
+            speaker: 'Paulo Laureano',
+            tickets: 'https://forms.gle/YbRKKBJed3QJcoT49',
+        },
+    ]
+
+    let others_2 = [
         {
             name: 'Network a Bit',
             time: '13:30 - 14:45',
@@ -200,8 +209,46 @@ export default function Agenda() {
                                 </div>
                             </span>
                             <span>
-                                <h4>28 of January</h4>
+                                <h4>27 of January</h4>
                                 {others_1.map((event, index) => (
+                                    <div
+                                        className={style.eventEntry}
+                                        key={index}
+                                    >
+                                        <div className={style.eventTop}>
+                                            <span className={style.eventName}>
+                                                {event.name}
+                                            </span>
+                                            <span className={style.eventTime}>
+                                                {event.time}
+                                            </span>
+                                        </div>
+                                        <div className={style.eventBottom}>
+                                            <div className={style.eventSpeaker}>
+                                                {event.speaker}
+                                            </div>
+                                            {event.tickets && (
+                                                <div
+                                                    className={
+                                                        style.eventTickets
+                                                    }
+                                                >
+                                                    <a
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href={event.tickets}
+                                                    >
+                                                        Tickets
+                                                    </a>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </span>
+                            <span>
+                                <h4>28 of January</h4>
+                                {others_2.map((event, index) => (
                                     <div
                                         className={style.eventEntry}
                                         key={index}
