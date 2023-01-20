@@ -39,8 +39,8 @@ export default function Agenda() {
             time: '14:45 - 15:30',
         },
         {
-            name: '',
-            speaker: '',
+            name: 'A bit of Smart Cities Data',
+            speaker: 'Cristiana Ramos & Ricardo Martins @ Deloitte',
             time: '15:30 - 16:15',
         },
         {
