@@ -83,6 +83,14 @@ export default function Speakers() {
                 'Ricardo joined Deloitte in 2021 as a member of our Global Smart Cities & Urban Transformation team. He is responsible for the development and growth of Synergy’s business and its technological alliances. \nWith more than 20 years of experience directing full-scale projects and business development initiatives for global corporations, he worked in areas such as Consulting, Government, Telecommunications, and Information Technology. \nBefore joining Deloitte, Ricardo worked for Philips where he was responsible for the development of the Smart Cities strategy for the Iberian Market, new business models, and technological partnerships. \nHe is also Advisor to technology-based Startups and an Expert for European Community Horizon 2020 Program.',
             linkedin: 'https://www.linkedin.com/in/ricardofmartins/',
         },
+        {
+            name: 'Liliana Ferreira',
+            title: 'Executive Director & Researcher @ Fraunhofer',
+            image: '/assets/speakers/liliana_ferreira.jpg',
+            description:
+                'Liliana Ferreira is chair of Fraunhofer Portugal and director of its research centre for Assistive Information and Communication Solutions (AICOS) since 2017. Liliana is also an invited Full Professor at the Department of Informatics of the Faculty of Engineering of the University of Porto. \nHer research focuses on the areas of Natural Language Processing, Medical Knowledge Representation, Information Extraction, and Health Informatics. \nLiliana holds a degree in Applied Mathematics and Technology by the Faculty of Sciences of the University of Porto (2002), a MSc in Electronics and Telecommunications Engineering and a Ph.D. in Informatics (2011) both from the University of Aveiro, Portugal. \nLiliana has developed her research in industry and research organizations as Philips Research Eindhoven (NL), IBM Research and Development Böblingen (DE), the Institute of Electronics and Telematics Engineering of Aveiro (PT), the Ubiquitous Knowledge Lab of the Technical University of Darmstadt (DE) and the University of Tübingen (DE).',
+            linkedin: 'https://www.linkedin.com/in/liliana-ferreira-12769639/',
+        },
     ]
 
     const useMediaQuery = (width) => {
