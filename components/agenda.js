@@ -29,8 +29,8 @@ export default function Agenda() {
             name: 'Lunch',
         },
         {
-            name: '',
-            speaker: '',
+            name: 'The challenges of Data in Health AI and the potential of synthetic Data',
+            speaker: 'Liliana Ferreira @ Fraunhofer',
             time: '14:00 - 14:45',
         },
         {
