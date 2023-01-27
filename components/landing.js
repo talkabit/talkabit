@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic'
 import LogoEd from '../public/assets/tab_ed.svg'
 
 export default function Landing() {
-    const FINAL_DAY_IN_MS = new Date(2023, 0, 28).getTime() - 3600000
+    const FINAL_DAY_IN_MS = new Date(2023, 0, 28, 10).getTime()
 
     const DynamicTime = dynamic(() => import('../hooks/CountdownTimer'))
 
