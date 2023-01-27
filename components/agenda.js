@@ -47,8 +47,8 @@ export default function Agenda() {
             name: 'Break',
         },
         {
-            name: '',
-            speaker: '',
+            name: 'Process and Usage of millions of events for E-commerce',
+            speaker: 'Tiago Matos @ Jumpseller',
             time: '16:45 - 17:30',
         },
         {

@@ -9,7 +9,7 @@ export default function sponsors() {
         },
         {
             name: 'ISS',
-            link: 'https://www.issworld.com/',
+            link: 'https://www.issworld.com/en/career/career-opportunities/iss-tech-team',
             image: '/assets/sponsors/iss.svg',
         },
     ]
@@ -32,7 +32,7 @@ export default function sponsors() {
         },
         {
             name: 'INESCTEC',
-            link: 'https://www.inesctec.pt/pt',
+            link: '/assets/sponsors/contents/Inesctec.pdf',
             image: '/assets/sponsors/inesctec.png',
         },
         {
