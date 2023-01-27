@@ -91,6 +91,14 @@ export default function Speakers() {
                 'Liliana Ferreira is chair of Fraunhofer Portugal and director of its research centre for Assistive Information and Communication Solutions (AICOS) since 2017. Liliana is also an invited Full Professor at the Department of Informatics of the Faculty of Engineering of the University of Porto. \nHer research focuses on the areas of Natural Language Processing, Medical Knowledge Representation, Information Extraction, and Health Informatics. \nLiliana holds a degree in Applied Mathematics and Technology by the Faculty of Sciences of the University of Porto (2002), a MSc in Electronics and Telecommunications Engineering and a Ph.D. in Informatics (2011) both from the University of Aveiro, Portugal. \nLiliana has developed her research in industry and research organizations as Philips Research Eindhoven (NL), IBM Research and Development Böblingen (DE), the Institute of Electronics and Telematics Engineering of Aveiro (PT), the Ubiquitous Knowledge Lab of the Technical University of Darmstadt (DE) and the University of Tübingen (DE).',
             linkedin: 'https://www.linkedin.com/in/liliana-ferreira-12769639/',
         },
+        {
+            name: 'Tiago Matos',
+            title: 'Co-Founder @ Jumpseller',
+            image: '/assets/speakers/tiago_matos.jpg',
+            description:
+                'I am passionate about Web Development as a whole. From server setup, DB optimization and rapid prototyping. Usefulness and usability are the key ingredients of what I like to do. \nWith extensive proficiency in Ruby and AWS, after 2018, I have been developing myself technically mostly on Infrastructure, DevOps and Security projects. \nMost of my time is spent on managing Jumpseller, with emphasis on Customer Relationships, Hiring, Governmental Programs, SCRUM methodology & OKRs framework.',
+            linkedin: 'https://www.linkedin.com/in/tiagomatos/',
+        },
     ]
 
     const useMediaQuery = (width) => {
